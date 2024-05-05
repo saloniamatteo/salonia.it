@@ -352,7 +352,7 @@
 
 				<div class="tile__container">
 					<p class="tile__title">
-					<a href="https://github.com/saloniamatteo/saloniamatteo.github.io" class="font-bold text-link-dark text-md u u-LR">
+					<a href="https://github.com/saloniamatteo/salonia.it" class="font-bold text-link-dark text-md u u-LR">
 						<?= lang("index.source.title") ?>
 					</a>
 					</p>
