@@ -9,6 +9,9 @@ $routes->setDefaultMethod('index');
 // Index
 $routes->get('/', 'Pages::index');
 
+// Error page
+$routes->get('/error', 'Pages::error');
+
 // Get list of supported locales
 $locales = config("App")->supportedLocales;
 $locale_regex = "";

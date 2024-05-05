@@ -37,6 +37,14 @@ class Pages extends BaseController {
         return view("index", $this->data);
     }
 
+    // Generic error
+    public function error() {
+        $this->setup();
+
+        // Render generic error page
+        return view("errors/html/production", $this->data);
+    }
+
     // View page
     public function view($page = 'index') {
         $this->setup();
