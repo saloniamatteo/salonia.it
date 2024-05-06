@@ -43,14 +43,20 @@
 	</div>
 
 	<?php if (ENVIRONMENT !== 'production') : ?>
-		<div class="content p-3">
+		<div class="divider w-90p-md u-center my-4"></div>
+
+		<div class="card w-90p-md u-center">
+		<div class="content p-3 u-text-left">
 			<h5>Error:</h5>
 
 			<p>
 				<?= nl2br(esc($message)) ?>
 			</p>
 		</div>
+		</div>
 	<?php endif; ?>
+
+	<br>
 
 	<?= view("static/footer") ?>
 </body>
