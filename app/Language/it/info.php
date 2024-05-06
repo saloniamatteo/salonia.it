@@ -4,7 +4,7 @@ return [
 	"title"			=> "Informazioni",
 	"desc"			=> "Informazioni su Matteo Salonia.",
 	"welcome"		=> [
-		"title"		=> "Informazioni",
+		"title"		=> "Info",
 		"desc"		=> "Scopri chi sono, le mie competenze, e le mie conoscenze.",
 	],
 	"hero"			=> [
