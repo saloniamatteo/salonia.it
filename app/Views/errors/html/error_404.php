@@ -56,7 +56,7 @@
 		</div>
 	<?php endif; ?>
 
-	<br>
+	<br><br>
 
 	<?= view("static/footer") ?>
 </body>
