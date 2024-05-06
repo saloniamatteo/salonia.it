@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="footer bg-blue-700 px-4 pt-6 pb-4 mt-3 u-shadow-inset">
+<footer class="footer bg-blue-700 px-4 pt-6 pb-4 mt-0 u-shadow-inset">
 	<h5 class="title text-white pt-2">Matteo Salonia</h5>
 
 	<?php
