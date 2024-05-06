@@ -257,7 +257,7 @@
 </div>
 </div>
 
-<div class="u-center mt-8">
+<div class="u-center my-8">
 	<a href="<?= site_url($locale) ?>">
 		<?= lang('glob.to-main') ?>
 	</a>
