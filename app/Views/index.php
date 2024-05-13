@@ -53,7 +53,7 @@
 
 			<div class="tile__container">
 				<p class="tile__title">
-				<a href="https://salonia.it/Arch" class="font-bold text-link-dark text-md u u-LR">
+				<a href="https://arch.salonia.it" class="font-bold text-link-dark text-md u u-LR">
 					<?= lang("index.arch.title") ?>
 				</a>
 				</p>
@@ -80,7 +80,7 @@
 
 			<div class="tile__container">
 				<p class="tile__title">
-				<a href="https://salonia.it/dotfiles" class="font-bold text-link-dark text-md u u-LR">
+				<a href="https://dotfiles.salonia.it" class="font-bold text-link-dark text-md u u-LR">
 					<?= lang("index.dotfiles.title") ?>
 				</a>
 				</p>
