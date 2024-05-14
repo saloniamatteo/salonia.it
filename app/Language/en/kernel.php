@@ -52,7 +52,7 @@ return [
 		"configs"			=> [
 			"desc"			=> "There are two default configs:",
 			"config"		=> "for my <b>ThinkPad T440p</b>, with CPU <b>i7-4700MQ</b>, no GPU (iGPU), <b>8GB RAM</b>, SSD M.2 2242 + SSD SATAIII.",
-			"config-pc"		=> "for my desktop PC, with CPU <b>i5-11400MQ</b>, no GPU (iGPU), <b>16GB RAM</b>, SSD NVME Samsung 980 Pro</b>.",
+			"config-pc"		=> "for my desktop PC, with CPU <b>i5-11400</b>, no GPU (iGPU), <b>16GB RAM</b>, SSD NVME Samsung 980 Pro</b>.",
 			"subd"			=> "Since the changes made to the Kernel config, it'll be necessary to verify the desired components are enabled in the Kernel, whenever you'd choose my config as a starting point. For example, components relative to AMD, Nvidia, NUMA, etc. have been disabled.<br>If you don't know where to start, use an already existing config that you know works on your hardware, if available, or else use any Kernel's default config, like that provided by your distro, or the Kernel's very own default config.",
 		],
 	],
