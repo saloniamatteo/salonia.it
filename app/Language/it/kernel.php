@@ -52,7 +52,7 @@ return [
 		"configs"			=> [
 			"desc"			=> "Vi sono due configurazioni di default:",
 			"config"		=> "per il mio <b>ThinkPad T440p</b>, con CPU <b>i7-4700MQ</b>, nessuna GPU (iGPU), <b>8GB RAM</b>, SSD M.2 2242 + SSD SATAIII.",
-			"config-pc"		=> "per il mio PC fisso, con CPU <b>i5-11400MQ</b>, nessuna GPU (iGPU), <b>16GB RAM</b>, SSD NVME Samsung 980 Pro</b>.",
+			"config-pc"		=> "per il mio PC fisso, con CPU <b>i5-11400</b>, nessuna GPU (iGPU), <b>16GB RAM</b>, SSD NVME Samsung 980 Pro</b>.",
 			"subd"			=> "Dati i cambiamenti effettuati nella configurazione del Kernel, sarà necessario verificare che i componenti desiderati sono abilitati nel Kernel, qualora sceglieste la mia configurazione come punto di partenza. Ad esempio, componenti relativi ad AMD, Nvidia, NUMA, ecc. sono stati disabilitati.<br>Se non sapete da dove partire, usate una configurazione già esistente che sapete funzioni sul vostro hardware, se disponibile, altrimenti usate la configurazione di default di un qualsiasi Kernel, come quella fornita dalla vostra distro, o la configurazione di default del Kernel.",
 		],
 	],
