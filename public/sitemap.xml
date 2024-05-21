@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://salonia.it/</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/en/</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/it/</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/kernel</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/packages</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/software</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/info</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/contact</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/donate</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/en/kernel</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/it/kernel</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/en/packages</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/it/packages</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/en/software</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/it/software</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/en/info</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/it/info</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/en/contact</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/it/contact</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/en/donate</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/it/donate</loc>
+  <priority>0.80</priority>
+</url>
+</urlset>
