@@ -23,4 +23,7 @@
 	<!-- CSS & Fonts -->
 	<link rel="stylesheet" href="<?= base_url('css/cirrus.min.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('css/fonts/fonts.css') ?>">
+
+	<!-- JS for header -->
+	<script src="<?= base_url('js/header.js') ?>"></script>
 </head>

@@ -1,6 +1,8 @@
 <?php
 // Italian dict containing global translations
 return [
+	"en"				=> "English",
+	"it"				=> "Italiano",
 	// Error 404
 	"404"				=> [
 		"title"			=> "Pagina non trovata",
