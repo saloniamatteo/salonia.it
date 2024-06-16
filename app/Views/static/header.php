@@ -22,8 +22,8 @@
 
 	<div class="header-nav" id="header-menu" role="button">
 		<div class="nav-right">
+			<!-- Language selector -->
 			<div class="nav-item">
-
 				<?php
 				function text_to_flag($text) {
 					$flagEmoji = [
@@ -52,12 +52,162 @@
 					$href = base_url() . replace_lang($uri, $locale);
 
 					// Add element with respective emoji
-					echo "<a class='u u-LR font-bold' href='$href'>"
+					echo "<a class='u u-LR font-bold p-0 m-1' href='$href'>"
 						. text_to_flag($locale) . "&nbsp;&nbsp;"
 						. lang("glob.$locale")
 						. "</a>";
 				}
 				?>
+			</div>
+
+			<!-- Pages -->
+			<div class="nav-item has-sub toggle-hover px-0">
+				<!-- Dropdown -->
+				<a class="font-bold nav-dropdown-link py-0 m-0">
+					<span class="u u-LR">💻&nbsp;&nbsp;<?= lang("glob.pages") ?></span>
+				</a>
+
+				<ul class="dropdown-menu dropdown-animated" id="pages-menu" role="menu" onclick="menu_toggle(this)">
+					<!-- Kernel -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('kernel') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/linux.png') ?>" alt="Tux">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.kernel.title") ?>
+						</a>
+					</li>
+
+					<!-- Packages -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('packages') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/box.png') ?>" alt="Box">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.packages.title") ?>
+						</a>
+					</li>
+
+					<!-- Software -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('software') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/c.png') ?>" alt="C">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.software.title") ?>
+						</a>
+					</li>
+
+					<!-- Info -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('info') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/about.png') ?>" alt="About">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.info.title") ?>
+						</a>
+					</li>
+
+					<!-- Contact -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('contact') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/contact.png') ?>" alt="Contact">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.contact.title") ?>
+						</a>
+					</li>
+
+					<!-- Donate -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('donate') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/cash.png') ?>" alt="Cash">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.donate.title") ?>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Links -->
+			<div class="nav-item has-sub toggle-hover px-0">
+				<!-- Dropdown -->
+				<a class="font-bold nav-dropdown-link py-0 m-0">
+					<span class="u u-LR">🔗&nbsp;&nbsp;<?= lang("glob.links") ?></span>
+				</a>
+
+				<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu" onclick="menu_toggle(this)">
+					<!-- SearXNG -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="https://s.salonia.it">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/searxng.png') ?>" alt="SearXNG logo">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.searxng.title") ?>
+						</a>
+					</li>
+
+					<!-- OpenAlias -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="https://oa.salonia.it">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/oa.png') ?>" style="border-radius: 50%" alt="OpenAlias logo">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.openalias.title") ?>
+						</a>
+					</li>
+
+					<!-- GitHub profile -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="https://github.com/saloniamatteo">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.github.title") ?>
+						</a>
+					</li>
+
+					<!-- Website source code -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="https://github.com/saloniamatteo/salonia.it">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.source.title") ?>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
