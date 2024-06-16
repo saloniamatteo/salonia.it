@@ -71,8 +71,6 @@
 		</div>
 	</div>
 
-	<div class="divider"></div>
-
 	<!-- Percorso formativo -->
 	<div class="grid-c-12 mr-4-lg u-text-left" id="timeline">
 	<div class="card">
