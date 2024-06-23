@@ -38,11 +38,11 @@
 			 src="<?= base_url('pics/me.jpeg') ?>">
 		</div>
 
-		<div class="grid-c-8-md">
+		<div class="grid-c-8-md ml-1-md">
 			<h1 class="my-0">Matteo Salonia</h1>
 		</div>
 
-		<div class="grid-c-8 mr-4-lg">
+		<div class="grid-c-8 ml-1-md mr-4-lg">
 			<p>
 				<?= lang('info.hero.desc') ?>
 			</p>
