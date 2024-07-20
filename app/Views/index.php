@@ -204,6 +204,8 @@
 			</div>
 		</div>
 
+		<div class="divider"></div>
+
 		<!-- About me -->
 		<div class="tile level">
 			<div class="tile__icon">
