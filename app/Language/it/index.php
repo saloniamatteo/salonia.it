@@ -32,6 +32,10 @@ return [
 		"title"		=> "Programmi",
 		"desc"		=> "Tutti i programmi che ho creato in C, compatibili con Linux e non solo.",
 	],
+	"cv"			=> [
+		"title"		=> "Curriculum",
+		"desc"		=> "Scarica il mio Curriculum Vitae",
+	],
 	"about"			=> [
 		"title"		=> "Su di me",
 		"desc"		=> "Scopri chi sono, le mie competenze, i miei recapiti, come puoi aiutarmi.",

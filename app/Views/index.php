@@ -183,6 +183,27 @@
 	<div class="content u-text-left w-90p-md">
 	<div class="card">
 	<div class="m-3">
+		<!-- Curriculum Vitae -->
+		<div class="tile level">
+			<div class="tile__icon">
+				<figure class="w-6" style="background: white">
+				<img src="<?= base_url('pics/cv.png') ?>" alt="CV">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title">
+				<a href="<?= base_url('cv.pdf') ?>" class="font-bold text-link-dark text-md u u-LR">
+					<?= lang('index.cv.title') ?>
+				</a>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang('index.cv.desc') ?>
+				</p>
+			</div>
+		</div>
+
 		<!-- About me -->
 		<div class="tile level">
 			<div class="tile__icon">

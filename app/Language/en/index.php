@@ -32,6 +32,10 @@ return [
 		"title"		=> "Software",
 		"desc"		=> "All of the programs I made in C, compatible with Linux, and more.",
 	],
+	"cv"			=> [
+		"title"		=> "CV",
+		"desc"		=> "Download my CV/Resume",
+	],
 	"about"			=> [
 		"title"		=> "About me",
 		"desc"		=> "Discover who I am, my skills, my contact details, and how you can help me.",
