@@ -91,7 +91,7 @@
 				<p class="tile__subtitle text-black">Link:</p>
 
 				<p class="tile__subtitle text-black font-bold">
-					<a href="https://paypal.me/saloniamatteo" class="font-bold text-link-dark u u-LR">paypal.me/saloniamatteo</a>
+					<a href="https://paypal.me/saloniamatteo" class="font-bold text-blue-700 u u-LR">paypal.me/saloniamatteo</a>
 				</p>
 			</div>
 		</div>

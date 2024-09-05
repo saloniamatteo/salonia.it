@@ -32,7 +32,7 @@
 		<p class="lead u-text-center">
 			<?= lang('glob.err.desc') ?><br>
 			<?= lang('glob.err.contact') ?>
-			<a class="font-bold text-link-dark u u-LR" href="<?= site_url('contact') ?>">
+			<a class="font-bold text-blue-700 u u-LR" href="<?= site_url('contact') ?>">
 			 <?= lang('glob.err.admin') ?>.
 		</p>
 

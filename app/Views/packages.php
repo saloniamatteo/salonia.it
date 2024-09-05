@@ -36,7 +36,7 @@
 
 			<div class="tile__container">
 				<p class="tile__title">
-				<a href="https://github.com/saloniamatteo/librsvg-overlay" class="font-bold text-link-dark text-md u u-LR">
+				<a href="https://github.com/saloniamatteo/librsvg-overlay" class="font-bold text-blue-700 text-md u u-LR">
 					<?= lang('packages.librsvg.title') ?>
 				</a>
 				</p>

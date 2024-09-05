@@ -42,7 +42,7 @@
 
 			<div class="tile__container">
 				<p class="tile__title">
-				<a href="mailto:saloniamatteo@pm.me" class="font-bold text-link-dark text-md u u-LR">
+				<a href="mailto:saloniamatteo@pm.me" class="font-bold text-blue-700 text-md u u-LR">
 					Protonmail: saloniamatteo@pm.me
 				</a>
 				</p>
@@ -51,7 +51,7 @@
 					<?= lang('contact.protonmail') ?>
 					&mdash;
 					<a href="<?= base_url('matteo-pm.asc') ?>"
-					class="font-bold text-link-dark text-md u u-LR">
+					class="font-bold text-blue-700 text-md u u-LR">
 						 <?= lang('contact.gpg') ?>
 					</a>
 				</p>
@@ -68,7 +68,7 @@
 
 			<div class="tile__container">
 				<p class="tile__title">
-				<a href="mailto:matteo@salonia.it" class="font-bold text-link-dark text-md u u-LR">
+				<a href="mailto:matteo@salonia.it" class="font-bold text-blue-700 text-md u u-LR">
 					<?= lang('contact.pserv.title') ?>: matteo@salonia.it
 				</a>
 				</p>
@@ -77,7 +77,7 @@
 					<?= lang('contact.pserv.desc') ?>
 					&mdash;
 					<a href="<?= base_url('matteo.asc') ?>"
-					class="font-bold text-link-dark text-md u u-LR">
+					class="font-bold text-blue-700 text-md u u-LR">
 						 <?= lang('contact.gpg') ?>
 					</a>
 				</p>

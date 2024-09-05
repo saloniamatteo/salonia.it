@@ -53,7 +53,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang("index.arch.title") ?>
 				</p>
 
@@ -80,7 +80,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang("index.dotfiles.title") ?>
 				</p>
 
@@ -103,7 +103,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang("index.kernel.title") ?>
 				</p>
 
@@ -126,7 +126,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('index.packages.title') ?>
 				</p>
 
@@ -149,7 +149,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang("index.software.title") ?>
 				</p>
 
@@ -193,7 +193,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('index.cv.title') ?>
 				</p>
 
@@ -216,7 +216,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('index.info.title') ?>
 				</p>
 
@@ -239,7 +239,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('index.contact.title') ?>
 				</p>
 
@@ -262,7 +262,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('index.donate.title') ?>
 				</p>
 
@@ -306,7 +306,7 @@
 				</div>
 
 				<div class="tile__container">
-					<p class="tile__title text-link-dark u u-LR">
+					<p class="tile__title text-blue-700 u u-LR">
 						<?= lang("index.searxng.title") ?>
 					</p>
 
@@ -329,7 +329,7 @@
 				</div>
 
 				<div class="tile__container">
-					<p class="tile__title text-link-dark u u-LR">
+					<p class="tile__title text-blue-700 u u-LR">
 						<?= lang("index.openalias.title") ?>
 					</p>
 
@@ -352,7 +352,7 @@
 				</div>
 
 				<div class="tile__container">
-					<p class="tile__title text-link-dark u u-LR">
+					<p class="tile__title text-blue-700 u u-LR">
 						<?= lang("index.github.title") ?>
 					</p>
 
@@ -375,7 +375,7 @@
 				</div>
 
 				<div class="tile__container">
-					<p class="tile__title text-link-dark u u-LR">
+					<p class="tile__title text-blue-700 u u-LR">
 						<?= lang("index.source.title") ?>
 					</p>
 

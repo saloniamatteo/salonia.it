@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('software.tp-xfan.title') ?>
 				</p>
 
@@ -63,7 +63,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('software.csnake.title') ?>
 				</p>
 
@@ -89,7 +89,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('software.quiz.title') ?>
 				</p>
 
@@ -114,7 +114,7 @@
 				</figure>
 			</div>
 			<div class="tile__container">
-				<p class="tile__title text-link-dark u u-LR">
+				<p class="tile__title text-blue-700 u u-LR">
 					<?= lang('software.calc.title') ?>
 				</p>
 
