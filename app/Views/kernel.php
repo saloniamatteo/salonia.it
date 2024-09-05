@@ -42,9 +42,9 @@
 	</a>
 	</p>
 
+	<div class="divider"></div>
+
 	<div class="content u-text-left">
-	<div class="card">
-	<div class="m-3">
 		<!-- Intro -->
 		<h3 class="tag tag--xl bg-blue-700 my-0" id="intro">
 			<a class="text-white" href="#intro">
@@ -138,11 +138,7 @@
 		<p>
 			<?= lang('kernel.intro.configs.subd') ?>
 		</p>
-	</div>
-	</div>
 
-	<div class="card">
-	<div class="m-3">
 		<h3 class="tag tag--xl bg-blue-700 my-0" id="setup">
 			<a class="text-white" href="#setup">
 				<?= lang('kernel.go-to.setup') ?>
@@ -152,8 +148,6 @@
 		<p>
 			<?= lang('kernel.setup.desc') ?>
 		</p>
-
-		<div class="divider"></div>
 
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="s1">
 			<a class="text-white" href="#s1">
@@ -176,8 +170,6 @@ cd /usr/src/usr-kernel</code></pre>
 			</p>
 		</div>
 
-		<div class="divider"></div>
-
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="s2">
 			<a class="text-white" href="#s2">
 				<?= lang('kernel.setup.s2.title') ?>
@@ -193,8 +185,6 @@ cd /usr/src/usr-kernel</code></pre>
 				<?= lang('kernel.setup.s2.note') ?>
 			</p>
 		</div>
-
-		<div class="divider"></div>
 
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="s3">
 			<a class="text-white" href="#s3">
@@ -319,8 +309,6 @@ cd /usr/src/usr-kernel</code></pre>
 		</ul>
 		</p>
 
-		<div class="divider"></div>
-
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="s4">
 			<a class="text-white" href="#s4">
 				<?= lang('kernel.setup.s4.title') ?>
@@ -413,8 +401,6 @@ cd /usr/src/usr-kernel</code></pre>
 		</table>
 		</div>
 
-		<div class="divider"></div>
-
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="s5">
 			<a class="text-white" href="#s5">
 				<?= lang('kernel.setup.s5.title') ?>
@@ -450,8 +436,6 @@ cd /usr/src/usr-kernel</code></pre>
 		<?= lang('kernel.setup.s5.desc4') ?>
 		</p>
 
-		<div class="divider"></div>
-
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="s6">
 			<a class="text-white" href="#s6">
 				<?= lang('kernel.setup.s6.title') ?>
@@ -475,11 +459,7 @@ cd /usr/src/usr-kernel</code></pre>
 		<p>
 			<?= lang('kernel.setup.s6.desc2') ?>
 		</p>
-	</div>
-	</div>
 
-	<div class="card">
-	<div class="m-3">
 		<h3 class="tag tag--xl bg-blue-700 my-0" id="extra">
 			<a class="text-white" href="#extra">
 				<?= lang('kernel.go-to.extra') ?>
@@ -489,8 +469,6 @@ cd /usr/src/usr-kernel</code></pre>
 		<p>
 			<?= lang('kernel.extra.desc') ?>
 		</p>
-
-		<div class="divider"></div>
 
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="e-v4l2">
 			<a class="text-white" href="#e-v4l2">
@@ -509,8 +487,6 @@ cd /usr/src/usr-kernel</code></pre>
 
 		<?= lang('kernel.extra.v4l2.cmd') ?>
 		</p>
-
-		<div class="divider"></div>
 
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="e-initramfs">
 			<a class="text-white" href="#e-initramfs">
@@ -563,8 +539,6 @@ early_microcode="yes"
 		<?= lang('kernel.extra.initramfs.cmd2') ?>
 		</p>
 
-		<div class="divider"></div>
-
 		<h4 class="tag tag--md bg-blue-700 mb-0" id="e-bootloader">
 			<a class="text-white" href="#e-bootloader">
 				<?= lang('kernel.extra.bootloader.title') ?>
@@ -586,8 +560,6 @@ early_microcode="yes"
 
 		<?= lang('kernel.extra.bootloader.cmd') ?>
 		</p>
-	</div>
-	</div>
 	</div>
 
 	<div class="mt-8">
