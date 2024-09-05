@@ -23,15 +23,16 @@
 		<?= lang('contact.welcome.desc') ?>
 	</p>
 
-	<div class="divider"></div>
-
-	<div class="content u-text-left">
+	<div class="content u-text-left w-90p-md">
 		<!-- Disclaimer -->
 		<div class="card bg-info text-white">
 			<p class="m-3">
 				<?= lang('contact.disclaimer') ?>
 			</p>
 		</div>
+
+	<div class="card">
+	<div class="m-3">
 
 		<!-- Protonmail -->
 		<div class="tile level">
@@ -57,7 +58,7 @@
 			</div>
 		</div>
 
-		<div class="space"></div>
+		<div class="divider"></div>
 
 		<!-- Personal server -->
 		<div class="tile level">
@@ -82,6 +83,8 @@
 				</p>
 			</div>
 		</div>
+	</div>
+	</div>
 	</div>
 
 	<div class="mt-8">

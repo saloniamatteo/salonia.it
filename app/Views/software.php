@@ -23,9 +23,9 @@
 		<?= lang("software.welcome.desc") ?>
 	</p>
 
-	<div class="divider"></div>
-
-	<div class="content u-text-left">
+	<div class="content u-text-left w-90p-md">
+	<div class="card">
+	<div class="m-3">
 		<!-- TP-XFan -->
 		<div class="tile level">
 			<a href="https://github.com/saloniamatteo/tp-xfan" class="u-flex">
@@ -127,6 +127,8 @@
 				</p>
 			</div>
 		</div>
+	</div>
+	</div>
 	</div>
 
 	<div class="mt-8">

@@ -23,9 +23,9 @@
 		<?= lang('donate.welcome.desc') ?>
 	</p>
 
-	<div class="divider"></div>
-
-	<div class="content u-text-left">
+	<div class="content u-text-left w-90p-md">
+	<div class="card">
+	<div class="m-3">
 		<!-- Monero -->
 		<div class="tile level">
 			<div class="tile__icon">
@@ -64,7 +64,7 @@
 			</div>
 		</div>
 
-		<div class="space"></div>
+		<div class="divider"></div>
 
 		<!-- PayPal -->
 		<div class="tile level">
@@ -95,6 +95,8 @@
 				</p>
 			</div>
 		</div>
+	</div>
+	</div>
 	</div>
 
 	<div class="mt-8">
