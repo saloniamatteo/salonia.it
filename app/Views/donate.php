@@ -12,7 +12,7 @@
 <?= $this->include("static/header") ?>
 
 <!-- Donate -->
-<div class="hero u-text-center u-shadow-inset pt-3">
+<div class="hero u-text-center u-shadow-inset pt-6">
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4 text-gray-900">
@@ -23,9 +23,9 @@
 		<?= lang('donate.welcome.desc') ?>
 	</p>
 
-	<div class="content u-text-left w-90p-md">
-	<div class="card">
-	<div class="m-3">
+	<div class="divider"></div>
+
+	<div class="content u-text-left">
 		<!-- Monero -->
 		<div class="tile level">
 			<div class="tile__icon">
@@ -64,7 +64,7 @@
 			</div>
 		</div>
 
-		<div class="divider"></div>
+		<div class="space"></div>
 
 		<!-- PayPal -->
 		<div class="tile level">
@@ -95,8 +95,6 @@
 				</p>
 			</div>
 		</div>
-	</div>
-	</div>
 	</div>
 
 	<div class="mt-8">
