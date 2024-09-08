@@ -74,7 +74,7 @@
 		<div class="tile level">
 			<a href="https://dotfiles.salonia.it" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6" style="background: white">
+				<figure class="w-6 mt-1" style="background: white">
 				<img src="<?= base_url('pics/gnu.png') ?>" alt="GNU logo">
 				</figure>
 			</div>
@@ -97,7 +97,7 @@
 		<div class="tile level">
 			<a href="<?= sub_url('kernel') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6" style="background: white">
+				<figure class="w-6 mt-1" style="background: white">
 				<img src="<?= base_url('pics/linux.png') ?>" alt="Tux">
 				</figure>
 			</div>
@@ -120,7 +120,7 @@
 		<div class="tile level">
 			<a href="<?= sub_url('packages') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6" style="background: white">
+				<figure class="w-6 mt-1" style="background: white">
 				<img src="<?= base_url('pics/box.png') ?>" alt="Box">
 				</figure>
 			</div>
@@ -183,11 +183,34 @@
 	<div class="content u-text-left w-90p-md">
 	<div class="card">
 	<div class="m-3">
+		<!-- Portfolio -->
+		<div class="tile level">
+			<a href="https://portfolio.salonia.it" class="u-flex">
+			<div class="tile__icon">
+				<figure class="w-6 mt-1" style="background: white">
+				<img src="<?= base_url('pics/web.png') ?>" alt="Web">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang('index.portfolio.title') ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang('index.portfolio.desc') ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<div class="divider"></div>
+
 		<!-- Curriculum Vitae -->
 		<div class="tile level">
 			<a href="<?= base_url('cv.pdf') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6" style="background: white">
+				<figure class="w-6 mt-1" style="background: white">
 				<img src="<?= base_url('pics/cv.png') ?>" alt="CV">
 				</figure>
 			</div>
