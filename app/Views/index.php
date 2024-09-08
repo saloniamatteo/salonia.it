@@ -183,29 +183,6 @@
 	<div class="content u-text-left w-90p-md">
 	<div class="card">
 	<div class="m-3">
-		<!-- Portfolio -->
-		<div class="tile level">
-			<a href="https://portfolio.salonia.it" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/web.png') ?>" alt="Web">
-				</figure>
-			</div>
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('index.portfolio.title') ?>
-				</p>
-
-				<p class="tile__subtitle text-black">
-					<?= lang('index.portfolio.desc') ?>
-				</p>
-			</div>
-			</a>
-		</div>
-
-		<div class="divider"></div>
-
 		<!-- Curriculum Vitae -->
 		<div class="tile level">
 			<a href="<?= base_url('cv.pdf') ?>" class="u-flex">
@@ -222,6 +199,29 @@
 
 				<p class="tile__subtitle text-black">
 					<?= lang('index.cv.desc') ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<div class="divider"></div>
+
+		<!-- Design principles -->
+		<div class="tile level">
+			<a href="<?= base_url('design') ?>" class="u-flex">
+			<div class="tile__icon">
+				<figure class="w-6 mt-1" style="background: white">
+				<img src="<?= base_url('pics/pencil.png') ?>" alt="Pencil">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang('index.design.title') ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang('index.design.desc') ?>
 				</p>
 			</div>
 			</a>
@@ -319,6 +319,29 @@
 	<div class="content u-text-left w-90p-md">
 	<div class="card">
 		<div class="m-3">
+			<!-- Portfolio -->
+			<div class="tile level">
+				<a href="https://portfolio.salonia.it" class="u-flex">
+				<div class="tile__icon">
+					<figure class="w-6 mt-1" style="background: white">
+					<img src="<?= base_url('pics/web.png') ?>" alt="Web">
+					</figure>
+				</div>
+
+				<div class="tile__container">
+					<p class="tile__title text-blue-700 u u-LR">
+						<?= lang('index.portfolio.title') ?>
+					</p>
+
+					<p class="tile__subtitle text-black">
+						<?= lang('index.portfolio.desc') ?>
+					</p>
+				</div>
+				</a>
+			</div>
+
+			<div class="divider"></div>
+
 			<!-- SearXNG -->
 			<div class="tile level">
 				<a href="https://s.salonia.it" class="u-flex">
