@@ -40,6 +40,10 @@ return [
 		"title"		=> "Curriculum",
 		"desc"		=> "Scarica il mio Curriculum Vitae",
 	],
+	"design"		=> [
+		"title"		=> "Principi di design",
+		"desc"		=> "Visualizza i miei principi di design.",
+	],
 	"about"			=> [
 		"title"		=> "Su di me",
 		"desc"		=> "Scopri chi sono, le mie competenze, i miei recapiti, come puoi aiutarmi.",

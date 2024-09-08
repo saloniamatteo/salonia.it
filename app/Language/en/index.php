@@ -40,6 +40,10 @@ return [
 		"title"		=> "CV",
 		"desc"		=> "Download my CV/Resume",
 	],
+	"design"		=> [
+		"title"		=> "Design principles",
+		"desc"		=> "View my design principles.",
+	],
 	"about"			=> [
 		"title"		=> "About me",
 		"desc"		=> "Discover who I am, my skills, my contact details, and how you can help me.",

@@ -107,6 +107,32 @@
 						</a>
 					</li>
 
+					<!-- Curriculum vitae -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= base_url('cv.pdf') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/cv.png') ?>" alt="CV">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.cv.title") ?>
+						</a>
+					</li>
+
+					<!-- Design principles -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('design') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/pencil.png') ?>" alt="About">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.design.title") ?>
+						</a>
+					</li>
+
 					<!-- Info -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('info') ?>">
@@ -156,6 +182,19 @@
 				</a>
 
 				<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu" onclick="menu_toggle(this)">
+					<!-- Portfolio -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex py-1" href="https://portfolio.salonia.it">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/web.png') ?>" alt="Web">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("index.portfolio.title") ?>
+						</a>
+					</li>
+
 					<!-- SearXNG -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex py-1" href="https://s.salonia.it">
