@@ -16,10 +16,10 @@
 <div class="hero-body bg-black u-opacity-90 pt-1 px-0">
 <div class="content u-center">
 	<figure class="fig w-100p u-center">
-		<img class="img-cover" src="<?= base_url('pics/saloniaw.png') ?>" alt="Salonia logo" style="height: 100px; min-width: 325px">
+		<img class="img-cover h-12 h-16-md" src="<?= base_url('pics/saloniaw.png') ?>" alt="Salonia logo" style="min-width: 325px">
 	</figure>
 
-	<p class="font-bold text-lg text-white u-text-center" style="margin-left: 0.75rem !important; margin-right: 0.75rem !important">
+	<p class="font-bold mt-1 text-lg text-white u-text-center" style="margin-left: 0.9rem !important; margin-right: 0.75rem !important">
 		<?= lang("index.welcome.desc") ?>
 	</p>
 </div>
