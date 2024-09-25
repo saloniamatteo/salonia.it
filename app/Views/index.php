@@ -12,16 +12,16 @@
 <?= $this->include("static/header") ?>
 
 <!-- Welcome -->
-<div class="hero mt-2 bg-blue-200">
-<div class="hero-body m-2-sm">
-<div class="content">
-	<h2 class="title">
-		<?= lang("index.welcome.title") ?>
-	</h2>
+<div class="hero" style="margin-top: 3.5em !important">
+<div class="hero-body bg-black u-opacity-90 pt-1 px-0">
+<div class="content u-center">
+	<figure class="fig w-100p u-center">
+		<img class="img-cover" src="<?= base_url('pics/saloniaw.png') ?>" alt="Salonia logo" style="height: 100px; min-width: 325px">
+	</figure>
 
-	<h5 class="subtitle text-gray-700">
+	<p class="font-bold text-lg text-white u-text-center" style="margin-left: 0.75rem !important; margin-right: 0.75rem !important">
 		<?= lang("index.welcome.desc") ?>
-	</h5>
+	</p>
 </div>
 </div>
 </div>

@@ -4,8 +4,7 @@ return [
 	"title"				=> "Matteo Salonia",
 	"desc"				=> "Welcome to Matteo Salonia's website.",
 	"welcome"			=> [
-		"title"			=> "Welcome!",
-		"desc"			=> "Here you can find some resources that may interest you, such as my Kernel, my configurations, the programs I've created, my contact details, various tools, and so on.",
+		"desc"			=> "Discover many GNU/Linux resources, my contacts, various tools, and much more.",
 	],
 	"linux-soft"		=> [
 		"title"			=> "Linux &amp; Software",

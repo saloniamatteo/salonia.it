@@ -4,8 +4,7 @@ return [
 	"title"				=> "Matteo Salonia",
 	"desc"				=> "Benvenuto nel sito di Matteo Salonia.",
 	"welcome"			=> [
-		"title"			=> "Benvenuto!",
-		"desc"			=> "Qui puoi trovare alcune risorse che ti potrebbero interessare, tra cui il mio Kernel, le mie configurazioni, i miei programmi, i miei recapiti, vari strumenti, e molto altro ancora.",
+		"desc"			=> "Scopri vaste risorse per GNU/Linux, i miei contatti, vari strumenti, e molto altro ancora.",
 	],
 	"linux-soft"		=> [
 		"title"			=> "Linux e Software",

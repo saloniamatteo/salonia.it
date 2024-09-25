@@ -2,15 +2,7 @@
 <div class="header header-animated header-fixed u-unselectable" style="backdrop-filter: blur(8px); background-color: #fffc">
 	<div class="header-brand">
 		<a href="https://salonia.it">
-		<?php
-			$opts = [
-				"src"	=> "pics/salonia.png",
-				"alt"	=> "Logo",
-				"class"	=> "w-24",
-			];
-
-			echo img($opts);
-		?>
+			<img src="<?= base_url('pics/salonia.png') ?>" alt="Logo" class="w-24" style="min-width: 180px">
 		</a>
 
 		<div class="nav-item nav-btn" id="header-btn">
