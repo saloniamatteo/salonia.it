@@ -49,6 +49,12 @@ class Pages extends BaseController {
     public function view($page = 'index') {
         $this->setup();
 
+        // If requested page ends with "htm(l)", trim it.
+        if (str_ends_with(strtolower($page), ".htm"))
+            $page = rtrim($page, ".htm");
+        else if (str_ends_with(strtolower($page), ".html"))
+            $page = rtrim($page, ".html");
+
         // Check if view exists
         if (!file_exists(APPPATH . "Views/" . esc($page) . ".php"))
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
