@@ -12,7 +12,7 @@
 <?= $this->include("static/header") ?>
 
 <!-- Design principles -->
-<div class="hero u-text-center u-shadow-inset pt-6">
+<div class="hero u-text-center u-shadow-inset pt-4">
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4 text-gray-900">
