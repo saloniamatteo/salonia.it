@@ -16,7 +16,7 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4">
-		<a class="text-gray-900">
+		<a class="text-black">
 			<?= lang('info.welcome.title') ?>
 		</a>
 	</h2>
