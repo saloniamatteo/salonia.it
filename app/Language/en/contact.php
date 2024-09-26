@@ -13,5 +13,4 @@ return [
 		"title"		=> "Personal server",
 		"desc"		=> "Contact me on my e-mail server",
 	],
-	"disclaimer"	=> "The only way to contact me is via e-mail, because I deleted all my social accounts.<br>Please encrypt the e-mail content using <strong>GPG</strong>: the keys for each address are provided on this page.",
 ];

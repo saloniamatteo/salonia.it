@@ -24,16 +24,8 @@
 	</p>
 
 	<div class="content u-text-left w-90p-md">
-		<!-- Disclaimer -->
-		<div class="card bg-info text-white">
-			<p class="m-3">
-				<?= lang('contact.disclaimer') ?>
-			</p>
-		</div>
-
 	<div class="card">
 	<div class="m-3">
-
 		<!-- Protonmail -->
 		<div class="tile level">
 			<div class="tile__icon">
