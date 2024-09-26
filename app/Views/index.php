@@ -31,7 +31,7 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4">
-		<a class="text-gray-900" href="#linux-soft">
+		<a class="text-black" href="#linux-soft">
 			<?= lang("index.linux-soft.title") ?>
 		</a>
 	</h2>
@@ -171,12 +171,12 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4">
-		<a class="text-gray-900" href="#about">
+		<a class="text-black" href="#about">
 			<?= lang('index.about.title') ?>
 		</a>
 	</h2>
 
-	<p class="lead">
+	<p class="lead text-black">
 		<?= lang('index.about.desc') ?>
 	</p>
 
@@ -307,7 +307,7 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4">
-		<a class="text-gray-900" href="#tools-links">
+		<a class="text-black" href="#tools-links">
 			<?= lang("index.tools-links.title") ?>
 		</a>
 	</h2>
