@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="grid-c-8-md ml-1-md">
-			<h1 class="my-0">Matteo Salonia</h1>
+			<h1 class="my-0 text-black">Matteo Salonia</h1>
 		</div>
 
 		<div class="grid-c-8 ml-1-md mr-4-lg">

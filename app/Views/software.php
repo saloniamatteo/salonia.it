@@ -51,7 +51,7 @@
 			</a>
 		</div>
 
-		<div class="space space--lg"></div>
+		<div class="divider"></div>
 
 		<!-- Csnake -->
 		<div class="tile level">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 
-		<div class="space space--lg"></div>
+		<div class="divider"></div>
 
 		<!-- Quiz -->
 		<div class="tile level">
@@ -103,7 +103,7 @@
 			</div>
 		</div>
 
-		<div class="space space--lg"></div>
+		<div class="divider"></div>
 
 		<!-- Calc -->
 		<div class="tile level">
