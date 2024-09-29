@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?= lang('glob.404.title') ?></title>
+	<title><?= lang('Glob.404.title') ?></title>
 
 	<!-- Do not index page -->
     <meta name="robots" content="noindex">
@@ -24,20 +24,20 @@
 	<div class="card w-90p-md u-center mt-12 bg-red-200">
 	<div class="content p-3 u-text-center">
 		<h4 class="u-round-xs u-inline-flex bg-red-600 text-white my-0 py-1 px-2">
-			<?= lang('glob.404.extended') ?>
+			<?= lang('Glob.404.extended') ?>
 		</h4>
 
 		<div class="divider"></div>
 
 		<p class="lead u-text-center">
-			<?= lang('glob.404.desc') ?><br>
-			<?= lang('glob.404.contact') ?>
+			<?= lang('Glob.404.desc') ?><br>
+			<?= lang('Glob.404.contact') ?>
 			<a class="font-bold text-blue-700 u u-LR" href="<?= site_url('contact') ?>">
-			 <?= lang('glob.404.admin') ?>.
+			 <?= lang('Glob.404.admin') ?>.
 		</p>
 
 		<a class="tag tag--md bg-blue-700 text-white" href="<?= site_url() ?>">
-			<?= lang('glob.to-main') ?>
+			<?= lang('Glob.to-main') ?>
 		</a>
 	</div>
 	</div>

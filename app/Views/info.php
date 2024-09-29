@@ -1,7 +1,7 @@
 <?php
 	$opts = [
-		"title" => lang("info.title"),
-		"desc"	=> lang("info.desc"),
+		"title" => lang("Info.title"),
+		"desc"	=> lang("Info.desc"),
 		"url"	=> base_url("info"),
 	];
 
@@ -17,12 +17,12 @@
 <div class="content w-90p">
 	<h2 class="headline-4">
 		<a class="text-black">
-			<?= lang('info.welcome.title') ?>
+			<?= lang('Info.welcome.title') ?>
 		</a>
 	</h2>
 
 	<p class="lead">
-		<?= lang('info.welcome.desc') ?>
+		<?= lang('Info.welcome.desc') ?>
 	</p>
 </div>
 </div>
@@ -44,28 +44,28 @@
 
 		<div class="grid-c-8 ml-1-md mr-4-lg">
 			<p>
-				<?= lang('info.hero.desc') ?>
+				<?= lang('Info.hero.desc') ?>
 			</p>
 
 			<ul>
 				<li>
-				<strong><u><?= lang('info.hero.it.title') ?></u></strong>:
-				<?= lang('info.hero.it.desc') ?>
+				<strong><u><?= lang('Info.hero.it.title') ?></u></strong>:
+				<?= lang('Info.hero.it.desc') ?>
 				</li>
 
 				<li>
-				<strong><u><?= lang('info.hero.english.title') ?></u></strong>:
-				<?= lang('info.hero.english.desc') ?>
+				<strong><u><?= lang('Info.hero.english.title') ?></u></strong>:
+				<?= lang('Info.hero.english.desc') ?>
 				</li>
 
 				<li>
-				<strong><u><?= lang('info.hero.business.title') ?></u></strong>:
-				<?= lang('info.hero.business.desc') ?>
+				<strong><u><?= lang('Info.hero.business.title') ?></u></strong>:
+				<?= lang('Info.hero.business.desc') ?>
 				</li>
 
 				<li>
-				<strong><u><?= lang('info.hero.maths.title') ?></u></strong>:
-				<?= lang('info.hero.maths.desc') ?>
+				<strong><u><?= lang('Info.hero.maths.title') ?></u></strong>:
+				<?= lang('Info.hero.maths.desc') ?>
 				</li>
 			</ul>
 		</div>
@@ -77,172 +77,172 @@
 	<div class="m-3 tile level">
 		<div class="tile__container">
 			<p class="tile__title text-lg">
-				<?= lang('info.timeline.title') ?>
+				<?= lang('Info.timeline.title') ?>
 			</p>
 
 			<ul class="menu">
 				<li class="menu-item">
-					<strong><?= lang('info.timeline.2018.title') ?></strong>
+					<strong><?= lang('Info.timeline.2018.title') ?></strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							<?= lang('info.timeline.2018.B2') ?>
+							<?= lang('Info.timeline.2018.B2') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2018.linux') ?>
+							<?= lang('Info.timeline.2018.linux') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2018.py') ?>
+							<?= lang('Info.timeline.2018.py') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2018.vbnet') ?>
+							<?= lang('Info.timeline.2018.vbnet') ?>
 						</li>
 					</ul>
 				</li>
 
 				<li class="menu-item">
-					<strong><?= lang('info.timeline.2019.title') ?></strong>
+					<strong><?= lang('Info.timeline.2019.title') ?></strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							<?= lang('info.timeline.2019.ubnt') ?>
+							<?= lang('Info.timeline.2019.ubnt') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2019.webs') ?>
+							<?= lang('Info.timeline.2019.webs') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2019.prog') ?>
+							<?= lang('Info.timeline.2019.prog') ?>
 						</li>
 					</ul>
 				</li>
 
 				<li class="menu-item">
-					<strong><?= lang('info.timeline.2020.title') ?></strong>
+					<strong><?= lang('Info.timeline.2020.title') ?></strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							<?= lang('info.timeline.2020.arch') ?>
+							<?= lang('Info.timeline.2020.arch') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2020.appr') ?>
+							<?= lang('Info.timeline.2020.appr') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2020.guide') ?>
+							<?= lang('Info.timeline.2020.guide') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2020.artix') ?>
+							<?= lang('Info.timeline.2020.artix') ?>
 						</li>
 					</ul>
 				</li>
 
 				<li class="menu-item">
-					<strong><?= lang('info.timeline.2021.title') ?></strong>
+					<strong><?= lang('Info.timeline.2021.title') ?></strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							<?= lang('info.timeline.2021.gento') ?>
+							<?= lang('Info.timeline.2021.gento') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2021.knowl') ?>
+							<?= lang('Info.timeline.2021.knowl') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2021.C') ?>
+							<?= lang('Info.timeline.2021.C') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2021.andr') ?>
+							<?= lang('Info.timeline.2021.andr') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2021.kconf') ?>
+							<?= lang('Info.timeline.2021.kconf') ?>
 						</li>
 					</ul>
 				</li>
 
 				<li class="menu-item">
-					<strong><?= lang('info.timeline.2022.title') ?></strong>
+					<strong><?= lang('Info.timeline.2022.title') ?></strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							<?= lang('info.timeline.2022.prog') ?>
+							<?= lang('Info.timeline.2022.prog') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2022.desig') ?>
+							<?= lang('Info.timeline.2022.desig') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2022.elec') ?>
+							<?= lang('Info.timeline.2022.elec') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2022.works') ?>
+							<?= lang('Info.timeline.2022.works') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2022.lan') ?>
+							<?= lang('Info.timeline.2022.lan') ?>
 						</li>
 					</ul>
 				</li>
 
 				<li class="menu-item">
-					<strong><?= lang('info.timeline.2023.title') ?></strong>
+					<strong><?= lang('Info.timeline.2023.title') ?></strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							<?= lang('info.timeline.2023.perf') ?>
+							<?= lang('Info.timeline.2023.perf') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2023.pwork') ?>
+							<?= lang('Info.timeline.2023.pwork') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2023.lan') ?>
+							<?= lang('Info.timeline.2023.lan') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2023.db') ?>
+							<?= lang('Info.timeline.2023.db') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2023.webs') ?>
+							<?= lang('Info.timeline.2023.webs') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2023.dipl') ?>
+							<?= lang('Info.timeline.2023.dipl') ?>
 						</li>
 					</ul>
 				</li>
 
 				<li class="menu-item">
-					<strong><?= lang('info.timeline.2024.title') ?></strong>
+					<strong><?= lang('Info.timeline.2024.title') ?></strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							<?= lang('info.timeline.2024.elec') ?>
+							<?= lang('Info.timeline.2024.elec') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2024.eleng') ?>
+							<?= lang('Info.timeline.2024.eleng') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2024.pract') ?>
+							<?= lang('Info.timeline.2024.pract') ?>
 						</li>
 
 						<li class="menu-item">
-							<?= lang('info.timeline.2024.ci') ?>
+							<?= lang('Info.timeline.2024.ci') ?>
 						</li>
 					</ul>
 				</li>
@@ -257,7 +257,7 @@
 
 <div class="u-center my-8">
 	<a href="<?= site_url($locale) ?>">
-		<?= lang('glob.to-main') ?>
+		<?= lang('Glob.to-main') ?>
 	</a>
 </div>
 

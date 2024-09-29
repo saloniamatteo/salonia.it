@@ -1,7 +1,7 @@
 <?php
 	$opts = [
-		"title" => lang("software.title"),
-		"desc"	=> lang("software.desc"),
+		"title" => lang("Software.title"),
+		"desc"	=> lang("Software.desc"),
 		"url"	=> base_url("software"),
 	];
 
@@ -16,11 +16,11 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4 text-black">
-		<?= lang("software.welcome.title") ?>
+		<?= lang("Software.welcome.title") ?>
 	</h2>
 
 	<p class="lead">
-		<?= lang("software.welcome.desc") ?>
+		<?= lang("Software.welcome.desc") ?>
 	</p>
 
 	<div class="content u-text-left w-90p-md">
@@ -37,15 +37,15 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('software.tp-xfan.title') ?>
+					<?= lang('Software.tp-xfan.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('software.tp-xfan.desc') ?>
+					<?= lang('Software.tp-xfan.desc') ?>
 				</p>
 
 				<p class="tile__subtitle text-gray-800">
-					<?= lang('software.tp-xfan.subd') ?>
+					<?= lang('Software.tp-xfan.subd') ?>
 				</p>
 			</div>
 			</a>
@@ -64,15 +64,15 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('software.csnake.title') ?>
+					<?= lang('Software.csnake.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('software.csnake.desc') ?>
+					<?= lang('Software.csnake.desc') ?>
 				</p>
 
 				<p class="tile__subtitle text-gray-800">
-					<?= lang('software.csnake.subd') ?>
+					<?= lang('Software.csnake.subd') ?>
 				</p>
 			</div>
 		</div>
@@ -90,15 +90,15 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('software.quiz.title') ?>
+					<?= lang('Software.quiz.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('software.quiz.desc') ?>
+					<?= lang('Software.quiz.desc') ?>
 				</p>
 
 				<p class="tile__subtitle text-gray-800">
-					<?= lang('software.quiz.subd') ?>
+					<?= lang('Software.quiz.subd') ?>
 				</p>
 			</div>
 		</div>
@@ -115,15 +115,15 @@
 			</div>
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('software.calc.title') ?>
+					<?= lang('Software.calc.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('software.calc.desc') ?>
+					<?= lang('Software.calc.desc') ?>
 				</p>
 
 				<p class="tile__subtitle text-gray-800">
-					<?= lang('software.calc.subd') ?>
+					<?= lang('Software.calc.subd') ?>
 				</p>
 			</div>
 		</div>
@@ -133,7 +133,7 @@
 
 	<div class="mt-8">
 		<a href="<?= site_url($locale) ?>">
-			<?= lang('glob.to-main') ?>
+			<?= lang('Glob.to-main') ?>
 		</a>
 	</div>
 </div>

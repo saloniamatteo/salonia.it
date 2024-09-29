@@ -1,8 +1,8 @@
 <?php
 	$opts = [
-		"title" => lang("designp.title"),
-		"desc"	=> lang("designp.desc"),
-		"url"	=> base_url("designp"),
+		"title" => lang("Design.title"),
+		"desc"	=> lang("Design.desc"),
+		"url"	=> base_url("design"),
 	];
 
 	echo view("static/head", $opts);
@@ -16,54 +16,54 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4 text-black">
-		<?= lang("designp.welcome.title") ?>
+		<?= lang("Design.welcome.title") ?>
 	</h2>
 
 	<p class="lead">
-		<?= lang("designp.welcome.desc") ?>
+		<?= lang("Design.welcome.desc") ?>
 	</p>
 
 	<p>
-	<?= lang('designp.go-to.title') ?><br>
+	<?= lang('Design.go-to.title') ?><br>
 
 	<a class="tag bg-blue-700 text-white" href="#intro">
-		<?= lang('designp.go-to.intro') ?>
+		<?= lang('Design.go-to.intro') ?>
 	</a>
 
 	<span> </span>
 
 	<a class="tag bg-blue-700 text-white" href="#mobile-first">
-		<?= lang('designp.go-to.mobile') ?>
+		<?= lang('Design.go-to.mobile') ?>
 	</a>
 
 	<span> </span>
 
 	<a class="tag bg-blue-700 text-white" href="#simplicity">
-		<?= lang('designp.go-to.simple') ?>
+		<?= lang('Design.go-to.simple') ?>
 	</a>
 
 	<span> </span>
 
 	<a class="tag bg-blue-700 text-white" href="#lightweight">
-		<?= lang('designp.go-to.light') ?>
+		<?= lang('Design.go-to.light') ?>
 	</a>
 
 	<span> </span>
 
 	<a class="tag bg-blue-700 text-white" href="#order">
-		<?= lang('designp.go-to.order') ?>
+		<?= lang('Design.go-to.order') ?>
 	</a>
 
 	<span> </span>
 
 	<a class="tag bg-blue-700 text-white" href="#colors">
-		<?= lang('designp.go-to.colors') ?>
+		<?= lang('Design.go-to.colors') ?>
 	</a>
 
 	<span> </span>
 
 	<a class="tag bg-blue-700 text-white" href="#languages">
-		<?= lang('designp.go-to.languages') ?>
+		<?= lang('Design.go-to.languages') ?>
 	</a>
 	</p>
 
@@ -73,84 +73,84 @@
 		<!-- Intro -->
 		<h3 class="tag tag--xl bg-blue-700 my-0" id="intro">
 			<a class="text-white" href="#intro">
-				<?= lang('designp.go-to.intro') ?>
+				<?= lang('Design.go-to.intro') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('designp.intro.desc') ?>
+			<?= lang('Design.intro.desc') ?>
 		</p>
 
 		<!-- Mobile-first -->
 		<h3 class="tag tag--xl bg-blue-700 mt-3 mb-0" id="mobile-first">
 			<a class="text-white" href="#mobile-first">
-				<?= lang('designp.go-to.mobile') ?>
+				<?= lang('Design.go-to.mobile') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('designp.mobile.desc') ?>
+			<?= lang('Design.mobile.desc') ?>
 		</p>
 
 		<!-- Simplicity -->
 		<h3 class="tag tag--xl bg-blue-700 mt-3 mb-0" id="simplicity">
 			<a class="text-white" href="#simplicity">
-				<?= lang('designp.go-to.simple') ?>
+				<?= lang('Design.go-to.simple') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('designp.simple.desc') ?>
+			<?= lang('Design.simple.desc') ?>
 		</p>
 
 		<!-- Lightweight -->
 		<h3 class="tag tag--xl bg-blue-700 mt-3 mb-0" id="lightweight">
 			<a class="text-white" href="#lightweight">
-				<?= lang('designp.go-to.light') ?>
+				<?= lang('Design.go-to.light') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('designp.light.desc') ?>
+			<?= lang('Design.light.desc') ?>
 		</p>
 
 		<!-- Order -->
 		<h3 class="tag tag--xl bg-blue-700 mt-3 mb-0" id="order">
 			<a class="text-white" href="#order">
-				<?= lang('designp.go-to.order') ?>
+				<?= lang('Design.go-to.order') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('designp.order.desc') ?>
+			<?= lang('Design.order.desc') ?>
 		</p>
 
 		<!-- Colors -->
 		<h3 class="tag tag--xl bg-blue-700 mt-3 mb-0" id="colors">
 			<a class="text-white" href="#colors">
-				<?= lang('designp.go-to.colors') ?>
+				<?= lang('Design.go-to.colors') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('designp.colors.desc') ?>
+			<?= lang('Design.colors.desc') ?>
 		</p>
 
 		<!-- Languages -->
 		<h3 class="tag tag--xl bg-blue-700 mt-3 mb-0" id="languages">
 			<a class="text-white" href="#languages">
-				<?= lang('designp.go-to.languages') ?>
+				<?= lang('Design.go-to.languages') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('designp.languages.desc') ?>
+			<?= lang('Design.languages.desc') ?>
 		</p>
 	</div>
 
 	<div class="mt-8">
 		<a href="<?= site_url($locale) ?>">
-			<?= lang('glob.to-main') ?>
+			<?= lang('Glob.to-main') ?>
 		</a>
 	</div>
 </div>

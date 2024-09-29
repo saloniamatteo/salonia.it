@@ -1,7 +1,7 @@
 <?php
 	$opts = [
-		"title" => lang("packages.title"),
-		"desc"	=> lang("packages.desc"),
+		"title" => lang("Packages.title"),
+		"desc"	=> lang("Packages.desc"),
 		"url"	=> base_url("packages"),
 	];
 
@@ -16,11 +16,11 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4 text-black">
-		<?= lang("packages.welcome.title") ?>
+		<?= lang("Packages.welcome.title") ?>
 	</h2>
 
 	<p class="lead">
-		<?= lang("packages.welcome.desc") ?>
+		<?= lang("Packages.welcome.desc") ?>
 	</p>
 
 	<div class="content u-text-left w-90p-md">
@@ -37,12 +37,12 @@
 			<div class="tile__container">
 				<p class="tile__title">
 				<a href="https://github.com/saloniamatteo/librsvg-overlay" class="font-bold text-blue-700 text-md u u-LR">
-					<?= lang('packages.librsvg.title') ?>
+					<?= lang('Packages.librsvg.title') ?>
 				</a>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('packages.librsvg.desc') ?>
+					<?= lang('Packages.librsvg.desc') ?>
 				</p>
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 
 	<div class="mt-8">
 		<a href="<?= site_url($locale) ?>">
-			<?= lang('glob.to-main') ?>
+			<?= lang('Glob.to-main') ?>
 		</a>
 	</div>
 </div>

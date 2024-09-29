@@ -1,7 +1,7 @@
 <?php
 	$opts = [
-		"title" => lang("contact.title"),
-		"desc"	=> lang("contact.desc"),
+		"title" => lang("Contact.title"),
+		"desc"	=> lang("Contact.desc"),
 		"url"	=> base_url("contact"),
 	];
 
@@ -16,24 +16,18 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4 text-black">
-		<?= lang('contact.welcome.title') ?>
+		<?= lang('Contact.welcome.title') ?>
 	</h2>
 
 	<p class="lead">
-		<?= lang('contact.welcome.desc') ?>
+		<?= lang('Contact.welcome.desc') ?>
 	</p>
 
 	<div class="content u-text-left w-90p-md">
 		<!-- Salonia Infrastrutture Digitali -->
-		<!-- Text for smaller screens -->
-		<h3 class="tag tag--md bg-blue-700 mb-3 mt-0 u-inline-flex u-none-sm" id="sid">
-			<a class="text-white" href="#sid"><?= lang("contact.sid.desc") ?></a>
-		</h3>
-
-		<!-- Text for bigger screens -->
-		<h3 class="tag tag--xl bg-blue-700 mb-3 mt-0 u-none u-inline-flex-sm" id="sid">
-			<a class="text-white" href="#sid"><?= lang("contact.sid.desc") ?></a>
-		</h3>
+		<h4 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="sid">
+			<a class="text-white" href="#sid"><?= lang("Contact.sid.desc") ?></a>
+		</h4>
 
 		<!-- IG -->
 		<div class="tile level">
@@ -50,7 +44,7 @@
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("contact.sid.ig") ?>
+					<?= lang("Contact.sid.ig") ?>
 				</p>
 			</div>
 			</a>
@@ -69,7 +63,7 @@
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("contact.sid.email") ?>
+					<?= lang("Contact.sid.email") ?>
 				</p>
 			</div>
 			</a>
@@ -79,14 +73,9 @@
 
 		<!-- Personal -->
 		<!-- Text for smaller screens -->
-		<h3 class="tag tag--md bg-blue-700 mb-3 mt-0 u-inline-flex u-none-sm" id="personal">
-			<a class="text-white" href="#personal"><?= lang("contact.personal.desc") ?></a>
-		</h3>
-
-		<!-- Text for bigger screens -->
-		<h3 class="tag tag--xl bg-blue-700 mb-3 mt-0 u-none u-inline-flex-sm" id="personal">
-			<a class="text-white" href="#personal"><?= lang("contact.personal.desc") ?></a>
-		</h3>
+		<h4 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="personal">
+			<a class="text-white" href="#personal"><?= lang("Contact.personal.desc") ?></a>
+		</h4>
 
 		<!-- Protonmail -->
 		<div class="tile level">
@@ -104,10 +93,10 @@
 				</a>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("contact.personal.protonmail") ?>
+					<?= lang("Contact.personal.protonmail") ?>
 					&mdash;
 					<a href="<?= base_url('matteo-pm.asc') ?>" class="font-bold text-blue-700 text-md u u-LR">
-						 <?= lang('contact.personal.gpg') ?>
+						 <?= lang('Contact.personal.gpg') ?>
 					</a>
 				</p>
 			</div>
@@ -125,15 +114,15 @@
 			<div class="tile__container">
 				<a href="mailto:matteo@salonia.it">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('contact.personal.pserv.title') ?>: matteo@salonia.it
+					<?= lang('Contact.personal.pserv.title') ?>: matteo@salonia.it
 				</p>
 				</a>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("contact.personal.pserv.desc") ?>
+					<?= lang("Contact.personal.pserv.desc") ?>
 					&mdash;
 					<a href="<?= base_url('matteo-pm.asc') ?>" class="font-bold text-blue-700 text-md u u-LR">
-						 <?= lang('contact.personal.gpg') ?>
+						 <?= lang('Contact.personal.gpg') ?>
 					</a>
 				</p>
 			</div>
@@ -143,7 +132,7 @@
 
 	<div class="mt-8">
 		<a href="<?= site_url($locale) ?>">
-			<?= lang('glob.to-main') ?>
+			<?= lang('Glob.to-main') ?>
 		</a>
 	</div>
 </div>

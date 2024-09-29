@@ -44,9 +44,9 @@
 					$href = base_url() . replace_lang($uri, $locale);
 
 					// Add element with respective emoji
-					echo "<a class='u u-LR font-bold p-0 m-1' href='$href'>"
+					echo "<a class='u u-LR font-bold text-gray-900 p-0 m-1' href='$href'>"
 						. text_to_flag($locale) . "&nbsp;&nbsp;"
-						. lang("glob.$locale")
+						. lang("Glob.$locale")
 						. "</a>";
 				}
 				?>
@@ -55,112 +55,141 @@
 			<!-- Pages -->
 			<div class="nav-item has-sub toggle-hover px-0">
 				<!-- Dropdown -->
-				<a class="font-bold nav-dropdown-link py-0 m-0">
-					<span class="u u-LR">💻&nbsp;&nbsp;<?= lang("glob.pages") ?></span>
+				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0">
+					<span class="u u-LR">💻&nbsp;&nbsp;<?= lang("Glob.pages") ?></span>
 				</a>
 
 				<ul class="dropdown-menu dropdown-animated" id="pages-menu" role="menu" onclick="menu_toggle(this)">
+					<!-- Linux & Software -->
+					<li role="menuitem">
+						<span class="ml-2 font-bold">
+							<?= lang("Index.linux-soft.title") ?>
+						</span>
+					</li>
+
 					<!-- Kernel -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('kernel') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('kernel') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/linux.png') ?>" alt="Tux">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.kernel.title") ?>
+							<?= lang("Index.kernel.title") ?>
 						</a>
 					</li>
 
 					<!-- Packages -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('packages') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('packages') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/box.png') ?>" alt="Box">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.packages.title") ?>
+							<?= lang("Index.packages.title") ?>
 						</a>
 					</li>
 
 					<!-- Software -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('software') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('software') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/c.png') ?>" alt="C">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.software.title") ?>
+							<?= lang("Index.software.title") ?>
+						</a>
+					</li>
+
+					<div class="divider mt-0 mb-1"></div>
+
+					<!-- About me -->
+					<li role="menuitem">
+						<span class="ml-2 font-bold">
+							<?= lang("Index.about.title") ?>
+						</span>
+					</li>
+
+					<!-- Services -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('services') ?>">
+							<figure class="w-3">
+								<img src="<?= base_url('pics/cash.png') ?>" alt="Services">
+							</figure>
+
+							&nbsp;
+
+							<?= lang("Index.services.title") ?>
 						</a>
 					</li>
 
 					<!-- Curriculum vitae -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= base_url('cv.pdf') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= base_url('cv.pdf') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/cv.png') ?>" alt="CV">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.cv.title") ?>
+							<?= lang("Index.cv.title") ?>
 						</a>
 					</li>
 
 					<!-- Design principles -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('design') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('design') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/pencil.png') ?>" alt="About">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.design.title") ?>
+							<?= lang("Index.design.title") ?>
 						</a>
 					</li>
 
 					<!-- Info -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('info') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('info') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/about.png') ?>" alt="About">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.info.title") ?>
+							<?= lang("Index.info.title") ?>
 						</a>
 					</li>
 
 					<!-- Contact -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('contact') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('contact') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/contact.png') ?>" alt="Contact">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.contact.title") ?>
+							<?= lang("Index.contact.title") ?>
 						</a>
 					</li>
 
 					<!-- Donate -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="<?= sub_url('donate') ?>">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('donate') ?>">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/cash.png') ?>" alt="Cash">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.donate.title") ?>
+							<?= lang("Index.donate.title") ?>
 						</a>
 					</li>
 				</ul>
@@ -169,73 +198,73 @@
 			<!-- Links -->
 			<div class="nav-item has-sub toggle-hover px-0">
 				<!-- Dropdown -->
-				<a class="font-bold nav-dropdown-link py-0 m-0">
-					<span class="u u-LR">🔗&nbsp;&nbsp;<?= lang("glob.links") ?></span>
+				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0">
+					<span class="u u-LR">🔗&nbsp;&nbsp;<?= lang("Glob.links") ?></span>
 				</a>
 
 				<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu" onclick="menu_toggle(this)">
 					<!-- Portfolio -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="https://portfolio.salonia.it">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://portfolio.salonia.it">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/web.png') ?>" alt="Web">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.portfolio.title") ?>
+							<?= lang("Index.portfolio.title") ?>
 						</a>
 					</li>
 
 					<!-- SearXNG -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="https://s.salonia.it">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://s.salonia.it">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/searxng.png') ?>" alt="SearXNG logo">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.searxng.title") ?>
+							<?= lang("Index.searxng.title") ?>
 						</a>
 					</li>
 
 					<!-- OpenAlias -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="https://oa.salonia.it">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://oa.salonia.it">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/oa.png') ?>" style="border-radius: 50%" alt="OpenAlias logo">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.openalias.title") ?>
+							<?= lang("Index.openalias.title") ?>
 						</a>
 					</li>
 
 					<!-- GitHub profile -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="https://github.com/saloniamatteo">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://github.com/saloniamatteo">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.github.title") ?>
+							<?= lang("Index.github.title") ?>
 						</a>
 					</li>
 
 					<!-- Website source code -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex py-1" href="https://github.com/saloniamatteo/salonia.it">
+						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://github.com/saloniamatteo/salonia.it">
 							<figure class="w-3">
 								<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
 							</figure>
 
 							&nbsp;
 
-							<?= lang("index.source.title") ?>
+							<?= lang("Index.source.title") ?>
 						</a>
 					</li>
 				</ul>

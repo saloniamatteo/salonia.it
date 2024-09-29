@@ -35,6 +35,10 @@ return [
 		"title"		=> "Portfolio",
 		"desc"		=> "Esplora la galleria dei miei siti web.",
 	],
+	"services"		=> [
+		"title"		=> "Servizi",
+		"desc"		=> "Scopri tutti i servizi offerti da Salonia Infrastrutture Digitali.",
+	],
 	"cv"			=> [
 		"title"		=> "Curriculum",
 		"desc"		=> "Scarica il mio Curriculum Vitae",

@@ -35,6 +35,10 @@ return [
 		"title"		=> "Portfolio",
 		"desc"		=> "Explore my website gallery.",
 	],
+	"services"		=> [
+		"title"		=> "Services",
+		"desc"		=> "Discover all of the services offered by Salonia Digital Infrastructures.",
+	],
 	"cv"			=> [
 		"title"		=> "CV",
 		"desc"		=> "Download my CV/Resume",

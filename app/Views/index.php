@@ -1,7 +1,7 @@
 <?php
 	$opts = [
-		"title" => lang("index.title"),
-		"desc"	=> lang("index.desc"),
+		"title" => lang("Index.title"),
+		"desc"	=> lang("Index.desc"),
 		"url"	=> base_url(),
 	];
 
@@ -20,7 +20,7 @@
 	</figure>
 
 	<p class="font-bold mt-1 text-lg text-white u-text-center" style="margin-left: 0.9rem !important; margin-right: 0.75rem !important">
-		<?= lang("index.welcome.desc") ?>
+		<?= lang("Index.welcome.desc") ?>
 	</p>
 </div>
 </div>
@@ -32,12 +32,12 @@
 <div class="content w-90p">
 	<h2 class="headline-4">
 		<a class="text-black" href="#linux-soft">
-			<?= lang("index.linux-soft.title") ?>
+			<?= lang("Index.linux-soft.title") ?>
 		</a>
 	</h2>
 
 	<p class="lead">
-		<?= lang("index.linux-soft.desc") ?>
+		<?= lang("Index.linux-soft.desc") ?>
 	</p>
 
 	<div class="content u-text-left w-90p-md">
@@ -54,15 +54,15 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang("index.arch.title") ?>
+					<?= lang("Index.arch.title") ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("index.arch.desc") ?>
+					<?= lang("Index.arch.desc") ?>
 				</p>
 
 				<p class="tile__subtitle text-gray-800">
-					<?= lang("index.arch.subd") ?>
+					<?= lang("Index.arch.subd") ?>
 				</p>
 			</div>
 			</a>
@@ -81,11 +81,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang("index.dotfiles.title") ?>
+					<?= lang("Index.dotfiles.title") ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("index.dotfiles.desc") ?>
+					<?= lang("Index.dotfiles.desc") ?>
 				</p>
 			</div>
 			</a>
@@ -104,11 +104,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang("index.kernel.title") ?>
+					<?= lang("Index.kernel.title") ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("index.kernel.desc") ?>
+					<?= lang("Index.kernel.desc") ?>
 				</p>
 			</div>
 			</a>
@@ -127,11 +127,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('index.packages.title') ?>
+					<?= lang('Index.packages.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('index.packages.desc') ?>
+					<?= lang('Index.packages.desc') ?>
 				</p>
 			</div>
 			</a>
@@ -150,11 +150,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang("index.software.title") ?>
+					<?= lang("Index.software.title") ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang("index.software.desc") ?>
+					<?= lang("Index.software.desc") ?>
 				</p>
 			</div>
 			</a>
@@ -172,12 +172,12 @@
 <div class="content w-90p">
 	<h2 class="headline-4">
 		<a class="text-black" href="#about">
-			<?= lang('index.about.title') ?>
+			<?= lang('Index.about.title') ?>
 		</a>
 	</h2>
 
 	<p class="lead text-black">
-		<?= lang('index.about.desc') ?>
+		<?= lang('Index.about.desc') ?>
 	</p>
 
 	<div class="content u-text-left w-90p-md">
@@ -194,11 +194,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('index.cv.title') ?>
+					<?= lang('Index.cv.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('index.cv.desc') ?>
+					<?= lang('Index.cv.desc') ?>
 				</p>
 			</div>
 			</a>
@@ -217,11 +217,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('index.design.title') ?>
+					<?= lang('Index.design.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('index.design.desc') ?>
+					<?= lang('Index.design.desc') ?>
 				</p>
 			</div>
 			</a>
@@ -240,11 +240,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('index.info.title') ?>
+					<?= lang('Index.info.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('index.info.desc') ?>
+					<?= lang('Index.info.desc') ?>
 				</p>
 			</div>
 			</a>
@@ -263,11 +263,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('index.contact.title') ?>
+					<?= lang('Index.contact.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('index.contact.desc') ?>
+					<?= lang('Index.contact.desc') ?>
 				</p>
 			</div>
 			</a>
@@ -286,11 +286,11 @@
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('index.donate.title') ?>
+					<?= lang('Index.donate.title') ?>
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('index.donate.desc') ?>
+					<?= lang('Index.donate.desc') ?>
 				</p>
 			</div>
 			</a>
@@ -308,12 +308,12 @@
 <div class="content w-90p">
 	<h2 class="headline-4">
 		<a class="text-black" href="#tools-links">
-			<?= lang("index.tools-links.title") ?>
+			<?= lang("Index.tools-links.title") ?>
 		</a>
 	</h2>
 
 	<p class="lead">
-		<?= lang("index.tools-links.desc") ?>
+		<?= lang("Index.tools-links.desc") ?>
 	</p>
 
 	<div class="content u-text-left w-90p-md">
@@ -330,11 +330,11 @@
 
 				<div class="tile__container">
 					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang('index.portfolio.title') ?>
+						<?= lang('Index.portfolio.title') ?>
 					</p>
 
 					<p class="tile__subtitle text-black">
-						<?= lang('index.portfolio.desc') ?>
+						<?= lang('Index.portfolio.desc') ?>
 					</p>
 				</div>
 				</a>
@@ -353,11 +353,11 @@
 
 				<div class="tile__container">
 					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("index.searxng.title") ?>
+						<?= lang("Index.searxng.title") ?>
 					</p>
 
 					<p class="tile__subtitle text-black">
-						<?= lang("index.searxng.desc") ?>
+						<?= lang("Index.searxng.desc") ?>
 					</p>
 				</div>
 				</a>
@@ -376,11 +376,11 @@
 
 				<div class="tile__container">
 					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("index.openalias.title") ?>
+						<?= lang("Index.openalias.title") ?>
 					</p>
 
 					<p class="tile__subtitle text-black">
-						<?= lang("index.openalias.desc") ?>
+						<?= lang("Index.openalias.desc") ?>
 					</p>
 				</div>
 				</a>
@@ -399,11 +399,11 @@
 
 				<div class="tile__container">
 					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("index.github.title") ?>
+						<?= lang("Index.github.title") ?>
 					</p>
 
 					<p class="tile__subtitle text-black">
-						<?= lang("index.github.desc") ?>
+						<?= lang("Index.github.desc") ?>
 					</p>
 				</div>
 				</a>
@@ -422,11 +422,11 @@
 
 				<div class="tile__container">
 					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("index.source.title") ?>
+						<?= lang("Index.source.title") ?>
 					</p>
 
 					<p class="tile__subtitle text-black">
-						<?= lang("index.source.desc") ?>
+						<?= lang("Index.source.desc") ?>
 					</p>
 				</div>
 				</a>

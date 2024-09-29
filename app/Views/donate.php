@@ -1,7 +1,7 @@
 <?php
 	$opts = [
-		"title" => lang("donate.title"),
-		"desc"	=> lang("donate.desc"),
+		"title" => lang("Donate.title"),
+		"desc"	=> lang("Donate.desc"),
 		"url"	=> base_url("donate"),
 	];
 
@@ -16,11 +16,11 @@
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4 text-black">
-		<?= lang('donate.welcome.title') ?>
+		<?= lang('Donate.welcome.title') ?>
 	</h2>
 
 	<p class="lead">
-		<?= lang('donate.welcome.desc') ?>
+		<?= lang('Donate.welcome.desc') ?>
 	</p>
 
 	<div class="content u-text-left w-90p-md">
@@ -40,7 +40,7 @@
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('donate.oa.title') ?>
+					<?= lang('Donate.oa.title') ?>
 				</p>
 
 				<p class="tile__subtitle">
@@ -52,10 +52,10 @@
 				</p>
 
 				<div class="divider"
-				data-content="<?= lang('donate.or') ?>"></div>
+				data-content="<?= lang('Donate.or') ?>"></div>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('donate.oa.addr') ?>
+					<?= lang('Donate.oa.addr') ?>
 				</p>
 
 				<p class="tile__subtitle text-black font-bold" style="word-break: break-all">
@@ -86,7 +86,7 @@
 				</p>
 
 				<div class="divider"
-				data-content="<?= lang('donate.or') ?>"></div>
+				data-content="<?= lang('Donate.or') ?>"></div>
 
 				<p class="tile__subtitle text-black">Link:</p>
 
@@ -101,7 +101,7 @@
 
 	<div class="mt-8">
 		<a href="<?= site_url($locale) ?>">
-			<?= lang('glob.to-main') ?>
+			<?= lang('Glob.to-main') ?>
 		</a>
 	</div>
 </div>
