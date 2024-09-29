@@ -59,7 +59,7 @@
 					<span class="u u-LR">💻&nbsp;&nbsp;<?= lang("Glob.pages") ?></span>
 				</a>
 
-				<ul class="dropdown-menu dropdown-animated" id="pages-menu" role="menu" onclick="menu_toggle(this)">
+				<ul class="dropdown-menu dropdown-animated" id="pages-menu" role="menu">
 					<!-- Linux & Software -->
 					<li role="menuitem">
 						<span class="ml-2 font-bold">
@@ -202,7 +202,7 @@
 					<span class="u u-LR">🔗&nbsp;&nbsp;<?= lang("Glob.links") ?></span>
 				</a>
 
-				<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu" onclick="menu_toggle(this)">
+				<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu">
 					<!-- Portfolio -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://portfolio.salonia.it">
