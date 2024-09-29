@@ -25,9 +25,9 @@
 
 	<div class="content u-text-left w-90p-md">
 		<!-- Salonia Infrastrutture Digitali -->
-		<h4 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="sid">
+		<h5 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="sid">
 			<a class="text-white" href="#sid"><?= lang("Contact.sid.desc") ?></a>
-		</h4>
+		</h5>
 
 		<!-- IG -->
 		<div class="tile level">
@@ -72,10 +72,9 @@
 		<div class="divider"></div>
 
 		<!-- Personal -->
-		<!-- Text for smaller screens -->
-		<h4 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="personal">
+		<h5 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="personal">
 			<a class="text-white" href="#personal"><?= lang("Contact.personal.desc") ?></a>
-		</h4>
+		</h5>
 
 		<!-- Protonmail -->
 		<div class="tile level">
