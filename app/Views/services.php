@@ -71,7 +71,7 @@
 
 	<div class="content u-text-left">
 		<!-- Promo -->
-		<div class="card" style="background: linear-gradient(to top, #141e30, #243b55)" id="promo">
+		<div class="card p-1" style="background: linear-gradient(to top, #141e30, #243b55)" id="promo">
 			<p class="font-bold text-white text-lg ml-2 mt-2 mb-0">
 				<?= lang('Services.promo.title') ?>
 			</p>
