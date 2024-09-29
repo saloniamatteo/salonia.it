@@ -7,10 +7,18 @@ return [
 		"title"		=> "Contattami",
 		"desc"		=> "Scopri come contattarmi.",
 	],
-	"protonmail"	=> "Contattami tramite ProtonMail",
-	"gpg"			=> "chiave GPG",
-	"pserv"			=> [
-		"title"		=> "Server personale",
-		"desc"		=> "Contattami tramite il mio server e-mail",
+	"sid"			=> [
+		"desc"		=> "Salonia Infrastrutture Digitali",
+		"ig"		=> "Profilo Instagram Aziendale",
+		"email"		=> "Email Aziendale",
+	],
+	"personal"		=> [
+		"desc"		=> "Personale",
+		"protonmail"=> "Contattami tramite ProtonMail",
+		"gpg"		=> "chiave GPG",
+		"pserv"		=> [
+			"title"	=> "Server personale",
+			"desc"	=> "Contattami tramite il mio server e-mail",
+		],
 	],
 ];

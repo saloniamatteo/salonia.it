@@ -24,59 +24,121 @@
 	</p>
 
 	<div class="content u-text-left w-90p-md">
-	<div class="card">
-	<div class="m-3">
-		<!-- Protonmail -->
+		<!-- Salonia Infrastrutture Digitali -->
+		<!-- Text for smaller screens -->
+		<h3 class="tag tag--md bg-blue-700 mb-3 mt-0 u-inline-flex u-none-sm" id="sid">
+			<a class="text-white" href="#sid"><?= lang("contact.sid.desc") ?></a>
+		</h3>
+
+		<!-- Text for bigger screens -->
+		<h3 class="tag tag--xl bg-blue-700 mb-3 mt-0 u-none u-inline-flex-sm" id="sid">
+			<a class="text-white" href="#sid"><?= lang("contact.sid.desc") ?></a>
+		</h3>
+
+		<!-- IG -->
 		<div class="tile level">
+			<a href="https://instagram.com/saloniainfrastrutture" class="u-flex">
 			<div class="tile__icon">
-				<p class="u-text-center w-6" style="font-size: 2rem!important">📧</p>
+				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
+				<img src="<?= base_url('pics/instagram.png') ?>" alt="Instagram logo">
+				</figure>
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title">
-				<a href="mailto:saloniamatteo@pm.me" class="font-bold text-blue-700 text-md u u-LR">
-					Protonmail: saloniamatteo@pm.me
-				</a>
+				<p class="tile__title text-blue-700 u u-LR">
+					@saloniainfrastrutture
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('contact.protonmail') ?>
-					&mdash;
-					<a href="<?= base_url('matteo-pm.asc') ?>"
-					class="font-bold text-blue-700 text-md u u-LR">
-						 <?= lang('contact.gpg') ?>
-					</a>
+					<?= lang("contact.sid.ig") ?>
 				</p>
 			</div>
+			</a>
+		</div>
+
+		<!-- Email -->
+		<div class="tile level mt-2">
+			<a href="mailto:assistenza@salonia.it" class="u-flex">
+			<div class="tile__icon">
+				<p class="u-text-center w-6 my-0" style="font-size: 2rem!important">📧</p>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					assistenza@salonia.it
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("contact.sid.email") ?>
+				</p>
+			</div>
+			</a>
 		</div>
 
 		<div class="divider"></div>
 
-		<!-- Personal server -->
+		<!-- Personal -->
+		<!-- Text for smaller screens -->
+		<h3 class="tag tag--md bg-blue-700 mb-3 mt-0 u-inline-flex u-none-sm" id="personal">
+			<a class="text-white" href="#personal"><?= lang("contact.personal.desc") ?></a>
+		</h3>
+
+		<!-- Text for bigger screens -->
+		<h3 class="tag tag--xl bg-blue-700 mb-3 mt-0 u-none u-inline-flex-sm" id="personal">
+			<a class="text-white" href="#personal"><?= lang("contact.personal.desc") ?></a>
+		</h3>
+
+		<!-- Protonmail -->
 		<div class="tile level">
 			<div class="tile__icon">
-				<p class="u-text-center w-6" style="font-size: 2rem!important">📧</p>
+			<a href="mailto:saloniamatteo@pm.me">
+				<p class="u-text-center w-6 my-0" style="font-size: 2rem!important">📧</p>
+			</a>
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title">
-				<a href="mailto:matteo@salonia.it" class="font-bold text-blue-700 text-md u u-LR">
-					<?= lang('contact.pserv.title') ?>: matteo@salonia.it
-				</a>
+				<a href="mailto:saloniamatteo@pm.me">
+				<p class="tile__title text-blue-700 u u-LR">
+					Protonmail: saloniamatteo@pm.me
 				</p>
+				</a>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('contact.pserv.desc') ?>
+					<?= lang("contact.personal.protonmail") ?>
 					&mdash;
-					<a href="<?= base_url('matteo.asc') ?>"
-					class="font-bold text-blue-700 text-md u u-LR">
-						 <?= lang('contact.gpg') ?>
+					<a href="<?= base_url('matteo-pm.asc') ?>" class="font-bold text-blue-700 text-md u u-LR">
+						 <?= lang('contact.personal.gpg') ?>
 					</a>
 				</p>
 			</div>
+			</a>
 		</div>
-	</div>
-	</div>
+
+		<!-- Personal server -->
+		<div class="tile level">
+			<div class="tile__icon">
+			<a href="mailto:matteo@salonia.it">
+				<p class="u-text-center w-6 my-0" style="font-size: 2rem!important">📧</p>
+			</a>
+			</div>
+
+			<div class="tile__container">
+				<a href="mailto:matteo@salonia.it">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang('contact.personal.pserv.title') ?>: matteo@salonia.it
+				</p>
+				</a>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("contact.personal.pserv.desc") ?>
+					&mdash;
+					<a href="<?= base_url('matteo-pm.asc') ?>" class="font-bold text-blue-700 text-md u u-LR">
+						 <?= lang('contact.personal.gpg') ?>
+					</a>
+				</p>
+			</div>
+			</a>
+		</div>
 	</div>
 
 	<div class="mt-8">

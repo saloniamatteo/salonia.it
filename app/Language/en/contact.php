@@ -7,10 +7,18 @@ return [
 		"title"		=> "Contact me",
 		"desc"		=> "Discover how to contact me.",
 	],
-	"protonmail"	=> "Contact me on ProtonMail",
-	"gpg"			=> "GPG key",
-	"pserv"			=> [
-		"title"		=> "Personal server",
-		"desc"		=> "Contact me on my e-mail server",
+	"sid"			=> [
+		"desc"		=> "Salonia Digital Infrastructures",
+		"ig"		=> "Instagram Business Profile",
+		"email"		=> "Business Email",
 	],
+	"personal"		=> [
+		"desc"		=> "Personal",
+		"protonmail"=> "Contact me on ProtonMail",
+		"gpg"		=> "GPG key",
+		"pserv"		=> [
+			"title"	=> "Personal server",
+			"desc"	=> "Contact me on my e-mail server",
+		],
+	]
 ];
