@@ -119,7 +119,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('services') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/cash.png') ?>" alt="Services">
+								<img src="<?= base_url('pics/services.png') ?>" alt="Services">
 							</figure>
 
 							&nbsp;

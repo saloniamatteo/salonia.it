@@ -183,6 +183,29 @@
 	<div class="content u-text-left w-90p-md">
 	<div class="card">
 	<div class="m-3">
+		<!-- Services -->
+		<div class="tile level">
+			<a href="<?= sub_url('services') ?>" class="u-flex">
+			<div class="tile__icon">
+				<figure class="w-6" style="background: white">
+				<img src="<?= base_url('pics/services.png') ?>" alt="Services">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang('Index.services.title') ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang('Index.services.desc') ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<div class="divider"></div>
+
 		<!-- Curriculum Vitae -->
 		<div class="tile level">
 			<a href="<?= base_url('cv.pdf') ?>" class="u-flex">
