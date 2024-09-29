@@ -85,7 +85,7 @@
 		</div>
 
 		<!-- Webdev -->
-		<h3 class="tag tag--xl bg-blue-700 my-0" id="webdev">
+		<h3 class="tag tag--lg bg-blue-700 my-0" id="webdev">
 			<a class="text-white" href="#webdev">
 				<?= lang('Services.go-to.webdev') ?>
 			</a>
@@ -96,7 +96,7 @@
 		</p>
 
 		<!-- UI/UX -->
-		<h3 class="tag tag--xl bg-blue-700 mt-3 my-0" id="uiux">
+		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="uiux">
 			<a class="text-white" href="#uiux">
 				<?= lang('Services.go-to.uiux') ?>
 			</a>
@@ -107,7 +107,7 @@
 		</p>
 
 		<!-- Backend -->
-		<h3 class="tag tag--xl bg-blue-700 mt-3 my-0" id="backend">
+		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="backend">
 			<a class="text-white" href="#backend">
 				<?= lang('Services.go-to.backend') ?>
 			</a>
@@ -118,7 +118,7 @@
 		</p>
 
 		<!-- Full-stack -->
-		<h3 class="tag tag--xl bg-blue-700 mt-3 my-0" id="fullstack">
+		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="fullstack">
 			<a class="text-white" href="#fullstack">
 				<?= lang('Services.go-to.fullstack') ?>
 			</a>
@@ -129,7 +129,7 @@
 		</p>
 
 		<!-- Domains + DNS -->
-		<h3 class="tag tag--xl bg-blue-700 mt-3 my-0" id="dns">
+		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="dns">
 			<a class="text-white" href="#dns">
 				<?= lang('Services.go-to.dns') ?>
 			</a>
@@ -140,7 +140,7 @@
 		</p>
 
 		<!-- GNU/Linux servers -->
-		<h3 class="tag tag--xl bg-blue-700 mt-3 my-0" id="server">
+		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="server">
 			<a class="text-white" href="#server">
 				<?= lang('Services.go-to.server') ?>
 			</a>
@@ -151,7 +151,7 @@
 		</p>
 
 		<!-- DB -->
-		<h3 class="tag tag--xl bg-blue-700 mt-3 my-0" id="db">
+		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="db">
 			<a class="text-white" href="#db">
 				<?= lang('Services.go-to.db') ?>
 			</a>
