@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Handler for hash changes
+document.addEventListener('hashchange', function() { handleHashChange(); });
+
 // HACK: for some reason not all browsers support document.addEventListener('hashchange')
 // (Meaning the event doesn't fire even when the hash actually changes...)
 window.onhashchange = function() { handleHashChange(); };
