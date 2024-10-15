@@ -32,38 +32,8 @@
 
 	<span> </span>
 
-	<a class="tag bg-blue-700 text-white" href="#uiux">
-		<?= lang('Services.go-to.uiux') ?>
-	</a>
-
-	<span> </span>
-
-	<a class="tag bg-blue-700 text-white" href="#backend">
-		<?= lang('Services.go-to.backend') ?>
-	</a>
-
-	<span> </span>
-
-	<a class="tag bg-blue-700 text-white" href="#fullstack">
-		<?= lang('Services.go-to.fullstack') ?>
-	</a>
-
-	<span> </span>
-
-	<a class="tag bg-blue-700 text-white" href="#dns">
-		<?= lang('Services.go-to.dns') ?>
-	</a>
-
-	<span> </span>
-
-	<a class="tag bg-blue-700 text-white" href="#server">
-		<?= lang('Services.go-to.server') ?>
-	</a>
-
-	<span> </span>
-
-	<a class="tag bg-blue-700 text-white" href="#db">
-		<?= lang('Services.go-to.db') ?>
+	<a class="tag bg-blue-700 text-white" href="#webserv">
+		<?= lang('Services.go-to.webserv') ?>
 	</a>
 	</p>
 
@@ -95,70 +65,96 @@
 			<?= lang('Services.webdev.desc') ?>
 		</p>
 
-		<!-- UI/UX -->
-		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="uiux">
-			<a class="text-white" href="#uiux">
-				<?= lang('Services.go-to.uiux') ?>
+		<!-- Multi-lang -->
+		<h3 class="tag tag--md bg-blue-700 my-1" id="lang">
+			<a class="text-white" href="#lang">
+				<?= lang('Services.webdev.lang.title') ?>
+			</a>
+		</h3>
+
+		<p class="mt-0">
+			<?= lang('Services.webdev.lang.desc') ?>
+		</p>
+
+		<!-- Mobile device support -->
+		<h3 class="tag tag--md bg-blue-700 my-1" id="mobile">
+			<a class="text-white" href="#mobile">
+				<?= lang('Services.webdev.mobile.title') ?>
+			</a>
+		</h3>
+
+		<p class="mt-0">
+			<?= lang('Services.webdev.mobile.desc') ?>
+		</p>
+
+		<!-- Speed -->
+		<h3 class="tag tag--md bg-blue-700 my-1" id="speed">
+			<a class="text-white" href="#speed">
+				<?= lang('Services.webdev.speed.title') ?>
+			</a>
+		</h3>
+
+		<p class="mt-0">
+			<?= lang('Services.webdev.speed.desc') ?>
+		</p>
+
+		<!-- Design -->
+		<h3 class="tag tag--md bg-blue-700 my-1" id="design">
+			<a class="text-white" href="#design">
+				<?= lang('Services.webdev.design.title') ?>
+			</a>
+		</h3>
+
+		<p class="mt-0 mb-0">
+			<?= lang('Services.webdev.design.desc') ?>
+		</p>
+
+		<!-- SEO -->
+		<h3 class="tag tag--md bg-blue-700 my-1" id="seo">
+			<a class="text-white" href="#seo">
+				<?= lang('Services.webdev.seo.title') ?>
+			</a>
+		</h3>
+
+		<p class="mt-0 mb-0">
+			<?= lang('Services.webdev.seo.desc') ?>
+		</p>
+	</div>
+
+	<div class="divider"></div>
+
+	<div class="content u-text-left">
+		<!-- Web services -->
+		<h3 class="tag tag--lg bg-blue-700 my-0" id="webserv">
+			<a class="text-white" href="#webserv">
+				<?= lang('Services.go-to.webserv') ?>
 			</a>
 		</h3>
 
 		<p class="my-1">
-			<?= lang('Services.uiux.desc') ?>
+			<?= lang('Services.webserv.desc') ?>
 		</p>
 
-		<!-- Backend -->
-		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="backend">
-			<a class="text-white" href="#backend">
-				<?= lang('Services.go-to.backend') ?>
-			</a>
-		</h3>
-
-		<p class="my-1">
-			<?= lang('Services.backend.desc') ?>
-		</p>
-
-		<!-- Full-stack -->
-		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="fullstack">
-			<a class="text-white" href="#fullstack">
-				<?= lang('Services.go-to.fullstack') ?>
-			</a>
-		</h3>
-
-		<p class="my-1">
-			<?= lang('Services.fullstack.desc') ?>
-		</p>
-
-		<!-- Domains + DNS -->
-		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="dns">
+		<!-- DNS -->
+		<h3 class="tag tag--md bg-blue-700 my-1" id="dns">
 			<a class="text-white" href="#dns">
-				<?= lang('Services.go-to.dns') ?>
+				<?= lang('Services.webserv.dns.title') ?>
 			</a>
 		</h3>
 
-		<p class="my-1">
-			<?= lang('Services.dns.desc') ?>
+		<p class="mt-0">
+			<?= lang('Services.webserv.dns.desc') ?>
 		</p>
 
-		<!-- GNU/Linux servers -->
-		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="server">
+		<!-- Server -->
+		<h3 class="tag tag--md bg-blue-700 my-1" id="server">
 			<a class="text-white" href="#server">
-				<?= lang('Services.go-to.server') ?>
+				<?= lang('Services.webserv.server.title') ?>
 			</a>
 		</h3>
 
-		<p class="my-1">
-			<?= lang('Services.server.desc') ?>
-		</p>
-
-		<!-- DB -->
-		<h3 class="tag tag--lg bg-blue-700 mt-3 my-0" id="db">
-			<a class="text-white" href="#db">
-				<?= lang('Services.go-to.db') ?>
-			</a>
-		</h3>
-
-		<p class="my-1">
-			<?= lang('Services.db.desc') ?>
+		<p class="mt-0 mb-0">
+			<?= lang('Services.webserv.server.desc') ?>
 		</p>
 	</div>
 
