@@ -141,19 +141,6 @@
 						</a>
 					</li>
 
-					<!-- Design principles -->
-					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('design') ?>">
-							<figure class="w-3">
-								<img src="<?= base_url('pics/pencil.png') ?>" alt="About">
-							</figure>
-
-							&nbsp;
-
-							<?= lang("Index.design.title") ?>
-						</a>
-					</li>
-
 					<!-- Info -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('info') ?>">

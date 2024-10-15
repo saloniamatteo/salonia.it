@@ -229,29 +229,6 @@
 
 		<div class="divider"></div>
 
-		<!-- Design principles -->
-		<div class="tile level">
-			<a href="<?= base_url('design') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/pencil.png') ?>" alt="Pencil">
-				</figure>
-			</div>
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 u u-LR">
-					<?= lang('Index.design.title') ?>
-				</p>
-
-				<p class="tile__subtitle text-black">
-					<?= lang('Index.design.desc') ?>
-				</p>
-			</div>
-			</a>
-		</div>
-
-		<div class="divider"></div>
-
 		<!-- About me -->
 		<div class="tile level">
 			<a href="<?= sub_url('info') ?>" class="u-flex">
