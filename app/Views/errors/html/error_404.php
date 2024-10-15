@@ -27,8 +27,6 @@
 			<?= lang('Glob.404.extended') ?>
 		</h4>
 
-		<div class="divider"></div>
-
 		<p class="lead u-text-center">
 			<?= lang('Glob.404.desc') ?><br>
 			<?= lang('Glob.404.contact') ?>
