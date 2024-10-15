@@ -10,6 +10,8 @@ return [
 	"sid"			=> [
 		"desc"		=> "Salonia Digital Infrastructures",
 		"ig"		=> "Instagram Business Profile",
+		"threads"	=> "Threads Business Profile",
+		"fb"		=> "Facebook Business Profile",
 		"email"		=> "Business Email",
 	],
 	"personal"		=> [

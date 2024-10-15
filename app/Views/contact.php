@@ -50,8 +50,50 @@
 			</a>
 		</div>
 
+		<!-- Threads -->
+		<div class="tile level mt-1">
+			<a href="https://threads.net/@saloniainfrastrutture" class="u-flex">
+			<div class="tile__icon">
+				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
+				<img src="<?= base_url('pics/threads.png') ?>" alt="Threads logo">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					@saloniainfrastrutture
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Contact.sid.threads") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<!-- Facebook -->
+		<div class="tile level mt-1">
+			<a href="https://www.facebook.com/profile.php?id=61566822561811" class="u-flex">
+			<div class="tile__icon">
+				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
+				<img src="<?= base_url('pics/facebook.png') ?>" alt="Facebook logo">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					Salonia Infrastrutture Digitali
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Contact.sid.fb") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
 		<!-- Email -->
-		<div class="tile level mt-2">
+		<div class="tile level mt-1">
 			<a href="mailto:assistenza@salonia.it" class="u-flex">
 			<div class="tile__icon">
 				<p class="u-text-center w-6 my-0" style="font-size: 2rem!important">📧</p>

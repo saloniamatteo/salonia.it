@@ -10,6 +10,8 @@ return [
 	"sid"			=> [
 		"desc"		=> "Salonia Infrastrutture Digitali",
 		"ig"		=> "Profilo Instagram Aziendale",
+		"threads"	=> "Profilo Threads Aziendale",
+		"fb"		=> "Profilo Facebook Aziendale",
 		"email"		=> "Email Aziendale",
 	],
 	"personal"		=> [
