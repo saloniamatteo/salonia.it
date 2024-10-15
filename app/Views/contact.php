@@ -97,7 +97,7 @@
 			<a href="https://g.page/r/CWbzRIvNa8T_EBM" class="u-flex">
 			<div class="tile__icon">
 				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img src="<?= base_url('pics/maps.png') ?>" alt="Google Maps logo">
+				<img style="margin-left: 0.35rem!important" src="<?= base_url('pics/maps.png') ?>" alt="Google Maps logo">
 				</figure>
 			</div>
 
