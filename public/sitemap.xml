@@ -10,16 +10,6 @@
 </url>
 
 <url>
-  <loc>https://salonia.it/en/</loc>
-  <priority>1.00</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/it/</loc>
-  <priority>1.00</priority>
-</url>
-
-<url>
   <loc>https://salonia.it/kernel</loc>
   <priority>0.80</priority>
 </url>
@@ -35,77 +25,22 @@
 </url>
 
 <url>
+  <loc>https://salonia.it/services</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
   <loc>https://salonia.it/info</loc>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://salonia.it/contact</loc>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 
 <url>
   <loc>https://salonia.it/donate</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/en/kernel</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/it/kernel</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/en/packages</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/it/packages</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/en/software</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/it/software</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/en/info</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/it/info</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/en/contact</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/it/contact</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/en/donate</loc>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/it/donate</loc>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 </urlset>
