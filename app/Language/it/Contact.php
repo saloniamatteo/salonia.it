@@ -12,6 +12,7 @@ return [
 		"ig"		=> "Profilo Instagram Aziendale",
 		"threads"	=> "Profilo Threads Aziendale",
 		"fb"		=> "Profilo Facebook Aziendale",
+		"maps"		=> "Trovaci su Google Maps",
 		"email"		=> "Email Aziendale",
 	],
 	"personal"		=> [

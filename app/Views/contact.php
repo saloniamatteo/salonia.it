@@ -92,6 +92,27 @@
 			</a>
 		</div>
 
+		<!-- Google Maps -->
+		<div class="tile level mt-1">
+			<a href="https://g.page/r/CWbzRIvNa8T_EBM" class="u-flex">
+			<div class="tile__icon">
+				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
+				<img src="<?= base_url('pics/maps.png') ?>" alt="Google Maps logo">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					Salonia Infrastrutture Digitali
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Contact.sid.maps") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
 		<!-- Email -->
 		<div class="tile level mt-1">
 			<a href="mailto:assistenza@salonia.it" class="u-flex">

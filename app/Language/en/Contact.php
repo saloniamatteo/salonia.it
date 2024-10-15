@@ -12,6 +12,7 @@ return [
 		"ig"		=> "Instagram Business Profile",
 		"threads"	=> "Threads Business Profile",
 		"fb"		=> "Facebook Business Profile",
+		"maps"		=> "Find us on Google Maps",
 		"email"		=> "Business Email",
 	],
 	"personal"		=> [
