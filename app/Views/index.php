@@ -208,7 +208,20 @@
 
 		<!-- Curriculum Vitae -->
 		<div class="tile level">
-			<a href="<?= base_url('cv.pdf') ?>" class="u-flex">
+			<?php
+			// Serve out a different file, depending on the language
+			// Get the current locale
+			$locale = esc(\Config\Services::request()->getLocale());
+
+			// Check locale and assign correct file
+			if ($locale == "it")
+				$file = base_url('cv.pdf');
+			else
+				$file = base_url('cv_en.pdf');
+
+			// Print link
+			echo "<a href='$file' class='u-flex'>";
+			?>
 			<div class="tile__icon">
 				<figure class="w-6 mt-1" style="background: white">
 				<img src="<?= base_url('pics/cv.png') ?>" alt="CV">

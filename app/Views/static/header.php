@@ -130,7 +130,20 @@
 
 					<!-- Curriculum vitae -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= base_url('cv.pdf') ?>">
+						<?php
+						// Serve out a different file, depending on the language
+						// Get the current locale
+						$locale = esc(\Config\Services::request()->getLocale());
+
+						// Check locale and assign correct file
+						if ($locale == "it")
+							$file = base_url('cv.pdf');
+						else
+							$file = base_url('cv_en.pdf');
+
+						// Print link
+						echo "<a class='u u-LR font-bold u-flex text-gray-800 py-1' href='$file'>";
+						?>
 							<figure class="w-3">
 								<img src="<?= base_url('pics/cv.png') ?>" alt="CV">
 							</figure>
