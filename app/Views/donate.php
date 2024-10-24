@@ -29,8 +29,8 @@
 		<!-- Monero -->
 		<div class="tile level">
 			<div class="tile__icon">
-				<figure class="w-5" style="background: white">
-				<img src="<?= base_url('pics/xmr.png') ?>">
+				<figure class="w-5">
+				<img src="/pics/xmr.png" loading="lazy">
 				</figure>
 			</div>
 
@@ -69,8 +69,8 @@
 		<!-- PayPal -->
 		<div class="tile level">
 			<div class="tile__icon">
-				<figure class="w-5" style="background: white">
-				<img src="<?= base_url('pics/paypal.png') ?>">
+				<figure class="w-5">
+				<img src="/pics/paypal.png" loading="lazy">
 				</figure>
 			</div>
 

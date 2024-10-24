@@ -29,8 +29,8 @@
 		<!-- librsvg -->
 		<div class="tile level">
 			<div class="tile__icon">
-				<figure class="w-6" style="background: white">
-				<img src="<?= base_url('pics/librsvg.png') ?>">
+				<figure class="w-6">
+				<img src="/pics/librsvg.png" loading="lazy">
 				</figure>
 			</div>
 

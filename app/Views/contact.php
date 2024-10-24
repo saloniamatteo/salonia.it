@@ -34,7 +34,7 @@
 			<a href="https://instagram.com/saloniainfrastrutture" class="u-flex">
 			<div class="tile__icon">
 				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img src="<?= base_url('pics/instagram.png') ?>" alt="Instagram logo">
+				<img src="/pics/instagram.png" alt="Instagram logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -55,7 +55,7 @@
 			<a href="https://threads.net/@saloniainfrastrutture" class="u-flex">
 			<div class="tile__icon">
 				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img src="<?= base_url('pics/threads.png') ?>" alt="Threads logo">
+				<img src="/pics/threads.png" alt="Threads logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -76,7 +76,7 @@
 			<a href="https://www.facebook.com/profile.php?id=61566822561811" class="u-flex">
 			<div class="tile__icon">
 				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img src="<?= base_url('pics/facebook.png') ?>" alt="Facebook logo">
+				<img src="/pics/facebook.png" alt="Facebook logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -97,7 +97,7 @@
 			<a href="https://g.page/r/CWbzRIvNa8T_EBM" class="u-flex">
 			<div class="tile__icon">
 				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img style="margin-left: 0.35rem!important" src="<?= base_url('pics/maps.png') ?>" alt="Google Maps logo">
+				<img style="margin-left: 0.35rem!important" src="/pics/maps.png" alt="Google Maps logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -157,7 +157,7 @@
 				<p class="tile__subtitle text-black">
 					<?= lang("Contact.personal.protonmail") ?>
 					&mdash;
-					<a href="<?= base_url('matteo-pm.asc') ?>" class="font-bold text-blue-700 text-md u u-LR">
+					<a href="/matteo-pm.asc" class="font-bold text-blue-700 text-md u u-LR">
 						 <?= lang('Contact.personal.gpg') ?>
 					</a>
 				</p>
@@ -183,7 +183,7 @@
 				<p class="tile__subtitle text-black">
 					<?= lang("Contact.personal.pserv.desc") ?>
 					&mdash;
-					<a href="<?= base_url('matteo-pm.asc') ?>" class="font-bold text-blue-700 text-md u u-LR">
+					<a href="/matteo-pm.asc" class="font-bold text-blue-700 text-md u u-LR">
 						 <?= lang('Contact.personal.gpg') ?>
 					</a>
 				</p>

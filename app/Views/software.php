@@ -57,8 +57,8 @@
 		<div class="tile level">
 			<a href="https://github.com/saloniamatteo/csnake" class="u-flex">
 			<div class="tile__icon">
-				<figure class="avatar w-6 mt-1" style="background: black">
-				<img src="<?= base_url('pics/csnake.png') ?>" alt="Csnake logo">
+				<figure class="w-6 mt-1">
+				<img src="/pics/csnake.png" alt="Csnake logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -83,8 +83,8 @@
 		<div class="tile level">
 			<a href="https://github.com/saloniamatteo/quiz" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/quiz.png') ?>" alt="Quiz logo">
+				<figure class="w-6 mt-1">
+				<img src="/pics/quiz.png" alt="Quiz logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -109,8 +109,8 @@
 		<div class="tile level">
 			<a href="https://github.com/saloniamatteo/calc" class="u-flex">
 			<div class="tile__icon">
-				<figure class="avatar w-6 mt-1" style="background: #607d8b">
-				<img src="<?= base_url('pics/calc.png') ?>" alt="Calc logo">
+				<figure class="w-6 mt-1">
+				<img src="/pics/calc.png" alt="Calc logo" loading="lazy">
 				</figure>
 			</div>
 			<div class="tile__container">

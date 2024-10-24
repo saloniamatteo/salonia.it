@@ -1,8 +1,8 @@
 <!-- Header -->
 <div class="header header-animated header-fixed u-unselectable" style="backdrop-filter: blur(8px); background-color: #fffc">
 	<div class="header-brand">
-		<a href="https://salonia.it">
-			<img src="<?= base_url('pics/salonia.png') ?>" alt="Logo" class="w-24" style="min-width: 180px">
+		<a href="<?= site_url() ?>">
+			<img src="/pics/salonia.png" alt="Logo" class="w-24" style="min-width: 180px">
 		</a>
 
 		<div class="nav-item nav-btn" id="header-btn">
@@ -41,10 +41,10 @@
 				// Iterate over available locales
 				for ($i = 0; $i < count($locales_list); $i++) {
 					$locale = $locales_list[$i];
-					$href = base_url() . replace_lang($uri, $locale);
+					$href = replace_lang($uri, $locale);
 
 					// Add element with respective emoji
-					echo "<a class='u u-LR font-bold text-gray-900 p-0 m-1' href='$href'>"
+					echo "<a class='u u-LR font-bold text-gray-900 p-0 m-1' href='/$href'>"
 						. text_to_flag($locale) . "&nbsp;&nbsp;"
 						. lang("Glob.$locale")
 						. "</a>";
@@ -71,7 +71,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('kernel') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/linux.png') ?>" alt="Tux">
+								<img src="/pics/linux.png" alt="Tux" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -84,7 +84,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('packages') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/box.png') ?>" alt="Box">
+								<img src="/pics/box.png" alt="Box" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -97,7 +97,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('software') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/c.png') ?>" alt="C">
+								<img src="/pics/c.png" alt="C" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -119,7 +119,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('services') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/services.png') ?>" alt="Services">
+								<img src="/pics/services.png" alt="Services" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -137,15 +137,15 @@
 
 						// Check locale and assign correct file
 						if ($locale == "it")
-							$file = base_url('cv.pdf');
+							$file = 'cv.pdf';
 						else
-							$file = base_url('cv_en.pdf');
+							$file = 'cv_en.pdf';
 
 						// Print link
-						echo "<a class='u u-LR font-bold u-flex text-gray-800 py-1' href='$file'>";
+						echo "<a class='u u-LR font-bold u-flex text-gray-800 py-1' href='/$file'>";
 						?>
 							<figure class="w-3">
-								<img src="<?= base_url('pics/cv.png') ?>" alt="CV">
+								<img src="/pics/cv.png" alt="CV" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -158,7 +158,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('info') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/about.png') ?>" alt="About">
+								<img src="/pics/about.png" alt="About" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -171,7 +171,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('contact') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/contact.png') ?>" alt="Contact">
+								<img src="/pics/contact.png" alt="Contact" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -184,7 +184,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('donate') ?>">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/cash.png') ?>" alt="Cash">
+								<img src="/pics/cash.png" alt="Cash" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -207,7 +207,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://portfolio.salonia.it">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/web.png') ?>" alt="Web">
+								<img src="/pics/web.png" alt="Web" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -220,7 +220,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://s.salonia.it">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/searxng.png') ?>" alt="SearXNG logo">
+								<img src="/pics/searxng.png" alt="SearXNG logo" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -233,7 +233,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://oa.salonia.it">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/oa.png') ?>" style="border-radius: 50%" alt="OpenAlias logo">
+								<img src="/pics/oa.png" alt="OpenAlias logo" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -246,7 +246,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://github.com/saloniamatteo">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
+								<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
 							</figure>
 
 							&nbsp;
@@ -259,7 +259,7 @@
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://github.com/saloniamatteo/salonia.it">
 							<figure class="w-3">
-								<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
+								<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
 							</figure>
 
 							&nbsp;

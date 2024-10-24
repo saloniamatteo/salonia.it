@@ -16,7 +16,7 @@
 <div class="hero-body bg-black u-opacity-90 pt-1 px-0">
 <div class="content u-center">
 	<figure class="fig w-100p u-center">
-		<img class="img-cover h-6 h-8-md mt-3 mb-1" src="<?= base_url('pics/saloniaw.png') ?>" alt="Salonia logo" style="min-width: 325px">
+		<img class="img-cover h-6 h-8-md mt-3 mb-1" src="/pics/saloniaw.png" alt="Salonia logo" style="min-width: 325px">
 	</figure>
 
 	<p class="font-bold mt-1 text-lg text-white u-text-center" style="margin-left: 0.9rem !important; margin-right: 0.75rem !important">
@@ -47,8 +47,8 @@
 		<div class="tile level">
 			<a href="https://arch.salonia.it" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/arch.png') ?>" alt="Arch Linux logo">
+				<figure class="w-6 mt-2">
+				<img src="/pics/arch.png" alt="Arch Linux logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -74,8 +74,8 @@
 		<div class="tile level">
 			<a href="https://dotfiles.salonia.it" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/gnu.png') ?>" alt="GNU logo">
+				<figure class="w-6 mt-1">
+				<img src="/pics/gnu.png" alt="GNU logo" loading="lazy">
 				</figure>
 			</div>
 
@@ -97,8 +97,8 @@
 		<div class="tile level">
 			<a href="<?= sub_url('kernel') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/linux.png') ?>" alt="Tux">
+				<figure class="w-6" style="margin-top: 0.25em">
+				<img src="/pics/linux.png" alt="Tux" loading="lazy">
 				</figure>
 			</div>
 
@@ -120,8 +120,8 @@
 		<div class="tile level">
 			<a href="<?= sub_url('packages') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/box.png') ?>" alt="Box">
+				<figure class="w-6 mt-1">
+				<img src="/pics/box.png" alt="Box" loading="lazy">
 				</figure>
 			</div>
 
@@ -143,8 +143,8 @@
 		<div class="tile level">
 			<a href="<?= sub_url('software') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6" style="background: white">
-				<img src="<?= base_url('pics/c.png') ?>" alt="C">
+				<figure class="w-6" style="margin-top: 0.25em">
+				<img src="/pics/c.png" alt="C" loading="lazy">
 				</figure>
 			</div>
 
@@ -187,8 +187,8 @@
 		<div class="tile level">
 			<a href="<?= sub_url('services') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6" style="background: white">
-				<img src="<?= base_url('pics/services.png') ?>" alt="Services">
+				<figure class="w-6" style="margin-top: 0.75em">
+				<img src="/pics/services.png" alt="Services" loading="lazy">
 				</figure>
 			</div>
 
@@ -215,16 +215,16 @@
 
 			// Check locale and assign correct file
 			if ($locale == "it")
-				$file = base_url('cv.pdf');
+				$file = 'cv.pdf';
 			else
-				$file = base_url('cv_en.pdf');
+				$file = 'cv_en.pdf';
 
 			// Print link
-			echo "<a href='$file' class='u-flex'>";
+			echo "<a href='/$file' class='u-flex'>";
 			?>
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/cv.png') ?>" alt="CV">
+				<figure class="w-6 mt-1">
+				<img src="/pics/cv.png" alt="CV" loading="lazy">
 				</figure>
 			</div>
 
@@ -246,8 +246,8 @@
 		<div class="tile level">
 			<a href="<?= sub_url('info') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/about.png') ?>" alt="About">
+				<figure class="w-6 mt-1">
+				<img src="/pics/about.png" alt="About" loading="lazy">
 				</figure>
 			</div>
 
@@ -269,8 +269,8 @@
 		<div class="tile level">
 			<a href="<?= sub_url('contact') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/contact.png') ?>" alt="Contact">
+				<figure class="w-6 mt-1">
+				<img src="/pics/contact.png" alt="Contact" loading="lazy">
 				</figure>
 			</div>
 
@@ -292,8 +292,8 @@
 		<div class="tile level">
 			<a href="<?= sub_url('donate') ?>" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-6 mt-1" style="background: white">
-				<img src="<?= base_url('pics/cash.png') ?>" alt="Cash">
+				<figure class="w-6 mt-1">
+				<img src="/pics/cash.png" alt="Cash" loading="lazy">
 				</figure>
 			</div>
 
@@ -336,8 +336,8 @@
 			<div class="tile level">
 				<a href="https://portfolio.salonia.it" class="u-flex">
 				<div class="tile__icon">
-					<figure class="w-6 mt-1" style="background: white">
-					<img src="<?= base_url('pics/web.png') ?>" alt="Web">
+					<figure class="w-6 mt-1">
+					<img src="/pics/web.png" alt="Web" loading="lazy">
 					</figure>
 				</div>
 
@@ -359,8 +359,8 @@
 			<div class="tile level">
 				<a href="https://s.salonia.it" class="u-flex">
 				<div class="tile__icon">
-					<figure class="w-6 mt-1" style="background: white">
-					<img src="<?= base_url('pics/searxng.png') ?>" alt="SearXNG logo">
+					<figure class="w-6 mt-1">
+					<img src="/pics/searxng.png" alt="SearXNG logo" loading="lazy">
 					</figure>
 				</div>
 
@@ -382,8 +382,8 @@
 			<div class="tile level">
 				<a href="https://oa.salonia.it" class="u-flex">
 				<div class="tile__icon">
-					<figure class="avatar w-6 mt-1" style="background: black">
-					<img src="<?= base_url('pics/oa.png') ?>" alt="OpenAlias logo">
+					<figure class="w-6 mt-1">
+					<img src="/pics/oa.png" alt="OpenAlias logo" loading="lazy">
 					</figure>
 				</div>
 
@@ -405,8 +405,8 @@
 			<div class="tile level">
 				<a href="https://github.com/saloniamatteo" class="u-flex">
 				<div class="tile__icon">
-					<figure class="w-6 mt-1" style="background: white">
-					<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
+					<figure class="w-6 mt-1">
+					<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
 					</figure>
 				</div>
 
@@ -428,8 +428,8 @@
 			<div class="tile level">
 				<a href="https://github.com/saloniamatteo/salonia.it" class="u-flex">
 				<div class="tile__icon">
-					<figure class="w-6 mt-1" style="background: white">
-					<img src="<?= base_url('pics/github.png') ?>" alt="GitHub logo">
+					<figure class="w-6 mt-1">
+					<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
 					</figure>
 				</div>
 

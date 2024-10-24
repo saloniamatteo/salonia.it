@@ -11,11 +11,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?= base_url('favicon.png') ?>">
+	<link rel="shortcut icon" href="/favicon.png">
 
 	<!-- CSS & Fonts -->
-	<link rel="stylesheet" href="<?= base_url('css/cirrus.min.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('css/fonts/fonts.css') ?>">
+	<link rel="stylesheet" href="/css/cirrus.min.css">
+	<link rel="stylesheet" href="/css/fonts/fonts.css">
+
+	<!-- Preload fonts to reduce CLS -->
+	<link rel="preload" href="/css/fonts/Montserrat.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="/css/fonts/NunitoSans.woff2" as="font" type="font/woff2">
+
+	<!-- JS for header -->
+	<script src="/js/header.js" defer></script>
 </head>
 
 <body>
