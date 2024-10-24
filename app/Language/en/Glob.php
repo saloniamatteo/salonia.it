@@ -29,4 +29,7 @@ return [
 
 	// Go back to main page
 	"to-main"			=> "&larr; Back to the main page",
+
+	// Page load time
+	"pageload"			=> "Page loaded in {elapsed_time} seconds",
 ];

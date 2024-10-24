@@ -29,4 +29,7 @@ return [
 
 	// Go back to main page
 	"to-main"			=> "&larr; Torna alla pagina principale",
+
+	// Page load time
+	"pageload"			=> "Pagina caricata in {elapsed_time} secondi",
 ];
