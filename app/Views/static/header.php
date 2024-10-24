@@ -55,7 +55,7 @@
 			<!-- Pages -->
 			<div class="nav-item has-sub toggle-hover px-0">
 				<!-- Dropdown -->
-				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0">
+				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0" href="#">
 					<span class="u u-LR">💻&nbsp;&nbsp;<?= lang("Glob.pages") ?></span>
 				</a>
 
@@ -198,7 +198,7 @@
 			<!-- Links -->
 			<div class="nav-item has-sub toggle-hover px-0">
 				<!-- Dropdown -->
-				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0">
+				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0" href="#">
 					<span class="u u-LR">🔗&nbsp;&nbsp;<?= lang("Glob.links") ?></span>
 				</a>
 
