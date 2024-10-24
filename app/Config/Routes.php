@@ -7,10 +7,13 @@ $routes->setDefaultController('Pages::index');
 $routes->setDefaultMethod('index');
 
 // Index
-$routes->get('/', 'Pages::index');
+// HACK: we manually add the 'throttler' filter
+// because it doesn't get loaded automatically for some reason...
+// (Same for all other routes, not specified for simplicity)
+$routes->get('/', 'Pages::index', ['filter' => \App\Filters\Throttler::class]);
 
 // Error page
-$routes->get('/error', 'Pages::error');
+$routes->get('/error', 'Pages::error', ['filter' => \App\Filters\Throttler::class]);
 
 // Get list of supported locales
 $locales = config("App")->supportedLocales;
@@ -31,8 +34,8 @@ for ($i = 0; $i < count($locales); $i++) {
 // but we can also request only a locale,
 // and get the index with the requested locale.
 $routes->addPlaceholder('lang', $locale_regex);
-$routes->get('(:lang)', [Pages::class, 'index']);
+$routes->get('(:lang)', [Pages::class, 'index'], ['filter' => \App\Filters\Throttler::class]);
 
 // All other pages
-$routes->get('(:segment)', [Pages::class, 'view']);
-$routes->get('{locale}/(:segment)', [Pages::class, 'view']);
+$routes->get('(:segment)', [Pages::class, 'view'], ['filter' => \App\Filters\Throttler::class]);
+$routes->get('{locale}/(:segment)', [Pages::class, 'view'], ['filter' => \App\Filters\Throttler::class]);
