@@ -15,14 +15,13 @@ class Throttler implements FilterInterface {
      */
     public function before(RequestInterface $request, $arguments = null) {
         $throttler = service('throttler');
-        $ip        = md5($request->getIPAddress());
-        $capacity  = 60;
-        $seconds   = MINUTE;
 
-        // Restrict an IP address to no more than 1 request per second across the entire site.
-        // Technically we are allowing a maximum of 60 requests per minute,
-        // which would equal 1 request per second.
-        // ===================================================================================
+        // Restrict an IP address to no more than 5 HTTP requests
+        // every 3 seconds across the entire site.
+        $ip        = md5($request->getIPAddress());
+        $capacity  = 5;
+        $seconds   = 3;
+
         // check(key, capacity, seconds, cost)
 		// key (string):   The name of the bucket
         // capacity (int): The number of tokens the bucket holds
