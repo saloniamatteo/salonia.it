@@ -4,7 +4,10 @@ return [
 	"title"				=> "Matteo Salonia",
 	"desc"				=> "Benvenuto nel sito di Matteo Salonia.",
 	"welcome"			=> [
-		"desc"			=> "Scopri vaste risorse per GNU/Linux, i miei contatti, vari strumenti, e molto altro ancora.",
+		"hello"			=> "Ciao",
+		"im"			=> "sono",
+		"desc"			=> "Benvenuto sul mio sito web! Scopri vaste risorse per GNU/Linux, i miei contatti, vari strumenti, e molto altro ancora.",
+		"sid"			=> "Cerchi",
 	],
 	"linux-soft"		=> [
 		"title"			=> "Linux e Software",

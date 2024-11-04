@@ -2,10 +2,10 @@
 // English dict file for services
 return [
 	"title"			=> "Services",
-	"desc"			=> "Services offered by Salonia Digital Infrastructures.",
+	"desc"			=> "Services offered by Salonia Infrastrutture Digitali.",
 	"welcome"		=> [
 		"title"		=> "Services",
-		"desc"		=> "Discover all of the services offered by <strong>Salonia Digital Infrastructures</strong>.",
+		"desc"		=> "Discover all of the services offered by <strong>Salonia Infrastrutture Digitali</strong>.",
 	],
 	"go-to"			=>	[
 		"title"		=> "Go to",
@@ -17,7 +17,7 @@ return [
 		"desc"		=> "For more info, contact",
 	],
 	"webdev"		=> [
-		"desc"		=> "Rely on <strong>Salonia Digital Infrastructures</strong>: you'll get a <strong>state-of-the-art website</strong>! Multiple years of study and pratice have lead us to <strong>perfect</strong> our websites, focusing on <strong>real experiences</strong>, focusing on the <strong>satisfaction of our customers</strong>. Here are some features that distinguish us from the competition:",
+		"desc"		=> "Rely on <strong>Salonia Infrastrutture Digitali</strong>: you'll get a <strong>state-of-the-art website</strong>! Multiple years of study and pratice have lead us to <strong>perfect</strong> our websites, focusing on <strong>real experiences</strong>, focusing on the <strong>satisfaction of our customers</strong>. Here are some features that distinguish us from the competition:",
 		"lang"		=> [
 			"title"	=> "Multi-language support",
 			"desc"	=> "<strong>English</strong>, <strong>Italian</strong>, or any other language, everything is possible! The pages will be loaded with the <strong>user's preferred language</strong>, but he'll be able to <strong>change</strong> it. Do you want to see a <strong>practical example</strong>? Look at the top-right of this page: if you're on <strong>desktop</strong>, you'll see the available languages, <em>English</em> and <em>Italian</em>, meanwhile on <strong>mobile</strong>, after opening the menu, you'll see exactly the same choices! Moreover, the choice is <strong>persistent</strong>: every single page will be loaded with the same <strong>chosen language</strong>, even while being different from the system's language!",

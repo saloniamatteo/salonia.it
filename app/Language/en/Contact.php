@@ -8,7 +8,7 @@ return [
 		"desc"		=> "Discover how to contact me.",
 	],
 	"sid"			=> [
-		"desc"		=> "Salonia Digital Infrastructures",
+		"desc"		=> "Salonia Infrastrutture Digitali",
 		"ig"		=> "Instagram Business Profile",
 		"threads"	=> "Threads Business Profile",
 		"fb"		=> "Facebook Business Profile",

@@ -4,7 +4,10 @@ return [
 	"title"				=> "Matteo Salonia",
 	"desc"				=> "Welcome to Matteo Salonia's website.",
 	"welcome"			=> [
-		"desc"			=> "Discover many GNU/Linux resources, my contacts, various tools, and much more.",
+		"hello"			=> "Hello",
+		"im"			=> "I'm",
+		"desc"			=> "Welcome to my website! Discover many GNU/Linux resources, my contacts, various tools, and much more.",
+		"sid"			=> "Looking for",
 	],
 	"linux-soft"		=> [
 		"title"			=> "Linux &amp; Software",
@@ -37,7 +40,7 @@ return [
 	],
 	"services"		=> [
 		"title"		=> "Services",
-		"desc"		=> "Discover all of the services offered by Salonia Digital Infrastructures.",
+		"desc"		=> "Discover all of the services offered by Salonia Infrastrutture Digitali.",
 	],
 	"cv"			=> [
 		"title"		=> "CV",
