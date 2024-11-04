@@ -5,7 +5,7 @@ return [
 	"desc"					=> "Il Kernel personalizzato di Matteo Salonia.",
 	"welcome"				=> [
 		"title"				=> "Kernel",
-		"desc"				=> "",
+		"desc"				=> "Questa pagina contiene tutti i dettagli necessari per usare il mio script per configurare il Kernel Linux, ottimizzandolo per massimizzare le prestazioni dell'hardware, ed essere più leggero possibile.",
 	],
 	"go-to"					=> [
 		"title"				=> "Vai a:",
