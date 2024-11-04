@@ -69,39 +69,27 @@
 
 					<!-- Kernel -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('kernel') ?>">
-							<figure class="w-3">
-								<img src="/pics/linux.png" alt="Tux" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('kernel') ?>">
+							<i data-lucide="book-open-text" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.kernel.title") ?>
 						</a>
 					</li>
 
 					<!-- Packages -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('packages') ?>">
-							<figure class="w-3">
-								<img src="/pics/box.png" alt="Box" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('packages') ?>">
+							<i data-lucide="folder-cog" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.packages.title") ?>
 						</a>
 					</li>
 
 					<!-- Software -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('software') ?>">
-							<figure class="w-3">
-								<img src="/pics/c.png" alt="C" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800" href="<?= sub_url('software') ?>">
+							<i data-lucide="binary" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.software.title") ?>
 						</a>
 					</li>
@@ -117,13 +105,9 @@
 
 					<!-- Services -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('services') ?>">
-							<figure class="w-3">
-								<img src="/pics/services.png" alt="Services" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('services') ?>">
+							<i data-lucide="server" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.services.title") ?>
 						</a>
 					</li>
@@ -142,40 +126,28 @@
 							$file = 'cv_en.pdf';
 
 						// Print link
-						echo "<a class='u u-LR font-bold u-flex text-gray-800 py-1' href='/$file'>";
+						echo "<a class='u u-LR font-bold u-flex text-gray-800 pb-0' href='/$file'>";
 						?>
-							<figure class="w-3">
-								<img src="/pics/cv.png" alt="CV" loading="lazy">
-							</figure>
-
+							<i data-lucide="file-badge" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.cv.title") ?>
 						</a>
 					</li>
 
 					<!-- Info -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('info') ?>">
-							<figure class="w-3">
-								<img src="/pics/about.png" alt="About" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('info') ?>">
+							<i data-lucide="user-round" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.info.title") ?>
 						</a>
 					</li>
 
 					<!-- Contact -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('contact') ?>">
-							<figure class="w-3">
-								<img src="/pics/contact.png" alt="Contact" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('contact') ?>">
+							<i data-lucide="send" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.contact.title") ?>
 						</a>
 					</li>
@@ -183,12 +155,8 @@
 					<!-- Donate -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="<?= sub_url('donate') ?>">
-							<figure class="w-3">
-								<img src="/pics/cash.png" alt="Cash" loading="lazy">
-							</figure>
-
+							<i data-lucide="hand-coins" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.donate.title") ?>
 						</a>
 					</li>
@@ -203,67 +171,54 @@
 				</a>
 
 				<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu">
+					<!-- Links -->
+					<li role="menuitem">
+						<span class="ml-2 font-bold">
+							<?= lang("Glob.links") ?>
+						</span>
+					</li>
+
 					<!-- Portfolio -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://portfolio.salonia.it">
-							<figure class="w-3">
-								<img src="/pics/web.png" alt="Web" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="https://portfolio.salonia.it">
+							<i data-lucide="globe" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.portfolio.title") ?>
 						</a>
 					</li>
 
 					<!-- SearXNG -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://s.salonia.it">
-							<figure class="w-3">
-								<img src="/pics/searxng.png" alt="SearXNG logo" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="https://s.salonia.it">
+							<i data-lucide="search" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.searxng.title") ?>
 						</a>
 					</li>
 
 					<!-- OpenAlias -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://oa.salonia.it">
-							<figure class="w-3">
-								<img src="/pics/oa.png" alt="OpenAlias logo" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="https://oa.salonia.it">
+							<i data-lucide="scroll-text" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.openalias.title") ?>
 						</a>
 					</li>
 
 					<!-- GitHub profile -->
 					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://github.com/saloniamatteo">
-							<figure class="w-3">
-								<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
-							</figure>
-
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="https://github.com/saloniamatteo">
+							<i data-lucide="github" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.github.title") ?>
 						</a>
 					</li>
 
 					<!-- Website source code -->
-					<li role="menuitem">
-						<a class="u u-LR font-bold u-flex text-gray-800 py-1" href="https://github.com/saloniamatteo/salonia.it">
-							<figure class="w-3">
-								<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
-							</figure>
-
+					<li class="w-32" role="menuitem">
+						<a class="u u-LR font-bold u-flex text-gray-800" href="https://github.com/saloniamatteo/salonia.it">
+							<i data-lucide="github" class="text-gray-900 w-3"></i>
 							&nbsp;
-
 							<?= lang("Index.source.title") ?>
 						</a>
 					</li>

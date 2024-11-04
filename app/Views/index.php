@@ -13,21 +13,50 @@
 
 <!-- Welcome -->
 <div class="hero" style="margin-top: 3.5em !important">
-<div class="hero-body bg-black u-opacity-90 pt-1 px-0">
-<div class="content u-center">
-	<figure class="fig w-100p u-center">
-		<img class="img-cover h-6 h-8-md mt-3 mb-1" src="/pics/saloniaw.png" alt="Salonia logo" style="min-width: 325px">
-	</figure>
+<div class="hero-body bg-black u-opacity-90 py-1 px-0">
+<div class="content u-text-left">
+<div class="grid-sm u-gap-2">
+	<!-- Text -->
+	<div class="grid-c-9 grid-r-3 ml-2">
+		<!-- Hello -->
+		<h2 class="text-gray-300 mb-0 mt-4" style="font-size: 2rem!important; line-height: 1.25rem!important"><?= lang('Index.welcome.hello') ?>,</h2>
+		<h1 class="text-white my-0" style="font-size: 2.8rem!important">
+		<span class="text-gray-300" style="font-size: 2rem!important; line-height: 1.75rem!important">
+		<?= lang('Index.welcome.im') ?> </span>
+		Matteo Salonia.
+		</h1>
 
-	<p class="font-bold mt-1 text-lg text-white u-text-center" style="margin-left: 0.9rem !important; margin-right: 0.75rem !important">
-		<?= lang("Index.welcome.desc") ?>
-	</p>
+		<!-- Subtitle -->
+		<p class="text-white text-md mt-0" style="line-height: 1.5rem!important">
+		Sysadmin &amp; full-stack web developer
+		</p>
+
+		<div class="divider text-white my-0 mr-2"></div>
+
+		<!-- Desc -->
+		<p class="font-bold lead mt-3 text-white" style="line-height: 1.7rem!important">
+			<?= lang("Index.welcome.desc") ?>
+		</p>
+
+		<!-- SID -->
+		<p class="font-bold lead mt-3 text-white" style="line-height: 1.7rem!important">
+			<?= lang("Index.welcome.sid") ?>&nbsp;
+			<a class="font-bold text-white" href="/services"><u>Salonia Infrastrutture Digitali</u></a>
+			?
+		</p>
+	</div>
+
+	<!-- Picture -->
+	<div class="grid-c-3 grid-r-3 mr-2 u-center">
+		<img class="w-32 mt-2 u-round-lg" src="/pics/me.jpeg" loading="lazy">
+	</div>
+</div>
 </div>
 </div>
 </div>
 
 <!-- Linux & Software -->
-<div class="hero u-text-center u-shadow-inset" id="linux-soft">
+<div class="hero u-text-center mt-4" id="linux-soft">
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4">
@@ -41,19 +70,17 @@
 	</p>
 
 	<div class="content u-text-left w-90p-md">
-	<div class="card">
-	<div class="m-3">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-2">
 		<!-- Arch Linux -->
 		<div class="tile level">
 			<a href="https://arch.salonia.it" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-2">
-				<img src="/pics/arch.png" alt="Arch Linux logo" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="book-open-text" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-blue-700 u u-LR">
+				<p class="tile__title text-blue-700 text-md u u-LR">
 					<?= lang("Index.arch.title") ?>
 				</p>
 
@@ -68,19 +95,17 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- Dotfiles -->
 		<div class="tile level">
 			<a href="https://dotfiles.salonia.it" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-1">
-				<img src="/pics/gnu.png" alt="GNU logo" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="folder-cog" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title text-blue-700 u u-LR">
+				<p class="tile__title text-blue-700 text-md u u-LR">
 					<?= lang("Index.dotfiles.title") ?>
 				</p>
 
@@ -91,15 +116,13 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- Kernel -->
 		<div class="tile level">
 			<a href="<?= sub_url('kernel') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6" style="margin-top: 0.25em">
-				<img src="/pics/linux.png" alt="Tux" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="server-cog" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -114,15 +137,13 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- Packages -->
 		<div class="tile level">
 			<a href="<?= sub_url('packages') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-1">
-				<img src="/pics/box.png" alt="Box" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="package" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -137,15 +158,13 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- Software -->
 		<div class="tile level">
 			<a href="<?= sub_url('software') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6" style="margin-top: 0.25em">
-				<img src="/pics/c.png" alt="C" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="binary" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -167,7 +186,7 @@
 </div>
 
 <!-- About me -->
-<div class="hero u-text-center bg-blue-200 u-shadow-inset" id="about">
+<div class="hero u-text-center" id="about">
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4">
@@ -181,15 +200,13 @@
 	</p>
 
 	<div class="content u-text-left w-90p-md">
-	<div class="card">
-	<div class="m-3">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-2">
 		<!-- Services -->
 		<div class="tile level">
 			<a href="<?= sub_url('services') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6" style="margin-top: 0.75em">
-				<img src="/pics/services.png" alt="Services" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="server" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -204,7 +221,7 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- Curriculum Vitae -->
 		<div class="tile level">
@@ -222,10 +239,8 @@
 			// Print link
 			echo "<a href='/$file' class='u-flex'>";
 			?>
-			<div class="tile__icon">
-				<figure class="w-6 mt-1">
-				<img src="/pics/cv.png" alt="CV" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="file-badge" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -240,15 +255,13 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- About me -->
 		<div class="tile level">
 			<a href="<?= sub_url('info') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-1">
-				<img src="/pics/about.png" alt="About" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="user-round" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -263,15 +276,13 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- Contact me -->
 		<div class="tile level">
 			<a href="<?= sub_url('contact') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-1">
-				<img src="/pics/contact.png" alt="Contact" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="send" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -286,15 +297,13 @@
 			</a>
 		</div>
 
-		<div class="divider"></div>
+		<div class="divider my-2"></div>
 
 		<!-- Donate -->
 		<div class="tile level">
 			<a href="<?= sub_url('donate') ?>" class="u-flex">
-			<div class="tile__icon">
-				<figure class="w-6 mt-1">
-				<img src="/pics/cash.png" alt="Cash" loading="lazy">
-				</figure>
+			<div class="tile__icon mx-2">
+				<i data-lucide="hand-coins" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
 			<div class="tile__container">
@@ -316,7 +325,7 @@
 </div>
 
 <!-- Tools & Links -->
-<div class="hero u-text-center u-shadow-inset" id="tools-links">
+<div class="hero u-text-center" id="tools-links">
 <div class="hero-body">
 <div class="content w-90p">
 	<h2 class="headline-4">
@@ -330,121 +339,111 @@
 	</p>
 
 	<div class="content u-text-left w-90p-md">
-	<div class="card">
-		<div class="m-3">
-			<!-- Portfolio -->
-			<div class="tile level">
-				<a href="https://portfolio.salonia.it" class="u-flex">
-				<div class="tile__icon">
-					<figure class="w-6 mt-1">
-					<img src="/pics/web.png" alt="Web" loading="lazy">
-					</figure>
-				</div>
-
-				<div class="tile__container">
-					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang('Index.portfolio.title') ?>
-					</p>
-
-					<p class="tile__subtitle text-black">
-						<?= lang('Index.portfolio.desc') ?>
-					</p>
-				</div>
-				</a>
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-2">
+		<!-- Portfolio -->
+		<div class="tile level">
+			<a href="https://portfolio.salonia.it" class="u-flex">
+			<div class="tile__icon mx-2">
+				<i data-lucide="globe" class="text-gray-900 mt-1 w-4"></i>
 			</div>
 
-			<div class="divider"></div>
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang('Index.portfolio.title') ?>
+				</p>
 
-			<!-- SearXNG -->
-			<div class="tile level">
-				<a href="https://s.salonia.it" class="u-flex">
-				<div class="tile__icon">
-					<figure class="w-6 mt-1">
-					<img src="/pics/searxng.png" alt="SearXNG logo" loading="lazy">
-					</figure>
-				</div>
-
-				<div class="tile__container">
-					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("Index.searxng.title") ?>
-					</p>
-
-					<p class="tile__subtitle text-black">
-						<?= lang("Index.searxng.desc") ?>
-					</p>
-				</div>
-				</a>
+				<p class="tile__subtitle text-black">
+					<?= lang('Index.portfolio.desc') ?>
+				</p>
 			</div>
-
-			<div class="divider"></div>
-
-			<!-- OpenAlias -->
-			<div class="tile level">
-				<a href="https://oa.salonia.it" class="u-flex">
-				<div class="tile__icon">
-					<figure class="w-6 mt-1">
-					<img src="/pics/oa.png" alt="OpenAlias logo" loading="lazy">
-					</figure>
-				</div>
-
-				<div class="tile__container">
-					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("Index.openalias.title") ?>
-					</p>
-
-					<p class="tile__subtitle text-black">
-						<?= lang("Index.openalias.desc") ?>
-					</p>
-				</div>
-				</a>
-			</div>
-
-			<div class="divider"></div>
-
-			<!-- GitHub profile -->
-			<div class="tile level">
-				<a href="https://github.com/saloniamatteo" class="u-flex">
-				<div class="tile__icon">
-					<figure class="w-6 mt-1">
-					<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
-					</figure>
-				</div>
-
-				<div class="tile__container">
-					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("Index.github.title") ?>
-					</p>
-
-					<p class="tile__subtitle text-black">
-						<?= lang("Index.github.desc") ?>
-					</p>
-				</div>
-				</a>
-			</div>
-
-			<div class="divider"></div>
-
-			<!-- Source code -->
-			<div class="tile level">
-				<a href="https://github.com/saloniamatteo/salonia.it" class="u-flex">
-				<div class="tile__icon">
-					<figure class="w-6 mt-1">
-					<img src="/pics/github.png" alt="GitHub logo" loading="lazy">
-					</figure>
-				</div>
-
-				<div class="tile__container">
-					<p class="tile__title text-blue-700 u u-LR">
-						<?= lang("Index.source.title") ?>
-					</p>
-
-					<p class="tile__subtitle text-black">
-						<?= lang("Index.source.desc") ?>
-					</p>
-				</div>
-				</a>
-			</div>
+			</a>
 		</div>
+
+		<div class="divider my-2"></div>
+
+		<!-- SearXNG -->
+		<div class="tile level">
+			<a href="https://s.salonia.it" class="u-flex">
+			<div class="tile__icon mx-2">
+				<i data-lucide="search" class="text-gray-900 mt-1 w-4"></i>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang("Index.searxng.title") ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Index.searxng.desc") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<div class="divider my-2"></div>
+
+		<!-- OpenAlias -->
+		<div class="tile level">
+			<a href="https://oa.salonia.it" class="u-flex">
+			<div class="tile__icon mx-2">
+				<i data-lucide="scroll-text" class="text-gray-900 mt-1 w-4"></i>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang("Index.openalias.title") ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Index.openalias.desc") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<div class="divider my-2"></div>
+
+		<!-- GitHub profile -->
+		<div class="tile level">
+			<a href="https://github.com/saloniamatteo" class="u-flex">
+			<div class="tile__icon mx-2">
+				<i data-lucide="github" class="text-gray-900 mt-1 w-4"></i>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang("Index.github.title") ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Index.github.desc") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<div class="divider my-2"></div>
+
+		<!-- Source code -->
+		<div class="tile level">
+			<a href="https://github.com/saloniamatteo/salonia.it" class="u-flex">
+			<div class="tile__icon mx-2">
+				<i data-lucide="github" class="text-gray-900 mt-1 w-4"></i>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang("Index.source.title") ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Index.source.desc") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+	</div>
 	</div>
 	</div>
 </div>

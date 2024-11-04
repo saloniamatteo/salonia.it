@@ -30,4 +30,11 @@
 
 	<!-- JS for header -->
 	<script src="/js/header.js" defer></script>
+
+	<!-- Lucide Icons styles -->
+	<style>
+	.lucide {
+		stroke-width: 1.7;
+	}
+	</style>
 </head>

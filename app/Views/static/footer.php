@@ -1,3 +1,7 @@
+<!-- Icons -->
+<script src="/js/lucide.min.js"></script>
+<script>lucide.createIcons()</script>
+
 <!-- Footer -->
 <footer class="footer bg-black px-4 pt-4 pb-3 mt-0 u-center u-shadow-inset">
 	<a href="https://salonia.it">

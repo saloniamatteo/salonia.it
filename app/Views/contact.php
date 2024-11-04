@@ -33,9 +33,7 @@
 		<div class="tile level">
 			<a href="https://instagram.com/saloniainfrastrutture" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img src="/pics/instagram.png" alt="Instagram logo" loading="lazy">
-				</figure>
+				<i data-lucide="instagram" class="text-gray-900 mt-1 w-5"></i>
 			</div>
 
 			<div class="tile__container">
@@ -54,9 +52,7 @@
 		<div class="tile level mt-1">
 			<a href="https://threads.net/@saloniainfrastrutture" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img src="/pics/threads.png" alt="Threads logo" loading="lazy">
-				</figure>
+				<i data-lucide="at-sign" class="text-gray-900 mt-1 w-5"></i>
 			</div>
 
 			<div class="tile__container">
@@ -75,9 +71,7 @@
 		<div class="tile level mt-1">
 			<a href="https://www.facebook.com/profile.php?id=61566822561811" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img src="/pics/facebook.png" alt="Facebook logo" loading="lazy">
-				</figure>
+				<i data-lucide="facebook" class="text-gray-900 mt-1 w-5"></i>
 			</div>
 
 			<div class="tile__container">
@@ -96,9 +90,7 @@
 		<div class="tile level mt-1">
 			<a href="https://g.page/r/CWbzRIvNa8T_EBM" class="u-flex">
 			<div class="tile__icon">
-				<figure class="w-5 mt-1" style="margin-left: 0.25rem !important">
-				<img style="margin-left: 0.35rem!important" src="/pics/maps.png" alt="Google Maps logo" loading="lazy">
-				</figure>
+				<i data-lucide="map-pin" class="text-gray-900 mt-1 w-5"></i>
 			</div>
 
 			<div class="tile__container">
@@ -117,7 +109,7 @@
 		<div class="tile level mt-1">
 			<a href="mailto:assistenza@salonia.it" class="u-flex">
 			<div class="tile__icon">
-				<p class="u-text-center w-6 my-0" style="font-size: 2rem!important">📧</p>
+				<i data-lucide="mail" class="text-gray-900 mt-1 w-5"></i>
 			</div>
 
 			<div class="tile__container">
@@ -143,7 +135,7 @@
 		<div class="tile level">
 			<div class="tile__icon">
 			<a href="mailto:saloniamatteo@pm.me">
-				<p class="u-text-center w-6 my-0" style="font-size: 2rem!important">📧</p>
+				<i data-lucide="mail" class="text-gray-900 mt-1 w-5"></i>
 			</a>
 			</div>
 
@@ -169,7 +161,7 @@
 		<div class="tile level">
 			<div class="tile__icon">
 			<a href="mailto:matteo@salonia.it">
-				<p class="u-text-center w-6 my-0" style="font-size: 2rem!important">📧</p>
+				<i data-lucide="mail" class="text-gray-900 mt-1 w-5"></i>
 			</a>
 			</div>
 
