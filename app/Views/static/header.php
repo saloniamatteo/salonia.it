@@ -56,7 +56,9 @@
 			<div class="nav-item has-sub toggle-hover px-0">
 				<!-- Dropdown -->
 				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0" href="#">
-					<span class="u u-LR">💻&nbsp;&nbsp;<?= lang("Glob.pages") ?></span>
+					<i data-lucide="laptop" class="text-gray-900 w-3"></i>
+					&nbsp;
+					<?= lang("Glob.pages") ?>
 				</a>
 
 				<ul class="dropdown-menu dropdown-animated" id="pages-menu" role="menu">
@@ -167,7 +169,9 @@
 			<div class="nav-item has-sub toggle-hover px-0">
 				<!-- Dropdown -->
 				<a class="font-bold nav-dropdown-link text-gray-900 py-0 m-0" href="#">
-					<span class="u u-LR">🔗&nbsp;&nbsp;<?= lang("Glob.links") ?></span>
+					<i data-lucide="link" class="text-gray-900 w-3"></i>
+					&nbsp;
+					<?= lang("Glob.links") ?>
 				</a>
 
 				<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu">
