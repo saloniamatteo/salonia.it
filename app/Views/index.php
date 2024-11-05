@@ -19,7 +19,7 @@
 	<!-- Text -->
 	<div class="grid-c-9 grid-r-3 ml-2">
 		<!-- Hello -->
-		<h2 class="text-gray-300 mb-0 mt-4" style="font-size: 2rem!important; line-height: 2rem!important"><?= lang('Index.welcome.hello') ?>,</h2>
+		<h2 class="text-gray-300 mb-0 mt-3" style="font-size: 2rem!important; line-height: 2rem!important"><?= lang('Index.welcome.hello') ?>,</h2>
 		<h1 class="text-white my-0" style="font-size: 2.8rem!important; line-height: 3rem!important">
 		<span class="text-gray-300" style="font-size: 2rem!important; line-height: 1.75rem!important">
 		<?= lang('Index.welcome.im') ?> </span>
