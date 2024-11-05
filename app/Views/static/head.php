@@ -34,8 +34,12 @@
 	<script src="/js/header.js" defer></script>
 	<script src="/js/events.js" defer></script>
 
-	<!-- Lucide Icons styles -->
+	<!-- Overrides -->
 	<style>
+	.card {
+		box-shadow: none;
+	}
+
 	.lucide {
 		stroke-width: 1.7;
 	}

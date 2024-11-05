@@ -72,7 +72,7 @@
 
 	<!-- Percorso formativo -->
 	<div class="grid-c-12 mr-4-lg u-text-left" id="timeline">
-	<div class="card">
+	<div class="card u-border-1 border-gray-500">
 	<div class="m-3 tile level">
 		<div class="tile__container">
 			<p class="tile__title text-lg">

@@ -24,7 +24,7 @@
 	</p>
 
 	<div class="content u-text-left w-90p-md">
-	<div class="card">
+	<div class="card u-border-1 border-gray-500">
 	<div class="m-3">
 		<!-- librsvg -->
 		<div class="tile level">

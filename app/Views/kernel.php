@@ -113,7 +113,7 @@
 		</ul>
 		</p>
 
-		<div class="card bg-warning">
+		<div class="card u-border-1 bg-warning">
 			<p class="m-3">
 				<?= lang('Kernel.intro.note') ?>
 			</p>
@@ -164,7 +164,7 @@ cd /usr/src/usr-kernel</code></pre>
 
 		<br>
 
-		<div class="card bg-info text-white">
+		<div class="card u-border-1 border-black bg-info text-white">
 			<p class="m-3">
 				<?= lang('Kernel.setup.s1.note') ?>
 			</p>
@@ -180,7 +180,7 @@ cd /usr/src/usr-kernel</code></pre>
 			<?= lang('Kernel.setup.s2.desc') ?>
 		</p>
 
-		<div class="card bg-info text-white">
+		<div class="card u-border-1 border-black bg-info text-white">
 			<p class="m-3">
 				<?= lang('Kernel.setup.s2.note') ?>
 			</p>
@@ -450,7 +450,7 @@ cd /usr/src/usr-kernel</code></pre>
 		<?= lang('Kernel.setup.s6.cmd') ?>
 		</p>
 
-		<div class="card bg-info text-white">
+		<div class="card u-border-1 border-black bg-info text-white">
 			<p class="m-3">
 				<?= lang('Kernel.setup.s6.note') ?>
 			</p>
