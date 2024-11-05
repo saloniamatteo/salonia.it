@@ -48,7 +48,8 @@
 
 	<!-- Picture -->
 	<div class="grid-c-3 grid-r-3 mr-2 u-center">
-		<img class="w-32 mt-2 u-round-lg" src="/pics/me2.jpeg" alt="Matteo Salonia">
+		<!-- Load a low-quality image; after loading, using JS, load a higher-quality pic -->
+		<img class="w-32 mt-2 u-round-lg" src="/pics/me2-lq.jpeg" alt="Matteo Salonia" onload="this.onload=null;this.src='/pics/me2.jpeg'">
 	</div>
 </div>
 </div>
