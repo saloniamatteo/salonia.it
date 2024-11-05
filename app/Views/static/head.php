@@ -30,7 +30,7 @@
 
 	<!-- JS -->
 	<script src="/js/hash.js" defer></script>
-	<script src="/js/lucide.min.js" type="module" defer></script>
+	<script src="/js/lucide.min.js" defer></script>
 	<script src="/js/header.js" defer></script>
 	<script src="/js/events.js" defer></script>
 
