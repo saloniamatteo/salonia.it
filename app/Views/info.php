@@ -34,7 +34,7 @@
 <div class="content">
 	<div class="grid-sm u-gap-2 u-text-left">
 		<div class="grid-c-4 grid-r-3">
-			<img class="img-stretch mb-2 u-round-lg" src="/pics/me.jpeg" loading="lazy">
+			<img class="img-stretch mb-2 u-round-lg" src="/pics/me.jpeg" loading="lazy" alt="Matteo Salonia">
 		</div>
 
 		<div class="grid-c-8-md ml-1-md">
