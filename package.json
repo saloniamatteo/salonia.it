@@ -1,0 +1,15 @@
+{
+  "name": "Matteo Salonia",
+  "version": "1.0.0",
+  "description": "Matteo Salonia's website",
+  "author": "Matteo Salonia",
+  "homepage": "https://salonia.it",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "postcss": "^8.4.47",
+    "purgecss": "^6.0.0"
+  },
+  "scripts": {
+    "purge": "purgecss -con 'app/Views/**/*.php' -css 'public/css/cirrus.min.css' -font -keyframes -v -o public/css/"
+  }
+}

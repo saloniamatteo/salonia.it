@@ -124,3 +124,6 @@ nb-configuration.xml
 
 /results/
 /phpunit*.xml
+
+# Node modules
+node_modules
