@@ -25,11 +25,14 @@
 	<link rel="stylesheet" href="/css/fonts/fonts.css">
 
 	<!-- Preload fonts to reduce CLS -->
-	<link rel="preload" href="/css/fonts/Montserrat.woff2" as="font" type="font/woff2">
-	<link rel="preload" href="/css/fonts/NunitoSans.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="/css/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/css/fonts/NunitoSans.woff2" as="font" type="font/woff2" crossorigin>
 
-	<!-- JS for header -->
+	<!-- JS -->
+	<script src="/js/hash.js" defer></script>
+	<script src="/js/lucide.min.js" type="module" defer></script>
 	<script src="/js/header.js" defer></script>
+	<script src="/js/events.js" defer></script>
 
 	<!-- Lucide Icons styles -->
 	<style>
