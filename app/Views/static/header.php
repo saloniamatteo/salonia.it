@@ -72,7 +72,7 @@
 					<!-- Kernel -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('kernel') ?>">
-							<i data-lucide="book-open-text" class="text-gray-900 w-3"></i>
+							<i data-lucide="server-cog" class="text-gray-900 w-3"></i>
 							&nbsp;
 							<?= lang("Index.kernel.title") ?>
 						</a>
@@ -81,7 +81,7 @@
 					<!-- Packages -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('packages') ?>">
-							<i data-lucide="folder-cog" class="text-gray-900 w-3"></i>
+							<i data-lucide="package" class="text-gray-900 w-3"></i>
 							&nbsp;
 							<?= lang("Index.packages.title") ?>
 						</a>
