@@ -4,8 +4,7 @@ return [
 	"title"				=> "Matteo Salonia",
 	"desc"				=> "Welcome to Matteo Salonia's website.",
 	"welcome"			=> [
-		"hello"			=> "Hello",
-		"im"			=> "I'm",
+		"hello"			=> "Hello, I'm",
 		"desc"			=> "Welcome to my website! Discover many GNU/Linux resources, my contacts, various tools, and much more.",
 		"sid"			=> "Looking for",
 	],

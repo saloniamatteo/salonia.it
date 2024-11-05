@@ -4,8 +4,7 @@ return [
 	"title"				=> "Matteo Salonia",
 	"desc"				=> "Benvenuto nel sito di Matteo Salonia.",
 	"welcome"			=> [
-		"hello"			=> "Ciao",
-		"im"			=> "sono",
+		"hello"			=> "Ciao, sono",
 		"desc"			=> "Benvenuto sul mio sito web! Scopri vaste risorse per GNU/Linux, i miei contatti, vari strumenti, e molto altro ancora.",
 		"sid"			=> "Cerchi",
 	],
