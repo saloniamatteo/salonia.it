@@ -19,8 +19,8 @@
 	<!-- Text -->
 	<div class="grid-c-9 grid-r-3 ml-2">
 		<!-- Hello -->
-		<h2 class="text-gray-300 mb-0 mt-4" style="font-size: 2rem!important; line-height: 1.25rem!important"><?= lang('Index.welcome.hello') ?>,</h2>
-		<h1 class="text-white my-0" style="font-size: 2.8rem!important">
+		<h2 class="text-gray-300 mb-0 mt-4" style="font-size: 2rem!important; line-height: 2rem!important"><?= lang('Index.welcome.hello') ?>,</h2>
+		<h1 class="text-white my-0" style="font-size: 2.8rem!important; line-height: 3rem!important">
 		<span class="text-gray-300" style="font-size: 2rem!important; line-height: 1.75rem!important">
 		<?= lang('Index.welcome.im') ?> </span>
 		Matteo Salonia.
@@ -48,7 +48,7 @@
 
 	<!-- Picture -->
 	<div class="grid-c-3 grid-r-3 mr-2 u-center">
-		<img class="w-32 mt-2 u-round-lg" src="/pics/me.jpeg">
+		<img class="w-32 mt-2 u-round-lg" src="/pics/me2.jpeg" alt="Matteo Salonia">
 	</div>
 </div>
 </div>
