@@ -19,7 +19,7 @@ class Throttler implements FilterInterface {
         // Restrict an IP address to no more than 5 HTTP requests
         // every 3 seconds across the entire site.
         $ip        = md5($request->getIPAddress());
-        $capacity  = 5;
+        $capacity  = 20;
         $seconds   = 3;
 
         // check(key, capacity, seconds, cost)
