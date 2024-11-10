@@ -23,8 +23,10 @@
 		<?= lang('Contact.welcome.desc') ?>
 	</p>
 
+	<!-- Salonia Infrastrutture Digitali -->
 	<div class="content u-text-left w-90p-md">
-		<!-- Salonia Infrastrutture Digitali -->
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-2">
 		<h5 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="sid">
 			<a class="text-white" href="#sid"><?= lang("Contact.sid.desc") ?></a>
 		</h5>
@@ -123,10 +125,14 @@
 			</div>
 			</a>
 		</div>
+	</div>
+	</div>
+	</div>
 
-		<div class="divider"></div>
-
-		<!-- Personal -->
+	<!-- Personal -->
+	<div class="content u-text-left w-90p-md">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-2">
 		<h5 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="personal">
 			<a class="text-white" href="#personal"><?= lang("Contact.personal.desc") ?></a>
 		</h5>
@@ -182,6 +188,8 @@
 			</div>
 			</a>
 		</div>
+	</div>
+	</div>
 	</div>
 
 	<div class="mt-8">

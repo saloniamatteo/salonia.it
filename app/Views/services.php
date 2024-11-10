@@ -53,7 +53,11 @@
 				</a>.
 			</p>
 		</div>
+	</div>
 
+	<div class="content u-text-left">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-2">
 		<!-- Webdev -->
 		<h3 class="tag tag--lg bg-blue-700 my-0" id="webdev">
 			<a class="text-white" href="#webdev">
@@ -120,10 +124,12 @@
 			<?= lang('Services.webdev.seo.desc') ?>
 		</p>
 	</div>
-
-	<div class="divider"></div>
+	</div>
+	</div>
 
 	<div class="content u-text-left">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-2">
 		<!-- Web services -->
 		<h3 class="tag tag--lg bg-blue-700 my-0" id="webserv">
 			<a class="text-white" href="#webserv">
@@ -156,6 +162,8 @@
 		<p class="mt-0 mb-0">
 			<?= lang('Services.webserv.server.desc') ?>
 		</p>
+	</div>
+	</div>
 	</div>
 
 	<div class="mt-8">
