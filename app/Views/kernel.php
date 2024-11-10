@@ -42,9 +42,9 @@
 	</a>
 	</p>
 
-	<div class="divider"></div>
-
-	<div class="content u-text-left">
+	<div class="content u-text-left w-90p-md">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-3">
 		<!-- Intro -->
 		<h3 class="tag tag--xl bg-blue-700 my-0" id="intro">
 			<a class="text-white" href="#intro">
@@ -138,7 +138,13 @@
 		<p>
 			<?= lang('Kernel.intro.configs.subd') ?>
 		</p>
+	</div>
+	</div>
+	</div>
 
+	<div class="content u-text-left w-90p-md">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-3">
 		<h3 class="tag tag--xl bg-blue-700 my-0" id="setup">
 			<a class="text-white" href="#setup">
 				<?= lang('Kernel.go-to.setup') ?>
@@ -459,7 +465,13 @@ cd /usr/src/usr-kernel</code></pre>
 		<p>
 			<?= lang('Kernel.setup.s6.desc2') ?>
 		</p>
+	</div>
+	</div>
+	</div>
 
+	<div class="content u-text-left w-90p-md">
+	<div class="card u-border-1 border-gray-500">
+	<div class="m-3">
 		<h3 class="tag tag--xl bg-blue-700 my-0" id="extra">
 			<a class="text-white" href="#extra">
 				<?= lang('Kernel.go-to.extra') ?>
@@ -560,6 +572,8 @@ early_microcode="yes"
 
 		<?= lang('Kernel.extra.bootloader.cmd') ?>
 		</p>
+	</div>
+	</div>
 	</div>
 
 	<div class="mt-8">
