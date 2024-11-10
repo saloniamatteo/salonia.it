@@ -25,6 +25,10 @@ return [
 		"title"		=> "Kernel",
 		"desc"		=> "All of the changes I've made to the Kernel to make it more performant and more efficient.",
 	],
+	"dns"		=> [
+		"title"		=> "DoH server",
+		"desc"		=> "Discover how to use my DNS-over-HTTPS (DoH) server.",
+	],
 	"packages"		=> [
 		"title"		=> "Packages",
 		"desc"		=> "My packages for Gentoo Linux.",
