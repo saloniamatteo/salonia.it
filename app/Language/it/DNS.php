@@ -13,8 +13,8 @@ return [
 		"params"	=> "Parametri",
 	],
 	"intro"			=> [
-		"desc"		=> "Cos'è un server DoH? Un <strong>server DNS-over-HTTPS</strong> è un server che riceve una <strong>%s</strong> tramite <strong>%s</strong>. L'obiettivo principale del protocollo DoH è di aumentare la privacy dell'utente e la sicurezza prevenendo intercettazioni e manipolazioni dei dati del DNS attraverso attacchi %s.",
-		"dns"		=> "query DNS",
+		"desc"		=> "Cos'è un server DoH? Un <strong>server DNS-over-HTTPS</strong> è un server che riceve una %s tramite %s. L'obiettivo principale del protocollo DoH è di aumentare la privacy dell'utente e la sicurezza prevenendo intercettazioni e manipolazioni dei dati del DNS attraverso attacchi %s.",
+		"dns"		=> "<strong>query DNS</strong>",
 		"dns-link"	=> "https://it.wikipedia.org/wiki/Domain_Name_System",
 		"http"		=> "<strong>HTTP(S)</strong>",
 		"http-link"	=> "https://it.wikipedia.org/wiki/HTTP",
