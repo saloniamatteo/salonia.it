@@ -140,6 +140,27 @@
 
 		<div class="divider my-2"></div>
 
+		<!-- DNS -->
+		<div class="tile level">
+			<a href="<?= sub_url('dns') ?>" class="u-flex">
+			<div class="tile__icon mx-2">
+				<i data-lucide="network" class="text-gray-900 mt-1 w-4"></i>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700 u u-LR">
+					<?= lang("Index.dns.title") ?>
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang("Index.dns.desc") ?>
+				</p>
+			</div>
+			</a>
+		</div>
+
+		<div class="divider my-2"></div>
+
 		<!-- Packages -->
 		<div class="tile level">
 			<a href="<?= sub_url('packages') ?>" class="u-flex">

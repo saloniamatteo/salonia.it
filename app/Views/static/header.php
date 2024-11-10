@@ -78,6 +78,15 @@
 						</a>
 					</li>
 
+					<!-- DNS -->
+					<li role="menuitem">
+						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('dns') ?>">
+							<i data-lucide="network" class="text-gray-900 w-3"></i>
+							&nbsp;
+							<?= lang("Index.dns.title") ?>
+						</a>
+					</li>
+
 					<!-- Packages -->
 					<li role="menuitem">
 						<a class="u u-LR font-bold u-flex text-gray-800 pb-0" href="<?= sub_url('packages') ?>">
