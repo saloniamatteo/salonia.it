@@ -1,7 +1,8 @@
 // These events are fired AFTER the page has loaded,
 // thanks to this script being called with the "defer" attribute.
+// ==============================================================
 // Event listener: hashChange
-window.addEventListener("hashchange", handleHashChange());
+window.onhashchange = () => { handleHashChange() };
 
 // DOMContentLoaded (see above)
 // Handle hash change
