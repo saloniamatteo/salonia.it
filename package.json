@@ -10,6 +10,6 @@
     "purgecss": "^6.0.0"
   },
   "scripts": {
-    "purge": "purgecss -con 'app/Views/**/*.php' -css 'public/css/cirrus.min.css' -font -keyframes -v -o public/css/"
+    "purge": "purgecss -con 'app/Views/**/*.php' -css 'public/css/cirrus.min.css' --safelist 'active' -font -keyframes -v -o public/css/"
   }
 }
