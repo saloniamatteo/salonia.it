@@ -43,13 +43,9 @@ function replace_lang($uri, $reqlang): string {
 /**
  * Returns a URL based on the current chosen locale
  */
-function sub_url($page): string {
+function sub_url($page = ""): string {
 	/* Get base URL */
 	$base = base_url();
-
-	/* If no page was provided, fall back to root URL */
-	if (empty(esc($page)))
-		return $base;
 
 	/* Get the URI */
 	$uri = uri_string();
@@ -63,7 +59,7 @@ function sub_url($page): string {
 	/* If URI starts with requested locale, then
 	 * return string prepended with it */
 	if (str_starts_with($uri, $locale))
-		return prep_url($base . $locale . "/" . $page);
+		return prep_url($base . $locale . "/" . esc($page));
 
 	/* No locale was chosen: return URL without it */
 	return prep_url($base . $page);

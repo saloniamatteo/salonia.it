@@ -1,7 +1,7 @@
 <!-- Header -->
 <div class="header header-fixed u-unselectable u-shadow-none" style="border-bottom: 1px solid">
 	<div class="header-brand">
-		<a href="<?= site_url() ?>">
+		<a href="<?= sub_url() ?>">
 			<img src="/pics/salonia.png" alt="Logo" class="w-24" style="min-width: 180px">
 		</a>
 
