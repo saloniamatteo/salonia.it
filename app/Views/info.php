@@ -14,7 +14,7 @@
 <!-- Info -->
 <div class="hero u-text-center u-shadow-inset pt-4">
 <div class="hero-body">
-<div class="content w-90p">
+<div class="content">
 	<h2 class="headline-4">
 		<a class="text-black">
 			<?= lang('Info.welcome.title') ?>

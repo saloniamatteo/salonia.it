@@ -59,7 +59,7 @@
 <!-- Linux & Software -->
 <div class="hero u-text-center mt-4" id="linux-soft">
 <div class="hero-body">
-<div class="content w-90p">
+<div class="content">
 	<h2 class="headline-4">
 		<a class="text-black" href="#linux-soft">
 			<?= lang("Index.linux-soft.title") ?>
@@ -210,7 +210,7 @@
 <!-- About me -->
 <div class="hero u-text-center" id="about">
 <div class="hero-body">
-<div class="content w-90p">
+<div class="content">
 	<h2 class="headline-4">
 		<a class="text-black" href="#about">
 			<?= lang('Index.about.title') ?>
@@ -349,7 +349,7 @@
 <!-- Tools & Links -->
 <div class="hero u-text-center" id="tools-links">
 <div class="hero-body">
-<div class="content w-90p">
+<div class="content">
 	<h2 class="headline-4">
 		<a class="text-black" href="#tools-links">
 			<?= lang("Index.tools-links.title") ?>
