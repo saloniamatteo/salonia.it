@@ -337,6 +337,16 @@ cd /usr/src/usr-kernel</code></pre>
 				</tr>
 			</thead>
 
+			<tfoot class="bg-blue-700 text-white">
+				<tr>
+					<th><?= lang('Kernel.setup.s4.table.sflag') ?></th>
+					<th><?= lang('Kernel.setup.s4.table.lflag') ?></th>
+					<th class="u-align-middle">
+						<?= lang('Kernel.setup.s4.table.desc') ?>
+					</th>
+				</tr>
+			</tfoot>
+
 			<tbody>
 				<tr>
 					<td>-b</td>
@@ -353,13 +363,29 @@ cd /usr/src/usr-kernel</code></pre>
 				<tr>
 					<td>-d</td>
 					<td>--distcc</td>
-					<td><?= lang('Kernel.setup.s4.table.d') ?></td>
+					<td>
+						<?php
+							$msg = lang('Kernel.setup.s4.table.d');
+							$msg_link = "<a class='link u u-LR' href='https://www.distcc.org'>distcc</a>";
+							$fmt_msg = sprintf($msg, $msg_link);
+
+							echo $fmt_msg;
+						?>
+					</td>
 				</tr>
 
 				<tr>
 					<td>-e</td>
 					<td>--ccache</td>
-					<td><?= lang('Kernel.setup.s4.table.e') ?></td>
+					<td>
+						<?php
+							$msg = lang('Kernel.setup.s4.table.e');
+							$msg_link = "<a class='link u u-LR' href='https://ccache.dev'>ccache</a>";
+							$fmt_msg = sprintf($msg, $msg_link);
+
+							echo $fmt_msg;
+						?>
+					</td>
 				</tr>
 
 				<tr>
@@ -399,9 +425,29 @@ cd /usr/src/usr-kernel</code></pre>
 				</tr>
 
 				<tr>
+					<td>-r</td>
+					<td>--bore</td>
+					<td><?= lang('Kernel.setup.s4.table.r') ?></td>
+				</tr>
+
+				<tr>
 					<td>-v</td>
 					<td>--v4l2</td>
-					<td><?= lang('Kernel.setup.s4.table.v') ?></td>
+					<td>
+						<?php
+							$msg = lang('Kernel.setup.s4.table.v');
+							$msg_link = "<a class='link u u-LR' href='https://github.com/umlaeute/v4l2loopback'>v4l2loopback</a>";
+							$fmt_msg = sprintf($msg, $msg_link);
+
+							echo $fmt_msg;
+						?>
+					</td>
+				</tr>
+
+				<tr>
+					<td>-z</td>
+					<td>--vars</td>
+					<td><?= lang('Kernel.setup.s4.table.z') ?></td>
 				</tr>
 			</tbody>
 		</table>
