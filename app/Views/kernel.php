@@ -326,7 +326,7 @@ cd /usr/src/usr-kernel</code></pre>
 		</p>
 
 		<div class="table-container">
-		<table class="table bordered striped">
+		<table class="table bordered striped" style="min-width: 400px">
 			<thead class="bg-blue-700 text-white">
 				<tr>
 					<th><?= lang('Kernel.setup.s4.table.sflag') ?></th>
