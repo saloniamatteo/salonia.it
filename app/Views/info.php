@@ -12,8 +12,8 @@
 <?= $this->include("static/header") ?>
 
 <!-- Info -->
-<div class="hero u-text-center u-shadow-inset pt-4">
-<div class="hero-body">
+<div class="hero u-text-center pt-4">
+<div class="hero-body pb-1">
 <div class="content">
 	<h2 class="headline-4">
 		<a class="text-black">
@@ -29,8 +29,8 @@
 </div>
 
 <!-- About me -->
-<div class="hero u-text-center bg-blue-200 u-shadow-inset">
-<div class="hero-body m-2-sm">
+<div class="hero u-text-center">
+<div class="hero-body m-2-sm pt-1">
 <div class="content">
 	<div class="grid-sm u-gap-2 u-text-left">
 		<div class="grid-c-4 grid-r-3">

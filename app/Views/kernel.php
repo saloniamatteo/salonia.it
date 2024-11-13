@@ -12,7 +12,7 @@
 <?= $this->include("static/header") ?>
 
 <!-- Kernel -->
-<div class="hero u-text-center u-shadow-inset pt-4">
+<div class="hero u-text-center pt-4">
 <div class="hero-body">
 <div class="content">
 	<h2 class="headline-4 text-black">

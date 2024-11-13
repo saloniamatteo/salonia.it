@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="footer bg-black px-4 pt-4 pb-3 mt-0 u-center u-shadow-inset">
+<footer class="footer bg-black p-4 mt-0 u-center">
 	<a href="https://salonia.it">
 		<img src="/pics/saloniaw.png" alt="Logo" style="min-width: 180px; width: 14rem !important" loading="lazy">
 	</a>
