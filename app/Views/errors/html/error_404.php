@@ -18,19 +18,34 @@
 	<link rel="stylesheet" href="/css/fonts/fonts.css">
 
 	<!-- Preload fonts to reduce CLS -->
-	<link rel="preload" href="/css/fonts/Montserrat.woff2" as="font" type="font/woff2">
-	<link rel="preload" href="/css/fonts/NunitoSans.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="/css/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/css/fonts/NunitoSans.woff2" as="font" type="font/woff2" crossorigin>
 
-	<!-- JS for header -->
+	<!-- JS -->
+	<script src="/js/hash.js" defer></script>
+	<script src="/js/lucide.min.js" defer></script>
 	<script src="/js/header.js" defer></script>
+	<script src="/js/events.js" defer></script>
+
+	<!-- Overrides -->
+	<style>
+	.card {
+		box-shadow: none;
+	}
+
+	.lucide {
+		stroke-width: 1.7;
+	}
+	</style>
 </head>
 
 <body>
 	<?= view("static/header") ?>
 
-	<div class="card w-90p-md u-center mt-12 bg-red-200">
-	<div class="content p-3 u-text-center">
-		<h4 class="u-round-xs u-inline-flex bg-red-600 text-white my-0 py-1 px-2">
+	<div class="content u-text-left mt-12 mb-5 w-90p-md">
+	<div class="card u-border-1 border-danger">
+	<div class="m-2 u-text-center">
+		<h4 class="u-round-xs u-inline-flex bg-red-600 text-white mb-1 py-1 px-2">
 			<?= lang('Glob.404.extended') ?>
 		</h4>
 
@@ -41,27 +56,12 @@
 			 <?= lang('Glob.404.admin') ?>.
 		</p>
 
-		<a class="tag tag--md bg-blue-700 text-white" href="<?= site_url() ?>">
+		<a class="tag tag--md bg-blue-700 text-white mt-2" href="<?= site_url() ?>">
 			<?= lang('Glob.to-main') ?>
 		</a>
 	</div>
 	</div>
-
-	<?php if (ENVIRONMENT !== 'production') : ?>
-		<div class="divider w-90p-md u-center my-4"></div>
-
-		<div class="card w-90p-md u-center">
-		<div class="content p-3 u-text-left">
-			<h5>Error:</h5>
-
-			<p>
-				<?= nl2br(esc($message)) ?>
-			</p>
-		</div>
-		</div>
-	<?php endif; ?>
-
-	<br><br>
+	</div>
 
 	<?= view("static/footer") ?>
 </body>
