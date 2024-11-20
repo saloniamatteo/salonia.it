@@ -35,12 +35,12 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title font-bold text-md">
+				<p class="tile__title font-bold text-lg">
 					Monero
 				</p>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('Donate.oa.title') ?>
+					<?= lang('Donate.xmr.title') ?>
 				</p>
 
 				<p class="tile__subtitle">
@@ -51,15 +51,53 @@
 					<span class="font-bold text-black">matteo@salonia.it</span>
 				</p>
 
-				<div class="divider"
-				data-content="<?= lang('Donate.or') ?>"></div>
+				<div class="my-2"></div>
 
 				<p class="tile__subtitle text-black">
-					<?= lang('Donate.oa.addr') ?>
+					<?= lang('Donate.xmr.addr') ?>
 				</p>
 
 				<p class="tile__subtitle text-black font-bold" style="word-break: break-all">
 					43cgqumPkUAXhL4cx5bn24aZQkg7dUGQtaugoCxNEg1c2kbUY14y5jJMBwju2vqqZDeCJvSsn3SC7cDLuv5ZSeth4CV71cz
+				</p>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<!-- Bitcoin -->
+		<div class="tile level">
+			<div class="tile__icon">
+				<figure class="w-5">
+				<img src="/pics/btc.png" loading="lazy">
+				</figure>
+			</div>
+
+			<div class="tile__container">
+				<p class="tile__title font-bold text-lg">
+					Bitcoin
+				</p>
+
+				<p class="tile__subtitle text-black">
+					<?= lang('Donate.btc.title') ?>
+				</p>
+
+				<p class="tile__subtitle">
+					<span class="font-bold text-black">salonia.it</span>
+					<span class="text-gray-600"> | </span>
+					<span class="font-bold text-black">matteo.salonia.it</span>
+					<span class="text-gray-600"> | </span>
+					<span class="font-bold text-black">matteo@salonia.it</span>
+				</p>
+
+				<div class="my-2"></div>
+
+				<p class="tile__subtitle text-black">
+					<?= lang('Donate.btc.addr') ?>
+				</p>
+
+				<p class="tile__subtitle text-black font-bold" style="word-break: break-all">
+					sp1qq2wuevaqz4e0s9z3sy0lr5vqfr34e4rauf8k6kywmuhaa99xp2y6gq7fpv592ltlr59y9au4yd60qr2vt6yjjxsxvqvsjdgy3vavsum3jv5euk75
 				</p>
 			</div>
 		</div>
@@ -75,7 +113,7 @@
 			</div>
 
 			<div class="tile__container">
-				<p class="tile__title font-bold text-md">
+				<p class="tile__title font-bold text-lg">
 					PayPal
 				</p>
 
@@ -85,8 +123,7 @@
 					<span class="font-bold text-black">saloniamatteo</span>
 				</p>
 
-				<div class="divider"
-				data-content="<?= lang('Donate.or') ?>"></div>
+				<div class="my-2"></div>
 
 				<p class="tile__subtitle text-black">Link:</p>
 

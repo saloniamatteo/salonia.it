@@ -7,9 +7,12 @@ return [
 		"title"		=> "Donazioni",
 		"desc"		=> "Vuoi sostenere me e/o il mio lavoro? Aiutami inviandomi una donazione.",
 	],
-	"oa"			=> [
-		"title"		=> "Indirizzi OpenAlias",
+	"xmr"			=> [
+		"title"		=> "Indirizzi OpenAlias (Monero)",
 		"addr"		=> "Indirizzo",
 	],
-	"or"			=> "OPPURE",
+	"btc"			=> [
+		"title"		=> "Indirizzi OpenAlias (Bitcoin)",
+		"addr"		=> "Indirizzo Silent Payments",
+	],
 ];

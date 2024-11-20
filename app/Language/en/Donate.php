@@ -7,9 +7,12 @@ return [
 		"title"		=> "Donate",
 		"desc"		=> "Want to support me and/or my work? Help by sending a donation.",
 	],
-	"oa"			=> [
-		"title"		=> "OpenAlias Addresses",
+	"xmr"			=> [
+		"title"		=> "OpenAlias Addresses (Monero)",
 		"addr"		=> "Address",
 	],
-	"or"			=> "OR",
+	"btc"			=> [
+		"title"		=> "OpenAlias Addresses (Bitcoin)",
+		"addr"		=> "Silent Payments Address",
+	],
 ];
