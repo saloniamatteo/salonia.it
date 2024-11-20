@@ -7,6 +7,9 @@ Additionally, [PurgeCSS](https://purgecss.com) is used in order to strip out unu
 [CirrusUI](https://cirrus-ui.com) is the used CSS Framework,
 and icons come from [Lucide](https://lucide.dev).
 
+## Donate
+Support this project: [salonia.it/donate](https://salonia.it/donate)
+
 ## Dependencies
 ### Runtime dependencies
 - `php`
