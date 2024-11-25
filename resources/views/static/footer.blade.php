@@ -1,8 +1,11 @@
 <!-- Footer -->
 <footer class="footer bg-black p-4 mt-0 u-center">
 	<a href="https://salonia.it">
-		<img src="{{ Vite::asset('resources/img/saloniaw.png') }}"
-		alt="Logo" style="min-width: 180px; width: 14rem !important" loading="lazy">
+		<!-- Instead of including yet another image, include the same image
+		     as the header, then we use CSS to invert the colors -->
+		<img src="{{ Vite::asset('resources/img/salonia.png') }}"
+		alt="Logo" loading="lazy"
+		style="min-width: 180px; width: 14rem !important; filter: invert(1)">
 	</a>
 
 	<h4 class="title text-white mt-1 mb-1" style="padding-top: 0.15em !important">Infrastrutture Digitali</h4>
