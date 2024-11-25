@@ -1,4 +1,4 @@
-// Assets
+// Load assets (for Vite)
 import.meta.glob([
     '../img/*',
     '../css/fonts/*.woff2',
@@ -41,17 +41,17 @@ function handleHashChange() {
 
         if (targetElement) {
             // Get the height of the fixed header
-            const headerOffset = document.querySelector('.header').offsetHeight; // Adjust the selector as needed
+            const headerOffset = document.querySelector('.header').offsetHeight;
 
             // Calculate the position to scroll to
             // Add 15px on top of element
             const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY - 15;
             const offsetPosition = elementPosition - headerOffset;
 
-            // Scroll to the adjusted position
+            // Smooth scroll to the adjusted position
             window.scrollTo({
                 top: offsetPosition,
-                behavior: 'smooth' // Optional: for smooth scrolling
+                behavior: 'smooth'
             });
         }
     }
