@@ -12,6 +12,34 @@ The following are used for the front-end:
 ## Donate
 Support this project: [salonia.it/donate](https://salonia.it/donate)
 
+## Features
+### Asset bundling
+Assets are bundled and handled by Vite:
+- CSS & JS files are minified (PostCSS and PurgeCSS) and versioned
+- Images are versionsed
+
+This helps with removing unused code, lowering asset size, and lowering load times.
+
+Run `npm run build` to re-generate the asset bundle.
+
+### Components
+Most HTML components (Card, Hero, Tile, etc.) are split up in several files, under `resources/views/components/`.
+This makes it way easier and faster to write new pages, thanks to Blade Templates.
+
+### Caching
+Config, events, views, and routes are cached, making site load-times faster.
+
+Run `composer cache` to cache them.
+
+### Localization
+You can choose between Italian and English via the header links,
+or your browser will automatically negotiate the locale!
+
+Choosing either one will set the site's language to the value you chose,
+without having to store the preference in the session/cookies!
+
+The language preference has effect site-wide, and every internal link follows it.
+
 ## Dependencies
 To deploy this website, you need the following:
 - `php`
