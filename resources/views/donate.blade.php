@@ -1,4 +1,4 @@
-@use('App\Helpers\Locale')
+@use('App\Helpers\Url')
 @include('static/head', [
     "lang"  => app()->getLocale(),
     "title" => __("donate.title"),
@@ -115,7 +115,7 @@
 				<p class="tile__subtitle text-black">
 					Link:
 					&nbsp;
-					{!! Locale::makeLink("https://paypal.me/saloniamatteo", "paypal.me/saloniamatteo") !!}
+					{!! Url::makeLink("https://paypal.me/saloniamatteo", "paypal.me/saloniamatteo") !!}
 				</p>
 			</div>
 			</x-icon-img>

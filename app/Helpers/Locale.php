@@ -158,16 +158,4 @@ class Locale
                 .'</a>';
         }
     }
-
-    // Return a bold string
-    public static function makeBold($text)
-    {
-        return "<strong>$text</strong>";
-    }
-
-    // Return a valid link item
-    public static function makeLink($link, $text)
-    {
-        return "<a class='text-blue-700 u u-LR' href='$link'><strong>$text</strong></a>";
-    }
 }

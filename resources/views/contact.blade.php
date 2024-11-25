@@ -1,4 +1,4 @@
-@use('App\Helpers\Locale')
+@use('App\Helpers\Url')
 @include('static/head', [
     "lang"  => app()->getLocale(),
     "title" => __("contact.title"),
@@ -121,7 +121,7 @@
 				<p class="tile__subtitle text-black">
 					{{ __("contact.me.pm") }}
 					&mdash;&nbsp;
-					{!! Locale::makeLink("/matteo-pm.asc", __("contact.me.gpg")) !!}
+					{!! Url::makeLink("/matteo-pm.asc", __("contact.me.gpg")) !!}
 				</p>
 			</div>
 		</x-tile>
@@ -140,7 +140,7 @@
 				<p class="tile__subtitle text-black">
 					{{ __("contact.me.pserv") }}
 					&mdash;&nbsp;
-					{!! Locale::makeLink("/matteo.asc", __("contact.me.gpg")) !!}
+					{!! Url::makeLink("/matteo.asc", __("contact.me.gpg")) !!}
 				</p>
 			</div>
 		</x-tile>

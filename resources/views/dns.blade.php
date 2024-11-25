@@ -1,4 +1,4 @@
-@use('App\Helpers\Locale')
+@use('App\Helpers\Url')
 @include('static/head', [
     "lang"  => app()->getLocale(),
     "title" => __("dns.title"),
@@ -52,10 +52,10 @@
 			@endphp
 
 			{!! __("dns.intro.desc", [
-				"doh" => Locale::makeBold(__("dns.intro.doh")),
-				"query" => Locale::makeLink($querylink, $query),
-				"http" => Locale::makeLink($httplink, $http),
-				"mitm" => Locale::makeLink($mitmlink, $mitm),
+				"doh" => Url::makeBold(__("dns.intro.doh")),
+				"query" => Url::makeLink($querylink, $query),
+				"http" => Url::makeLink($httplink, $http),
+				"mitm" => Url::makeLink($mitmlink, $mitm),
 			]) !!}
 		</p>
 
@@ -70,7 +70,7 @@
 			@endphp
 
 			{!! __("dns.intro.desc3", [
-				"rproxy" => Locale::makeLink($rproxylink, $rproxy),
+				"rproxy" => Url::makeLink($rproxylink, $rproxy),
 			]) !!}
 		</p>
 	</x-card>
@@ -115,7 +115,7 @@
 			@endphp
 
 			{!! __("dns.params.android.desc", [
-				"rethink" => Locale::makeLink($rethink, "RethinkDNS"),
+				"rethink" => Url::makeLink($rethink, "RethinkDNS"),
 			]) !!}:
 
 			<ol>

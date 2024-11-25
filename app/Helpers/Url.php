@@ -128,4 +128,16 @@ class Url
 
         return 'cv_en.pdf';
     }
+
+    // Return a bold string
+    public static function makeBold($text)
+    {
+        return "<strong>$text</strong>";
+    }
+
+    // Return a valid link item
+    public static function makeLink($link, $text, $color = '700')
+    {
+        return "<a class='text-blue-$color u u-LR' href='$link'><strong>$text</strong></a>";
+    }
 }

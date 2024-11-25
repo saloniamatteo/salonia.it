@@ -1,4 +1,3 @@
-@use('App\Helpers\Locale')
 @use('App\Helpers\Url')
 @include('static/head', [
     "lang"  => app()->getLocale(),
@@ -24,7 +23,7 @@
         @yield('message')
         <br>
         {!! __("errors.persist", [
-            "admin" => Locale::makeLink($adminlink, $admin),
+            "admin" => Url::makeLink($adminlink, $admin),
         ]) !!}
     </p>
 
