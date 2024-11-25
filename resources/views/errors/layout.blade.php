@@ -30,10 +30,8 @@
 
     <div class="divider mx-10"></div>
 
-    <x-home/>
+    @include('static/home')
 </x-card-error>
-
-@yield('code')
 
 @include('static/footer')
 </body>

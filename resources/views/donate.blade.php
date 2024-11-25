@@ -122,7 +122,7 @@
 		</x-tile>
 	</x-card>
 
-	<x-home/>
+	@include('static/home')
 </x-hero>
 
 @include('static/footer')
