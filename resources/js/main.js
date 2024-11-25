@@ -6,9 +6,9 @@ import.meta.glob([
 
 // Icons
 import { createIcons,
-    Binary, BookOpenText, CirclePlus, FileBadge, FolderCog, Github, Globe,
-    HandCoins, Laptop, Link, Network, Package, ScrollText, Search, Send,
-    Server, ServerCog, UserRound
+AtSign, Binary, BookOpenText, CirclePlus, Facebook, FileBadge, FolderCog,
+Github, Globe, HandCoins, Instagram, Laptop, Link, Mail, MapPin, Network,
+Package, ScrollText, Search, Send, Server, ServerCog, UserRound,
 } from 'lucide';
 
 // Make all nav-btns in the page clickable
@@ -75,16 +75,21 @@ document.addEventListener('DOMContentLoaded', () => {
     //lucide.createIcons();
     createIcons({
         icons: {
+            AtSign,
             Binary,
             BookOpenText,
             CirclePlus,
+            Facebook,
             FileBadge,
             FolderCog,
             Github,
             Globe,
             HandCoins,
+            Instagram,
             Laptop,
             Link,
+            Mail,
+            MapPin,
             Network,
             Package,
             ScrollText,
