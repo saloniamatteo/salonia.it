@@ -16,9 +16,9 @@ Support this project: [salonia.it/donate](https://salonia.it/donate)
 ### Asset bundling
 Assets are bundled and handled by Vite:
 - CSS & JS files are minified (PostCSS and PurgeCSS) and versioned
-- Images are versionsed
+- Images are versioned
 
-This helps with removing unused code, lowering asset size, and lowering load times.
+This helps with removing unused code, lowering asset size, and lowering page load times.
 
 Run `npm run build` to re-generate the asset bundle.
 
