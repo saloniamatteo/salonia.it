@@ -40,6 +40,14 @@ without having to store the preference in the session/cookies!
 
 The language preference has effect site-wide, and every internal link follows it.
 
+### Minification
+Every page is minified. Laravel does not do this by default, and there does not
+seem to be a "standard" way to do it, other than downloading some shady package.
+
+I've implemented my own simple HTML minifier, making use of PHP's output buffering.
+
+Additionally, CSS & JS files are minified by PurgeCSS and Vite, respectively.
+
 ## Dependencies
 To deploy this website, you need the following:
 - `php`
