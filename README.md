@@ -17,7 +17,7 @@ Loaded network resources + time:
 ![network](Pictures/network.png)
 
 [PageSpeed](https://pagespeed.web.dev) timings:
-![pagespeed](Screenshots/pagespeed.png)
+![pagespeed](Pictures/pagespeed.png)
 
 ## Features
 ### Asset bundling
