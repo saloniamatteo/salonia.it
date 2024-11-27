@@ -12,6 +12,13 @@ The following are used for the front-end:
 ## Donate
 Support this project: [salonia.it/donate](https://salonia.it/donate)
 
+## Website performance stats
+Loaded network resources + time:
+![network](Pictures/network.png)
+
+[PageSpeed](https://pagespeed.web.dev) timings:
+![pagespeed](Screenshots/pagespeed.png)
+
 ## Features
 ### Asset bundling
 Assets are bundled and handled by Vite:
