@@ -1,6 +1,7 @@
+@use('App\Helpers\Locale')
 @use('App\Helpers\Url')
 <!DOCTYPE html>
-<html lang="{{ $lang ?? 'it' }}">
+<html lang="{{ $lang ?? Locale::getDefaultLocale() }}">
 <head>
 	<title>{{ $title ?? 'Hello, world!' }}</title>
 

@@ -63,6 +63,12 @@ class Locale
         return $matches;
     }
 
+    // Get default locale
+    public static function getDefaultLocale()
+    {
+        return Config::get('locale.languages')[0];
+    }
+
     // Get current locale
     public static function getLocale()
     {
