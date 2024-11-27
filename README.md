@@ -81,11 +81,13 @@ APP_URL="http://localhost"
 The website can now be deployed using the built-in webserver, `php artisan serve`:
 it will be reachable at `localhost` on port `8000`.
 
+If you want to use the built-in webserver, make sure you set `APP_URL` to your website's URL.
+
 If you want to serve this website to the Internet, please make sure you don't use
 `php spark serve`, and rather have a real server.
 I use [nginx](https://nginx.org) with [FastCGI](https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html).
 
-If you want to use the built-in webserver, make sure you set `APP_URL` to your website's URL.
+Make sure you also disable access to `/build/assets/manifest.json`!
 
 ### Assets
 Make sure you bundle the assets used in the website (CSS, fonts, images):
@@ -102,3 +104,192 @@ composer cache
 ```
 
 This will cache PHP config, events, routes, views.
+
+### Sample nginx config
+Note: this config makes the following assumptions:
+- Your site is hosted at `example.com`
+- You use LetsEncrypt (`certbot`) and have deployed an SSL certificate
+- Your `nginx` build supports HTTP2 and HTTP3 (QUIC)
+- You have IPv6 support enabled
+- You use port 80 for HTTP and port 443 for HTTPS
+- You use php-fpm (FastCGI) and call it via `/var/run/php-fpm.sock`
+- You want to disable client uploads
+- You want to redirect every HTTP request to the HTTPS port
+- You want to allow `robots.txt`
+- You want to disable `.well-known`
+
+Remove the `default_server` directives if this isn't your primary website.
+Make sure you movify everything that says "Change this"!
+
+```nginx
+server {
+	# HTTP/1.1 & HTTP/2
+	listen 443 ssl default_server;
+	listen [::]:443 ssl default_server;
+
+	# HTTP/3 (QUIC)
+	listen 443 quic default_server reuseport;
+	listen [::]:443 quic default_server reuseport;
+
+    # Change this!
+	server_name example.com www.example.com _;
+
+	# If the host isn't example.com, redirect the client
+    # Change this!
+	if ($host != example.com) {
+		return 301 https://example.com$request_uri;
+	}
+
+	# HTTP2/3
+	http2 on;
+	http3 on;
+	quic_gso on;
+	quic_retry on;
+	ssl_early_data on;
+
+	# SSL
+	ssl_stapling on;
+	ssl_stapling_verify on;
+	include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_certificate /path/to/fullchain.pem; # Change this!
+    ssl_certificate_key /path/to/privkey.pem; # Change this!
+	ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+	# Site root. Change this!
+	root /var/www/example.com/public;
+
+	# Prevent nginx HTTP Server Detection
+	server_tokens off;
+
+	# Only allow GET requests
+	if ($request_method !~* ^GET$) {
+		return 405;
+	}
+
+	# Disable uploads
+	client_max_body_size 0;
+	client_body_timeout 0s;
+	fastcgi_buffers 64 4K;
+
+	# The settings allows you to optimize the HTTP2 bandwidth.
+	# See https://blog.cloudflare.com/delivering-http-2-upload-speed-improvements for tuning hints
+	client_body_buffer_size 512k;
+
+	# Specify how to handle directories -- specifying `/index.php$request_uri`
+	# here as the fallback means that Nginx always exhibits the desired behaviour
+	# when a client requests a path that corresponds to a directory that exists
+	# on the server. In particular, if that directory contains an index.php file,
+	# that file is correctly served; if it doesn't, then the request is passed to
+	# the front-end controller. This consistent behaviour means that we don't need
+	# to specify custom rules for certain paths (e.g. images and other assets,
+	# `/updater`, `/ocm-provider`, `/ocs-provider`), and thus
+	# `try_files $uri $uri/ /index.php$request_uri`
+	# always provides the desired behaviour.
+	index index.php index.html /index.php$request_uri;
+
+	# Allow robots.txt
+	location = /robots.txt {
+		allow all;
+		log_not_found off;
+	}
+
+	# Disable .well-known
+	location ~ /\.(?!well-known).* {
+		log_not_found off;
+		deny all;
+	}
+
+	# Hide certain paths from clients
+	location ~ ^/(?:3rdparty|config|data|lib|manifest.json|templates|tests)(?:$|/) { return 404; }
+	location ~ ^/(?:\.|autotest|console|db_|indie|issue|occ) { return 404; }
+
+	# Prepend all requests with "/index.php" -- this acts as our front controller.
+	# index.php handles all requests, but we have to hide it.
+	# The line below allows us to do exactly what we want.
+	location / {
+		rewrite ^ /index.php;
+    }
+
+	# Ensure this block, which passes PHP files to the PHP process, is above the blocks
+	# which handle static assets (as seen below). If this block is not declared first,
+	# then Nginx will encounter an infinite rewriting loop when it prepends `/index.php`
+	# to the URI, resulting in a HTTP 500 error response.
+	location ~ \.php(?:$|/) {
+		fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+		set $path_info $fastcgi_path_info;
+
+		try_files $fastcgi_script_name =404;
+
+		include fastcgi_params;
+		fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+		fastcgi_param PATH_INFO $path_info;
+		fastcgi_param HTTPS on;
+
+		fastcgi_param modHeadersAvailable true;		 # Avoid sending the security headers twice
+		fastcgi_param front_controller_active true;	 # Enable pretty urls
+		fastcgi_pass unix:/var/run/php-fpm.sock;
+
+		fastcgi_intercept_errors on;
+		fastcgi_request_buffering off;
+		fastcgi_max_temp_file_size 0;
+
+		# Remove X-Powered-By, which is an information leak
+		fastcgi_hide_header X-Powered-By;
+
+		# Do not show ratelimit
+		fastcgi_hide_header X-Ratelimit-Limit;
+		fastcgi_hide_header X-Ratelimit-Remaining;
+
+		# Inform clients that HTTP3 is available
+		add_header Alt-Svc 'h3=":443"; ma=86400';
+
+		# COOP/COEP. Disable if you use external plugins/images/assets
+		add_header Cross-Origin-Opener-Policy "same-origin" always;
+		add_header Cross-Origin-Embedder-Policy "require-corp" always;
+		add_header Cross-Origin-Resource-Policy "same-origin" always;
+
+		# HSTS
+		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
+		# HTTP response headers borrowed from Nextcloud `.htaccess`
+		add_header Referrer-Policy						"no-referrer";
+		add_header X-Content-Type-Options				"nosniff";
+		add_header X-Download-Options					"noopen";
+		add_header X-Frame-Options						"SAMEORIGIN";
+		add_header X-Permitted-Cross-Domain-Policies	"none";
+		add_header X-XSS-Protection						"1; mode=block";
+
+		# Tell browsers to use per-origin process isolation
+		add_header Origin-Agent-Cluster "?1" always;
+	}
+
+	# Serve static files
+	location ~ \.(?:xml|asc)$ {
+		try_files $uri /index.php$request_uri;
+		add_header Cache-Control "public, max-age=15778463, immutable";
+	}
+
+	# CSS & JS
+	location ~ \.(?:css|js|woff2)$ {
+		try_files $uri /index.php$request_uri;
+		expires 10d;
+	}
+
+	# Images
+	location ~ \.(?:gif|ico|jpg|jpeg|pdf|png|svg|webp)$ {
+		try_files $uri /index.php$request_uri;
+		expires 14d;
+	}
+}
+
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	server_name _;
+
+	# Prevent nginx HTTP Server Detection
+	server_tokens off;
+
+	return 301 https://example.com$request_uri;
+}
+```
