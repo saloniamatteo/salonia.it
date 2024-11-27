@@ -3,6 +3,21 @@ import laravel from 'laravel-vite-plugin';
 import purge from '@erbelion/vite-plugin-laravel-purgecss'
 
 export default defineConfig({
+    // Disable polyfill
+    build: {
+        modulePreload: {
+            polyfill: false,
+        },
+        rollupOptions: {
+            // Tree-shaking
+            treeshake: {
+                preset: "smallest",
+                propertyReadSideEffects: false,
+            }
+        }
+    },
+    // Disable comments in JS
+    esbuild: { legalComments: 'none' },
     plugins: [
         laravel({
             input: [
@@ -12,6 +27,7 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        // PurgeCSS
         purge({
             paths: [
                 'resources/views/**/*.php',
@@ -22,5 +38,4 @@ export default defineConfig({
             safelist: ["active", "m-1", "p-0", "text-blue-500"],
         }),
     ],
-    esbuild: { legalComments: 'none' },
 });
