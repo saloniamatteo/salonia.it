@@ -23,7 +23,7 @@
 		<x-tag-xl id="sid">Salonia Infrastrutture Digitali</x-tag>
 
 		<!-- Instagram -->
-		<x-tile>
+		<x-tile class="mt-1">
 			<x-icon link="https://instagram.com/saloniainfrastrutture" icon="instagram">
 
 			<div class="tile__container">
@@ -108,7 +108,7 @@
 		<x-tag-xl id="personal">{{ __("contact.me.title") }}</x-tag>
 
 		<!-- Protonmail -->
-		<x-tile>
+		<x-tile class="mt-1">
 			<x-icon link="mailto:saloniamatteo@pm.me" icon="mail"/>
 
 			<div class="tile__container">

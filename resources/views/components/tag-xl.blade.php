@@ -1,5 +1,5 @@
-<h5 class="bg-blue-700 mb-3 mt-0 p-1 u-inline-flex u-round-xs" id="{{ $id }}">
+<h3 class="tag tag--xl bg-blue-700 mt-0 mb-1" id="{{ $id }}">
     <a class="text-white" href="#{{ $id }}">
         {{ $slot }}
     </a>
-</h5>
+</h3>
