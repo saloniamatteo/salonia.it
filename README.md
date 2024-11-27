@@ -131,11 +131,11 @@ server {
 	listen 443 quic default_server reuseport;
 	listen [::]:443 quic default_server reuseport;
 
-    # Change this!
+	# Change this!
 	server_name example.com www.example.com _;
 
 	# If the host isn't example.com, redirect the client
-    # Change this!
+	# Change this!
 	if ($host != example.com) {
 		return 301 https://example.com$request_uri;
 	}
@@ -151,8 +151,8 @@ server {
 	ssl_stapling on;
 	ssl_stapling_verify on;
 	include /etc/letsencrypt/options-ssl-nginx.conf;
-    ssl_certificate /path/to/fullchain.pem; # Change this!
-    ssl_certificate_key /path/to/privkey.pem; # Change this!
+	ssl_certificate /path/to/fullchain.pem; # Change this!
+	ssl_certificate_key /path/to/privkey.pem; # Change this!
 	ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
 	# Site root. Change this!
@@ -208,7 +208,7 @@ server {
 	# The line below allows us to do exactly what we want.
 	location / {
 		rewrite ^ /index.php;
-    }
+	}
 
 	# Ensure this block, which passes PHP files to the PHP process, is above the blocks
 	# which handle static assets (as seen below). If this block is not declared first,
@@ -252,12 +252,12 @@ server {
 		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
 		# HTTP response headers borrowed from Nextcloud `.htaccess`
-		add_header Referrer-Policy						"no-referrer";
-		add_header X-Content-Type-Options				"nosniff";
-		add_header X-Download-Options					"noopen";
-		add_header X-Frame-Options						"SAMEORIGIN";
-		add_header X-Permitted-Cross-Domain-Policies	"none";
-		add_header X-XSS-Protection						"1; mode=block";
+		add_header Referrer-Policy "no-referrer";
+		add_header X-Content-Type-Options "nosniff";
+		add_header X-Download-Options "noopen";
+		add_header X-Frame-Options "SAMEORIGIN";
+		add_header X-Permitted-Cross-Domain-Policies "none";
+		add_header X-XSS-Protection "1; mode=block";
 
 		# Tell browsers to use per-origin process isolation
 		add_header Origin-Agent-Cluster "?1" always;
