@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- SEO -->
+	<!-- SEO (do not include if "noseo" is set) -->
 	@if (!isset($noseo))
 	<meta name="description"				content="{{ $desc ?? 'Desc' }}">
 	<meta property="og:description"			content="{{ $desc ?? 'Desc' }}">
@@ -32,5 +32,6 @@
 	<!-- Overrides -->
 	<style>
 	.card { box-shadow: none }
+	code { padding: .2rem }
 	</style>
 </head>
