@@ -11,7 +11,8 @@ class TagError extends Component
     public function __construct() {}
 
     /* Get the view / contents that represent the component. */
-    public function render() {
+    public function render()
+    {
         return view('components.tag-error');
     }
 }

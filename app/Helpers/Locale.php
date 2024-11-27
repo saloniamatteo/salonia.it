@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Request;
 class Locale
 {
     /* Return all the accepted languages from the browser. */
-    private static function getAcceptLanguage() {
+    private static function getAcceptLanguage()
+    {
         $matches = [];
 
         if ($acceptLangs = Request::header('Accept-Language')) {
@@ -43,7 +44,7 @@ class Locale
                 $l = explode('-', $l);
                 array_pop($l);
 
-                while (!empty($l)) {
+                while (! empty($l)) {
                     // The new generic option needs to be slightly less important than it's base
                     $q -= 0.001;
                     $op = implode('-', $l);
@@ -92,12 +93,12 @@ class Locale
      * HTTP header. Quality factors in the Accept-Language header are supported,
      * e.g.:
      *      Accept-Language: en-UK;q=0.7, en-US;q=0.6, no, dk;q=0.8
-     *
      */
-    public static function negotiateLang() {
+    public static function negotiateLang()
+    {
         // Check if browser has matching request lang
         $matches = Locale::getAcceptLanguage();
-        $langs   = Locale::getLocales();
+        $langs = Locale::getLocales();
 
         // Loop over user locales
         foreach ($matches as $key => $q) {

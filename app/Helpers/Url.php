@@ -38,8 +38,9 @@ class Url
         $pathlang = substr($path, 0, 2);
         if (in_array($pathlang, $locales)) {
             // If reqlang is empty, return the path without lang
-            if (empty($reqlang))
+            if (empty($reqlang)) {
                 return substr($path, 3);
+            }
 
             return $reqlang.substr($path, 2);
         }
@@ -48,16 +49,17 @@ class Url
         // If reqlang is empty, return the path without /,
         // otherwhise add the language
         // Example: /page -> /it/page
-        if (empty($reqlang))
+        if (empty($reqlang)) {
             return $path;
+        }
 
         return $reqlang.'/'.$path;
     }
 
     /**
      * Get base URL (scheme + host)
-    * <scheme>://<host>
-    */
+     * <scheme>://<host>
+     */
     public static function getBaseURL()
     {
         return Request::schemeAndHttpHost();
@@ -81,7 +83,7 @@ class Url
      *
      * We take advantage of the function replaceLang(), by passing
      * an empty reqlang, thus stripping it from the final path.
-    */
+     */
     public static function getPath()
     {
         // Strip lang from path
@@ -91,7 +93,7 @@ class Url
     /* Get URL without localization */
     public static function getURL()
     {
-        return URL::getBaseURL() . '/' . URL::getPath();
+        return URL::getBaseURL().'/'.URL::getPath();
     }
 
     /* Returns a URL based on the current chosen locale */
@@ -123,8 +125,9 @@ class Url
         $lang = Locale::getLocale();
 
         // Check it
-        if ($lang == 'it')
+        if ($lang == 'it') {
             return 'cv.pdf';
+        }
 
         return 'cv_en.pdf';
     }

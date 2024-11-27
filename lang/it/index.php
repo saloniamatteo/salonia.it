@@ -4,11 +4,11 @@
 return [
     // SEO
     'title' => 'Matteo Salonia',
-    'desc' => "Benvenuto sul sito di Matteo Salonia.",
+    'desc' => 'Benvenuto sul sito di Matteo Salonia.',
 
     // Hero
     'welcome' => [
-        'hello' => "Ciao, sono",
+        'hello' => 'Ciao, sono',
         'desc' => 'Benvenuto sul mio sito web! Scopri vaste risorse per GNU/Linux, i miei contatti, vari strumenti, e molto altro ancora.',
         'look' => 'Cerchi',
         'sid' => 'Salonia Infrastrutture Digitali',
@@ -17,7 +17,7 @@ return [
     // Linux & Software
     'linux-soft' => [
         'title' => 'Linux e Software',
-        'desc' => "Scopri la guida che ti aiuta ad installare Arch Linux, le mie configurazioni (i miei dotfiles), il mio Kernel, i programmi che ho creato, ed i miei pacchetti per Gentoo Linux.",
+        'desc' => 'Scopri la guida che ti aiuta ad installare Arch Linux, le mie configurazioni (i miei dotfiles), il mio Kernel, i programmi che ho creato, ed i miei pacchetti per Gentoo Linux.',
 
         // Arch Linux
         'arch' => [
@@ -35,7 +35,7 @@ return [
         // Kernel
         'kernel' => [
             'title' => 'Kernel',
-            'desc' => "Tutte le modifiche che ho apportato al Kernel per renderlo più performante e più efficiente.",
+            'desc' => 'Tutte le modifiche che ho apportato al Kernel per renderlo più performante e più efficiente.',
         ],
 
         // DNS
@@ -107,7 +107,7 @@ return [
         // SearXNG
         'searxng' => [
             'title' => 'SearXNG',
-            'desc' => "Istanza self-hosted del meta-motore di ricerca che protegge la privacy dei propri utenti.",
+            'desc' => 'Istanza self-hosted del meta-motore di ricerca che protegge la privacy dei propri utenti.',
         ],
 
         // OpenAlias
@@ -125,7 +125,7 @@ return [
         // Source code
         'source' => [
             'title' => 'Codice sorgente sito web',
-            'desc' => "Ottieni il codice sorgente di questo sito web.",
+            'desc' => 'Ottieni il codice sorgente di questo sito web.',
         ],
     ],
 ];

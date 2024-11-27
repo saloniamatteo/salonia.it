@@ -17,7 +17,8 @@ class PageController
     */
     private $langOverride = false;
 
-    public function viewLang($lang, $page = 'index') {
+    public function viewLang($lang, $page = 'index')
+    {
         // Make sure page is loaded with lang
         $this->langOverride = true;
         Locale::setLocale($lang);
@@ -26,16 +27,19 @@ class PageController
         return $this->view($page);
     }
 
-    public function view($page = 'index') {
+    public function view($page = 'index')
+    {
         // Check if we need to negotiate locale
-        if (!$this->langOverride)
+        if (! $this->langOverride) {
             // Negotiate and set locale
             Locale::setLocale(Locale::negotiateLang());
+        }
 
         // Check if view exists
-        if (View::exists($page))
+        if (View::exists($page)) {
             // Load requested page, minified
             return Page::minify($page);
+        }
 
         // Return 404
         abort(404);
