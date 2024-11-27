@@ -8,16 +8,6 @@ use Illuminate\Support\Facades\Request;
 
 class Locale
 {
-    private const flagEmojis = [
-        'it' => '🇮🇹',
-        'en' => '🇬🇧',
-    ];
-
-    private const langStrings = [
-        'it' => 'Italiano',
-        'en' => 'English',
-    ];
-
     /* Return all the accepted languages from the browser. */
     private static function getAcceptLanguage() {
         $matches = [];
@@ -82,7 +72,7 @@ class Locale
     // Get a list of supported locales
     public static function getLocales()
     {
-        return Config::get('app.languages');
+        return Config::get('locale.languages');
     }
 
     // Set locale
@@ -118,9 +108,11 @@ class Locale
     // Convert text to flag emoji
     public static function textToFlag($text)
     {
+        $emojis = Config::get('locale.emojis');
+
         // Check if the input text exists in the mapping array
-        if (array_key_exists($text, Locale::flagEmojis)) {
-            return Locale::flagEmojis[$text];
+        if (array_key_exists($text, $emojis)) {
+            return $emojis[$text];
         }
 
         return $text; // Return original if not matching
@@ -129,9 +121,11 @@ class Locale
     // Get language string
     public static function langStr($lang)
     {
+        $strings = Config::get('locale.strings');
+
         // Check if lang is in array
-        if (array_key_exists($lang, Locale::langStrings)) {
-            return Locale::langStrings[$lang];
+        if (array_key_exists($lang, $strings)) {
+            return $strings[$lang];
         }
 
         return $lang; // Return original if not matching

@@ -80,12 +80,4 @@ return [
 
     'locale' => env('APP_LOCALE', 'it'),
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'it'),
-
-    // Supported languages
-    // NOTE: this is required for Matteo Salonia's
-    // custom localization implementation.
-    'languages' => [
-        'it',
-        'en',
-    ],
 ];

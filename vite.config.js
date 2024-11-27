@@ -35,7 +35,7 @@ export default defineConfig({
             output: 'resources/css/cirrus.min.css',
             fontFace: true,
             keyframes: true,
-            safelist: ["active", "m-1", "p-0", "text-blue-500"],
+            safelist: ["active", "m-1", "p-0"],
         }),
     ],
 });
