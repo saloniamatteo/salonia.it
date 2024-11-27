@@ -8,7 +8,7 @@ import.meta.glob([
 import { createIcons,
 AtSign, Binary, BookOpenText, CirclePlus, Facebook, FileBadge, FolderCog,
 Github, Globe, HandCoins, Instagram, Laptop, Link, Mail, MapPin, Network,
-Package, ScrollText, Search, Send, Server, ServerCog, UserRound,
+Package, ScrollText, Search, Send, Server, ServerCog, TriangleAlert, UserRound,
 } from 'lucide';
 
 // Make all nav-btns in the page clickable
@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Send,
             Server,
             ServerCog,
+            TriangleAlert,
             UserRound,
         }
     });
