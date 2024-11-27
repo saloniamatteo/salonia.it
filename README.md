@@ -57,8 +57,8 @@ To deploy this website, you need the following:
 ## Setup
 - Clone the repo: `git clone https://github.com/saloniamatteo/salonia.it website`
 - Change directory: `cd website`
-- Update PHP dependencies: `composer update`
-- Update node dependencies: `npm i`
+- Install PHP dependencies: `composer install`
+- Install node dependencies: `npm i`
 - Generate `APP_KEY`: `php artisan key:generate`
 
 If you want to deploy the website locally, make sure you modify `.env`,
@@ -80,7 +80,14 @@ I use [nginx](https://nginx.org) with [FastCGI](https://nginx.org/en/docs/http/n
 
 If you want to use the built-in webserver, make sure you set `APP_URL` to your website's URL.
 
-## Cache
+### Assets
+Make sure you bundle the assets used in the website (CSS, fonts, images):
+
+```sh
+npm run build
+```
+
+### Cache
 When running in production, it is recommended to cache PHP assets with the following command:
 
 ```sh
@@ -88,11 +95,3 @@ composer cache
 ```
 
 This will cache PHP config, events, routes, views.
-
-Additionally, bundle the assets used in the website (CSS, fonts, images):
-
-```sh
-npm run build
-```
-
-This is not needed if you don't have assets that differ from the included ones.
