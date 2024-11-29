@@ -25,6 +25,17 @@ This Middleware, written by me, checks if the incoming IP address comes from
 a "bad" server (crawlers, scanners, etc.) thanks to AbuseIPDB's `/check`
 API endpoint.
 
+When a request is received, the `BlockRequest` Middleware will check the cache,
+using the incoming IP as key. If a record is found, check if it is a good IP:
+if it is, proceed with the request. If it isn't, throw a `403`, which will be
+rendered with a pretty page, regardless.
+
+If no records are found in the cache, `BlockRequest` queries AbuseIPDB,
+honoring the user-provided options (see below). If the IP address is
+whitelisted, check if the user wants to ignore this whitelist;
+we then check the IP score and, if it is above a certain threshold,
+the request will be blocked, like the case above, throwing a `403`.
+
 To use this, create an account, then head over to [AbuseIPDB/api](https://www.abuseipdb.com/account/api)
 and create an APIv2 key. Save this key into the `.env` file:
 
