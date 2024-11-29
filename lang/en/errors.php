@@ -4,6 +4,7 @@
 return [
     // Page title
     'title' => 'Error',
+    'desc' => 'An error has occurred. Please try again later.',
 
     // Admin contact
     'persist' => 'If this error persists, please contact the :admin.',

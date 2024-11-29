@@ -4,6 +4,7 @@
 return [
     // Page title
     'title' => 'Errore',
+    'desc' => 'Si è verificato un errore. Si prega di provare più tardi.',
 
     // Admin contact
     'persist' => 'Se questo errore persiste, contatta :admin.',
