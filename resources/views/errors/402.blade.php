@@ -1,4 +1,7 @@
-@extends('errors::layout')
-
-@section('card-title', __('errors.402.title'))
-@section('message', __('errors.402.desc'))
+@use('App\Helpers\Page')
+{!!
+	Page::minify('errors.layout', [
+		"card_title" => __('errors.402.title'),
+		"message" => __('errors.402.desc'),
+	])
+!!}

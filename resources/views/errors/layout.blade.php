@@ -11,7 +11,7 @@
 <!-- Error card -->
 <x-card-error>
     <x-tag-error>
-        @yield('card-title')
+        {{ $title ?? __("errors.title") }}
     </x-tag-error>
 
     @php
@@ -20,7 +20,7 @@
     @endphp
 
     <p class="lead">
-        @yield('message')
+        {{ $msg ?? __("errors.desc") }}
         <br>
         {!! __("errors.persist", [
             "admin" => Url::makeLink($adminlink, $admin),
