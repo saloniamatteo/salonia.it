@@ -218,7 +218,10 @@ server {
 		fastcgi_split_path_info ^(.+?\.php)(/.*)$;
 		set $path_info $fastcgi_path_info;
 
-		try_files $fastcgi_script_name =404;
+		# Try to load requested file. If it doesn't exist, instead
+		# of throwing a 404, load the front controller, where
+		# we can load a pretty 404 page.
+		try_files $fastcgi_script_name /index.php/$fastcgi_script_name;
 
 		include fastcgi_params;
 		fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
@@ -265,18 +268,32 @@ server {
 
 	# Serve static files
 	location ~ \.(?:xml|asc)$ {
-		try_files $uri /index.php$request_uri;
+		add_header Alt-Svc 'h3=":443"; ma=86400';
 		add_header Cache-Control "public, max-age=15778463, immutable";
+		add_header X-Content-Type-Options "nosniff";
+		add_header X-Frame-Options "SAMEORIGIN";
+
+		try_files $uri /index.php$request_uri;
 	}
 
 	# CSS & JS
 	location ~ \.(?:css|js|woff2)$ {
+		add_header Alt-Svc 'h3=":443"; ma=86400';
+		add_header X-Content-Type-Options "nosniff";
+		add_header X-Frame-Options "SAMEORIGIN";
+		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
 		try_files $uri /index.php$request_uri;
 		expires 10d;
 	}
 
 	# Images
 	location ~ \.(?:gif|ico|jpg|jpeg|pdf|png|svg|webp)$ {
+		add_header Alt-Svc 'h3=":443"; ma=86400';
+		add_header X-Content-Type-Options "nosniff";
+		add_header X-Frame-Options "SAMEORIGIN";
+		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
 		try_files $uri /index.php$request_uri;
 		expires 14d;
 	}
