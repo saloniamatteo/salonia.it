@@ -20,6 +20,32 @@ Loaded network resources + time:
 ![pagespeed](Pictures/pagespeed.png)
 
 ## Features
+### AbuseIPDB
+This Middleware, written by me, checks if the incoming IP address comes from
+a "bad" server (crawlers, scanners, etc.) thanks to AbuseIPDB's `/check`
+API endpoint.
+
+To use this, create an account, then head over to [AbuseIPDB/api](https://www.abuseipdb.com/account/api)
+and create an APIv2 key. Save this key into the `.env` file:
+
+```env
+# If you want to block incoming requests from bad servers
+# using AbuseIPDB, enter your API key here.
+ABUSEIPDB_KEY= # Your API key goes here!
+```
+
+You're all set! Make sure the cache store is also properly configured.
+The cache store provided with this site is `file`, so you should be good.
+
+Additionally, you can tune the following parameters:
+- `ABUSEIPDB_THRESHOLD`: The minimum percentage score required
+                         for an IP to be considered malicious. Default: `35`.
+- `ABUSEIPDB_IGNORE_WHITELIST`: Ignore AbuseIPDB's whitelist preference
+                                for every IP. Default: `0`.
+- `ABUSEIPDB_CACHE_TTL`: Store the results in cache for x minutes. Default: `15`
+- `ABUSEIPDB_IP_OK`: Store this string for a known good IP. Default: `OK`
+- `ABUSEIPDB_IP_BAD`: Store this string for a known bad IP. Default: `BAD`
+
 ### Asset bundling
 Assets are bundled and handled by Vite:
 - CSS & JS files are minified (PostCSS and PurgeCSS) and versioned
