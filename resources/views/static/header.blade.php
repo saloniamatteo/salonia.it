@@ -5,7 +5,8 @@
 <div class="header header-fixed u-unselectable u-shadow-none" style="border-bottom: 1px solid">
 <div class="header-brand">
 	<a href="{{ URL::subUrl() }}">
-		<img src="{{ Vite::asset('resources/img/salonia.png') }}" alt="Logo" class="w-24" style="min-width: 180px">
+		<img src="{{ Vite::asset('resources/img/salonia.png') }}" alt="Logo"
+		style="min-width: 180px; width: 13rem; padding: .3rem">
 	</a>
 
 	<div class="nav-item nav-btn" id="header-btn">
