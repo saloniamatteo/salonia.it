@@ -29,7 +29,7 @@ class Page
     }
 
     // Minify a page
-    public static function minify($page)
+    public static function minify($page, $params = [])
     {
         // Flush buffer
         while (ob_get_level() > 0) {
@@ -40,7 +40,7 @@ class Page
         ob_start();
 
         // Get rendered page
-        echo view($page)->render();
+        echo view($page, $params)->render();
         $html = ob_get_clean();
 
         // Minify HTML (aka clean it up)
