@@ -153,7 +153,7 @@ class Locale
             $href = URL::replaceLang($path, $lang);
 
             // Create link
-            echo "<a class='u u-LR font-bold text-gray-900 p-0 m-1' href='/$href'>"
+            echo "<a class='u u-LR font-bold text-gray-900' href='/$href'>"
                 .Locale::textToFlag($lang).'&nbsp;&nbsp;'
                 .Locale::langStr($langs[$i])
                 .'</a>';
