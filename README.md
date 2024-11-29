@@ -22,8 +22,8 @@ Loaded network resources + time:
 ## Features
 ### AbuseIPDB
 This Middleware, written by me, checks if the incoming IP address comes from
-a "bad" server (crawlers, scanners, etc.) thanks to AbuseIPDB's `/check`
-API endpoint.
+a "bad" server (crawlers, scanners, etc.), thanks to
+[AbuseIPDB](https://www.abuseipdb.com/faq.html)'s `/check` API endpoint.
 
 When a request is received, the `BlockRequest` Middleware will check the cache,
 using the incoming IP as key. If a record is found, check if it is a good IP:
