@@ -124,24 +124,6 @@
 
 		<div class="divider my-2"></div>
 
-		<!-- DNS -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('dns') }}" icon="network">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.linux-soft.dns.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.linux-soft.dns.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
 		<!-- Packages -->
 		<x-tile>
 			<x-icon link="{{ URL::subUrl('packages') }}" icon="package">

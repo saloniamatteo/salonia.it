@@ -7,7 +7,7 @@ import.meta.glob([
 // Icons
 import { createIcons,
 AtSign, Binary, BookOpenText, CirclePlus, Facebook, FileBadge, FolderCog,
-Github, Globe, HandCoins, Info, Instagram, Laptop, Link, Mail, MapPin, Network,
+Github, Globe, HandCoins, Info, Instagram, Laptop, Link, Mail, MapPin,
 Package, ScrollText, Search, Send, Server, ServerCog, TriangleAlert, UserRound,
 } from 'lucide';
 
@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
             Link,
             Mail,
             MapPin,
-            Network,
             Package,
             ScrollText,
             Search,

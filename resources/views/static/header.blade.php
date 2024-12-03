@@ -37,11 +37,6 @@
 					{{ __("header.pages.kernel") }}
 				</x-icon-header>
 
-				<!-- DNS -->
-				<x-icon-header link="{{ URL::subUrl('dns') }}" icon="network">
-					{{ __("header.pages.dns") }}
-				</x-icon-header>
-
 				<!-- Packages -->
 				<x-icon-header link="{{ URL::subUrl('packages') }}" icon="package">
 					{{ __("header.pages.packages") }}
