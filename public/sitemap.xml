@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://salonia.it/</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/contact</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/donate</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/info</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/kernel</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/packages</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/services</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/software</loc>
+  <priority>1.00</priority>
+</url>
+</urlset>
