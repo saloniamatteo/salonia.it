@@ -104,7 +104,7 @@ return [
             'custdir' => 'cartella che contiene questo progetto, da modificare qualora sia diversa dai default.',
             'cleardir' => 'cartella patch Clear Linux, <u>non modificare</u>.',
             'patchdir' => 'cartella patch, <u>non modificare</u>.',
-            'boredir' => 'cartella BORE scheduler, <u>do not modify</u>.',
+            'boredir' => 'cartella BORE scheduler, <u>non modificare</u>.',
             'v4l2dir' => 'cartella V4L2loopback, <u>non modificare</u>.',
             'cfodir' => 'cartella Kernel Compiler Patch, <u>non modificare</u>.',
             'usrdir' => 'cartella che contiene la versione scelta del Kernel, <u>non modificare</u>.',
