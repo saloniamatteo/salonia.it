@@ -15,9 +15,9 @@ class AppServiceProvider extends ServiceProvider
     /* Bootstrap any application services. */
     public function boot()
     {
-        // Limit to 100 requests per minute.
+        // Limit to 5 requests per minute.
         RateLimiter::for('global', function (Request $request) {
-            return Limit::perMinute(100)->by($request->ip());
+            return Limit::perMinute(5)->by($request->ip());
         });
     }
 }

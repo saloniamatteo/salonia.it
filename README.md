@@ -62,6 +62,28 @@ Additionally, you can tune the following parameters:
 - `ABUSEIPDB_IP_OK`: Store this string for a known good IP. Default: `OK`
 - `ABUSEIPDB_IP_BAD`: Store this string for a known bad IP. Default: `BAD`
 
+### Rate limiter
+Apart from the AbuseIPDB integration, this website uses Laravel's
+[rate limiter](https://laravel.com/docs/11.x/rate-limiting).
+It uses the same `CACHE_STORE` driver as the AbuseIPDB integration,
+which defaults to `file`.
+
+The rate limiter is defined in `app/Providers/AppServiceProvider.php` as follows:
+
+```php
+/* Bootstrap any application services. */
+public function boot()
+{
+	// Limit to 5 requests per minute.
+	RateLimiter::for('global', function (Request $request) {
+		return Limit::perMinute(5)->by($request->ip());
+	});
+}
+```
+
+It is configured to allow a maximum of **5 page requests per minute**,
+before throwing an HTTP 429 (Too many requests).
+
 ### Asset bundling
 Assets are bundled and handled by Vite:
 - CSS & JS files are minified (PostCSS and PurgeCSS) and versioned
