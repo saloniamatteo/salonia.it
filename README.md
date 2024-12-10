@@ -17,7 +17,12 @@ Loaded network resources + time:
 ![network](Pictures/network.png)
 
 [PageSpeed](https://pagespeed.web.dev) timings:
-![pagespeed](Pictures/pagespeed.png)
+
+Mobile:
+![pagespeed-mobile](Pictures/pagespeed-mobile.png)
+
+Desktop:
+![pagespeed-desktop](Pictures/pagespeed-desktop.png)
 
 ## Features
 ### AbuseIPDB
