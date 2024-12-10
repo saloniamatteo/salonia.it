@@ -9,6 +9,10 @@ dir=$(pwd)
 composer install
 npm i
 
+# Regenerate key
+composer cache
+php artisan key:generate --force
+
 # Build & cache assets
 npm run build
 composer cache
