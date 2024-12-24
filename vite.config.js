@@ -30,11 +30,10 @@ export default defineConfig({
         // PurgeCSS
         purge({
             paths: [
-                'app/Views/Components/*.php',
-                'resources/views/**/*.php',
+                'resources/views/**',
             ],
             output: 'resources/css/cirrus.min.css',
-            fontFace: true,
+            fontFace: false,
             keyframes: true,
             safelist: ["active"],
         }),
