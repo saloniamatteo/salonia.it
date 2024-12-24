@@ -33,7 +33,7 @@ export default defineConfig({
                 'resources/views/**',
             ],
             output: 'resources/css/cirrus.min.css',
-            fontFace: false,
+            fontFace: true,
             keyframes: true,
             safelist: ["active"],
         }),
