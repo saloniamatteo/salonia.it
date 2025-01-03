@@ -20,7 +20,7 @@
 
 	<!-- SID -->
 	<x-card>
-		<x-tag-lg id="sid">Salonia Infrastrutture Digitali</x-tag>
+		<x-tag id="sid">Salonia Infrastrutture Digitali</x-tag>
 
 		<!-- Instagram -->
 		<x-tile class="mt-1">
@@ -105,7 +105,7 @@
 
 	<!-- Personal -->
 	<x-card>
-		<x-tag-lg id="personal">{{ __("contact.me.title") }}</x-tag>
+		<x-tag id="personal">{{ __("contact.me.title") }}</x-tag>
 
 		<!-- Protonmail -->
 		<x-tile class="mt-1">
