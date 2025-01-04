@@ -308,7 +308,7 @@
 
 		<!-- OpenAlias -->
 		<x-tile>
-			<x-icon link="https://s.salonia.it" icon="scroll-text">
+			<x-icon link="https://oa.salonia.it" icon="scroll-text">
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 text-md u u-LR">

@@ -2,7 +2,7 @@
 @use('App\Helpers\Url')
 
 <!-- Header -->
-<div class="header header-fixed u-unselectable u-shadow-none" style="border-bottom: 1px solid">
+<div class="header header-animated header-fixed u-unselectable u-shadow-none" style="border-bottom: 1px solid">
 <div class="header-brand">
 	<a href="{{ URL::subUrl() }}">
 		<img src="{{ Vite::asset('resources/img/salonia.png') }}" alt="Logo"
