@@ -48,7 +48,7 @@
 
 	<!-- Picture -->
 	<div class="grid-c-3 grid-r-3 mr-2 u-center">
-		<img class="w-32 mt-2 u-round-lg" src="{{ Vite::asset('resources/img/me2.jpeg') }}" alt="Matteo Salonia">
+		<img class="w-32 mt-2 u-round-lg" src="{{ Vite::asset('resources/img/me2.jpg') }}" alt="Matteo Salonia">
 	</div>
 </div>
 </div>

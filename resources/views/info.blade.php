@@ -7,7 +7,7 @@
 <body>
 @include('static/header')
 
-<!-- info -->
+<!-- Info -->
 <x-hero class="mt-4" id="info">
 	<x-slot:title>
 		{{ __("info.title") }}
@@ -22,7 +22,7 @@
 			<div class="grid-c-4 grid-r-3">
 				<img class="img-stretch mb-2 u-round-lg"
 				loading="lazy" alt="Matteo Salonia"
-				src="{{ Vite::asset('resources/img/me.jpeg') }}">
+				src="{{ Vite::asset('resources/img/me.jpg') }}">
 			</div>
 
 			<div class="grid-c-8-md ml-1-md">
