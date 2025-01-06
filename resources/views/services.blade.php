@@ -18,24 +18,6 @@
 		{{ __("services.desc") }}
 	</x-slot>
 
-	<!-- Go to -->
-	<p>
-		{{ __("services.go-to.title") }}:
-		<br>
-
-		<!-- Webdev -->
-		<x-tag-xs href="webdev">
-			{{ __("services.go-to.webdev") }}
-		</x-tag-xs>
-
-		&nbsp;
-
-		<!-- Web services -->
-		<x-tag-xs href="webserv">
-			{{ __("services.go-to.webserv") }}
-		</x-tag-xs>
-	</p>
-
 	<!-- Promo -->
 	<div class="content u-text-left w-90p-md">
 		<div class="card p-1" style="background: linear-gradient(to top, #141e30, #243b55)" id="promo">

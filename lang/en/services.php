@@ -5,13 +5,6 @@ return [
     'title' => 'Services',
     'desc' => 'Discover all of the services offered by Salonia Infrastrutture Digitali',
 
-    // Go to
-    'go-to' => [
-        'title' => 'Go to',
-        'webdev' => 'Website development',
-        'webserv' => 'Web services',
-    ],
-
     // Promo
     'promo' => [
         'title' => "Request a free quote and get up to <span class='text-blue-500'><strong>20%</strong></span> off!",

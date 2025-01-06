@@ -5,13 +5,6 @@ return [
     'title' => 'Servizi',
     'desc' => 'Scopri tutti i servizi offerti da Salonia Infrastrutture Digitali',
 
-    // Go to
-    'go-to' => [
-        'title' => 'Vai a',
-        'webdev' => 'Sviluppo siti web',
-        'webserv' => 'Servizi web',
-    ],
-
     // Promo
     'promo' => [
         'title' => "Richiedi un preventivo gratuito ed ottieni fino al <span class='text-blue-500'><u>20%</u></span> di sconto!",
