@@ -1,5 +1,5 @@
 /* Enable smooth scrolling */
-body { scroll-behavior: smooth }
+* { scroll-behavior: smooth }
 
 /* Adjust <code> padding */
 code { padding: .2rem }
