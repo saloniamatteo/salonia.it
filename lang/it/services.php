@@ -13,6 +13,7 @@ return [
 
     // Web development
     'webdev' => [
+        'title' => 'Sviluppo siti web',
         'desc' => "Affidati a <strong>Salonia Infrastrutture Digitali</strong>: otterrai un <strong>sito web</strong> a <strong>regola d'arte</strong>! Molteplici anni di studio e di pratica ci hanno concesso di <strong>perfezionare</strong> i nostri siti web, focalizzandoci su <strong>esperienze reali</strong>, puntando sulla <strong>soddisfazione dei nostri clienti</strong>. Ecco alcune funzionalità che ci contraddistinguono:",
 
         // Multi-lang
@@ -43,23 +44,6 @@ return [
         'seo' => [
             'title' => 'SEO',
             'desc' => 'Che siano i <strong>risultati di Google</strong>, le <strong>condivisioni su Facebook, Instagram, Whatsapp, TikTok, Twitter (X)</strong>, o qualsiasi altra piattaforma, ogni nostra pagina ha degli appositi <strong>tag</strong> per migliorare la <strong>SEO</strong> (Search Engine Optimization): il tuo sito web conterrà dei <strong>contenuti pertinenti</strong>, grazie ai quali potrai ottenere <strong>risultati migliori</strong>, sia in termini di <strong>posizionamento</strong> nei risultati di ricerca, sia in termini di <strong>clienti soddisfatti</strong>!',
-        ],
-    ],
-
-    // Web services
-    'webserv' => [
-        'desc' => 'Per <strong>completare</strong> un sito web, è necessario avere anche un <strong>nome di dominio</strong> (salonia.it), ed un <strong>server</strong>.',
-
-        // Domains & DNS
-        'dns' => [
-            'title' => 'Nomi di dominio + DNS',
-            'desc' => 'Un <strong>nome di dominio</strong> (salonia.it) non è solo un <strong>indirizzo web</strong>; è la tua <strong>identità online</strong>, il primo punto di contatto con i clienti e un <strong>potente strumento di branding</strong>. Scegliere un nome di dominio pertinente e memorabile aiuta a costruire <strong>credibilità e fiducia</strong>, rendendo più facile per i clienti trovarti e ricordarti. Affidando il tuo dominio a noi, non solo ti aiuteremo a scegliere il <strong>dominio perfetto</strong>, ma ci occuperemo anche della sua <strong>gestione</strong> al meglio, <strong>garantendo</strong> che sia <strong>sempre attivo e ottimizzato</strong>.',
-        ],
-
-        // Server
-        'server' => [
-            'title' => 'Server GNU/Linux',
-            'desc' => "La gestione di <strong>server GNU/Linux</strong> rappresenta una <strong>sfida cruciale</strong> per molte aziende, e l'approccio migliore può fare la differenza. Un servizio di gestione efficace integra <strong>tecnologie all'avanguardia</strong> e <strong>ottimizza le prestazioni</strong>, garantendo un'<strong>infrastruttura robusta e scalabile</strong>. Un <strong>team di esperti sempre aggiornato</strong> assicura che i server siano non solo <strong>sicuri</strong>, ma anche <strong>altamente performanti</strong>. Scegliere un fornitore che offre un <strong>servizio completo</strong> nella gestione di <strong>server GNU/Linux</strong> significa investire in <strong>efficienza, affidabilità e innovazione</strong>, supportando così la <strong>crescita e il successo</strong> della tua azienda.",
         ],
     ],
 ];

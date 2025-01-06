@@ -40,7 +40,7 @@
 
 	<!-- Webdev -->
 	<x-card>
-		<x-tag id="webdev">{{ __("services.go-to.webdev") }}</x-tag>
+		<x-tag id="webdev">{{ __("services.webdev.title") }}</x-tag>
 
 		<p class="mt-1">
 			{!! __("services.webdev.desc") !!}

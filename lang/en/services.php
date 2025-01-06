@@ -13,6 +13,7 @@ return [
 
     // Web development
     'webdev' => [
+        'title' => 'Web development',
         'desc' => "Choose <strong>Salonia Infrastrutture Digitali</strong>: you'll get a <strong>state-of-the-art website</strong>! Multiple years of study and pratice have lead us to <strong>perfect</strong> our websites, focusing on <strong>real experiences</strong>, focusing on the <strong>satisfaction of our customers</strong>. Here are some features that distinguish us from the competition:",
 
         // Multi-lang
@@ -43,23 +44,6 @@ return [
         'seo' => [
             'title' => 'SEO',
             'desc' => "Whether it's <strong>Google results</strong>, <strong>shares on Facebook, Instagram, Whatsapp, TikTok, Twitter (X)</strong>, or any other platform, each of our pages has specific <strong>tags</strong> to improve <strong>SEO</strong> (Search Engine Optimization): your website will contain <strong>relevant content</strong>, thanks to which you can obtain <strong>better results</strong>, both in terms of <strong>positioning</strong> in search results, and in terms of <strong>satisfied customers</strong>!",
-        ],
-    ],
-
-    // Web services
-    'webserv' => [
-        'desc' => 'To <strong>complete</strong> a website, having a <strong>domain name</strong> (salonia.it), and a <strong>server</strong> is mandatory.',
-
-        // Domains & DNS
-        'dns' => [
-            'title' => 'Domains + DNS',
-            'desc' => "A <strong>domain name</strong> (salonia.it) is more than just a <strong>web address</strong>; it's your <strong>online identity</strong>, your first point of contact with customers and a <strong>powerful branding tool</strong>. Choosing a relevant and memorable domain name helps build <strong>credibility and trust</strong>, making it easier for customers to find and remember you. By entrusting your domain name to us, we'll not only help you choose the <strong>perfect domain</strong>, but we'll also take care of its <strong>management</strong>, <strong>ensuring</strong> it's <strong>always up and running</strong>.",
-        ],
-
-        // Server
-        'server' => [
-            'title' => 'Server GNU/Linux',
-            'desc' => 'Managing <strong>GNU/Linux servers</strong> is a <strong>critical challenge</strong> for many companies, and the best approach can make all the difference. An effective management service integrates <strong>cutting-edge technologies</strong> and <strong>optimizes performance</strong>, ensuring a <strong>robust</strong> and <strong>scalable infrastructure</strong>. An <strong>always up-to-date team of experts</strong> ensures that servers are not only <strong>secure</strong>, but also <strong>highly performing</strong>. Choosing a provider that offers a <strong>complete service</strong> in managing GNU/Linux servers means investing in <strong>efficiency</strong>, <strong>reliability</strong> and <strong>innovation</strong>, thus supporting the <strong>growth</strong> and <strong>success</strong> of your company.',
         ],
     ],
 ];
