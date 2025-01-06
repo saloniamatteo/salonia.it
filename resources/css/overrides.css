@@ -1,0 +1,11 @@
+/* Enable smooth scrolling */
+body { scroll-behavior: smooth }
+
+/* Adjust <code> padding */
+code { padding: .2rem }
+
+/* Add margin on top of selected items (/page#item) */
+h3 { scroll-margin-top: 5rem }
+
+/* Remove shadows from cards */
+.card { box-shadow: none }
