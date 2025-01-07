@@ -81,7 +81,7 @@ return [
             'title' => '1. Get the repository',
             'desc' => "We'll use the <code>/usr/src/usr-kernel</code> directory in order to save this project. Make sure you have read and write permissions, in order to create the directory.",
 
-            'note' => "Whenever the chosen directory differs from the default, don't forget to modify the <code>CUSTDIR</code> variable in <code>build.sh</code>",
+            'note' => "Whenever the chosen directory differs from the default, don't forget to modify the <code class='d'>CUSTDIR</code> variable in <code class='d'>build.sh</code>",
         ],
 
         // Step 2
@@ -89,7 +89,7 @@ return [
             'title' => '2. Version selection',
             'desc' => "Once you get the repository, choose an available version. To see which version is available, you just need to list the directory contents with <code>ls</code>. In this example, we'll use Linux <code>6.8.2-gentoo</code>.",
 
-            'note' => "<u>Your Kernel will definitely have a different version.</u><br>Don't panic: you just need to copy the folder, and rename it according to your version. For example, if your version would be <code>6.8.3-zen</code>, you just need to execute: <code>cp -r 6.8.2-gentoo 6.8.3-zen</code>.<br>Don't forget to modify the <code>KVER</code> variable whenever the primary version differs (e.g.: <code>6.8.2</code> -> <code>6.8.3</code>), and <code>PVER</code> whenever the secondary/custom version differs (e.g.: <code>gentoo</code> -> <code>zen</code>)",
+            'note' => "<u>Your Kernel will surely have a different version</u>. No problem: you just need to copy the folder, and rename it according to your version. For example, if your version would be <code class='d'>6.8.3-zen</code>, you just need to execute: <code class='d'>cp -r 6.8.2-gentoo 6.8.3-zen</code>. Don't forget to modify the <code class='d'>KVER</code> variable whenever the primary version differs (e.g.: <code class='d'>6.8.2</code> -> <code class='d'>6.8.3</code>), and <code class='d'>PVER</code> whenever the secondary/custom version differs (e.g.: <code class='d'>gentoo</code> -> <code class='d'>zen</code>)",
         ],
 
         // Step 3

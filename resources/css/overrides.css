@@ -4,6 +4,9 @@
 /* Adjust <code> padding */
 code { padding: .2rem }
 
+/* Dark <code> */
+code.d { background-color: #343a40; color: #f8f9fa }
+
 /* Add margin on top of selected items (/page#item) */
 h3 { scroll-margin-top: 5rem }
 

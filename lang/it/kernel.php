@@ -80,7 +80,7 @@ return [
             'title' => '1. Ottenimento repository',
             'desc' => 'Useremo la directory <code>/usr/src/usr-kernel</code> per salvare questo progetto, e tutte le eventuali modifiche. <br> Assicuratevi di avere permessi di lettura e scrittura, in modo tale da poter creare la directory.',
 
-            'note' => 'Qualora la directory scelta dovesse essere diversa, non dimenticatevi di modificare la variabile <code>CUSTDIR</code> nel file <code>build.sh</code>.',
+            'note' => "Qualora la directory scelta dovesse essere diversa, non dimenticatevi di modificare la variabile <code class='d'>CUSTDIR</code> nel file <code class='d'>build.sh</code>.",
         ],
 
         // Step 2
@@ -88,7 +88,7 @@ return [
             'title' => '2. Selezione versione',
             'desc' => 'Una volta scaricata la repository, scegliete una versione disponibile. Per vedere quali versioni sono disponibili, basta vedere i contenuti della directory con <code>ls</code>. In questo esempio, utilizzeremo Linux <code>6.8.2-gentoo</code>.',
 
-            'note' => '<u>Il vostro Kernel sicuramente avrà una versione diversa.</u><br>Niente panico: basterà copiare la cartella, e rinominarla in base alla vostra versione. Ad esempio, se la vostra versione dovesse essere <code>6.8.3-zen</code>, basterà eseguire: <code>cp -r 6.8.2-gentoo 6.8.3-zen</code>.<br>Non dimenticatevi di modificare la variabile <code>KVER</code> qualora la versione primaria dovesse essere diversa (esempio: <code>6.8.2</code> -> <code>6.8.3</code>), e la variabile <code>PVER</code> qualora la versione secondaria dovesse essere diversa (esempio: <code>gentoo</code> -> <code>zen</code>)',
+            'note' => "<u>Il vostro Kernel sicuramente avrà una versione diversa</u>. Niente panico: basterà copiare la cartella, e rinominarla in base alla vostra versione. Ad esempio, se la vostra versione dovesse essere <code class='d'>6.8.3-zen</code>, basterà eseguire: <code class='d'>cp -r 6.8.2-gentoo 6.8.3-zen</code>. Non dimenticatevi di modificare la variabile <code class='d'>KVER</code> qualora la versione primaria dovesse essere diversa (esempio: <code class='d'>6.8.2</code> -> <code class='d'>6.8.3</code>), e la variabile <code class='d'>PVER</code> qualora la versione secondaria dovesse essere diversa (esempio: <code class='d'>gentoo</code> -> <code class='d'>zen</code>)",
         ],
 
         // Step 3
