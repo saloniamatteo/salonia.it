@@ -214,6 +214,14 @@ Remove the `default_server` directives if this isn't your primary website.
 Make sure you movify everything that says "Change this"!
 
 ```nginx
+# Optional: Rate-limits
+#limit_req_zone $binary_remote_addr zone=example_css:10m rate=10r/s;
+#limit_req_zone $binary_remote_addr zone=example_img:10m rate=5r/s;
+
+# Bandwidth limits
+#limit_conn_zone $binary_remote_addr zone=example_conn_css:10m;
+#limit_conn_zone $binary_remote_addr zone=example_conn_img:10m;
+
 server {
 	# HTTP/1.1 & HTTP/2
 	listen 443 ssl default_server;
@@ -285,15 +293,11 @@ server {
 		log_not_found off;
 	}
 
-	# Disable .well-known
-	location ~ /\.(?!well-known).* {
+	# Allow .well-known/security.txt
+	location = /.well-known/security.txt {
+		allow all;
 		log_not_found off;
-		deny all;
 	}
-
-	# Hide certain paths from clients
-	location ~ ^/(?:3rdparty|config|data|lib|manifest.json|templates|tests)(?:$|/) { return 404; }
-	location ~ ^/(?:\.|autotest|console|db_|indie|issue|occ) { return 404; }
 
 	# Prepend all requests with "/index.php" -- this acts as our front controller.
 	# index.php handles all requests, but we have to hide it.
@@ -335,6 +339,14 @@ server {
 		fastcgi_hide_header X-Ratelimit-Limit;
 		fastcgi_hide_header X-Ratelimit-Remaining;
 
+		# Enable gzip but do not remove ETag headers
+		gzip on;
+		gzip_vary on;
+		gzip_comp_level 4;
+		gzip_min_length 256;
+		gzip_proxied expired no-cache no-store private no_last_modified no_etag auth;
+		gzip_types text/plain;
+
 		# Inform clients that HTTP3 is available
 		add_header Alt-Svc 'h3=":443"; ma=86400';
 
@@ -342,6 +354,11 @@ server {
 		add_header Cross-Origin-Opener-Policy "same-origin" always;
 		add_header Cross-Origin-Embedder-Policy "require-corp" always;
 		add_header Cross-Origin-Resource-Policy "same-origin" always;
+
+		# Content Security Policy
+		# See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+		# This policy allows only internal assets.
+		add_header Content-Security-Policy "default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; child-src 'self';";
 
 		# HSTS
 		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
@@ -352,7 +369,7 @@ server {
 		add_header X-Download-Options "noopen";
 		add_header X-Frame-Options "SAMEORIGIN";
 		add_header X-Permitted-Cross-Domain-Policies "none";
-		add_header X-XSS-Protection "1; mode=block";
+		add_header X-XSS-Protection "0";
 
 		# Tell browsers to use per-origin process isolation
 		add_header Origin-Agent-Cluster "?1" always;
@@ -370,24 +387,60 @@ server {
 
 	# CSS & JS
 	location ~ \.(?:css|js|woff2)$ {
+		# Limit access to CSS & JS
+		# Set a burst of 15, and start delaying after the 10th req.
+		limit_req zone=example_css burst=15 delay=10;
+		limit_req_log_level warn;
+		limit_req_status 429;
+
+		# Cap bandwidth to 1MB/s after 1MB,
+		# allowing 5 concurrent requests
+		limit_conn example_conn_css 5;
+		limit_rate_after 1M;
+		limit_rate 1M;
+
+		# Enable gzip but do not remove ETag headers
+		gzip on;
+		gzip_vary on;
+		gzip_comp_level 4;
+		gzip_min_length 256;
+		gzip_proxied expired no-cache no-store private no_last_modified no_etag auth;
+		gzip_types font/woff2 text/css text/javascript text/plain;
+
 		add_header Alt-Svc 'h3=":443"; ma=86400';
 		add_header X-Content-Type-Options "nosniff";
 		add_header X-Frame-Options "SAMEORIGIN";
 		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
 		try_files $uri /index.php$request_uri;
+
 		expires 10d;
+		access_log off;
 	}
 
 	# Images
 	location ~ \.(?:gif|ico|jpg|jpeg|pdf|png|svg|webp)$ {
+		# Limit access to images
+		# Set a burst of 10, and start delaying after the 5th req.
+		limit_req zone=example_img burst=10 delay=5;
+		limit_req_log_level warn;
+		limit_req_status 429;
+
+		# Cap bandwidth to 1MB/s after 1MB,
+		# allowing 5 concurrent requests
+		limit_conn example_conn_img 5;
+		limit_rate_after 1M;
+		limit_rate 1M;
+
 		add_header Alt-Svc 'h3=":443"; ma=86400';
 		add_header X-Content-Type-Options "nosniff";
 		add_header X-Frame-Options "SAMEORIGIN";
 		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
 		try_files $uri /index.php$request_uri;
+
 		expires 14d;
+		access_log off;
 	}
 }
 
