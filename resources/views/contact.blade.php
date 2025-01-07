@@ -107,6 +107,22 @@
 	<x-card>
 		<x-tag id="personal">{{ __("contact.me.title") }}</x-tag>
 
+		<!-- Email -->
+		<x-tile class="mt-1">
+			<x-icon link="https://linkedin.com/in/saloniamatteo/" icon="linkedin">
+
+			<div class="tile__container">
+				<p class="tile__title text-blue-700">
+					@saloniamatteo
+				</p>
+
+				<p class="tile__subtitle text-black">
+					LinkedIn
+				</p>
+			</div>
+			</x-icon>
+		</x-tile>
+
 		<!-- Protonmail -->
 		<x-tile class="mt-1">
 			<x-icon link="mailto:saloniamatteo@pm.me" icon="mail"/>
