@@ -7,7 +7,7 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => "I'm an Italian man originally from Sicily, from the province of Ragusa. I <strong>graduated</strong> on <strong>06/29/2023</strong> with a score of <strong>98/100</strong> at the <strong>ITC Archimede</strong> Accounting School in Modica (RG), as a <strong>Accountant Computer Expert</strong> (<strong>Ragioniere Perito Informatico</strong>). Here I attended the <strong>SIA</strong> course (<em>Sistemi Informativi Aziendali</em>, <em>Corporate Information Systems</em>). I am specialised in:",
+        'desc' => "I'm an Italian man originally from Sicily, from the province of Ragusa. I <strong>graduated</strong> on <strong>06/29/2023</strong> with a score of <strong>98/100</strong> at the <strong>ITC Archimede</strong> Accounting School in Modica (RG), as a <strong>Accountant &amp; Computer Expert</strong> (<strong>Ragioniere Perito Informatico</strong>). Here I attended the <strong>SIA</strong> course (<em>Sistemi Informativi Aziendali</em>, <em>Corporate Information Systems</em>). I am specialised in:",
         'desc2' => 'Over the years I have undertaken a path of <strong>independent study</strong> of many concepts, which has allowed me to significantly expand my skills in <strong>various areas</strong>. In particular, I specialise in:',
 
         // Specializations
@@ -72,75 +72,99 @@ return [
         // 2025
         '2025' => [
             'title' => '2025',
-            'aws' => 'Obtained a <strong>scholarship</strong> through <strong>Edgemony</strong>, and <strong>certified</strong> at <strong>Amazon Web Services (AWS)</strong> as a <strong>Cloud Engineer</strong> and <strong>Solutions Architect</strong>.',
+
+            'c' => [
+                'a' => 'Obtained a <strong>scholarship</strong> through <strong>Edgemony</strong>, and <strong>certified</strong> at <strong>Amazon Web Services (AWS)</strong> as a <strong>Cloud Engineer</strong> and <strong>Solutions Architect</strong>.',
+                'b' => 'Further website improvements (both <strong>client-side</strong> &amp; <strong>server-side</strong>)',
+            ],
         ],
 
         // 2024
         '2024' => [
             'title' => '2024',
-            'elec' => '<strong>Electrical systems</strong> knowledge increase',
-            'eleng' => '<strong>Electrical engineering</strong> knowledge increase',
-            'pract' => 'Practical skills improvement of <strong>electrical</strong>, <strong>home automation/smart home</strong>, <strong>video surveillance</strong>, <strong>anti-theft</strong>, <strong>LAN</strong> systems installation',
-            'ci' => 'Introduction of <strong>CodeIgniter</strong> in personal website',
-            'kconf' => 'Deep-dive in <strong>Kernel</strong> configuration: even smaller Kernel, with performance in mind',
-            'laravel' => 'Website rewrite in <strong>Laravel</strong>, with subsequent analysis and increase of performance. Improvements to website UI.',
+
+            'c' => [
+                'a' => 'In-depth study of <strong>Electrical engineering</strong>',
+                'b' => 'Practical skills improvement regarding <strong>electrical</strong>, <strong>smart home</strong>, <strong>video surveillance</strong>, <strong>anti-theft</strong>, <strong>LAN systems installation</strong>',
+                'c' => 'Introduction of <strong>CodeIgniter</strong> in personal website',
+                'd' => 'Deep-dive in <strong>Kernel</strong> configuration: even smaller Kernel, with performance in mind',
+                'e' => 'Website rewrite in <strong>Laravel</strong>, with subsequent analysis and increase of performance. Improvements to website UI.',
+            ],
         ],
 
         // 2023
         '2023' => [
             'title' => '2023 &mdash; 13th grade',
-            'perf' => 'Improvement of custom Kernel performance',
-            'pwork' => 'Improvement of workstation performance and efficiency, with periodic maintenance',
-            'lan' => 'Improvement of local network',
-            'db' => 'Advanced study of databases, with PHP connection',
-            'webs' => 'Personal website redesign',
-            'dipl' => 'Accountant &amp; Computer Expert</strong> degree (<strong>Ragioniere Perito Informatico</strong>), score of <strong>98/100</strong>',
+
+            'c' => [
+                'a' => 'Improvement of custom Kernel performance',
+                'b' => 'Improvement of workstation performance and efficiency, with periodic maintenance',
+                'c' => 'Improvement of local network',
+                'd' => 'Advanced study of databases, with PHP connection',
+                'e' => 'Personal website redesign',
+                'f' => 'Accountant &amp; Computer Expert</strong> degree (<strong>Ragioniere Perito Informatico</strong>), score of <strong>98/100</strong>',
+            ],
         ],
 
         // 2022
         '2022' => [
             'title' => '2022 &mdash; 12th-13th grade',
-            'prog' => 'Advanced study of programming theories',
-            'desig' => 'Advanced study of design theories',
-            'elec' => 'Knowledge improvement regarding electrical systems, local network systems, and video surveillance systems',
-            'works' => 'Built performant workstation with Gentoo Linux',
-            'lan' => 'Built and improved local network, with IPV6 connectivity',
+
+            'c' => [
+                'a' => 'Advanced study of programming theories',
+                'b' => 'Advanced study of design theories',
+                'c' => 'Knowledge improvement regarding electrical systems, local network systems, and video surveillance systems',
+                'd' => 'Built performant workstation with Gentoo Linux',
+                'e' => 'Built and improved local network, with IPV6 connectivity',
+            ],
         ],
 
         // 2021
         '2021' => [
             'title' => '2021 &mdash; 11th-12th grade',
-            'gento' => 'Move from Artix Linux to Gentoo Linux',
-            'knowl' => 'Extensive improvement of Linux knowledge',
-            'C' => 'Advanced study of the C programming language, development of various programs in C',
-            'andr' => 'Development of small Android apps',
-            'kconf' => 'First steps with Kernel personalization to increase performance and efficiency',
+
+            'c' => [
+                'a' => 'Move from Artix Linux to Gentoo Linux',
+                'b' => 'Extensive improvement of Linux knowledge',
+                'c' => 'Advanced study of the C programming language, development of various programs in C',
+                'd' => 'Development of small Android apps',
+                'e' => 'First steps with Kernel personalization to increase performance and efficiency',
+            ],
         ],
 
         // 2020
         '2020' => [
             'title' => '2020 &mdash; 10th-11th grade',
-            'arch' => 'Move from Ubuntu to Arch Linux',
-            'appr' => 'Advanced study of Linux key concepts and theories',
-            'guide' => 'Wrote Arch Linux installation guide',
-            'artix' => 'Move from Arch Linux to Artix Linux',
+
+            'c' => [
+                'a' => 'Move from Ubuntu to Arch Linux',
+                'b' => 'Advanced study of Linux key concepts and theories',
+                'c' => 'Wrote Arch Linux installation guide',
+                'd' => 'Move from Arch Linux to Artix Linux',
+            ],
         ],
 
         // 2019
         '2019' => [
             'title' => '2019 &mdash; 9th-10th grade',
-            'ubnt' => 'Improved experience with Ubuntu (GNOME+LXDE+XFCE) and Linux Mint',
-            'webs' => 'Frequent development of websites with various tools and various styles',
-            'prog' => 'Advanced study of programming theories',
+
+            'c' => [
+                'a' => 'Improved experience with Ubuntu (GNOME+LXDE+XFCE) and Linux Mint',
+                'b' => 'Frequent development of websites with various tools and various styles',
+                'd' => 'Advanced study of programming theories',
+            ],
         ],
 
         // 2018
         '2018' => [
             'title' => '2018 &mdash; 8th-9th grade',
-            'B2' => 'English B2 certification',
-            'linux' => 'First experience with Linux, with Raspbian on a Raspberry Pi 0 W (1° gen), and Ubuntu 16 on a Sony Vaio VGN-N11M',
-            'py' => 'First programming experience with Python',
-            'vbnet' => 'Development of small programs with Visual Basic .NET',
+
+            'c' => [
+                'a' => 'English B2 certification',
+                'b' => 'First experience with Linux, with Raspbian on a Raspberry Pi 0 W (1° gen), and Ubuntu 16 on a Sony Vaio VGN-N11M',
+                'c' => 'First programming experience with Python',
+                'd' => 'Development of small programs with Visual Basic .NET',
+            ],
         ],
     ],
 ];
