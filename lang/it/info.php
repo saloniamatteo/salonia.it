@@ -71,7 +71,7 @@ return [
 
         // 2025
         '2025' => [
-            'title' => '2025',
+            'title' => '',
 
             'c' => [
                 'a' => 'Ottenimento <strong>borsa di studio</strong> tramite <strong>Edgemony</strong>, e <strong>certificazione</strong> presso <strong>Amazon Web Services (AWS)</strong> in qualità di <strong>Cloud Engineer</strong> e <strong>Solutions Architect</strong>.',
@@ -81,7 +81,7 @@ return [
 
         // 2024
         '2024' => [
-            'title' => '2024',
+            'title' => '',
 
             'c' => [
                 'a' => 'Ampliamento conoscenze di <strong>Elettrotecnica</strong>',
@@ -94,7 +94,7 @@ return [
 
         // 2023
         '2023' => [
-            'title' => '2023 &mdash; 5° Superiore (corso SIA)',
+            'title' => '5° Superiore (corso SIA)',
 
             'c' => [
                 'a' => 'Miglioramento prestazioni Kernel personalizzato',
@@ -108,7 +108,7 @@ return [
 
         // 2022
         '2022' => [
-            'title' => '2022 &mdash; 4-5° Superiore (corso SIA)',
+            'title' => '4-5° Superiore (corso SIA)',
 
             'c' => [
                 'a' => 'Studio ed approfondimento teorie di programmazione',
@@ -121,7 +121,7 @@ return [
 
         // 2021
         '2021' => [
-            'title' => '2021 &mdash; 3-4° Superiore (corso SIA)',
+            'title' => '3-4° Superiore (corso SIA)',
 
             'c' => [
                 'a' => 'Passaggio da Artix Linux a Gentoo Linux',
@@ -134,7 +134,7 @@ return [
 
         // 2020
         '2020' => [
-            'title' => '2020 &mdash; 2-3° Superiore (corso SIA)',
+            'title' => '2-3° Superiore (corso SIA)',
 
             'c' => [
                 'a' => 'Passaggio da Ubuntu ad Arch Linux',
@@ -146,7 +146,7 @@ return [
 
         // 2019
         '2019' => [
-            'title' => '2019 &mdash; 1-2° Superiore (corso AFM)',
+            'title' => '1-2° Superiore (corso AFM)',
 
             'c' => [
                 'a' => 'Sviluppo esperienza con Ubuntu (GNOME+LXDE+XFCE) e Linux Mint',
@@ -157,7 +157,7 @@ return [
 
         // 2018
         '2018' => [
-            'title' => '2018 &mdash; 3° Media-1° Superiore (corso AFM)',
+            'title' => '3° Media-1° Superiore (corso AFM)',
 
             'c' => [
                 'a' => 'Certificazione B2 Inglese',
