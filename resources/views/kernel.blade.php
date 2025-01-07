@@ -334,6 +334,13 @@
 					<td>{{ __("kernel.setup.s4.table.f") }}</td>
 				</tr>
 
+				<!-- Graphite -->
+				<tr>
+					<td>-g</td>
+					<td>--graphite</td>
+					<td>{{ __("kernel.setup.s4.table.g") }}</td>
+				</tr>
+
 				<!-- Help -->
 				<tr>
 					<td>-h</td>
