@@ -30,7 +30,7 @@
 			</div>
 
 			<div class="grid-c-8 ml-1-md mr-4-lg">
-				<p>
+				<p class="mt-0-md">
 					{!! __("info.hero.desc") !!}
 				</p>
 
