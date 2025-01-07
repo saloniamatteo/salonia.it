@@ -34,26 +34,72 @@
 					{!! __("info.hero.desc") !!}
 				</p>
 
+				<p class="mt-0-md">
+					{!! __("info.hero.desc2") !!}
+				</p>
+
 				<ul>
-					<li>
-					<strong><u>{{ __("info.hero.it.title") }}</u></strong>:
-					{!! __("info.hero.it.desc") !!}
-					</li>
+					<!-- GNU/Linux -->
+					<x-list-item-u
+					name="{{ __('info.hero.spec.linux.title') }}">
 
-					<li>
-					<strong><u>{{ __("info.hero.english.title") }}</u></strong>:
-					{!! __("info.hero.english.desc") !!}
-					</li>
+						<ul>
+							<li>{!! __("info.hero.spec.linux.desc") !!}</li>
+							<li>{!! __("info.hero.spec.linux.desc2") !!}</li>
+							<li>{!! __("info.hero.spec.linux.desc3") !!}</li>
+						</ul>
+					</x-list-item-u>
 
-					<li>
-					<strong><u>{{ __("info.hero.business.title") }}</u></strong>:
-					{!! __("info.hero.business.desc") !!}
-					</li>
+					<!-- Cloud computing -->
+					<x-list-item-u
+					name="{{ __('info.hero.spec.cloud.title') }}">
 
-					<li>
-					<strong><u>{{ __("info.hero.maths.title") }}</u></strong>:
-					{!! __("info.hero.maths.desc") !!}
-					</li>
+						{!! __("info.hero.spec.cloud.desc") !!}
+					</x-list-item-u>
+
+					<!-- Firewall -->
+					<x-list-item-u
+					name="{{ __('info.hero.spec.firewall.title') }}">
+
+						<ul>
+							<li>{!! __("info.hero.spec.firewall.desc") !!}</li>
+							<li>{!! __("info.hero.spec.firewall.desc2") !!}</li>
+							<li>{!! __("info.hero.spec.firewall.desc3") !!}</li>
+						</ul>
+					</x-list-item-u>
+
+					<!-- Web server -->
+					<x-list-item-u
+					name="{{ __('info.hero.spec.webserver.title') }}">
+
+						{!! __("info.hero.spec.webserver.desc") !!}
+					</x-list-item-u>
+
+					<!-- Web dev -->
+					<x-list-item-u
+					name="{{ __('info.hero.spec.web.title') }}">
+
+						<ul>
+							<!-- Frontend -->
+							<x-list-item-u
+							name="{{ __('info.hero.spec.web.frontend.title') }}">
+								{!! __("info.hero.spec.web.frontend.desc") !!}
+							</x-list-item-u>
+
+							<!-- Backend -->
+							<x-list-item-u
+							name="{{ __('info.hero.spec.web.backend.title') }}">
+								{!! __("info.hero.spec.web.backend.desc") !!}
+							</x-list-item-u>
+						</ul>
+					</x-list-item-u>
+
+					<!-- DNS -->
+					<x-list-item-u
+					name="{!! __('info.hero.spec.dns.title') !!}">
+
+						{!! __("info.hero.spec.dns.desc") !!}
+					</x-list-item-u>
 				</ul>
 			</div>
 		</div>
@@ -237,6 +283,16 @@
 
 						<li class="menu-item">
 							{!! __("info.timeline.2024.laravel") !!}
+						</li>
+					</ul>
+				</li>
+
+				<li class="menu-item">
+					<strong>{{ __("info.timeline.2025.title") }}</strong>
+
+					<ul class="menu">
+						<li class="menu-item">
+							{!! __("info.timeline.2025.aws") !!}
 						</li>
 					</ul>
 				</li>

@@ -7,29 +7,61 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => "I'm an Italian man originally from Sicily, from the province of Ragusa. I <strong>graduated</strong> on <strong>06/29/2023</strong> with a score of <strong>98/100</strong> at the '<strong>Archimede</strong>' Accounting School in Modica (RG), where I attended the programmer course, abbreviated <strong>SIA</strong> (<em>Sistemi Informativi Aziendali</em>, <em>Corporate Information Systems </em>).<br>I am specialised in:",
-        // IT
-        'it' => [
-            'title' => 'IT &amp; Electronics',
-            'desc' => 'Software development (<strong>C</strong>, <strong>VB.NET</strong>), website development (<strong>HTML+CSS+JS+PHP+SQL</strong>), <strong>GNU/Linux</strong> system management and maintenance, <strong>workstation</strong> assembly and management, <strong>LAN networks</strong> installation and maintenance, <strong>video surveillance systems</strong> installation, <strong>anti-theft systems</strong> installation.',
-        ],
+        'desc' => "I'm an Italian man originally from Sicily, from the province of Ragusa. I <strong>graduated</strong> on <strong>06/29/2023</strong> with a score of <strong>98/100</strong> at the <strong>ITC Archimede</strong> Accounting School in Modica (RG), as a <strong>Accountant Computer Expert</strong> (<strong>Ragioniere Perito Informatico</strong>). Here I attended the <strong>SIA</strong> course (<em>Sistemi Informativi Aziendali</em>, <em>Corporate Information Systems</em>). I am specialised in:",
+        'desc2' => 'Over the years I have undertaken a path of <strong>independent study</strong> of many concepts, which has allowed me to significantly expand my skills in <strong>various areas</strong>. In particular, I specialise in:',
 
-        // English
-        'english' => [
-            'title' => 'English',
-            'desc' => 'Fluent in <strong>Speaking</strong>, <strong>Listening</strong>, <strong>Writing</strong>.',
-        ],
+        // Specializations
+        'spec' => [
+            // GNU/Linux
+            'linux' => [
+                'title' => 'GNU/Linux',
+                'desc' => '<strong>Kernel</strong> configuration &amp; compilation, for <strong>high-performance</strong> systems, daily use, <strong>real-time</strong>, etc.',
+                'desc2' => 'Management of servers capable of supporting <strong>thousands of concurrent users</strong>, and implementation of <strong>cost-saving</strong> measures.',
+                'desc3' => 'Distro: <strong>Arch</strong>, <strong>Artix</strong>, <strong>Debian</strong>, <strong>Devuan</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>, <strong>Ubuntu</strong>',
+            ],
 
-        // Business & Finance
-        'business' => [
-            'title' => 'Business & Finance',
-            'desc' => 'Preparation of the <strong>Economic Balance Sheet</strong>, <strong>Economic-Financial Budgets</strong>, <strong>Cost analysis</strong>, <strong>Employee paycheck</strong>, <strong>Leasing</strong>, <strong>Issue of Shares and Bonds</strong>, <strong>Distribution of Operating Profits and dividends</strong>, <strong>Financial market analysis</strong>, <strong>Stock market index analysis</strong>, <strong>Stock market investments</strong>.',
-        ],
+            // Cloud computing
+            'cloud' => [
+                'title' => 'Cloud computing',
+                'desc' => 'Management of <strong>cloud infrastructures</strong>, such as <strong>servers</strong>, <strong>databases</strong>, <strong>storage</strong>, etc.',
+            ],
 
-        // Maths
-        'maths' => [
-            'title' => 'Mathematics',
-            'desc' => 'Proficient in <strong>Algebra</strong>, <strong>Mathematical Analysis</strong>, <strong>Financial Mathematics</strong>, <strong>Combinatorics</strong>.',
+            // Firewall
+            'firewall' => [
+                'title' => 'Firewall',
+                'desc' => '<strong>Firewall</strong> configuration, with <strong>port filtering</strong> and <strong>rate-limiting</strong>.',
+                'desc2' => '<strong>Suricata IDS/IPS</strong> configuration.',
+                'desc3' => '<strong>Malicious request blocking</strong> via <strong>Fail2ban</strong> &amp; automatic <strong>AbuseIPDB</strong> reporting.',
+            ],
+
+            // Web server
+            'webserver' => [
+                'title' => 'Web server',
+                'desc' => 'Implementation of <strong>security policies</strong> &amp; <strong>SSL certificates</strong>, <strong>HTTP2</strong> &amp; <strong>HTTP3/QUIC</strong> protocols, <strong>asset rate-limiting</strong> (<strong>nginx</strong>)',
+            ],
+
+            // Web dev
+            'web' => [
+                'title' => 'Website development',
+
+                // Frontend
+                'frontend' => [
+                    'title' => 'Frontend development',
+                    'desc' => '<strong>Minimization of JS dependency</strong>, <strong>responsive &amp; modern design</strong>.',
+                ],
+
+                // Backend
+                'backend' => [
+                    'title' => 'Backend development',
+                    'desc' => '<strong>PHP 8 + Laravel 11</strong>, <strong>content compression &amp; reduction</strong>, <strong>load time reduction</strong>, blocking of requests from IPs present in <strong>AbuseIPDB</strong>, <strong>rate-limiting</strong>.',
+                ],
+            ],
+
+            // Domains & DNS
+            'dns' => [
+                'title' => 'Domain names & DNS',
+                'desc' => 'Configuration of <strong>DNS zones &amp; records</strong>. <strong>Ad-hoc</strong> implementation of a <strong>DDNS client</strong>, via <strong>API calls</strong>.',
+            ],
         ],
     ],
 
@@ -103,6 +135,12 @@ return [
             'ci' => 'Introduction of <strong>CodeIgniter</strong> in personal website',
             'kconf' => 'Deep-dive in <strong>Kernel</strong> configuration: even smaller Kernel, with performance in mind',
             'laravel' => 'Website rewrite in <strong>Laravel</strong>, with subsequent analysis and increase of performance. Improvements to website UI.',
+        ],
+
+        // 2025
+        '2025' => [
+            'title' => '2025',
+            'aws' => 'Obtained a <strong>scholarship</strong> through <strong>Edgemony</strong>, and <strong>certified</strong> at <strong>Amazon Web Services (AWS)</strong> as a <strong>Cloud Engineer</strong> and <strong>Solutions Architect</strong>.',
         ],
     ],
 ];

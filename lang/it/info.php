@@ -7,30 +7,61 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => "Sono un ragazzo Italiano originario della Sicilia, provincia di Ragusa. Mi sono <strong>diplomato</strong> in data <strong>29/06/2023</strong> con un punteggio di <strong>98/100</strong> presso la Ragioneria '<strong>Archimede</strong>' di Modica (RG), dove ho frequentato il corso di programmatore, denominato <strong>SIA</strong> (<em>Sistemi Informativi Aziendali </em>).<br>Sono specializzato in:",
+        'desc' => "Sono un ragazzo Italiano originario della Sicilia, provincia di Ragusa. Mi sono <strong>diplomato</strong> in data <strong>29/06/2023</strong> con un punteggio di <strong>98/100</strong> presso la Ragioneria <strong>ITC Archimede</strong> di Modica (RG), in qualità di <strong>Ragioniere Perito Informatico</strong>. Qui ho frequentato il corso <strong>SIA</strong> (<em>Sistemi Informativi Aziendali</em>).",
+        'desc2' => 'Nel corso degli anni ho intrapreso un percorso di <strong>approfondimento autonomo</strong> dei concetti, che mi ha consentito di ampliare significativamente le mie competenze in <strong>diversi ambiti</strong>. In particolare, sono specializzato in:',
 
-        // IT
-        'it' => [
-            'title' => 'Informatica ed Elettronica',
-            'desc' => 'Sviluppo programmi (<strong>C</strong>, <strong>VB.NET</strong>), sviluppo siti web (<strong>HTML+CSS+JS+PHP+SQL</strong>), gestione e manutenzione sistemi informatici <strong>GNU/Linux</strong>, assemblaggio e manutenzione <strong>workstation</strong>, installazione e manutenzione <strong>reti LAN</strong>, installazione <strong>impianti di videosorveglianza</strong>, installazione <strong>impianti di antifurto</strong>.',
-        ],
+        // Specializations
+        'spec' => [
+            // GNU/Linux
+            'linux' => [
+                'title' => 'GNU/Linux',
+                'desc' => 'Configurazione e compilazione del <strong>Kernel</strong> per sistemi con necessità <strong>high-performance</strong>, uso quotidiano, <strong>real-time</strong>, ecc.',
+                'desc2' => 'Gestione server in grado di sostenere <strong>migliaia di utenti</strong> in <strong>contemporanea</strong>, ed implementazione di misure volte alla <strong>riduzione dei costi</strong>.',
+                'desc3' => 'Distro: <strong>Arch</strong>, <strong>Artix</strong>, <strong>Debian</strong>, <strong>Devuan</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>, <strong>Ubuntu</strong>',
+            ],
 
-        // English
-        'english' => [
-            'title' => 'Inglese',
-            'desc' => 'Fluente in <strong>Speaking</strong>, <strong>Listening</strong>, <strong>Writing</strong>.',
-        ],
+            // Cloud computing
+            'cloud' => [
+                'title' => 'Cloud computing',
+                'desc' => 'Gestione delle <strong>infrastrutture in cloud</strong>, quali <strong>server</strong>, <strong>database</strong>, <strong>storage</strong>, ecc.',
+            ],
 
-        // Business & Finance
-        'business' => [
-            'title' => 'Economia e Finanza',
-            'desc' => "Redazione <strong>Bilancio</strong>, <strong>Budget economico-finanziari</strong>, <strong>Analisi dei costi</strong>, <strong>Busta paga</strong>, <strong>Leasing</strong>, <strong>Emissione Azioni ed Obbligazioni</strong>, <strong>Distribuzione Utile d'Esercizio e dividendi</strong>, altre operazioni di <strong>Partita doppia</strong>, <strong>Analisi dei mercati finanziari</strong>, <strong>Analisi degli indici di mercato</strong>, <strong>Investimenti in borsa</strong>.",
-        ],
+            // Firewall
+            'firewall' => [
+                'title' => 'Firewall',
+                'desc' => 'Configurazione <strong>firewall</strong>, con <strong>filtraggio delle porte</strong> e <strong>rate-limiting</strong>.',
+                'desc2' => 'Configurazione <strong>Suricata IDS/IPS</strong>.',
+                'desc3' => '<strong>Blocco</strong> delle <strong>richieste malevole</strong> tramite <strong>Fail2ban</strong>, e segnalazione automatica su <strong>AbuseIPDB</strong>.',
+            ],
 
-        // Maths
-        'maths' => [
-            'title' => 'Matematica',
-            'desc' => 'Abile in <strong>Algebra</strong>, <strong>Analisi Matematica</strong>, <strong>Matematica Finanziaria</strong>, <strong>Calcolo Combinatorio</strong>.',
+            // Web server
+            'webserver' => [
+                'title' => 'Server web',
+                'desc' => 'Implementazione <strong>policy di sicurezza</strong> e <strong>certificati SSL</strong>, protocolli <strong>HTTP2</strong> e <strong>HTTP3/QUIC</strong>, <strong>rate-limiting di asset</strong> (<strong>nginx</strong>)',
+            ],
+
+            // Web dev
+            'web' => [
+                'title' => 'Sviluppo siti web',
+
+                // Frontend
+                'frontend' => [
+                    'title' => 'Sviluppo frontend',
+                    'desc' => '<strong>Riduzione</strong> delle <strong>dipendenze su JS</strong>, <strong>design responsive</strong> e <strong>moderno</strong>.',
+                ],
+
+                // Backend
+                'backend' => [
+                    'title' => 'Sviluppo backend',
+                    'desc' => '<strong>PHP 8 + Laravel 11</strong>, <strong>compressione</strong> e <strong>riduzione dei contenuti</strong>, <strong>riduzione</strong> dei <strong>tempi di caricamento</strong>, blocco delle richieste da IP presenti in <strong>AbuseIPDB</strong>, <strong>rate-limiting</strong>.',
+                ],
+            ],
+
+            // Domains & DNS
+            'dns' => [
+                'title' => 'Nomi di dominio e DNS',
+                'desc' => 'Configurazione <strong>zone</strong> e <strong>record DNS</strong>. Implementazione <strong>ad-hoc</strong> di un <strong>client DDNS</strong>, tramite <strong>chiamate API</strong>.',
+            ],
         ],
     ],
 
@@ -104,6 +135,12 @@ return [
             'ci' => 'Introduzione di <strong>CodeIgniter</strong> in sito web personale',
             'kconf' => 'Approfondimento della configurazione del <strong>Kernel</strong>: Kernel ancora più piccolo, mettendo in primo piano le prestazioni',
             'laravel' => 'Riscrittura sito web con <strong>Laravel</strong>, con ulteriore analisi e miglioramento delle prestazioni. Miglioramento UI del sito web.',
+        ],
+
+        // 2025
+        '2025' => [
+            'title' => '2025',
+            'aws' => 'Ottenimento <strong>borsa di studio</strong> tramite <strong>Edgemony</strong>, e <strong>certificazione</strong> presso <strong>Amazon Web Services (AWS)</strong> in qualità di <strong>Cloud Engineer</strong> e <strong>Solutions Architect</strong>.',
         ],
     ],
 ];
