@@ -389,15 +389,15 @@ server {
 	location ~ \.(?:css|js|woff2)$ {
 		# Limit access to CSS & JS
 		# Set a burst of 15, and start delaying after the 10th req.
-		limit_req zone=example_css burst=15 delay=10;
-		limit_req_log_level warn;
-		limit_req_status 429;
+		#limit_req zone=example_css burst=15 delay=10;
+		#limit_req_log_level warn;
+		#limit_req_status 429;
 
 		# Cap bandwidth to 1MB/s after 1MB,
 		# allowing 5 concurrent requests
-		limit_conn example_conn_css 5;
-		limit_rate_after 1M;
-		limit_rate 1M;
+		#limit_conn example_conn_css 5;
+		#limit_rate_after 1M;
+		#limit_rate 1M;
 
 		# Enable gzip but do not remove ETag headers
 		gzip on;
@@ -422,15 +422,15 @@ server {
 	location ~ \.(?:gif|ico|jpg|jpeg|pdf|png|svg|webp)$ {
 		# Limit access to images
 		# Set a burst of 10, and start delaying after the 5th req.
-		limit_req zone=example_img burst=10 delay=5;
-		limit_req_log_level warn;
-		limit_req_status 429;
+		#limit_req zone=example_img burst=10 delay=5;
+		#limit_req_log_level warn;
+		#limit_req_status 429;
 
 		# Cap bandwidth to 1MB/s after 1MB,
 		# allowing 5 concurrent requests
-		limit_conn example_conn_img 5;
-		limit_rate_after 1M;
-		limit_rate 1M;
+		#limit_conn example_conn_img 5;
+		#limit_rate_after 1M;
+		#limit_rate 1M;
 
 		add_header Alt-Svc 'h3=":443"; ma=86400';
 		add_header X-Content-Type-Options "nosniff";
@@ -452,6 +452,7 @@ server {
 	# Prevent nginx HTTP Server Detection
 	server_tokens off;
 
+	# Change this!
 	return 301 https://example.com$request_uri;
 }
 ```
