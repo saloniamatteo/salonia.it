@@ -69,61 +69,10 @@ return [
     'timeline' => [
         'title' => 'Percorso formativo',
 
-        // 2018
-        '2018' => [
-            'title' => '2018 &mdash; 3° Media-1° Superiore (corso AFM)',
-            'B2' => 'Certificazione B2 Inglese',
-            'linux' => 'Prima esperienza con Linux, tramite Raspbian su Raspberry Pi 0 W (1° gen), e Ubuntu 16 su Sony Vaio VGN-N11M',
-            'py' => 'Prima esperienza con programmazione in Python',
-            'vbnet' => 'Sviluppo piccoli programmi in Visual Basic .NET',
-        ],
-
-        // 2019
-        '2019' => [
-            'title' => '2019 &mdash; 1-2° Superiore (corso AFM)',
-            'ubnt' => 'Sviluppo esperienza con Ubuntu (GNOME+LXDE+XFCE) e Linux Mint',
-            'webs' => 'Sviluppo frequente di siti web con vari strumenti e con stili diversi',
-            'prog' => 'Approfondimento e studio di teorie della programmazione',
-        ],
-
-        // 2020
-        '2020' => [
-            'title' => '2020 &mdash; 2-3° Superiore (corso SIA)',
-            'arch' => 'Passaggio da Ubuntu ad Arch Linux',
-            'appr' => 'Approfondimento concetti e teorie chiave Linux',
-            'guide' => 'Redazione guida su installazione Arch Linux',
-            'artix' => 'Passaggio da Arch Linux ad Artix Linux',
-        ],
-
-        // 2021
-        '2021' => [
-            'title' => '2021 &mdash; 3-4° Superiore (corso SIA)',
-            'gento' => 'Passaggio da Artix Linux a Gentoo Linux',
-            'knowl' => 'Miglioramento notevole conoscenze Linux',
-            'C' => 'Studio ed approfondimento linguaggio C, sviluppo di vari programmi in C',
-            'andr' => 'Sviluppo piccole applicazioni Android',
-            'kconf' => 'Primi passi con personalizzazione Kernel volta a migliorare prestazioni ed efficienza',
-        ],
-
-        // 2022
-        '2022' => [
-            'title' => '2022 &mdash; 4-5° Superiore (corso SIA)',
-            'prog' => 'Studio ed approfondimento teorie di programmazione',
-            'desig' => 'Studio ed approfondimento teorie di design',
-            'elec' => 'Miglioramento competenze in impianti elettrici, impianti reti locali, e sistemi di sorveglianza',
-            'works' => 'Costruzione workstation performante con Gentoo Linux',
-            'lan' => 'Costruzione e miglioramento rete locale, con connettività IPV6',
-        ],
-
-        // 2023
-        '2023' => [
-            'title' => '2023 &mdash; 5° Superiore (corso SIA)',
-            'perf' => 'Miglioramento prestazioni Kernel personalizzato',
-            'pwork' => 'Miglioramento prestazioni ed efficienza workstation, con manutenzione periodica',
-            'lan' => 'Miglioramento rete locale',
-            'db' => 'Approfondimento teorie e concetti dei database, con collegamento PHP',
-            'webs' => 'Redesign sito web personale',
-            'dipl' => 'Diploma di <strong>Ragioniere Perito Informatico</strong>, punteggio <strong>98/100</strong>',
+        // 2025
+        '2025' => [
+            'title' => '2025',
+            'aws' => 'Ottenimento <strong>borsa di studio</strong> tramite <strong>Edgemony</strong>, e <strong>certificazione</strong> presso <strong>Amazon Web Services (AWS)</strong> in qualità di <strong>Cloud Engineer</strong> e <strong>Solutions Architect</strong>.',
         ],
 
         // 2024
@@ -137,10 +86,61 @@ return [
             'laravel' => 'Riscrittura sito web con <strong>Laravel</strong>, con ulteriore analisi e miglioramento delle prestazioni. Miglioramento UI del sito web.',
         ],
 
-        // 2025
-        '2025' => [
-            'title' => '2025',
-            'aws' => 'Ottenimento <strong>borsa di studio</strong> tramite <strong>Edgemony</strong>, e <strong>certificazione</strong> presso <strong>Amazon Web Services (AWS)</strong> in qualità di <strong>Cloud Engineer</strong> e <strong>Solutions Architect</strong>.',
+        // 2023
+        '2023' => [
+            'title' => '2023 &mdash; 5° Superiore (corso SIA)',
+            'perf' => 'Miglioramento prestazioni Kernel personalizzato',
+            'pwork' => 'Miglioramento prestazioni ed efficienza workstation, con manutenzione periodica',
+            'lan' => 'Miglioramento rete locale',
+            'db' => 'Approfondimento teorie e concetti dei database, con collegamento PHP',
+            'webs' => 'Redesign sito web personale',
+            'dipl' => 'Diploma di <strong>Ragioniere Perito Informatico</strong>, punteggio <strong>98/100</strong>',
+        ],
+
+        // 2022
+        '2022' => [
+            'title' => '2022 &mdash; 4-5° Superiore (corso SIA)',
+            'prog' => 'Studio ed approfondimento teorie di programmazione',
+            'desig' => 'Studio ed approfondimento teorie di design',
+            'elec' => 'Miglioramento competenze in impianti elettrici, impianti reti locali, e sistemi di sorveglianza',
+            'works' => 'Costruzione workstation performante con Gentoo Linux',
+            'lan' => 'Costruzione e miglioramento rete locale, con connettività IPV6',
+        ],
+
+        // 2021
+        '2021' => [
+            'title' => '2021 &mdash; 3-4° Superiore (corso SIA)',
+            'gento' => 'Passaggio da Artix Linux a Gentoo Linux',
+            'knowl' => 'Miglioramento notevole conoscenze Linux',
+            'C' => 'Studio ed approfondimento linguaggio C, sviluppo di vari programmi in C',
+            'andr' => 'Sviluppo piccole applicazioni Android',
+            'kconf' => 'Primi passi con personalizzazione Kernel volta a migliorare prestazioni ed efficienza',
+        ],
+
+        // 2020
+        '2020' => [
+            'title' => '2020 &mdash; 2-3° Superiore (corso SIA)',
+            'arch' => 'Passaggio da Ubuntu ad Arch Linux',
+            'appr' => 'Approfondimento concetti e teorie chiave Linux',
+            'guide' => 'Redazione guida su installazione Arch Linux',
+            'artix' => 'Passaggio da Arch Linux ad Artix Linux',
+        ],
+
+        // 2019
+        '2019' => [
+            'title' => '2019 &mdash; 1-2° Superiore (corso AFM)',
+            'ubnt' => 'Sviluppo esperienza con Ubuntu (GNOME+LXDE+XFCE) e Linux Mint',
+            'webs' => 'Sviluppo frequente di siti web con vari strumenti e con stili diversi',
+            'prog' => 'Approfondimento e studio di teorie della programmazione',
+        ],
+
+        // 2018
+        '2018' => [
+            'title' => '2018 &mdash; 3° Media-1° Superiore (corso AFM)',
+            'B2' => 'Certificazione B2 Inglese',
+            'linux' => 'Prima esperienza con Linux, tramite Raspbian su Raspberry Pi 0 W (1° gen), e Ubuntu 16 su Sony Vaio VGN-N11M',
+            'py' => 'Prima esperienza con programmazione in Python',
+            'vbnet' => 'Sviluppo piccoli programmi in Visual Basic .NET',
         ],
     ],
 ];

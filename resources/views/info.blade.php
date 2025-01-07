@@ -113,150 +113,18 @@
 			</p>
 
 			<ul class="menu">
+				<!-- 2025 -->
 				<li class="menu-item">
-					<strong>{!! __("info.timeline.2018.title") !!}</strong>
+					<strong>{{ __("info.timeline.2025.title") }}</strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							{{ __("info.timeline.2018.B2") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2018.linux") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2018.py") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2018.vbnet") }}
+							{!! __("info.timeline.2025.aws") !!}
 						</li>
 					</ul>
 				</li>
 
-				<li class="menu-item">
-					<strong>{!! __("info.timeline.2019.title") !!}</strong>
-
-					<ul class="menu">
-						<li class="menu-item">
-							{{ __("info.timeline.2019.ubnt") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2019.webs") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2019.prog") }}
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu-item">
-					<strong>{!! __("info.timeline.2020.title") !!}</strong>
-
-					<ul class="menu">
-						<li class="menu-item">
-							{{ __("info.timeline.2020.arch") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2020.appr") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2020.guide") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2020.artix") }}
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu-item">
-					<strong>{!! __("info.timeline.2021.title") !!}</strong>
-
-					<ul class="menu">
-						<li class="menu-item">
-							{{ __("info.timeline.2021.gento") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2021.knowl") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2021.C") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2021.andr") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2021.kconf") }}
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu-item">
-					<strong>{!! __("info.timeline.2022.title") !!}</strong>
-
-					<ul class="menu">
-						<li class="menu-item">
-							{{ __("info.timeline.2022.prog") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2022.desig") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2022.elec") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2022.works") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2022.lan") }}
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu-item">
-					<strong>{!! __("info.timeline.2023.title") !!}</strong>
-
-					<ul class="menu">
-						<li class="menu-item">
-							{{ __("info.timeline.2023.perf") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2023.pwork") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2023.lan") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2023.db") }}
-						</li>
-
-						<li class="menu-item">
-							{{ __("info.timeline.2023.webs") }}
-						</li>
-
-						<li class="menu-item">
-							{!! __("info.timeline.2023.dipl") !!}
-						</li>
-					</ul>
-				</li>
-
+				<!-- 2024 -->
 				<li class="menu-item">
 					<strong>{{ __("info.timeline.2024.title") }}</strong>
 
@@ -287,12 +155,152 @@
 					</ul>
 				</li>
 
+				<!-- 2023 -->
 				<li class="menu-item">
-					<strong>{{ __("info.timeline.2025.title") }}</strong>
+					<strong>{!! __("info.timeline.2023.title") !!}</strong>
 
 					<ul class="menu">
 						<li class="menu-item">
-							{!! __("info.timeline.2025.aws") !!}
+							{{ __("info.timeline.2023.perf") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2023.pwork") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2023.lan") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2023.db") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2023.webs") }}
+						</li>
+
+						<li class="menu-item">
+							{!! __("info.timeline.2023.dipl") !!}
+						</li>
+					</ul>
+				</li>
+
+				<!-- 2022 -->
+				<li class="menu-item">
+					<strong>{!! __("info.timeline.2022.title") !!}</strong>
+
+					<ul class="menu">
+						<li class="menu-item">
+							{{ __("info.timeline.2022.prog") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2022.desig") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2022.elec") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2022.works") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2022.lan") }}
+						</li>
+					</ul>
+				</li>
+
+				<!-- 2021 -->
+				<li class="menu-item">
+					<strong>{!! __("info.timeline.2021.title") !!}</strong>
+
+					<ul class="menu">
+						<li class="menu-item">
+							{{ __("info.timeline.2021.gento") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2021.knowl") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2021.C") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2021.andr") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2021.kconf") }}
+						</li>
+					</ul>
+				</li>
+
+				<!-- 2020 -->
+				<li class="menu-item">
+					<strong>{!! __("info.timeline.2020.title") !!}</strong>
+
+					<ul class="menu">
+						<li class="menu-item">
+							{{ __("info.timeline.2020.arch") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2020.appr") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2020.guide") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2020.artix") }}
+						</li>
+					</ul>
+				</li>
+
+				<!-- 2019 -->
+				<li class="menu-item">
+					<strong>{!! __("info.timeline.2019.title") !!}</strong>
+
+					<ul class="menu">
+						<li class="menu-item">
+							{{ __("info.timeline.2019.ubnt") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2019.webs") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2019.prog") }}
+						</li>
+					</ul>
+				</li>
+
+				<!-- 2018 -->
+				<li class="menu-item">
+					<strong>{!! __("info.timeline.2018.title") !!}</strong>
+
+					<ul class="menu">
+						<li class="menu-item">
+							{{ __("info.timeline.2018.B2") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2018.linux") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2018.py") }}
+						</li>
+
+						<li class="menu-item">
+							{{ __("info.timeline.2018.vbnet") }}
 						</li>
 					</ul>
 				</li>
