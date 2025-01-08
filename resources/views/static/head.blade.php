@@ -1,5 +1,6 @@
 @use('App\Helpers\Locale')
 @use('App\Helpers\Url')
+@use('Illuminate\Support\Facades\Config')
 <!DOCTYPE html>
 <html lang="{{ $lang ?? Locale::getDefaultLocale() }}">
 <head>
@@ -11,14 +12,25 @@
 
 	<!-- SEO (do not include if "noseo" is set) -->
 	@if (!isset($noseo))
-	<meta name="description"				content="{{ $desc ?? 'Desc' }}">
-	<meta property="og:description"			content="{{ $desc ?? 'Desc' }}">
-	<meta property="twitter:description"	content="{{ $desc ?? 'Desc' }}">
-	<meta property="og:title"				content="{{ $title ?? 'Hello, world!'}}">
-	<meta property="twitter:title"			content="{{ $title ?? 'Hello, world' }}">
-	<meta property="og:url"					content="{{ $url ?? Url::getURL() }}">
-	<meta property="og:image"				content="/banner.png">
-	<meta property="twitter:image"			content="/banner.png">
+	<!-- Description -->
+	<meta name="description"                content="{{ $desc ?? 'Desc' }}">
+	<meta property="og:description"         content="{{ $desc ?? 'Desc' }}">
+	<meta property="twitter:description"    content="{{ $desc ?? 'Desc' }}">
+
+	<!-- Title -->
+	<meta property="og:title"               content="{{ $title ?? 'Hello, world!'}}">
+	<meta property="twitter:title"          content="{{ $title ?? 'Hello, world' }}">
+	<meta property="og:url"                 content="{{ $url ?? Url::getURL() }}">
+
+	<!-- Banner image -->
+	<meta property="og:image:alt"           content="{{ Config::get('app.name') }}">
+	<meta property="og:image"               content="/banner.png">
+	<meta property="twitter:image"          content="/banner.png">
+	<meta property="og:image:width"         content="1200">
+	<meta property="og:image:height"        content="600">
+
+	<!-- Misc -->
+	<meta property="og:type"                content="object">
 	@endif
 
 	<!-- Favicon -->
