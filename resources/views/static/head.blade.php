@@ -30,7 +30,8 @@
 	<meta property="og:image:height"        content="600">
 
 	<!-- Misc -->
-	<meta property="og:type"                content="object">
+	<meta property="og:site_name"           content="{{ Config::get('app.sitename') }}">
+	<meta property="og:type"                content="website">
 	@endif
 
 	<!-- Favicon -->
