@@ -17,8 +17,8 @@
 	<meta property="og:title"				content="{{ $title ?? 'Hello, world!'}}">
 	<meta property="twitter:title"			content="{{ $title ?? 'Hello, world' }}">
 	<meta property="og:url"					content="{{ $url ?? Url::getURL() }}">
-	<meta property="og:image"				content="/favicon.png">
-	<meta property="twitter:image"			content="/favicon.png">
+	<meta property="og:image"				content="/banner.png">
+	<meta property="twitter:image"			content="/banner.png">
 	@endif
 
 	<!-- Favicon -->
