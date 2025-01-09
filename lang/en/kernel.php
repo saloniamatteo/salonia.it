@@ -25,7 +25,7 @@ return [
 
             'kcompr' => [
                 'name' => 'Kernel Compression',
-                'value' => 'LZ4 for the initramfs, zstd for modules',
+                'value' => 'LZ4 for the initramfs, zstd for zswap',
             ],
 
             'initramfs' => [
@@ -75,6 +75,7 @@ return [
     // Setup
     'setup' => [
         'desc' => "Make sure to have all the tools necessary to proceed. Verify you have <code>git</code>, <code>gcc</code>, <code>make</code>, etc. Tipically, most compilation tools are provided by packages like <code>base-devel</code>. I suggest you also verify the presence of <code>linux-firmware</code>, in order to have the necessary firmware for any :nonfree hardware. Don't forget to download the :microcode that is most appropriate, whether it be Intel, AMD, or any other. Finally, make sure you have <code>lz4</code> and <code>zstd</code>, in order to compress various Kernel components.",
+        'desc2' => "<strong>Gentoo users</strong>: it is highly recommended you use :installkernel to automatically create the initramfs & update the bootloader config, by respecting your system preferences (e.g. initramfs->dracut, bootloader->GRUB).",
 
         // Step 1
         's1' => [
@@ -87,9 +88,10 @@ return [
         // Step 2
         's2' => [
             'title' => '2. Version selection',
-            'desc' => "Once you get the repository, choose an available version. To see which version is available, you just need to list the directory contents with <code>ls</code>. In this example, we'll use Linux <code>6.8.2-gentoo</code>.",
+            'desc' => "Once you get the repository, choose an available version. To see which version is available, you just need to list the directory contents with <code>ls</code>:",
+            'desc2' => "In this example, we'll be using Linux <code>6.12.8-gentoo</code>.",
 
-            'note' => "<u>Your Kernel will surely have a different version</u>. No problem: you just need to copy the folder, and rename it according to your version. For example, if your version would be <code class='d'>6.8.3-zen</code>, you just need to execute: <code class='d'>cp -r 6.8.2-gentoo 6.8.3-zen</code>. Don't forget to modify the <code class='d'>KVER</code> variable whenever the primary version differs (e.g.: <code class='d'>6.8.2</code> -> <code class='d'>6.8.3</code>), and <code class='d'>PVER</code> whenever the secondary/custom version differs (e.g.: <code class='d'>gentoo</code> -> <code class='d'>zen</code>)",
+            'note' => "<u>Your Kernel will surely have a different version</u>. No problem: you just need to copy the folder, and rename it according to your version. For example, if your version is be <code class='d'>6.12.9-zen</code>, you just need to execute: <code class='d'>cp -r 6.12.8-gentoo 6.12.9-zen</code>. Don't forget to modify the <code class='d'>KVER</code> variable whenever the primary version differs (e.g.: <code class='d'>6.12.8</code> -> <code class='d'>6.12.9</code>), and <code class='d'>PVER</code> whenever the secondary/custom version differs (e.g.: <code class='d'>gentoo</code> -> <code class='d'>zen</code>)",
         ],
 
         // Step 3
@@ -97,19 +99,12 @@ return [
             'title' => '3. Modify the script',
             'desc' => 'Now, we need to verify the contents of <code>build.sh</code>. Modify the file with any text editor, and note the following variables:',
 
-            'configfile' => 'config file name, that will be copied from the directory to the Kernel.',
-            'jobs' => 'how many threads to use for the compilation. I recommend setting the number of physical cores.',
+            'custdir' => "this project's directory.",
             'kver' => 'primary Kernel version.',
             'pver' => 'secondary/custom Kernel version.',
-            'kernver' => 'full Kernel version, <u>do not modify</u>.',
-            'custdir' => "this project's directory, modify whenever it differs from the defaults.",
-            'cleardir' => 'Clear Linux directory, <u>do not modify</u>.',
-            'patchdir' => 'patch directory, <u>do not modify</u>.',
-            'boredir' => 'BORE scheduler directory, <u>do not modify</u>.',
-            'v4l2dir' => 'V4L2loopback directory, <u>do not modify</u>.',
-            'cfodir' => 'Kernel Compiler Patch directory, <u>do not modify</u>.',
-            'usrdir' => 'chosen Kernel version directory, <u>do not modify</u>.',
-            'kerneldir' => 'set this variable whenever the Kernel directory differs from <code>/usr/src</code>.',
+            'kerneldir' => "directory where Kernels are stored.",
+            'jobs' => 'how many threads to use for compilation. Recommended: physical core count.',
+            'configfile' => 'il nome del file di configurazione, che verrà copiato dalla directory al Kernel.',
         ],
 
         // Step 4
@@ -156,22 +151,23 @@ return [
             ],
 
             'desc2' => "Once the Kernel config process is done, the new config file will be available as <code>/usr/src/linux/.config</code> (or under <code>\$KERNELDIR/.config</code> whenever <code>KERNELDIR</code> would've been set).",
-            'desc3' => 'Now we need to copy <code>.config</code> from the Kernel directory to the current directory, to then compare the two files and see any changes:',
+            'desc3' => 'Now we need to copy <code>.config</code> from the Kernel directory to the chosen Kernel directory (in this case, <code>6.12.8-gentoo</code>), to then compare the two files and see any changes:',
 
-            'desc4' => "The last command above executes the <code>diff</code> command, showing the differences between our starting <code>config</code> file, and the new <code>config.new</code> file, to then show everything with the Vim editor. Obviously, it's necessary to modify the name of the <code>config</code> file in the command above whenever appropriate.",
-            'desc5' => "After verifying the differences, let's replace our config file with the <code>config.new</code> file, and move on to the actual Kernel compilation.",
+            'desc4' => "The last command executes the <code>diff</code> command, showing the differences between our starting <code>config</code> file, and the new <code>config.new</code> file, to then show everything with the Vim editor. Obviously, it's necessary to modify the name of the <code>config</code> file in the command above whenever needed (example: you use a custom config)",
+            'desc5' => "Note the <code>6.12.8-gentoo</code> in both commands: modify this whenever you use a different Kernel version.",
+            'desc6' => "After verifying the differences, let's replace our config file with the <code>config.new</code> file, and move on to the actual Kernel compilation:",
         ],
 
         // Step 6
         's6' => [
             'title' => '6. Kernel compilation',
-            'desc' => "After making sure we have everything that's necessary, we can proceed with compiling the Kernel with the following command, executing it as root:",
+            'desc' => "After making sure we have everything that's necessary, we can proceed with compiling the Kernel with the following command, executing it as <strong>root</strong>:",
 
-            'desc2' => 'Note the repeated presence of the patch options (<code>-l</code>, <code>-o</code>, <code>-p</code>). This is because the script automatically reverts all changes made by the patches present in the Kernel directory, where possible, and removes said patches. I programmed the script this way because I often have to revert and remove various patches, especially after multiple compilations.',
+            'desc2' => 'Note the repeated presence of the patch options (<code>-l</code>, <code>-o</code>, <code>-p</code>). This is because the script automatically reverts all changes made by the patches present in the Kernel directory, where possible, and removes said patches. This behavior is wanted, because it helps us reduce errors caused by patches that are malformed, not applied correctly, not wanted, and/or various errors.',
 
             'note' => 'The script will show any compilation error, as well as showing the true compilation time, not considering patches and so on.',
 
-            'desc3' => 'Once the script finishes its execution, thanks to <code>installkernel</code> the initramfs will be generated, and the bootloader will be updated. With my configuration these correspond, respectively, to <code>dracut</code> and <code>grub</code>.',
+            'desc3' => "Once the script finishes its execution, thanks to <code>installkernel</code> the initramfs will be generated, and the bootloader will be updated. With my configuration these correspond, respectively, to <code>dracut</code> and <code>grub</code>. Obviously it'll be your responsibility to configure <code>installkernel</code> before trying to install the Kernel.",
         ],
     ],
 
@@ -213,6 +209,7 @@ return [
         'rootfs' => 'https://www.kernel.org/doc/html/latest/filesystems/ramfs-rootfs-initramfs.html#what-is-rootfs',
         'nonfree' => 'https://www.gnu.org/philosophy/free-hardware-designs.html',
         'microcode' => 'https://wiki.gentoo.org/wiki/Microcode',
+        'installkernel' => 'https://packages.gentoo.org/packages/sys-kernel/installkernel',
         'distcc' => 'https://www.distcc.org',
         'ccache' => 'https://ccache.dev',
         'v4l2loopback' => 'https://github.com/umlaeute/v4l2loopback',

@@ -166,6 +166,16 @@
 			]) !!},&nbsp;
 		</p>
 
+		<p class="mt-1">
+			@php
+				$installkernel = __("kernel.links.installkernel");
+			@endphp
+
+			{!! __("kernel.setup.desc2", [
+				"installkernel" => Url::makeLink($installkernel, "sys-kernel/installkernel"),
+			]) !!},&nbsp;
+		</p>
+
 		<!-- Step 1 -->
 		<x-tag-md id="s1">{{ __("kernel.setup.s1.title") }}</x-tag-md>
 
@@ -175,8 +185,10 @@
 
 		<p>
 			<pre>
-				<code>git clone --recurse-submodules "https://github.com/saloniamatteo/kernel" /usr/src/usr-kernel<br>
-				cd /usr/src/usr-kernel</code>
+			<code>
+				git clone --recurse-submodules "https://github.com/saloniamatteo/kernel" /usr/src/usr-kernel<br>
+				cd /usr/src/usr-kernel
+			</code>
 			</pre>
 		</p>
 
@@ -189,6 +201,26 @@
 			{!! __("kernel.setup.s2.desc") !!}
 		</p>
 
+		<p>
+			<pre>
+			<code>
+			$ ls<br>
+			<strong>6.12.8-gentoo</strong> # <-- Kernel config <br>
+			<em>bore-scheduler</em><br>
+			<em>clear-patches</em><br>
+			<em>kernel_compiler_patch</em><br>
+			<em>patches</em><br>
+			<em>v4l2loopback</em><br>
+			<em>build.sh</em><br>
+			<em>README.md</em>
+			</code>
+			</pre>
+		</p>
+
+		<p>
+			{!! __("kernel.setup.s2.desc2") !!}
+		</p>
+
 		<x-card-info>{!! __("kernel.setup.s2.note") !!}</x-card-info>
 
 		<!-- Step 3 -->
@@ -199,69 +231,37 @@
 		</p>
 
 		<ul>
-			<!-- Configfile -->
-			<x-list-item-code name="CONFIGFILE">
-				{{ __("kernel.setup.s3.configfile") }}
-			</x-list-item-code>
-
-			<!-- Jobs -->
-			<x-list-item-code name="JOBS">
-				{{ __("kernel.setup.s3.jobs") }}
-			</x-list-item-code>
-
-			<!-- Kver -->
-			<x-list-item-code name="KVER">
-				{{ __("kernel.setup.s3.kver") }}
-			</x-list-item-code>
-
-			<!-- Pver -->
-			<x-list-item-code name="PVER">
-				{{ __("kernel.setup.s3.pver") }}
-			</x-list-item-code>
-
-			<!-- Kernver -->
-			<x-list-item-code name="KERNVER">
-				{!! __("kernel.setup.s3.kernver") !!}
-			</x-list-item-code>
-
-			<!-- Custdir -->
+			<!-- CUSTDIR -->
 			<x-list-item-code name="CUSTDIR">
-				{{ __("kernel.setup.s3.custdir") }}
+				{!! __("kernel.setup.s3.custdir") !!}
+				Default: <code>/usr/src/usr-kernel</code>
 			</x-list-item-code>
 
-			<!-- Cleardir -->
-			<x-list-item-code name="CLEARDIR">
-				{!! __("kernel.setup.s3.cleardir") !!}
+			<!-- KVER -->
+			<x-list-item-code name="KVER">
+				{!! __("kernel.setup.s3.kver") !!}
 			</x-list-item-code>
 
-			<!-- Patchdir -->
-			<x-list-item-code name="PATCHDIR">
-				{!! __("kernel.setup.s3.patchdir") !!}
+			<!-- PVER -->
+			<x-list-item-code name="PVER">
+				{!! __("kernel.setup.s3.pver") !!}
 			</x-list-item-code>
 
-			<!-- Boredir -->
-			<x-list-item-code name="BOREDIR">
-				{!! __("kernel.setup.s3.boredir") !!}
-			</x-list-item-code>
-
-			<!-- v4l2dir -->
-			<x-list-item-code name="V4L2DIR">
-				{!! __("kernel.setup.s3.v4l2dir") !!}
-			</x-list-item-code>
-
-			<!-- Cfodir -->
-			<x-list-item-code name="CFODIR">
-				{!! __("kernel.setup.s3.cfodir") !!}
-			</x-list-item-code>
-
-			<!-- Usrdir -->
-			<x-list-item-code name="USRDIR">
-				{!! __("kernel.setup.s3.usrdir") !!}
-			</x-list-item-code>
-
-			<!-- Kerneldir -->
-			<x-list-item-code name="USRDIR">
+			<!-- KERNELDIR -->
+			<x-list-item-code name="KERNELDIR">
 				{!! __("kernel.setup.s3.kerneldir") !!}
+				Default: <code>/usr/src</code>
+			</x-list-item-code>
+
+			<!-- JOBS -->
+			<x-list-item-code name="JOBS">
+				{!! __("kernel.setup.s3.jobs") !!}
+			</x-list-item-code>
+
+			<!-- CONFIGFILE -->
+			<x-list-item-code name="CONFIGFILE">
+				{!! __("kernel.setup.s3.configfile") !!}
+				Default: <code>config</code>
 			</x-list-item-code>
 		</ul>
 
@@ -456,8 +456,10 @@
 
 		<p>
 			<pre>
-				<code>cp /usr/src/linux/.config config.new<br>
-				diff -u config config.new | vim</code>
+			<code>
+				cp /usr/src/linux/.config 6.12.8-gentoo/config.new<br>
+				diff -u 6.12.8-gentoo/config{,.new} | vim
+			</code>
 			</pre>
 		</p>
 
@@ -469,11 +471,23 @@
 			{!! __("kernel.setup.s5.desc5") !!}
 		</p>
 
+		<p>
+			{!! __("kernel.setup.s5.desc6") !!}
+		</p>
+
+		<p>
+			<pre>
+			<code>
+				mv 6.12.8-gentoo/config{.new,}
+			</code>
+			</pre>
+		</p>
+
 		<!-- Step 6 -->
 		<x-tag-md id="s6">{{ __("kernel.setup.s6.title") }}</x-tag-md>
 
 		<p class="mt-0">
-			{{ __("kernel.setup.s6.desc") }}
+			{!! __("kernel.setup.s6.desc") !!}
 		</p>
 
 		<p>
