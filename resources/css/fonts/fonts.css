@@ -3,7 +3,6 @@
 @font-face {
     font-family: 'Red Hat Display';
     font-display: swap;
-    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 300 900;
     src: url(RHD.woff2) format('woff2');
@@ -14,7 +13,6 @@
 @font-face {
     font-family: 'Red Hat Display';
     font-display: swap;
-    font-optical-sizing: auto;
     font-style: italic;
     font-weight: 300 900;
     src: url(RHDItalic.woff2) format('woff2');
@@ -25,7 +23,6 @@
 @font-face {
     font-family: 'Red Hat Mono';
     font-display: swap;
-    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 300 700;
     src: url(RHM.woff2) format('woff2');
@@ -53,10 +50,11 @@ p.lead {
     font-weight: 600
 }
 
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
     font-weight: 700
 }
 
+h1, h2,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 a, strong, th {
     font-weight: 800
