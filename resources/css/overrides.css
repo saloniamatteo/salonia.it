@@ -1,8 +1,8 @@
 /* Enable smooth scrolling */
 * { scroll-behavior: smooth }
 
-/* Adjust <code> padding */
-code { padding: .2rem }
+/* Adjust <code> size */
+code { letter-spacing: 0.05em; padding: .2em .4em .2em .4em }
 
 /* Dark <code> */
 code.d { background-color: #343a40; color: #f8f9fa }
