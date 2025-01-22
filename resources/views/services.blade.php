@@ -32,7 +32,7 @@
 					Url::makeLink(
 					Url::subUrl("contact#sid"),
 					"Salonia Infrastrutture Digitali",
-					500)
+					300)
 				!!}
 			</p>
 		</div>

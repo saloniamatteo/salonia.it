@@ -275,8 +275,8 @@
 		<!-- Table -->
 		<x-table>
 			<x-slot:head>
-				<th>{{ __("kernel.setup.s4.table.sflag") }}</th>
-				<th>{{ __("kernel.setup.s4.table.lflag") }}</th>
+				<th class="u-align-middle">{{ __("kernel.setup.s4.table.sflag") }}</th>
+				<th class="u-align-middle">{{ __("kernel.setup.s4.table.lflag") }}</th>
 				<th class="u-align-middle">
 					{{ __("kernel.setup.s4.table.desc") }}
 				</th>
