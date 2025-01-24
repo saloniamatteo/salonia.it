@@ -21,7 +21,7 @@
 		<div class="grid-sm u-gap-2 u-text-left">
 			<div class="grid-c-4 grid-r-3">
 				<img class="img-stretch mb-2 u-round-lg"
-				loading="lazy" alt="Matteo Salonia"
+				alt="Matteo Salonia"
 				src="{{ Vite::asset('resources/img/me.jpg') }}">
 			</div>
 
