@@ -206,13 +206,13 @@
 			<code>
 			$ ls<br>
 			<strong>6.12.8-gentoo</strong> # <-- Kernel config <br>
-			<em>bore-scheduler</em><br>
-			<em>clear-patches</em><br>
-			<em>kernel_compiler_patch</em><br>
-			<em>patches</em><br>
-			<em>v4l2loopback</em><br>
-			<em>build.sh</em><br>
-			<em>README.md</em>
+			bore-scheduler<br>
+			clear-patches<br>
+			kernel_compiler_patch<br>
+			patches<br>
+			v4l2loopback<br>
+			build.sh<br>
+			README.md
 			</code>
 			</pre>
 		</p>
