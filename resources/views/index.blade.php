@@ -56,7 +56,7 @@
 </div>
 
 <!-- Linux & Software -->
-<x-hero class="mt-3" id="linux-soft">
+<x-hero id="linux-soft">
 	<x-slot:title>
 		{{ __("index.linux-soft.title") }}
 	</x-slot>
@@ -160,7 +160,7 @@
 	</x-card>
 </x-hero>
 
-<x-hero class="mt-1" id="about">
+<x-hero id="about">
 	<x-slot:title>
 		{{ __("index.about.title") }}
 	</x-slot>
@@ -260,7 +260,7 @@
 	</x-card>
 </x-hero>
 
-<x-hero class="mt-1" id="tools-links">
+<x-hero id="tools-links">
 	<x-slot:title>
 		{{ __("index.tools-links.title") }}
 	</x-slot>
