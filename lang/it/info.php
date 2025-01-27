@@ -7,7 +7,7 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => "Sono un ragazzo Italiano originario della Sicilia, provincia di Ragusa. Mi sono <strong>diplomato</strong> in data <strong>29/06/2023</strong> con un punteggio di <strong>98/100</strong> presso la Ragioneria <strong>ITC Archimede</strong> di Modica (RG), in qualità di <strong>Ragioniere Perito Informatico</strong>. Qui ho frequentato il corso <strong>SIA</strong> (<em>Sistemi Informativi Aziendali</em>).",
+        'desc' => 'Sono un ragazzo Italiano originario della Sicilia, provincia di Ragusa. Mi sono <strong>diplomato</strong> in data <strong>29/06/2023</strong> con un punteggio di <strong>98/100</strong> presso la Ragioneria <strong>ITC Archimede</strong> di Modica (RG), in qualità di <strong>Ragioniere Perito Informatico</strong>. Qui ho frequentato il corso <strong>SIA</strong> (<em>Sistemi Informativi Aziendali</em>).',
         'desc2' => 'Nel corso degli anni ho intrapreso un percorso di <strong>approfondimento autonomo</strong> dei concetti, che mi ha consentito di ampliare significativamente le mie competenze in <strong>diversi ambiti</strong>. In particolare, sono specializzato in:',
 
         // Specializations

@@ -153,7 +153,7 @@ return [
             'desc3' => 'A questo punto bisognerà copiare il file <code>.config</code> dalla directory del Kernel alla directory del Kernel scelto (in questo caso <code>6.12.8-gentoo</code>), per poi confrontare i due file e controllare eventuali cambiamenti:',
 
             'desc4' => "L'ultimo comando esegue il comando <code>diff</code>, mostrando le differenze tra il nostro file di partenza <code>config</code> ed il nuovo file <code>config.new</code>, per poi mostrare il tutto con l'editor Vim. Ovviamente, bisogna modificare il nome del file <code>config</code> nel comando sopra qualora fosse necessario (esempio: si usa una config personalizzata)",
-            'desc5' => "Notate il <code>6.12.8-gentoo</code> in entrambi i comandi: modificatelo quando usate una versione del Kernel diversa.",
+            'desc5' => 'Notate il <code>6.12.8-gentoo</code> in entrambi i comandi: modificatelo quando usate una versione del Kernel diversa.',
             'desc6' => 'Dopo aver verificato le eventuali differenze, sostituiamo il nostro file config con il file <code>config.new</code>, e passiamo alla vera e propria compilazione del Kernel:',
         ],
 

@@ -75,7 +75,7 @@ return [
     // Setup
     'setup' => [
         'desc' => "Make sure to have all the tools necessary to proceed. Verify you have <code>git</code>, <code>gcc</code>, <code>make</code>, etc. Tipically, most compilation tools are provided by packages like <code>base-devel</code>. I suggest you also verify the presence of <code>linux-firmware</code>, in order to have the necessary firmware for any :nonfree hardware. Don't forget to download the :microcode that is most appropriate, whether it be Intel, AMD, or any other. Finally, make sure you have <code>lz4</code> and <code>zstd</code>, in order to compress various Kernel components.",
-        'desc2' => "<strong>Gentoo users</strong>: it is highly recommended you use :installkernel to automatically create the initramfs & update the bootloader config, by respecting your system preferences (e.g. initramfs->dracut, bootloader->GRUB).",
+        'desc2' => '<strong>Gentoo users</strong>: it is highly recommended you use :installkernel to automatically create the initramfs & update the bootloader config, by respecting your system preferences (e.g. initramfs->dracut, bootloader->GRUB).',
 
         // Step 1
         's1' => [
@@ -88,7 +88,7 @@ return [
         // Step 2
         's2' => [
             'title' => '2. Version selection',
-            'desc' => "Once you get the repository, choose an available version. To see which version is available, you just need to list the directory contents with <code>ls</code>:",
+            'desc' => 'Once you get the repository, choose an available version. To see which version is available, you just need to list the directory contents with <code>ls</code>:',
             'desc2' => "In this example, we'll be using Linux <code>6.12.8-gentoo</code>.",
 
             'note' => "<u>Your Kernel will surely have a different version</u>. No problem: you just need to copy the folder, and rename it according to your version. For example, if your version is be <code class='d'>6.12.9-zen</code>, you just need to execute: <code class='d'>cp -r 6.12.8-gentoo 6.12.9-zen</code>. Don't forget to modify the <code class='d'>KVER</code> variable whenever the primary version differs (e.g.: <code class='d'>6.12.8</code> -> <code class='d'>6.12.9</code>), and <code class='d'>PVER</code> whenever the secondary/custom version differs (e.g.: <code class='d'>gentoo</code> -> <code class='d'>zen</code>)",
@@ -102,7 +102,7 @@ return [
             'custdir' => "this project's directory.",
             'kver' => 'primary Kernel version.',
             'pver' => 'secondary/custom Kernel version.',
-            'kerneldir' => "directory where Kernels are stored.",
+            'kerneldir' => 'directory where Kernels are stored.',
             'jobs' => 'how many threads to use for compilation. Recommended: physical core count.',
             'configfile' => 'il nome del file di configurazione, che verrà copiato dalla directory al Kernel.',
         ],
@@ -154,7 +154,7 @@ return [
             'desc3' => 'Now we need to copy <code>.config</code> from the Kernel directory to the chosen Kernel directory (in this case, <code>6.12.8-gentoo</code>), to then compare the two files and see any changes:',
 
             'desc4' => "The last command executes the <code>diff</code> command, showing the differences between our starting <code>config</code> file, and the new <code>config.new</code> file, to then show everything with the Vim editor. Obviously, it's necessary to modify the name of the <code>config</code> file in the command above whenever needed (example: you use a custom config)",
-            'desc5' => "Note the <code>6.12.8-gentoo</code> in both commands: modify this whenever you use a different Kernel version.",
+            'desc5' => 'Note the <code>6.12.8-gentoo</code> in both commands: modify this whenever you use a different Kernel version.',
             'desc6' => "After verifying the differences, let's replace our config file with the <code>config.new</code> file, and move on to the actual Kernel compilation:",
         ],
 
