@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Limit to 5 requests per minute.
         RateLimiter::for('global', function (Request $request) {
-            if (config('APP_ENV') == 'production') {
+            if (config('APP_ENV') === 'production') {
                 return Limit::perMinute(5)->by($request->ip());
             }
         });

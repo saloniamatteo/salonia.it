@@ -30,7 +30,7 @@ class Url
 
         // path may start with a slash ("/").
         // Check if it does, and remove it.
-        if (! empty($path) && $path[0] == '/') {
+        if (! empty($path) && $path[0] === '/') {
             $path = substr($path, 1);
         }
 
@@ -53,7 +53,7 @@ class Url
             return $path;
         }
 
-        return $reqlang.'/'.$path;
+        return "{$reqlang}/{$path}";
     }
 
     /**
@@ -111,11 +111,11 @@ class Url
         /* If URL starts with requested locale, then
          * return string prepended with it */
         if (str_starts_with($path, $locale)) {
-            return "$base/$locale/$page";
+            return "{$base}/{$locale}/{$page}";
         }
 
         /* No locale was chosen: return URL without it */
-        return "$base/$page";
+        return "{$base}/{$page}";
     }
 
     // Get CV link based on lang
@@ -125,7 +125,7 @@ class Url
         $lang = Locale::getLocale();
 
         // Check it
-        if ($lang == 'it') {
+        if ($lang === 'it') {
             return 'cv.pdf';
         }
 
@@ -135,12 +135,12 @@ class Url
     // Return a bold string
     public static function makeBold($text)
     {
-        return "<strong>$text</strong>";
+        return "<strong>{$text}</strong>";
     }
 
     // Return a valid link item
     public static function makeLink($link, $text, $color = '700')
     {
-        return "<a class='text-blue-$color u u-LR' href='$link'><strong>$text</strong></a>";
+        return "<a class='text-blue-{$color} u u-LR' href='{$link}'><strong>{$text}</strong></a>";
     }
 }

@@ -30,9 +30,9 @@ class Locale
                     $q = null;
 
                     // Assign default low weight for generic values
-                    if ($l == '*/*') {
+                    if ($l === '*/*') {
                         $q = 0.01;
-                    } elseif (substr($l, -1) == '*') {
+                    } elseif (substr($l, -1) === '*') {
                         $q = 0.02;
                     }
                 }
@@ -153,9 +153,9 @@ class Locale
             $href = URL::replaceLang($path, $lang);
 
             // Create link
-            echo "<a class='u u-LR font-bold text-gray-900' href='/$href'>"
+            echo "<a class='u u-LR font-bold text-gray-900' href='/{$href}'>"
                 .Locale::textToFlag($lang).'&nbsp;&nbsp;'
-                .Locale::langStr($langs[$i])
+                .Locale::langStr($lang)
                 .'</a>';
         }
     }
