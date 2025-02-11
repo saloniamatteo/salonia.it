@@ -213,6 +213,9 @@ Note: this config makes the following assumptions:
 Remove the `default_server` directives if this isn't your primary website.
 Make sure you movify everything that says "Change this"!
 
+Hint: add `quic_bpf on` to `nginx.conf` (ctx: main) if you're using Linux >5.7
+to enable routing of QUIC packets using eBPF.
+
 ```nginx
 # Optional: Rate-limits
 #limit_req_zone $binary_remote_addr zone=example_css:10m rate=10r/s;
