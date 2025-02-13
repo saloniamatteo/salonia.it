@@ -31,12 +31,7 @@ function handleNavBtns() {
 
 // Fire events after page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Load icons
-    // This is a heavier task, compared to handling hash changes,
-    // and making nav-btns clickable. Since this impacts our
-    // loading times visibily, and it is visible only after
-    // the page scrolling (handle hash change), execute it later.
-    //lucide.createIcons();
+    // Load Lucide icons
     createIcons({
         icons: {
             AtSign,
