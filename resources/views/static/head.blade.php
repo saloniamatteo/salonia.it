@@ -34,7 +34,9 @@
 	@endif
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="apple-touch-icon" href="/favicon.png">
+	<link rel="icon"             href="/favicon.png">
+	<link rel="shortcut icon"    href="/favicon.png">
 
 	<!-- CSS & Fonts -->
 	@vite([
