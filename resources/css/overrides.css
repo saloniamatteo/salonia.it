@@ -10,5 +10,11 @@ code.d { background-color: #343a40; color: #f8f9fa }
 /* Add margin on top of selected items (/page#item) */
 h3 { scroll-margin-top: 5rem }
 
+/* Background: blur */
+.blurbg {
+    backdrop-filter: blur(8px) !important;
+    background-color: hsla(0, 0%, 100%, .88) !important
+}
+
 /* Remove shadows from cards */
 .card { box-shadow: none }

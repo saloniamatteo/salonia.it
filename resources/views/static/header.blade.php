@@ -2,7 +2,7 @@
 @use('App\Helpers\Url')
 
 <!-- Header -->
-<div class="header header-animated header-fixed u-unselectable u-shadow-none" style="border-bottom: 1px solid">
+<div class="header header-animated header-fixed u-unselectable u-shadow-none blurbg" style="border-bottom: 1px solid">
 <div class="header-brand">
 	<a href="{{ URL::subUrl() }}">
 		<img src="{{ Vite::asset('resources/img/salonia.png') }}" alt="Logo"
@@ -28,7 +28,7 @@
 			<!-- Dropdown -->
 			<x-dropdown icon="laptop">{{ __("header.pages.title") }}</x-dropdown>
 
-			<ul class="dropdown-menu dropdown-animated" id="pages-menu" role="menu">
+			<ul class="dropdown-menu dropdown-animated blurbg" id="pages-menu" role="menu">
 				<!-- Linux & Software -->
 				<x-header-span>{{ __("header.pages.linux-soft") }}</x-header-span>
 
@@ -84,7 +84,7 @@
 			<!-- Dropdown -->
 			<x-dropdown icon="link">{{ __("header.links.title") }}</x-dropdown>
 
-			<ul class="dropdown-menu dropdown-animated" id="links-menu" role="menu">
+			<ul class="dropdown-menu dropdown-animated blurbg" id="links-menu" role="menu">
 				<!-- Links -->
 				<x-header-span>{{ __("header.links.title") }}</x-header-span>
 
