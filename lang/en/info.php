@@ -7,75 +7,103 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => "I'm an Italian man originally from Sicily, from the province of Ragusa. I <strong>graduated</strong> on <strong>06/29/2023</strong> with a score of <strong>98/100</strong> at the <strong>ITC Archimede</strong> Accounting School in Modica (RG), as a <strong>Accountant &amp; Computer Expert</strong> (<strong>Ragioniere Perito Informatico</strong>). Here I attended the <strong>SIA</strong> course (<em>Sistemi Informativi Aziendali</em>, <em>Corporate Information Systems</em>). I am specialised in:",
-        'desc2' => 'Over the years I have undertaken a path of <strong>independent study</strong> of many concepts, which has allowed me to significantly expand my skills in <strong>various areas</strong>. In particular, I specialise in:',
+        'desc' => "I have solid experience with <strong>GNU/Linux servers</strong> & <strong>web development</strong>. Since the age of 13 I have developed a strong interest in computer science, dedicating a lot of time to <strong>exploring</strong>, <strong>analyzing</strong>, and <strong>understanding the functionalities</strong> of <strong>operating systems</strong>, <strong>networks</strong>, <strong>web sites</strong>, and technology in general. My experience on <strong>GNU/Linux servers</strong> includes <strong>configuring</strong> and <strong>optimizing systems</strong>, as well as <strong>solving complex problems</strong>. I am always looking for <strong>new opportunities</strong> to <strong>deepen my knowledge</strong>, and stay updated on the <strong>latest trends</strong> in technology. My passion for computer science is reflected in my <strong>approach to work</strong>, where I commit to providing <strong>efficient and innovative solutions</strong>. I am a <strong>results-oriented</strong> collaborator, ready to contribute to the <strong>success of the team</strong> and the <strong>organization</strong>.",
+    ],
 
-        // Specializations
-        'spec' => [
+    // Certifications
+    'certs' => [
+        'title' => 'Certifications',
+        'desc' => "In <strong>November 2024</strong> I won a scholarship for the <strong>AWS re/Start</strong> program, which I am currently participating in at the <strong>Edgemony</strong> training school.<br>I'm currently studying to obtain the <strong>Solutions Architect Associate</strong> certification.",
+
+        // Certified Cloud Practitioner
+        'ccp' => "This certification demonstrates mastery of <strong>cloud computing</strong< principles. This credential rigorously examines the components of the <strong>AWS ecosystem</strong>, including an <strong>analysis</strong> of the <strong>reference architectures</strong>, a <strong>broad range of services</strong>, as well as <strong>established best practices</strong> for <strong>security</strong> and <strong>regulatory compliance</strong>.",
+    ],
+
+    // Skills
+    'skills' => [
+        'title' => 'Skills',
+        'desc' => 'Over the years I have undertaken a path of <strong>autonomous learning</strong>, which has allowed me to <strong>significantly expand my skills</strong> in <strong>various areas</strong>. Here are some of my <strong>hard skills</strong>:',
+
+        'c' => [
             // GNU/Linux
             'linux' => [
                 'title' => 'GNU/Linux',
-                'desc' => '<strong>Kernel</strong> configuration &amp; compilation, for <strong>high-performance</strong> systems, daily use, <strong>real-time</strong>, etc.',
-                'desc2' => 'Management of servers capable of supporting <strong>thousands of concurrent users</strong>, and implementation of <strong>cost-saving</strong> measures.',
-                'desc3' => 'Distro: <strong>Arch</strong>, <strong>Artix</strong>, <strong>Debian</strong>, <strong>Devuan</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>, <strong>Ubuntu</strong>',
+
+                'c' => [
+                    '<strong>Kernel configuration</strong> & <strong>compilation</strong>',
+                    '<strong>Server</strong> administration (distro: <strong>Amazon Linux</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>)',
+                    '<strong>Suricata IPS/IDS</strong>, <strong>ufw</strong>, <strong>iptables</strong>',
+                    'Implementation of <strong>Fail2ban</strong> and <strong>AbuseIPDB</strong>',
+                    '<strong>Rate-limiting</strong>',
+                ],
             ],
 
             // Cloud computing
             'cloud' => [
                 'title' => 'Cloud computing',
-                'desc' => 'Management of <strong>cloud infrastructures</strong>, such as <strong>servers</strong>, <strong>databases</strong>, <strong>storage</strong>, etc.',
-            ],
 
-            // Firewall
-            'firewall' => [
-                'title' => 'Firewall',
-                'desc' => '<strong>Firewall</strong> configuration, with <strong>port filtering</strong> and <strong>rate-limiting</strong>.',
-                'desc2' => '<strong>Suricata IDS/IPS</strong> configuration.',
-                'desc3' => '<strong>Malicious request blocking</strong> via <strong>Fail2ban</strong> &amp; automatic <strong>AbuseIPDB</strong> reporting.',
+                'c' => [
+                    'Management of <strong>cloud infrastructures</strong>',
+                    'Implementation of <strong>best practices</strong> in various scopes',
+                ],
             ],
 
             // Web server
             'webserver' => [
-                'title' => 'Web server',
-                'desc' => 'Implementation of <strong>security policies</strong> &amp; <strong>SSL certificates</strong>, <strong>HTTP2</strong> &amp; <strong>HTTP3/QUIC</strong> protocols, <strong>asset rate-limiting</strong> (<strong>nginx</strong>)',
+                'title' => 'Web servers',
+
+                'c' => [
+                    'Implementation of <strong>security policies</strong> and <strong>SSL certificates</strong>',
+                    'Modern HTTP protocols <strong>HTTP2</strong> and <strong>HTTP3/QUIC</strong>',
+                    '<strong>Rate-limiting</strong>',
+                    '<strong>nginx</strong> configuration',
+                ],
             ],
 
             // Web dev
             'web' => [
                 'title' => 'Website development',
 
-                // Frontend
-                'frontend' => [
-                    'title' => 'Frontend development',
-                    'desc' => '<strong>Minimization of JS dependency</strong>, <strong>responsive &amp; modern design</strong>.',
-                ],
-
-                // Backend
-                'backend' => [
-                    'title' => 'Backend development',
-                    'desc' => '<strong>PHP 8 + Laravel 11</strong>, <strong>content compression &amp; reduction</strong>, <strong>load time reduction</strong>, blocking of requests from IPs present in <strong>AbuseIPDB</strong>, <strong>rate-limiting</strong>.',
+                'c' => [
+                    '<u>Frontend</u>: <strong>HTML</strong>, <strong>CSS</strong>, vanilla <strong>JS</strong>',
+                    '<u>Backend</u>: <strong>PHP</strong>, <strong>Laravel</strong>',
                 ],
             ],
 
             // Domains & DNS
             'dns' => [
                 'title' => 'Domain names & DNS',
-                'desc' => 'Configuration of <strong>DNS zones &amp; records</strong>. <strong>Ad-hoc</strong> implementation of a <strong>DDNS client</strong>, via <strong>API calls</strong>.',
+
+                'c' => [
+                    '<strong>Zone and record</strong> administration',
+                    '<strong>DDNS client</strong> implementation via <strong>API calls</strong>',
+                ],
+            ],
+
+            // DB
+            'db' => [
+                'title' => 'Databases',
+
+                'c' => [
+                    '<strong>RDBMS</strong> (MySQL/MariaDB, Aurora)',
+                    '<strong>noSQL</strong> (DynamoDB)',
+                ],
             ],
         ],
     ],
 
     // Timeline
     'timeline' => [
-        'title' => 'Experience timeline',
+        'title' => 'Study timeline',
 
         // 2025
         '2025' => [
             'title' => '',
 
             'c' => [
-                'a' => 'Obtained a <strong>scholarship</strong> through <strong>Edgemony</strong>, and <strong>certified</strong> at <strong>Amazon Web Services (AWS)</strong> as a <strong>Cloud Engineer</strong> and <strong>Solutions Architect</strong>.',
-                'b' => 'Further website improvements (both <strong>client-side</strong> &amp; <strong>server-side</strong>)',
+                'Ottenimento certificazione <strong>AWS Certified Cloud Practitioner</strong>',
+                'Obtained a <strong>scholarship</strong> through <strong>Edgemony</strong>, and <strong>certified</strong> at <strong>Amazon Web Services (AWS)</strong> as a <strong>Cloud Engineer</strong> and <strong>Solutions Architect</strong>.',
+                'Further website improvements (both <strong>client-side</strong> &amp; <strong>server-side</strong>)',
             ],
         ],
 
@@ -84,11 +112,11 @@ return [
             'title' => '',
 
             'c' => [
-                'a' => 'In-depth study of <strong>Electrical engineering</strong>',
-                'b' => 'Practical skills improvement regarding <strong>electrical</strong>, <strong>smart home</strong>, <strong>video surveillance</strong>, <strong>anti-theft</strong>, <strong>LAN systems installation</strong>',
-                'c' => 'Introduction of <strong>CodeIgniter</strong> in personal website',
-                'd' => 'Deep-dive in <strong>Kernel</strong> configuration: even smaller Kernel, with performance in mind',
-                'e' => 'Website rewrite in <strong>Laravel</strong>, with subsequent analysis and increase of performance. Improvements to website UI.',
+                'In-depth study of <strong>Electrical engineering</strong>',
+                'Practical skills improvement regarding <strong>electrical</strong>, <strong>smart home</strong>, <strong>video surveillance</strong>, <strong>anti-theft</strong>, <strong>LAN systems installation</strong>',
+                'Introduction of <strong>CodeIgniter</strong> in personal website',
+                'Deep-dive in <strong>Kernel</strong> configuration: even smaller Kernel, with performance in mind',
+                'Website rewrite in <strong>Laravel</strong>, with subsequent analysis and increase of performance. Improvements to website UI.',
             ],
         ],
 
@@ -97,73 +125,73 @@ return [
             'title' => '13th grade',
 
             'c' => [
-                'a' => 'Improvement of custom Kernel performance',
-                'b' => 'Improvement of workstation performance and efficiency, with periodic maintenance',
-                'c' => 'Improvement of local network',
-                'd' => 'Advanced study of databases, with PHP connection',
-                'e' => 'Personal website redesign',
-                'f' => 'Accountant &amp; Computer Expert</strong> degree (<strong>Ragioniere Perito Informatico</strong>), score of <strong>98/100</strong>',
+                'Improvement of custom Kernel performance',
+                'Improvement of workstation performance and efficiency, with periodic maintenance',
+                'Improvement of local network',
+                'Advanced study of databases, with PHP connection',
+                'Personal website redesign',
+                'Accountant &amp; Computer Expert</strong> degree (<strong>Ragioniere Perito Informatico</strong>), score of <strong>98/100</strong>',
             ],
         ],
 
         // 2022
         '2022' => [
-            'title' => '12th-13th grade',
+            'title' => '12th &mdash; 13th grade',
 
             'c' => [
-                'a' => 'Advanced study of programming theories',
-                'b' => 'Advanced study of design theories',
-                'c' => 'Knowledge improvement regarding electrical systems, local network systems, and video surveillance systems',
-                'd' => 'Built performant workstation with Gentoo Linux',
-                'e' => 'Built and improved local network, with IPV6 connectivity',
+                'Advanced study of programming theories',
+                'Advanced study of design theories',
+                'Knowledge improvement regarding electrical systems, local network systems, and video surveillance systems',
+                'Built performant workstation with Gentoo Linux',
+                'Built and improved local network, with IPV6 connectivity',
             ],
         ],
 
         // 2021
         '2021' => [
-            'title' => '11th-12th grade',
+            'title' => '11th &mdash; 12th grade',
 
             'c' => [
-                'a' => 'Move from Artix Linux to Gentoo Linux',
-                'b' => 'Extensive improvement of Linux knowledge',
-                'c' => 'Advanced study of the C programming language, development of various programs in C',
-                'd' => 'Development of small Android apps',
-                'e' => 'First steps with Kernel personalization to increase performance and efficiency',
+                'Move from Artix Linux to Gentoo Linux',
+                'Extensive improvement of Linux knowledge',
+                'Advanced study of the C programming language, development of various programs in C',
+                'Development of small Android apps',
+                'First steps with Kernel personalization to increase performance and efficiency',
             ],
         ],
 
         // 2020
         '2020' => [
-            'title' => '10th-11th grade',
+            'title' => '10th &mdash; 11th grade',
 
             'c' => [
-                'a' => 'Move from Ubuntu to Arch Linux',
-                'b' => 'Advanced study of Linux key concepts and theories',
-                'c' => 'Wrote Arch Linux installation guide',
-                'd' => 'Move from Arch Linux to Artix Linux',
+                'Move from Ubuntu to Arch Linux',
+                'Advanced study of Linux key concepts and theories',
+                'Wrote Arch Linux installation guide',
+                'Move from Arch Linux to Artix Linux',
             ],
         ],
 
         // 2019
         '2019' => [
-            'title' => '9th-10th grade',
+            'title' => '9th &mdash; 10th grade',
 
             'c' => [
-                'a' => 'Improved experience with Ubuntu (GNOME+LXDE+XFCE) and Linux Mint',
-                'b' => 'Frequent development of websites with various tools and various styles',
-                'd' => 'Advanced study of programming theories',
+                'Improved experience with Ubuntu (GNOME+LXDE+XFCE) and Linux Mint',
+                'Frequent development of websites with various tools and various styles',
+                'Advanced study of programming theories',
             ],
         ],
 
         // 2018
         '2018' => [
-            'title' => '8th-9th grade',
+            'title' => '8th &mdash; 9th grade',
 
             'c' => [
-                'a' => 'English B2 certification',
-                'b' => 'First experience with Linux, with Raspbian on a Raspberry Pi 0 W (1° gen), and Ubuntu 16 on a Sony Vaio VGN-N11M',
-                'c' => 'First programming experience with Python',
-                'd' => 'Development of small programs with Visual Basic .NET',
+                'English B2 certification',
+                'First experience with Linux, with Raspbian on a Raspberry Pi 0 W (1° gen), and Ubuntu 16 on a Sony Vaio VGN-N11M',
+                'First programming experience with Python',
+                'Development of small programs with Visual Basic .NET',
             ],
         ],
     ],

@@ -7,60 +7,87 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => 'Sono un ragazzo Italiano originario della Sicilia, provincia di Ragusa. Mi sono <strong>diplomato</strong> in data <strong>29/06/2023</strong> con un punteggio di <strong>98/100</strong> presso la Ragioneria <strong>ITC Archimede</strong> di Modica (RG), in qualità di <strong>Ragioniere Perito Informatico</strong>. Qui ho frequentato il corso <strong>SIA</strong> (<em>Sistemi Informativi Aziendali</em>).',
-        'desc2' => 'Nel corso degli anni ho intrapreso un percorso di <strong>approfondimento autonomo</strong> dei concetti, che mi ha consentito di ampliare significativamente le mie competenze in <strong>diversi ambiti</strong>. In particolare, sono specializzato in:',
+        'desc' => "Ho una solida esperienza nell’ambito <strong>server GNU/Linux</strong> e <strong>sviluppo web</strong>. Sin dall'età di 13 anni ho sviluppato un forte interesse per l'informatica, dedicando molto tempo all'<strong>esplorazione</strong>, all'<strong>analisi</strong>, e alla <strong>comprensione delle funzionalità</strong> dei <strong>sistemi operativi</strong>, delle <strong>reti</strong>, dei <strong>siti web</strong>, e della tecnologia in generale. La mia esperienza sui <strong>server GNU/Linux</strong> include la <strong>configurazione</strong> e l'<strong>ottimizzazione dei sistemi</strong>, nonché la <strong>risoluzione di problemi complessi</strong>. Sono sempre alla ricerca di <strong>nuove opportunità</strong> per <strong>approfondire le mie conoscenze</strong>, e rimanere aggiornato sulle <strong>ultime tendenze</strong> nel campo della tecnologia. La mia passione per l’informatica si riflette nel mio <strong>approccio al lavoro</strong>, in cui mi impegno a fornire <strong>soluzioni efficienti e innovative</strong>. Sono un collaboratore proattivo e <strong>orientato ai risultati</strong>, pronto a contribuire al <strong>successo del team</strong> e dell'<strong>organizzazione</strong>.",
+    ],
 
-        // Specializations
-        'spec' => [
+    // Certifications
+    'certs' => [
+        'title' => 'Certificazioni',
+        'desc' => 'Nel mese di <strong>Novembre 2024</strong> ho vinto una borsa di studio per il programma <strong>AWS re/Start</strong>, a cui attualmente partecipo presso la scuola di formazione <strong>Edgemony</strong>.<br>Attualmente sto studiando per ottenere la certificazione <strong>Solutions Architect Associate</strong>.',
+
+        // Certified Cloud Practitioner
+        'ccp' => "Questa certificazione attesta una padronanza dei principi del <strong>cloud computing</strong>. Tale credenziale esamina con rigore le componenti dell'<strong>ecosistema AWS</strong>, includendo un'<strong>analisi</strong> delle <strong>architetture di riferimento</strong>, di una <strong>vasta gamma di servizi</strong>, oltre a <strong>best practices consolidate</strong> in materia di <strong>sicurezza</strong> e <strong>conformità normativa</strong>.",
+    ],
+
+    // Skills
+    'skills' => [
+        'title' => 'Competenze',
+        'desc' => 'Nel corso degli anni ho intrapreso un percorso di <strong>approfondimento autonomo</strong> dei concetti, che mi ha consentito di <strong>ampliare significativamente le mie competenze</strong> in <strong>diversi ambiti</strong>. Ecco alcune mie <strong>hard skills</strong>:',
+
+        'c' => [
             // GNU/Linux
             'linux' => [
                 'title' => 'GNU/Linux',
-                'desc' => 'Configurazione e compilazione del <strong>Kernel</strong> per sistemi con necessità <strong>high-performance</strong>, uso quotidiano, <strong>real-time</strong>, ecc.',
-                'desc2' => 'Gestione server in grado di sostenere <strong>migliaia di utenti</strong> in <strong>contemporanea</strong>, ed implementazione di misure volte alla <strong>riduzione dei costi</strong>.',
-                'desc3' => 'Distro: <strong>Arch</strong>, <strong>Artix</strong>, <strong>Debian</strong>, <strong>Devuan</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>, <strong>Ubuntu</strong>',
+
+                'c' => [
+                    '<strong>Configurazione</strong> e <strong>compilazione Kernel</strong>',
+                    'Amministrazione <strong>server</strong> (distro: <strong>Amazon Linux</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>)',
+                    '<strong>Suricata IPS/IDS</strong>, <strong>ufw</strong>, <strong>iptables</strong>',
+                    'Implementazione <strong>Fail2ban</strong> e <strong>AbuseIPDB</strong>',
+                    '<strong>Rate-limiting</strong>',
+                ],
             ],
 
             // Cloud computing
             'cloud' => [
                 'title' => 'Cloud computing',
-                'desc' => 'Gestione delle <strong>infrastrutture in cloud</strong>, quali <strong>server</strong>, <strong>database</strong>, <strong>storage</strong>, ecc.',
-            ],
 
-            // Firewall
-            'firewall' => [
-                'title' => 'Firewall',
-                'desc' => 'Configurazione <strong>firewall</strong>, con <strong>filtraggio delle porte</strong> e <strong>rate-limiting</strong>.',
-                'desc2' => 'Configurazione <strong>Suricata IDS/IPS</strong>.',
-                'desc3' => '<strong>Blocco</strong> delle <strong>richieste malevole</strong> tramite <strong>Fail2ban</strong>, e segnalazione automatica su <strong>AbuseIPDB</strong>.',
+                'c' => [
+                    'Gestione delle <strong>infrastrutture in cloud</strong>',
+                    'Implementazione delle <strong>best practices</strong> in diversi ambiti',
+                ],
             ],
 
             // Web server
             'webserver' => [
                 'title' => 'Server web',
-                'desc' => 'Implementazione <strong>policy di sicurezza</strong> e <strong>certificati SSL</strong>, protocolli <strong>HTTP2</strong> e <strong>HTTP3/QUIC</strong>, <strong>rate-limiting di asset</strong> (<strong>nginx</strong>)',
+
+                'c' => [
+                    'Implementazione <strong>policy di sicurezza</strong> e <strong>certificati SSL</strong>',
+                    'Protocolli HTTP moderni <strong>HTTP2</strong> e <strong>HTTP3/QUIC</strong>',
+                    '<strong>Rate-limiting</strong>',
+                    'Configurazione <strong>nginx</strong>',
+                ],
             ],
 
             // Web dev
             'web' => [
                 'title' => 'Sviluppo siti web',
 
-                // Frontend
-                'frontend' => [
-                    'title' => 'Sviluppo frontend',
-                    'desc' => '<strong>Riduzione</strong> delle <strong>dipendenze su JS</strong>, <strong>design responsive</strong> e <strong>moderno</strong>.',
-                ],
-
-                // Backend
-                'backend' => [
-                    'title' => 'Sviluppo backend',
-                    'desc' => '<strong>PHP 8 + Laravel 11</strong>, <strong>compressione</strong> e <strong>riduzione dei contenuti</strong>, <strong>riduzione</strong> dei <strong>tempi di caricamento</strong>, blocco delle richieste da IP presenti in <strong>AbuseIPDB</strong>, <strong>rate-limiting</strong>.',
+                'c' => [
+                    '<u>Frontend</u>: <strong>HTML</strong>, <strong>CSS</strong>, vanilla <strong>JS</strong>',
+                    '<u>Backend</u>: <strong>PHP</strong>, <strong>Laravel</strong>',
                 ],
             ],
 
             // Domains & DNS
             'dns' => [
                 'title' => 'Nomi di dominio e DNS',
-                'desc' => 'Configurazione <strong>zone</strong> e <strong>record DNS</strong>. Implementazione <strong>ad-hoc</strong> di un <strong>client DDNS</strong>, tramite <strong>chiamate API</strong>.',
+
+                'c' => [
+                    'Amministrazione <strong>zone e record</strong>',
+                    'Implementazione <strong>client DDNS</strong> tramite <strong>chiamate API</strong>',
+                ],
+            ],
+
+            // DB
+            'db' => [
+                'title' => 'Database',
+
+                'c' => [
+                    '<strong>RDBMS</strong> (MySQL/MariaDB, Aurora)',
+                    '<strong>noSQL</strong> (DynamoDB)',
+                ],
             ],
         ],
     ],
@@ -74,8 +101,9 @@ return [
             'title' => '',
 
             'c' => [
-                'a' => 'Ottenimento <strong>borsa di studio</strong> tramite <strong>Edgemony</strong>, e <strong>certificazione</strong> presso <strong>Amazon Web Services (AWS)</strong> in qualità di <strong>Cloud Engineer</strong> e <strong>Solutions Architect</strong>.',
-                'b' => 'Ulteriori miglioramenti ai siti web (sia <strong>lato client</strong> che <strong>lato server</strong>)',
+                'Ottenimento certificazione <strong>AWS Certified Cloud Practitioner</strong>',
+                'Ottenimento <strong>borsa di studio</strong> tramite <strong>Edgemony</strong>, e <strong>certificazione</strong> presso <strong>Amazon Web Services (AWS)</strong> in qualità di <strong>Cloud Engineer</strong> e <strong>Solutions Architect</strong>.',
+                'Ulteriori miglioramenti ai siti web (sia <strong>lato client</strong> che <strong>lato server</strong>)',
             ],
         ],
 
@@ -84,11 +112,11 @@ return [
             'title' => '',
 
             'c' => [
-                'a' => 'Ampliamento conoscenze di <strong>Elettrotecnica</strong>',
-                'b' => 'Miglioramento abilità pratiche di <strong>installazione impianti elettrici</strong>, <strong>domotici</strong>, <strong>videosorveglianza</strong>, <strong>antifurto</strong>, <strong>rete dati (LAN)</strong>',
-                'c' => 'Introduzione di <strong>CodeIgniter</strong> in sito web personale',
-                'd' => 'Approfondimento della configurazione del <strong>Kernel</strong>: Kernel ancora più piccolo, mettendo in primo piano le prestazioni',
-                'e' => 'Riscrittura sito web con <strong>Laravel</strong>, con ulteriore analisi e miglioramento delle prestazioni. Miglioramento UI del sito web.',
+                'Ampliamento conoscenze di <strong>Elettrotecnica</strong>',
+                'Miglioramento abilità pratiche di <strong>installazione impianti elettrici</strong>, <strong>domotici</strong>, <strong>videosorveglianza</strong>, <strong>antifurto</strong>, <strong>rete dati (LAN)</strong>',
+                'Introduzione di <strong>CodeIgniter</strong> in sito web personale',
+                'Approfondimento della configurazione del <strong>Kernel</strong>: Kernel ancora più piccolo, mettendo in primo piano le prestazioni',
+                'Riscrittura sito web con <strong>Laravel</strong>, con ulteriore analisi e miglioramento delle prestazioni. Miglioramento UI del sito web.',
             ],
         ],
 
@@ -97,73 +125,73 @@ return [
             'title' => '5° Superiore (corso SIA)',
 
             'c' => [
-                'a' => 'Miglioramento prestazioni Kernel personalizzato',
-                'b' => 'Miglioramento prestazioni ed efficienza workstation, con manutenzione periodica',
-                'c' => 'Miglioramento rete locale',
-                'd' => 'Approfondimento teorie e concetti dei database, con collegamento PHP',
-                'e' => 'Redesign sito web personale',
-                'f' => 'Diploma di <strong>Ragioniere Perito Informatico</strong>, punteggio <strong>98/100</strong>',
+                'Miglioramento prestazioni Kernel personalizzato',
+                'Miglioramento prestazioni ed efficienza workstation, con manutenzione periodica',
+                'Miglioramento rete locale',
+                'Approfondimento teorie e concetti dei database, con collegamento PHP',
+                'Redesign sito web personale',
+                'Diploma di <strong>Ragioniere Perito Informatico</strong>, punteggio <strong>98/100</strong>',
             ],
         ],
 
         // 2022
         '2022' => [
-            'title' => '4-5° Superiore (corso SIA)',
+            'title' => '4 &mdash; 5° Superiore (corso SIA)',
 
             'c' => [
-                'a' => 'Studio ed approfondimento teorie di programmazione',
-                'b' => 'Studio ed approfondimento teorie di design',
-                'c' => 'Miglioramento competenze in impianti elettrici, impianti reti locali, e sistemi di sorveglianza',
-                'd' => 'Costruzione workstation performante con Gentoo Linux',
-                'e' => 'Costruzione e miglioramento rete locale, con connettività IPV6',
+                'Studio ed approfondimento teorie di programmazione',
+                'Studio ed approfondimento teorie di design',
+                'Miglioramento competenze in impianti elettrici, impianti reti locali, e sistemi di sorveglianza',
+                'Costruzione workstation performante con Gentoo Linux',
+                'Costruzione e miglioramento rete locale, con connettività IPV6',
             ],
         ],
 
         // 2021
         '2021' => [
-            'title' => '3-4° Superiore (corso SIA)',
+            'title' => '3 &mdash; 4° Superiore (corso SIA)',
 
             'c' => [
-                'a' => 'Passaggio da Artix Linux a Gentoo Linux',
-                'b' => 'Miglioramento notevole conoscenze Linux',
-                'c' => 'Studio ed approfondimento linguaggio C, sviluppo di vari programmi in C',
-                'd' => 'Sviluppo piccole applicazioni Android',
-                'e' => 'Primi passi con personalizzazione Kernel volta a migliorare prestazioni ed efficienza',
+                'Passaggio da Artix Linux a Gentoo Linux',
+                'Miglioramento notevole conoscenze Linux',
+                'Studio ed approfondimento linguaggio C, sviluppo di vari programmi in C',
+                'Sviluppo piccole applicazioni Android',
+                'Primi passi con personalizzazione Kernel volta a migliorare prestazioni ed efficienza',
             ],
         ],
 
         // 2020
         '2020' => [
-            'title' => '2-3° Superiore (corso SIA)',
+            'title' => '2 &mdash; 3° Superiore (corso SIA)',
 
             'c' => [
-                'a' => 'Passaggio da Ubuntu ad Arch Linux',
-                'b' => 'Approfondimento concetti e teorie chiave Linux',
-                'c' => 'Redazione guida su installazione Arch Linux',
-                'd' => 'Passaggio da Arch Linux ad Artix Linux',
+                'Passaggio da Ubuntu ad Arch Linux',
+                'Approfondimento concetti e teorie chiave Linux',
+                'Redazione guida su installazione Arch Linux',
+                'Passaggio da Arch Linux ad Artix Linux',
             ],
         ],
 
         // 2019
         '2019' => [
-            'title' => '1-2° Superiore (corso AFM)',
+            'title' => '1 &mdash; 2° Superiore (corso AFM)',
 
             'c' => [
-                'a' => 'Sviluppo esperienza con Ubuntu (GNOME+LXDE+XFCE) e Linux Mint',
-                'b' => 'Sviluppo frequente di siti web con vari strumenti e con stili diversi',
-                'c' => 'Approfondimento e studio di teorie della programmazione',
+                'Sviluppo esperienza con Ubuntu (GNOME+LXDE+XFCE) e Linux Mint',
+                'Sviluppo frequente di siti web con vari strumenti e con stili diversi',
+                'Approfondimento e studio di teorie della programmazione',
             ],
         ],
 
         // 2018
         '2018' => [
-            'title' => '3° Media-1° Superiore (corso AFM)',
+            'title' => '3° Media &mdash; 1° Superiore (corso AFM)',
 
             'c' => [
-                'a' => 'Certificazione B2 Inglese',
-                'b' => 'Prima esperienza con Linux, tramite Raspbian su Raspberry Pi 0 W (1° gen), e Ubuntu 16 su Sony Vaio VGN-N11M',
-                'c' => 'Prima esperienza con programmazione in Python',
-                'd' => 'Sviluppo piccoli programmi in Visual Basic .NET',
+                'Certificazione B2 Inglese',
+                'Prima esperienza con Linux, tramite Raspbian su Raspberry Pi 0 W (1° gen), e Ubuntu 16 su Sony Vaio VGN-N11M',
+                'Prima esperienza con programmazione in Python',
+                'Sviluppo piccoli programmi in Visual Basic .NET',
             ],
         ],
     ],

@@ -1,4 +1,4 @@
-<li>
-    <strong><u>{{ $name }}</u></strong>:&thinsp;
+<li class="mb-2">
+    <u><strong>{{ $name }}</strong></u>:&thinsp;
     {{ $slot }}
 </li>

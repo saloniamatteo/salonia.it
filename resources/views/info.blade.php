@@ -33,75 +33,70 @@
 				<p class="mt-0-md">
 					{!! __("info.hero.desc") !!}
 				</p>
-
-				<p class="mt-0-md">
-					{!! __("info.hero.desc2") !!}
-				</p>
-
-				<ul>
-					<!-- GNU/Linux -->
-					<x-list-item-u
-					name="{{ __('info.hero.spec.linux.title') }}">
-
-						<ul>
-							<li>{!! __("info.hero.spec.linux.desc") !!}</li>
-							<li>{!! __("info.hero.spec.linux.desc2") !!}</li>
-							<li>{!! __("info.hero.spec.linux.desc3") !!}</li>
-						</ul>
-					</x-list-item-u>
-
-					<!-- Cloud computing -->
-					<x-list-item-u
-					name="{{ __('info.hero.spec.cloud.title') }}">
-
-						{!! __("info.hero.spec.cloud.desc") !!}
-					</x-list-item-u>
-
-					<!-- Firewall -->
-					<x-list-item-u
-					name="{{ __('info.hero.spec.firewall.title') }}">
-
-						<ul>
-							<li>{!! __("info.hero.spec.firewall.desc") !!}</li>
-							<li>{!! __("info.hero.spec.firewall.desc2") !!}</li>
-							<li>{!! __("info.hero.spec.firewall.desc3") !!}</li>
-						</ul>
-					</x-list-item-u>
-
-					<!-- Web server -->
-					<x-list-item-u
-					name="{{ __('info.hero.spec.webserver.title') }}">
-
-						{!! __("info.hero.spec.webserver.desc") !!}
-					</x-list-item-u>
-
-					<!-- Web dev -->
-					<x-list-item-u
-					name="{{ __('info.hero.spec.web.title') }}">
-
-						<ul>
-							<!-- Frontend -->
-							<x-list-item-u
-							name="{{ __('info.hero.spec.web.frontend.title') }}">
-								{!! __("info.hero.spec.web.frontend.desc") !!}
-							</x-list-item-u>
-
-							<!-- Backend -->
-							<x-list-item-u
-							name="{{ __('info.hero.spec.web.backend.title') }}">
-								{!! __("info.hero.spec.web.backend.desc") !!}
-							</x-list-item-u>
-						</ul>
-					</x-list-item-u>
-
-					<!-- DNS -->
-					<x-list-item-u
-					name="{!! __('info.hero.spec.dns.title') !!}">
-
-						{!! __("info.hero.spec.dns.desc") !!}
-					</x-list-item-u>
-				</ul>
 			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<!-- Certs -->
+		<div>
+			<p class="tile__title font-bold text-lg mb-0">
+				{{ __("info.certs.title") }}
+			</p>
+
+			<p class="mt-0-md">
+				{!! __("info.certs.desc") !!}
+			</p>
+
+			<!-- AWS CCP -->
+			<div class="grid u-gap-2 u-text-left">
+				<div class="grid-c-3 grid-c-2-sm grid-r-2">
+					<img class="img-stretch"
+					alt="Certified Cloud Practitioner Badge"
+					src="{{ Vite::asset('resources/img/ccp_badge.jpg') }}">
+				</div>
+
+				<div class="grid-c-9 grid-c-10-sm">
+					<p class="my-0 text-black">
+						<u><strong>
+							AWS Certified Cloud Practitioner
+						</strong></u>
+						&thinsp;
+						<span class="text-gray-600">(Feb 2025)</span>
+					</p>
+
+					<p class="mt-0-md">
+						{!! __("info.certs.ccp") !!}
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<!-- Skills -->
+		<div>
+			<p class="tile__title font-bold text-lg mb-0">
+				{{ __("info.skills.title") }}
+			</p>
+
+			<p class="mt-0">
+				{!! __("info.skills.desc") !!}
+			</p>
+
+			<!-- Programmatically print skills -->
+			<ul>
+			@foreach (__("info.skills.c") as $skills)
+				<x-list-item-u name="{{ $skills['title'] }}">
+
+					<ul class="mt-0">
+						@foreach ($skills['c'] as $skill)
+							<li>{!! $skill !!}</li>
+						@endforeach
+					</ul>
+				</x-list-item-u>
+			@endforeach
+			</ul>
 		</div>
 
 		<div class="divider"></div>
