@@ -102,7 +102,7 @@ return [
 
             'c' => [
                 'Ottenimento certificazione <strong>AWS Certified Cloud Practitioner</strong>',
-                'Obtained a <strong>scholarship</strong> through <strong>Edgemony</strong>, and <strong>certified</strong> at <strong>Amazon Web Services (AWS)</strong> as a <strong>Cloud Engineer</strong> and <strong>Solutions Architect</strong>.',
+                'Obtained a <strong>scholarship</strong> for the <strong>AWS re/Start</strong> program at <strong>Edgemony</strong>',
                 'Further website improvements (both <strong>client-side</strong> &amp; <strong>server-side</strong>)',
             ],
         ],

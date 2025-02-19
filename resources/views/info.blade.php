@@ -20,7 +20,7 @@
 	<x-card class="m-3">
 		<div class="grid-sm u-gap-2 u-text-left">
 			<div class="grid-c-4 grid-r-3">
-				<img class="img-stretch mb-2 u-round-lg"
+				<img class="img-stretch mb-2 u-round-lg u-center"
 				alt="Matteo Salonia"
 				src="{{ Vite::asset('resources/img/me.jpg') }}">
 			</div>
