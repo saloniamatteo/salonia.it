@@ -118,7 +118,6 @@ return [
             'c' => [
                 'Ottenimento certificazione <strong>AWS Certified Cloud Practitioner</strong>',
                 'Ottenimento <strong>borsa di studio</strong> per il programma <strong>AWS re/Start</strong> presso <strong>Edgemony</strong>',
-                'Ulteriori miglioramenti ai siti web (sia <strong>lato client</strong> che <strong>lato server</strong>)',
             ],
         ],
 
@@ -127,11 +126,11 @@ return [
             'title' => '',
 
             'c' => [
-                'Ampliamento conoscenze di <strong>Elettrotecnica</strong>',
-                'Miglioramento abilità pratiche di <strong>installazione impianti elettrici</strong>, <strong>domotici</strong>, <strong>videosorveglianza</strong>, <strong>antifurto</strong>, <strong>rete dati (LAN)</strong>',
-                'Introduzione di <strong>CodeIgniter</strong> in sito web personale',
-                'Approfondimento della configurazione del <strong>Kernel</strong>: Kernel ancora più piccolo, mettendo in primo piano le prestazioni',
-                'Riscrittura sito web con <strong>Laravel</strong>, con ulteriore analisi e miglioramento delle prestazioni. Miglioramento UI del sito web.',
+                'Studi di <strong>Elettrotecnica</strong>',
+                'Approfondimento della configurazione del <strong>Kernel</strong>',
+                'Miglioramento <strong>UI/UX</strong> sito web',
+                'Riscrittura sito web con <strong>Laravel</strong>',
+                'Introduzione di <strong>CodeIgniter</strong> nel sito web personale',
             ],
         ],
 
@@ -140,12 +139,10 @@ return [
             'title' => '5° Superiore (corso SIA)',
 
             'c' => [
-                'Miglioramento prestazioni Kernel personalizzato',
-                'Miglioramento prestazioni ed efficienza workstation, con manutenzione periodica',
-                'Miglioramento rete locale',
-                'Approfondimento teorie e concetti dei database, con collegamento PHP',
-                'Redesign sito web personale',
-                'Diploma di <strong>Ragioniere Perito Informatico</strong>, punteggio <strong>98/100</strong>',
+                'Diploma in qualità di <strong>Ragioniere Perito Informatico</strong>, con un punteggio di <strong>98/100</strong>',
+                'Miglioramento delle <strong>prestazioni della workstation</strong>',
+                'Miglioramento delle <strong>prestazioni di rete</strong>',
+                '<strong>Redesign</strong> sito web personale',
             ],
         ],
 
@@ -154,11 +151,11 @@ return [
             'title' => '4 &mdash; 5° Superiore (corso SIA)',
 
             'c' => [
-                'Studio ed approfondimento teorie di programmazione',
-                'Studio ed approfondimento teorie di design',
-                'Miglioramento competenze in impianti elettrici, impianti reti locali, e sistemi di sorveglianza',
-                'Costruzione workstation performante con Gentoo Linux',
-                'Costruzione e miglioramento rete locale, con connettività IPV6',
+                'Approfondimento dei <strong>principi di programmazione</strong>',
+                "Miglioramento <strong>competenze nell'ambito elettrico</strong>",
+                "Miglioramento <strong>competenze di rete</strong>",
+                'Creazione <strong>workstation</strong>',
+                'Creazione <strong>rete locale</strong>',
             ],
         ],
 
@@ -167,11 +164,10 @@ return [
             'title' => '3 &mdash; 4° Superiore (corso SIA)',
 
             'c' => [
-                'Passaggio da Artix Linux a Gentoo Linux',
-                'Miglioramento notevole conoscenze Linux',
-                'Studio ed approfondimento linguaggio C, sviluppo di vari programmi in C',
-                'Sviluppo piccole applicazioni Android',
-                'Primi passi con personalizzazione Kernel volta a migliorare prestazioni ed efficienza',
+                'Approfondimento <strong>conoscenze dei sistemi GNU/Linux</strong>',
+                'Sviluppo di vari <strong>programmi in C</strong>',
+                'Approfondimento <strong>C</strong> (linguaggio di programmazione)',
+                'Primi passi nella <strong>personalizzazione del Kernel</strong>',
             ],
         ],
 
@@ -180,10 +176,8 @@ return [
             'title' => '2 &mdash; 3° Superiore (corso SIA)',
 
             'c' => [
-                'Passaggio da Ubuntu ad Arch Linux',
-                'Approfondimento concetti e teorie chiave Linux',
-                'Redazione guida su installazione Arch Linux',
-                'Passaggio da Arch Linux ad Artix Linux',
+                'Approfondimento <strong>conoscenze dei sistemi GNU/Linux</strong>',
+                'Redazione <strong>guida installazione Arch Linux</strong>',
             ],
         ],
 
@@ -192,9 +186,8 @@ return [
             'title' => '1 &mdash; 2° Superiore (corso AFM)',
 
             'c' => [
-                'Sviluppo esperienza con Ubuntu (GNOME+LXDE+XFCE) e Linux Mint',
-                'Sviluppo frequente di siti web con vari strumenti e con stili diversi',
-                'Approfondimento e studio di teorie della programmazione',
+                '<strong>Sviluppo siti web</strong> con <strong>vari strumenti</strong> e <strong>vari stili</strong>',
+                'Studio dei <strong>principi di programmazione</strong>',
             ],
         ],
 
@@ -203,10 +196,10 @@ return [
             'title' => '3° Media &mdash; 1° Superiore (corso AFM)',
 
             'c' => [
-                'Certificazione B2 Inglese',
-                'Prima esperienza con Linux, tramite Raspbian su Raspberry Pi 0 W (1° gen), e Ubuntu 16 su Sony Vaio VGN-N11M',
-                'Prima esperienza con programmazione in Python',
-                'Sviluppo piccoli programmi in Visual Basic .NET',
+                'Creazione di progetti <strong>Raspberry Pi</strong>',
+                'Prima esperienza con <strong>Python</strong>',
+                'Prima esperienza con <strong>Linux</strong>',
+                'Ottenimento certificazione <strong>B2 QCER Inglese</strong>',
             ],
         ],
     ],

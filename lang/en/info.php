@@ -116,9 +116,8 @@ return [
             'title' => '',
 
             'c' => [
-                'Ottenimento certificazione <strong>AWS Certified Cloud Practitioner</strong>',
+                'Obtained <strong>AWS Certified Cloud Practitioner</strong> certification',
                 'Obtained a <strong>scholarship</strong> for the <strong>AWS re/Start</strong> program at <strong>Edgemony</strong>',
-                'Further website improvements (both <strong>client-side</strong> &amp; <strong>server-side</strong>)',
             ],
         ],
 
@@ -127,11 +126,11 @@ return [
             'title' => '',
 
             'c' => [
-                'In-depth study of <strong>Electrical engineering</strong>',
-                'Practical skills improvement regarding <strong>electrical</strong>, <strong>smart home</strong>, <strong>video surveillance</strong>, <strong>anti-theft</strong>, <strong>LAN systems installation</strong>',
+                '<strong>Electrical engineering</strong> studies',
+                'Deep-dive in <strong>Kernel</strong> configuration',
+                'Website <strong>UI/UX</strong> improvements',
+                'Website rewrite using <strong>Laravel</strong>',
                 'Introduction of <strong>CodeIgniter</strong> in personal website',
-                'Deep-dive in <strong>Kernel</strong> configuration: even smaller Kernel, with performance in mind',
-                'Website rewrite in <strong>Laravel</strong>, with subsequent analysis and increase of performance. Improvements to website UI.',
             ],
         ],
 
@@ -140,12 +139,10 @@ return [
             'title' => '13th grade',
 
             'c' => [
-                'Improvement of custom Kernel performance',
-                'Improvement of workstation performance and efficiency, with periodic maintenance',
-                'Improvement of local network',
-                'Advanced study of databases, with PHP connection',
-                'Personal website redesign',
-                'Accountant &amp; Computer Expert</strong> degree (<strong>Ragioniere Perito Informatico</strong>), score of <strong>98/100</strong>',
+                '<strong>Accountant &amp; Computer Expert</strong> degree, with a score of <strong>98/100</strong>',
+                'Improvements to <strong>workstation performance</strong>',
+                'Improvements to <strong>network performance</strong>',
+                'Personal website <strong>redesign</strong>',
             ],
         ],
 
@@ -154,11 +151,11 @@ return [
             'title' => '12th &mdash; 13th grade',
 
             'c' => [
-                'Advanced study of programming theories',
-                'Advanced study of design theories',
-                'Knowledge improvement regarding electrical systems, local network systems, and video surveillance systems',
-                'Built performant workstation with Gentoo Linux',
-                'Built and improved local network, with IPV6 connectivity',
+                'Deep-dive of <strong>programming principles</strong>',
+                'Improvement of <strong>electrical skills</strong>',
+                'Improvement of <strong>networking skills</strong>',
+                '<strong>Workstation</strong> creation',
+                '<strong>Local network</strong> creation',
             ],
         ],
 
@@ -167,11 +164,10 @@ return [
             'title' => '11th &mdash; 12th grade',
 
             'c' => [
-                'Move from Artix Linux to Gentoo Linux',
-                'Extensive improvement of Linux knowledge',
-                'Advanced study of the C programming language, development of various programs in C',
-                'Development of small Android apps',
-                'First steps with Kernel personalization to increase performance and efficiency',
+                'Improvement of <strong>GNU/Linux systems knowledge</strong>',
+                'Development of various <strong>C programs</strong>',
+                'Deep-dive into <strong>C</strong> (programming language)',
+                'First steps with <strong>Kernel customization</strong>',
             ],
         ],
 
@@ -180,10 +176,8 @@ return [
             'title' => '10th &mdash; 11th grade',
 
             'c' => [
-                'Move from Ubuntu to Arch Linux',
-                'Advanced study of Linux key concepts and theories',
-                'Wrote Arch Linux installation guide',
-                'Move from Arch Linux to Artix Linux',
+                'Improvement of <strong>GNU/Linux systems knowledge</strong>',
+                'Wrote <strong>Arch Linux installation guide</strong>',
             ],
         ],
 
@@ -192,9 +186,8 @@ return [
             'title' => '9th &mdash; 10th grade',
 
             'c' => [
-                'Improved experience with Ubuntu (GNOME+LXDE+XFCE) and Linux Mint',
-                'Frequent development of websites with various tools and various styles',
-                'Advanced study of programming theories',
+                '<strong>Website development</strong> with <strong>various tools</strong> and <strong>various styles</strong>',
+                'Study of <strong>programming principles</strong>',
             ],
         ],
 
@@ -203,10 +196,10 @@ return [
             'title' => '8th &mdash; 9th grade',
 
             'c' => [
-                'English B2 certification',
-                'First experience with Linux, with Raspbian on a Raspberry Pi 0 W (1° gen), and Ubuntu 16 on a Sony Vaio VGN-N11M',
-                'First programming experience with Python',
-                'Development of small programs with Visual Basic .NET',
+                'Creation of <strong>Raspberry Pi</strong> projects',
+                'First experience with <strong>Python</strong>',
+                'First experience with <strong>Linux</strong>',
+                'Obtained <strong>English B2 QCER</strong> certification',
             ],
         ],
     ],
