@@ -51,7 +51,7 @@
 			<!-- AWS SAA -->
 			<x-badge alt="Solutions Architect Associate Badge"
 					 image="aws_saa_badge.png"
-					 name="AWS Solutions Architect Associate"
+					 name="AWS Certified Solutions Architect Associate"
 					 date="{{ __('info.certs.ongoing') }}"
 			>
 				{!! __("info.certs.saa") !!}
