@@ -7,13 +7,18 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => "Ho una solida esperienza nell’ambito <strong>server GNU/Linux</strong> e <strong>sviluppo web</strong>. Sin dall'età di 13 anni ho sviluppato un forte interesse per l'informatica, dedicando molto tempo all'<strong>esplorazione</strong>, all'<strong>analisi</strong>, e alla <strong>comprensione delle funzionalità</strong> dei <strong>sistemi operativi</strong>, delle <strong>reti</strong>, dei <strong>siti web</strong>, e della tecnologia in generale. La mia esperienza sui <strong>server GNU/Linux</strong> include la <strong>configurazione</strong> e l'<strong>ottimizzazione dei sistemi</strong>, nonché la <strong>risoluzione di problemi complessi</strong>. Sono sempre alla ricerca di <strong>nuove opportunità</strong> per <strong>approfondire le mie conoscenze</strong>, e rimanere aggiornato sulle <strong>ultime tendenze</strong> nel campo della tecnologia. La mia passione per l’informatica si riflette nel mio <strong>approccio al lavoro</strong>, in cui mi impegno a fornire <strong>soluzioni efficienti e innovative</strong>. Sono un collaboratore proattivo e <strong>orientato ai risultati</strong>, pronto a contribuire al <strong>successo del team</strong> e dell'<strong>organizzazione</strong>.",
+        'desc' => "Ho una solida esperienza nell’ambito <strong>server GNU/Linux</strong> e <strong>sviluppo web</strong>. Sin dall'età di 13 anni ho sviluppato un forte interesse per l'informatica, dedicando molto tempo all'<strong>esplorazione</strong>, all'<strong>analisi</strong>, e alla <strong>comprensione delle funzionalità</strong> dei <strong>sistemi operativi</strong>, delle <strong>reti</strong>, dei <strong>siti web</strong>, e della tecnologia in generale. La mia esperienza sui <strong>server GNU/Linux</strong> include la <strong>configurazione</strong> e l'<strong>ottimizzazione dei sistemi</strong>, nonché la <strong>risoluzione di problemi complessi</strong>.",
     ],
 
     // Certifications
     'certs' => [
         'title' => 'Certificazioni',
         'desc' => 'Nel mese di <strong>Novembre 2024</strong> ho vinto una borsa di studio per il programma <strong>AWS re/Start</strong>, a cui attualmente partecipo presso la scuola di formazione <strong>Edgemony</strong>.<br>Attualmente sto studiando per ottenere la certificazione <strong>Solutions Architect Associate</strong>.',
+
+        'ongoing' => 'In corso',
+
+        // Solutions Architect Associate
+        'saa' => "Questa certificazione attesta competenze nella <strong>progettazione</strong> e <strong>implementazione</strong> di <strong>architetture sicure</strong>, <strong>scalabili</strong>, <strng>resilienti</strong>, ed <strong>ottimizzate</strong> in termini di <strong>costi</strong>, osservando le <strong>best practices architetturali</strong>, e traducendo <strong>requisiti aziendali</strong> in <strong>soluzioni tecniche efficaci</strong>.",
 
         // Certified Cloud Practitioner
         'ccp' => "Questa certificazione attesta una padronanza dei principi del <strong>cloud computing</strong>. Tale credenziale esamina con rigore le componenti dell'<strong>ecosistema AWS</strong>, includendo un'<strong>analisi</strong> delle <strong>architetture di riferimento</strong>, di una <strong>vasta gamma di servizi</strong>, oltre a <strong>best practices consolidate</strong> in materia di <strong>sicurezza</strong> e <strong>conformità normativa</strong>.",
@@ -22,7 +27,7 @@ return [
     // Skills
     'skills' => [
         'title' => 'Competenze',
-        'desc' => 'Nel corso degli anni ho intrapreso un percorso di <strong>approfondimento autonomo</strong> dei concetti, che mi ha consentito di <strong>ampliare significativamente le mie competenze</strong> in <strong>diversi ambiti</strong>. Ecco alcune mie <strong>hard skills</strong>:',
+        'desc' => 'Nel corso degli anni ho intrapreso un percorso di <strong>approfondimento autonomo</strong> che mi ha consentito di <strong>ampliare significativamente le mie competenze</strong> in <strong>diversi ambiti</strong>. Ecco alcune delle mie competenze:',
 
         'c' => [
             // GNU/Linux
@@ -31,6 +36,7 @@ return [
 
                 'c' => [
                     '<strong>Configurazione</strong> e <strong>compilazione Kernel</strong>',
+                    '<strong>Configurazione bootloader</strong> (GRUB2)',
                     'Amministrazione <strong>server</strong> (distro: <strong>Amazon Linux</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>)',
                     '<strong>Suricata IPS/IDS</strong>, <strong>ufw</strong>, <strong>iptables</strong>',
                     'Implementazione <strong>Fail2ban</strong> e <strong>AbuseIPDB</strong>',
@@ -45,6 +51,8 @@ return [
                 'c' => [
                     'Gestione delle <strong>infrastrutture in cloud</strong>',
                     'Implementazione delle <strong>best practices</strong> in diversi ambiti',
+                    'Communicazione tra <strong>ambienti on-premises</strong> e <strong>cloud</strong>',
+                    '<strong>Alta disponibilità</strong>',
                 ],
             ],
 
@@ -67,6 +75,11 @@ return [
                 'c' => [
                     '<u>Frontend</u>: <strong>HTML</strong>, <strong>CSS</strong>, vanilla <strong>JS</strong>',
                     '<u>Backend</u>: <strong>PHP</strong>, <strong>Laravel</strong>',
+                    'Riduzione dei <strong>tempi di caricamento</strong>',
+                    '<strong>Ottimizzazione delle prestazioni</strong>',
+                    '<strong>Responsive design</strong>',
+                    '<strong>Massimizzazione parametri SEO</strong>',
+                    '<strong>Ottimizzazione della navigabilità</strong>',
                 ],
             ],
 
@@ -76,6 +89,8 @@ return [
 
                 'c' => [
                     'Amministrazione <strong>zone e record</strong>',
+                    'Configurazione <strong>DNSSEC</strong>',
+                    'Controllo stato <strong>DNSSEC</strong>',
                     'Implementazione <strong>client DDNS</strong> tramite <strong>chiamate API</strong>',
                 ],
             ],

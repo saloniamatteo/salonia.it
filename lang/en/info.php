@@ -7,13 +7,18 @@ return [
 
     // Hero
     'hero' => [
-        'desc' => "I have solid experience with <strong>GNU/Linux servers</strong> & <strong>web development</strong>. Since the age of 13 I have developed a strong interest in computer science, dedicating a lot of time to <strong>exploring</strong>, <strong>analyzing</strong>, and <strong>understanding the functionalities</strong> of <strong>operating systems</strong>, <strong>networks</strong>, <strong>web sites</strong>, and technology in general. My experience on <strong>GNU/Linux servers</strong> includes <strong>configuring</strong> and <strong>optimizing systems</strong>, as well as <strong>solving complex problems</strong>. I am always looking for <strong>new opportunities</strong> to <strong>deepen my knowledge</strong>, and stay updated on the <strong>latest trends</strong> in technology. My passion for computer science is reflected in my <strong>approach to work</strong>, where I commit to providing <strong>efficient and innovative solutions</strong>. I am a <strong>results-oriented</strong> collaborator, ready to contribute to the <strong>success of the team</strong> and the <strong>organization</strong>.",
+        'desc' => "I have solid experience with <strong>GNU/Linux servers</strong> & <strong>web development</strong>. Since the age of 13 I have developed a strong interest in computer science, dedicating a lot of time to <strong>exploring</strong>, <strong>analyzing</strong>, and <strong>understanding the functionalities</strong> of <strong>operating systems</strong>, <strong>networks</strong>, <strong>web sites</strong>, and technology in general. My experience on <strong>GNU/Linux servers</strong> includes <strong>configuring</strong> and <strong>optimizing systems</strong>, as well as <strong>solving complex problems</strong>.",
     ],
 
     // Certifications
     'certs' => [
         'title' => 'Certifications',
         'desc' => "In <strong>November 2024</strong> I won a scholarship for the <strong>AWS re/Start</strong> program, which I am currently participating in at the <strong>Edgemony</strong> training school.<br>I'm currently studying to obtain the <strong>Solutions Architect Associate</strong> certification.",
+
+        'ongoing' => 'Ongoing',
+
+        // Solutions Architect Associate
+        'saa' => "This certification demonstrates skills in <strong>design</strong> & <strong>implementation</strong> of <strong>secure</strong>, <strong>scalable</strong>, <strong>resilient</strong>, and <strong>cost-optimized architectures</strong>, following <strong>architectural best practices</strong>, and translating <strong>business requirements</strong> into <strong>effective technical solutions</strong>.",
 
         // Certified Cloud Practitioner
         'ccp' => "This certification demonstrates mastery of <strong>cloud computing</strong< principles. This credential rigorously examines the components of the <strong>AWS ecosystem</strong>, including an <strong>analysis</strong> of the <strong>reference architectures</strong>, a <strong>broad range of services</strong>, as well as <strong>established best practices</strong> for <strong>security</strong> and <strong>regulatory compliance</strong>.",
@@ -31,6 +36,7 @@ return [
 
                 'c' => [
                     '<strong>Kernel configuration</strong> & <strong>compilation</strong>',
+                    '<strong>Bootloader configuration</strong> (GRUB2)',
                     '<strong>Server</strong> administration (distro: <strong>Amazon Linux</strong>, <strong>Gentoo</strong>, <strong>RHEL</strong>)',
                     '<strong>Suricata IPS/IDS</strong>, <strong>ufw</strong>, <strong>iptables</strong>',
                     'Implementation of <strong>Fail2ban</strong> and <strong>AbuseIPDB</strong>',
@@ -45,6 +51,8 @@ return [
                 'c' => [
                     'Management of <strong>cloud infrastructures</strong>',
                     'Implementation of <strong>best practices</strong> in various scopes',
+                    'Communication between <strong>on-premises</strong> & <strong>cloud environments</strong>',
+                    '<strong>High availability</strong>',
                 ],
             ],
 
@@ -67,6 +75,11 @@ return [
                 'c' => [
                     '<u>Frontend</u>: <strong>HTML</strong>, <strong>CSS</strong>, vanilla <strong>JS</strong>',
                     '<u>Backend</u>: <strong>PHP</strong>, <strong>Laravel</strong>',
+                    'Reduction of <strong>load times</strong>',
+                    '<strong>Performance optimization</strong>',
+                    '<strong>Responsive design</strong>',
+                    '<strong>SEO parameter maximization</strong>',
+                    '<strong>Navigability optimization</strong>',
                 ],
             ],
 
@@ -76,6 +89,8 @@ return [
 
                 'c' => [
                     '<strong>Zone and record</strong> administration',
+                    '<strong>DNSSEC</strong> configuration',
+                    '<strong>DNSSEC</strong> status checking',
                     '<strong>DDNS client</strong> implementation via <strong>API calls</strong>',
                 ],
             ],

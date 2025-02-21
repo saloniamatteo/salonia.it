@@ -25,7 +25,7 @@
 				src="{{ Vite::asset('resources/img/me.jpg') }}">
 			</div>
 
-			<div class="grid-c-8-md ml-1-md">
+			<div class="grid-c-7 ml-1-md">
 				<h1 class="my-0 text-black">Matteo Salonia</h1>
 			</div>
 
@@ -48,28 +48,23 @@
 				{!! __("info.certs.desc") !!}
 			</p>
 
+			<!-- AWS SAA -->
+			<x-badge alt="Solutions Architect Associate Badge"
+					 image="aws_saa_badge.png"
+					 name="AWS Solutions Architect Associate"
+					 date="{{ __('info.certs.ongoing') }}"
+			>
+				{!! __("info.certs.saa") !!}
+			</x-badge>
+
 			<!-- AWS CCP -->
-			<div class="grid u-gap-2 u-text-left">
-				<div class="grid-c-3 grid-c-2-sm grid-r-2">
-					<img class="img-stretch"
-					alt="Certified Cloud Practitioner Badge"
-					src="{{ Vite::asset('resources/img/ccp_badge.jpg') }}">
-				</div>
-
-				<div class="grid-c-9 grid-c-10-sm">
-					<p class="my-0 text-black">
-						<u><strong>
-							AWS Certified Cloud Practitioner
-						</strong></u>
-						&thinsp;
-						<span class="text-gray-600">(Feb 2025)</span>
-					</p>
-
-					<p class="mt-0-md">
-						{!! __("info.certs.ccp") !!}
-					</p>
-				</div>
-			</div>
+			<x-badge alt="Certified Cloud Practitioner Badge"
+					 image="aws_ccp_badge.png"
+					 name="AWS Certified Cloud Practitioner"
+					 date="Feb 2025"
+			>
+				{!! __("info.certs.ccp") !!}
+			</x-badge>
 		</div>
 
 		<div class="divider"></div>
@@ -87,7 +82,7 @@
 			<!-- Programmatically print skills -->
 			<ul>
 			@foreach (__("info.skills.c") as $skills)
-				<x-list-item-u name="{{ $skills['title'] }}">
+				<x-list-item-u name="{!! $skills['title'] !!}">
 
 					<ul class="mt-0">
 						@foreach ($skills['c'] as $skill)
