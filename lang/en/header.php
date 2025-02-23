@@ -7,19 +7,26 @@ return [
         'title' => 'Pages',
 
         // Linux & Software
-        'linux-soft' => 'Linux & Software',
-        'kernel' => 'Kernel',
-        'dns' => 'DNS',
-        'packages' => 'Packages',
-        'software' => 'Software',
+        'linux-soft' => [
+            'title' => 'Linux & Software',
+            'c' => [
+                'kernel' => 'Kernel',
+                'packages' => 'Packages',
+                'software' => 'Software',
+            ],
+        ],
 
         // About
-        'about' => 'About me',
-        'services' => 'Services',
-        'cv' => 'CV',
-        'info' => 'Info',
-        'contact' => 'Contact me',
-        'donate' => 'Donate',
+        'about' => [
+            'title' => 'About me',
+            'c' => [
+                'services' => 'Services',
+                'cv' => 'CV',
+                'info' => 'Info',
+                'contact' => 'Contact me',
+                'donate' => 'Donate',
+            ],
+        ],
     ],
 
     // Links
@@ -27,10 +34,12 @@ return [
         'title' => 'Links',
 
         // Links
-        'portfolio' => 'Portfolio',
-        'searxng' => 'SearXNG',
-        'oa' => 'OpenAlias',
-        'github' => 'GitHub',
-        'source' => 'Source code',
+        'c' => [
+            'portfolio' => 'Portfolio',
+            'searxng' => 'SearXNG',
+            'oa' => 'OpenAlias',
+            'github' => 'GitHub',
+            'source' => 'Source code',
+        ],
     ],
 ];

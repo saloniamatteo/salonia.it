@@ -124,12 +124,9 @@ class Url
         // Get the current lang
         $lang = Locale::getLocale();
 
-        // Check it
-        if ($lang === 'it') {
-            return 'cv.pdf';
-        }
-
-        return 'cv_en.pdf';
+        return $lang === 'it'
+                ? "/cv.pdf"
+                : "/cv_en.pdf";
     }
 
     // Return a bold string

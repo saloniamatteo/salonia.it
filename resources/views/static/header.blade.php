@@ -1,6 +1,47 @@
 @use('App\Helpers\Locale')
 @use('App\Helpers\Url')
 
+@php
+	// TODO: this is just a quick fix... implement a proper way to handle this
+	const maps = [
+		'kernel' => 'server-cog',
+		'packages' => 'package',
+		'software' => 'binary',
+		'services' => 'server',
+		'cv' => 'file-badge',// link="/{{ URL::getCVLink() }}"
+		'info' => 'user-round',
+		'contact' => 'send',
+		'donate' => 'hand-coins',
+	];
+
+	const link_maps = [
+		'portfolio' => [
+			'link' => 'https://portfolio.salonia.it',
+			'icon' => 'globe',
+		],
+
+		'searxng' => [
+			'link' => 'https://s.salonia.it',
+			'icon' => 'search',
+		],
+
+		'oa' => [
+			'link' => 'https://oa.salonia.it',
+			'icon' => 'scroll-text',
+		],
+
+		'github' => [
+			'link' => 'https://github.com/saloniamatteo',
+			'icon' => 'github',
+		],
+
+		'source' => [
+			'link' => 'https://github.com/saloniamatteo/salonia.it',
+			'icon' => 'github',
+		],
+	];
+@endphp
+
 <!-- Header -->
 <div class="header header-animated header-fixed u-unselectable u-shadow-none blurbg" style="border-bottom: 1px solid">
 <div class="header-brand">
@@ -30,52 +71,37 @@
 
 			<ul class="dropdown-menu dropdown-animated blurbg" id="pages-menu" role="menu">
 				<!-- Linux & Software -->
-				<x-header-span>{{ __("header.pages.linux-soft") }}</x-header-span>
+				<x-header-span>{{ __("header.pages.linux-soft.title") }}</x-header-span>
 
-				<!-- Kernel -->
-				<x-icon-header link="{{ URL::subUrl('kernel') }}" icon="server-cog">
-					{{ __("header.pages.kernel") }}
-				</x-icon-header>
+				@foreach (__("header.pages.linux-soft.c") as $key => $value)
+					@php
+						$link = URL::subUrl("{$key}");
+						$icon = maps["{$key}"];
+					@endphp
 
-				<!-- Packages -->
-				<x-icon-header link="{{ URL::subUrl('packages') }}" icon="package">
-					{{ __("header.pages.packages") }}
-				</x-icon-header>
-
-				<!-- Software -->
-				<x-icon-header link="{{ URL::subUrl('software') }}" icon="binary">
-					{{ __("header.pages.software") }}
-				</x-icon-header>
+					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
+						{{ $value }}
+					</x-icon-header>
+				@endforeach
 
 				<div class="divider my-1"></div>
 
 				<!-- About me -->
-				<x-header-span>{{ __("header.pages.about") }}</x-header-span>
+				<x-header-span>{{ __("header.pages.about.title") }}</x-header-span>
 
-				<!-- Services -->
-				<x-icon-header link="{{ URL::subUrl('services') }}" icon="server">
-					{{ __("header.pages.services") }}
-				</x-icon-header>
+				@foreach (__("header.pages.about.c") as $key => $value)
+					@php
+						$link = $key === 'cv'
+								? URL::getCVLink()
+								: URL::subUrl("{$key}");
 
-				<!-- Curriculum vitae -->
-				<x-icon-header link="/{{ URL::getCVLink() }}" icon="file-badge">
-					{{ __("header.pages.cv") }}
-				</x-icon-header>
+						$icon = maps["{$key}"];
+					@endphp
 
-				<!-- Info -->
-				<x-icon-header link="{{ URL::subUrl('info') }}" icon="user-round">
-					{{ __("header.pages.info") }}
-				</x-icon-header>
-
-				<!-- Contact -->
-				<x-icon-header link="{{ URL::subUrl('contact') }}" icon="send">
-					{{ __("header.pages.contact") }}
-				</x-icon-header>
-
-				<!-- Donate -->
-				<x-icon-header link="{{ URL::subUrl('donate') }}" icon="hand-coins">
-					{{ __("header.pages.donate") }}
-				</x-icon-header>
+					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
+						{{ $value }}
+					</x-icon-header>
+				@endforeach
 			</ul>
 		</div>
 
@@ -88,30 +114,16 @@
 				<!-- Links -->
 				<x-header-span>{{ __("header.links.title") }}</x-header-span>
 
-				<!-- Portfolio -->
-				<x-icon-header link="https://portfolio.salonia.it" icon="globe">
-					{{ __("header.links.portfolio") }}
-				</x-icon-header>
+				@foreach (__("header.links.c") as $key => $value)
+					@php
+						$link = link_maps["{$key}"]["link"];
+						$icon = link_maps["{$key}"]["icon"];
+					@endphp
 
-				<!-- SearXNG -->
-				<x-icon-header link="https://s.salonia.it" icon="search">
-					{{ __("header.links.searxng") }}
-				</x-icon-header>
-
-				<!-- OpenAlias -->
-				<x-icon-header link="https://oa.salonia.it" icon="scroll-text">
-					{{ __("header.links.oa") }}
-				</x-icon-header>
-
-				<!-- GitHub profile -->
-				<x-icon-header link="https://github.com/saloniamatteo" icon="github">
-					{{ __("header.links.github") }}
-				</x-icon-header>
-
-				<!-- Website source code -->
-				<x-icon-header link="https://github.com/saloniamatteo/salonia.it" icon="github">
-					{{ __("header.links.source") }}
-				</x-icon-header>
+					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
+						{{ $value }}
+					</x-icon-header>
+				@endforeach
 			</ul>
 		</div>
 	</div>
