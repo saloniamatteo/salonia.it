@@ -1,46 +1,6 @@
+@use('App\Helpers\Links')
 @use('App\Helpers\Locale')
 @use('App\Helpers\Url')
-
-@php
-	// TODO: this is just a quick fix... implement a proper way to handle this
-	const maps = [
-		'kernel' => 'server-cog',
-		'packages' => 'package',
-		'software' => 'binary',
-		'services' => 'server',
-		'cv' => 'file-badge',// link="/{{ URL::getCVLink() }}"
-		'info' => 'user-round',
-		'contact' => 'send',
-		'donate' => 'hand-coins',
-	];
-
-	const link_maps = [
-		'portfolio' => [
-			'link' => 'https://portfolio.salonia.it',
-			'icon' => 'globe',
-		],
-
-		'searxng' => [
-			'link' => 'https://s.salonia.it',
-			'icon' => 'search',
-		],
-
-		'oa' => [
-			'link' => 'https://oa.salonia.it',
-			'icon' => 'scroll-text',
-		],
-
-		'github' => [
-			'link' => 'https://github.com/saloniamatteo',
-			'icon' => 'github',
-		],
-
-		'source' => [
-			'link' => 'https://github.com/saloniamatteo/salonia.it',
-			'icon' => 'github',
-		],
-	];
-@endphp
 
 <!-- Header -->
 <div class="header header-animated header-fixed u-unselectable u-shadow-none blurbg" style="border-bottom: 1px solid">
@@ -76,7 +36,7 @@
 				@foreach (__("header.pages.linux-soft.c") as $key => $value)
 					@php
 						$link = URL::subUrl("{$key}");
-						$icon = maps["{$key}"];
+						$icon = Links::maps["{$key}"];
 					@endphp
 
 					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
@@ -95,7 +55,7 @@
 								? URL::getCVLink()
 								: URL::subUrl("{$key}");
 
-						$icon = maps["{$key}"];
+						$icon = Links::maps["{$key}"];
 					@endphp
 
 					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
@@ -116,8 +76,8 @@
 
 				@foreach (__("header.links.c") as $key => $value)
 					@php
-						$link = link_maps["{$key}"]["link"];
-						$icon = link_maps["{$key}"]["icon"];
+						$link = Links::link_maps["{$key}"]["link"];
+						$icon = Links::link_maps["{$key}"]["icon"];
 					@endphp
 
 					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
