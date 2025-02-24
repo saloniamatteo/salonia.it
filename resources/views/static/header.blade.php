@@ -35,8 +35,8 @@
 
 				@foreach (__("header.pages.linux-soft.c") as $key => $value)
 					@php
-						$link = URL::subUrl("{$key}");
-						$icon = Links::maps["{$key}"];
+						$link = Links::getPagesLink("{$key}");
+						$icon = Links::getPagesIcon("{$key}");
 					@endphp
 
 					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
@@ -51,11 +51,8 @@
 
 				@foreach (__("header.pages.about.c") as $key => $value)
 					@php
-						$link = $key === 'cv'
-								? URL::getCVLink()
-								: URL::subUrl("{$key}");
-
-						$icon = Links::maps["{$key}"];
+						$link = Links::getPagesLink("{$key}");
+						$icon = Links::getPagesIcon("{$key}");
 					@endphp
 
 					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">
@@ -76,8 +73,8 @@
 
 				@foreach (__("header.links.c") as $key => $value)
 					@php
-						$link = Links::link_maps["{$key}"]["link"];
-						$icon = Links::link_maps["{$key}"]["icon"];
+						$link = Links::getLink("{$key}");
+						$icon = Links::getIcon("{$key}");
 					@endphp
 
 					<x-icon-header link="{{ $link }}" icon="{{ $icon }}">

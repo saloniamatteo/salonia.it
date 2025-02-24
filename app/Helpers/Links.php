@@ -2,6 +2,8 @@
 
 namespace App\Helpers;
 
+use App\Helpers\Url;
+
 class Links
 {
 	public const maps = [
@@ -41,4 +43,26 @@ class Links
 			'icon' => 'github',
 		],
 	];
+
+	public static function getPagesLink($key)
+	{
+		return $key === 'cv'
+				? Url::getCVLink()
+				: Url::subUrl("{$key}");
+	}
+
+	public static function getPagesIcon($key)
+	{
+		return self::maps["{$key}"];
+	}
+
+	public static function getLink($key)
+	{
+		return self::link_maps["{$key}"]["link"];
+	}
+
+	public static function getIcon($key)
+	{
+		return self::link_maps["{$key}"]["icon"];
+	}
 }
