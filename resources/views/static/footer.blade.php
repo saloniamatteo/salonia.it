@@ -35,7 +35,7 @@
 				$link = Links::getPagesLink($key);
 			@endphp
 
-			<a class="u u-LR text-gray-600 font-medium" href="{{ $link }}">
+			<a class="u u-LR text-gray-700 font-medium" href="{{ $link }}">
 				{{ $value }}
 			</a>
 			&nbsp;&nbsp;&nbsp;
@@ -47,7 +47,7 @@
 				$link = Links::getLink($key);
 			@endphp
 
-			<a class="u u-LR text-gray-600 font-medium" href="{{ $link }}">
+			<a class="u u-LR text-gray-700 font-medium" href="{{ $link }}">
 				{{ $value }}
 			</a>
 			&nbsp;&nbsp;&nbsp;
