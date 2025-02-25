@@ -14,6 +14,9 @@ Additionally, the following are used for debugging of perf data:
 - [XHProf](https://github.com/longxinH/xhprof)
 - [XHProf-Buggregator-Laravel](https://github.com/maantje/xhprof-buggregator-laravel)
 
+The latter plugin (XHProf-Buggregator-Laravel) was temporarily removed because
+it currently isn't compatible with Laravel 12.
+
 ## Donate
 Support this project: [salonia.it/donate](https://salonia.it/donate)
 
