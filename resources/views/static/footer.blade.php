@@ -18,7 +18,10 @@
 	</p>
 
 	<h6 class="font-bold mb-0 w-100p">
-		di <a class="text-blue-700" href="https://salonia.it/contact">Matteo Salonia</a>
+		di&thinsp;
+		<a class="u u-LR text-blue-700" href="https://salonia.it/contact">
+			Matteo Salonia
+		</a>
 	</h6>
 
 	<!-- Pages & Links -->
@@ -35,22 +38,35 @@
 				$link = Links::getPagesLink($key);
 			@endphp
 
-			<a class="u u-LR text-gray-700 font-medium" href="{{ $link }}">
+			<x-footer-link href="{{ $link }}">
 				{{ $value }}
-			</a>
-			&nbsp;&nbsp;&nbsp;
+			</x-footer-link>
+
+			&nbsp;&nbsp;
+			<span class="text-gray-500">|</span>
+			&nbsp;&nbsp;
 		@endforeach
 
 		<!-- Links -->
-		@foreach (__("header.links.c") as $key => $value)
+		@php
+			$links = __("header.links.c");
+		@endphp
+
+		@foreach ($links as $key => $value)
 			@php
 				$link = Links::getLink($key);
 			@endphp
 
-			<a class="u u-LR text-gray-700 font-medium" href="{{ $link }}">
+			<x-footer-link href="{{ $link }}">
 				{{ $value }}
-			</a>
-			&nbsp;&nbsp;&nbsp;
+			</x-footer-link>
+
+			<!-- Check if we're the last array item -->
+			@if (array_key_last($links) !== $key)
+				&nbsp;&nbsp;
+				<span class="text-gray-500">|</span>
+				&nbsp;&nbsp;
+			@endif
 		@endforeach
 	</div>
 
