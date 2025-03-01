@@ -21,7 +21,7 @@ return [
             'title' => 'About me',
             'c' => [
                 'services' => 'Services',
-                'cv' => 'CV',
+                'cv' => 'Resume',
                 'info' => 'Info',
                 'contact' => 'Contact me',
                 'donate' => 'Donate',

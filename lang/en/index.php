@@ -70,8 +70,8 @@ return [
 
         // CV
         'cv' => [
-            'title' => 'CV',
-            'desc' => 'Download my Curriculum Vitae',
+            'title' => 'Resume',
+            'desc' => 'Download my resume',
         ],
 
         // Info

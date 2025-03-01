@@ -71,7 +71,7 @@ return [
         // CV
         'cv' => [
             'title' => 'CV',
-            'desc' => 'Scarica il mio Curriculum Vitae',
+            'desc' => 'Scarica il mio curriculum',
         ],
 
         // Info

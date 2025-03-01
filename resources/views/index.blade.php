@@ -190,7 +190,7 @@
 
 		<!-- Curriculum vitae -->
 		<x-tile>
-			<x-icon link="/{{ Url::getCVLink() }}" icon="file-badge">
+			<x-icon link="{{ Url::getCVLink() }}" icon="file-badge">
 
 			<div class="tile__container">
 				<p class="tile__title text-blue-700 text-md u u-LR">
