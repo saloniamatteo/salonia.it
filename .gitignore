@@ -19,6 +19,7 @@
 /storage/*.key
 /storage/pail
 /vendor
+Envoy.blade.php
 Homestead.json
 Homestead.yaml
 auth.json
