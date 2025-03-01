@@ -26,7 +26,7 @@ export default defineConfig({
         // Laravel
         laravel({
             input: [
-                'resources/css/cirrus.min.css',
+                'resources/css/cirrus.css',
                 'resources/css/fonts/fonts.css',
                 'resources/css/overrides.css',
                 'resources/js/main.js',
@@ -39,10 +39,22 @@ export default defineConfig({
             paths: [
                 'resources/views/**',
             ],
-            output: 'resources/css/cirrus.min.css',
+            output: 'resources/css/cirrus.css',
+            // This fixes escaped prefixes (sm:, lg:, ...)
+            extractors: [
+                {
+                    extractor: (content) => {
+                        return content.match(/[A-z0-9-:\/]+/g) || []
+                    },
+                    extensions: ['php', 'html']
+                }
+            ],
             fontFace: true,
             keyframes: true,
-            safelist: ["active"],
+            safelist: [
+                "active",           // Header
+                "text-blue-300"     // Promo link
+            ],
         }),
     ],
 });
