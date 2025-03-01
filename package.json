@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build-css": "sass --no-source-map --load-path=node_modules --load-path=node_modules/cirrus-ui/ --load-path=node_modules/cirrus-ui/src resources/css/cirrus.scss resources/css/cirrus.css",
+        "build-css": "sass --no-source-map --update --load-path=node_modules --load-path=node_modules/cirrus-ui/ --load-path=node_modules/cirrus-ui/src resources/css/cirrus.scss resources/css/cirrus.css",
         "build": "npm run build-css && vite build",
         "dev": "vite"
     },
