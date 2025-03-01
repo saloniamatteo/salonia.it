@@ -3,11 +3,13 @@ import laravel from 'laravel-vite-plugin';
 import purge from '@erbelion/vite-plugin-laravel-purgecss'
 
 export default defineConfig({
-    // Disable polyfill
     build: {
+        // Disable polyfill
         modulePreload: {
             polyfill: false,
         },
+
+        // Rollup options
         rollupOptions: {
             // Tree-shaking
             treeshake: {
@@ -18,7 +20,10 @@ export default defineConfig({
     },
     // Disable comments in JS
     esbuild: { legalComments: 'none' },
+
+    // Plugins
     plugins: [
+        // Laravel
         laravel({
             input: [
                 'resources/css/cirrus.min.css',
@@ -28,6 +33,7 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+
         // PurgeCSS
         purge({
             paths: [
