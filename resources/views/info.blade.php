@@ -18,19 +18,19 @@
 	</x-slot>
 
 	<x-card class="m-3">
-		<div class="grid-sm u-gap-2 u-text-left">
+		<div class="sm:grid u-gap-2 u-text-left">
 			<div class="grid-c-4 grid-r-3">
 				<img class="img-stretch mb-2 u-round-lg u-center"
 				alt="Matteo Salonia"
 				src="{{ Vite::asset('resources/img/me.jpg') }}">
 			</div>
 
-			<div class="grid-c-7 ml-1-md">
+			<div class="grid-c-7 md:ml-1">
 				<h1 class="my-0 text-black">Matteo Salonia</h1>
 			</div>
 
-			<div class="grid-c-8 ml-1-md mr-4-lg">
-				<p class="mt-0-md">
+			<div class="grid-c-8 md:ml-1 lg:mr-4">
+				<p class="md:mt-0">
 					{!! __("info.hero.desc") !!}
 				</p>
 			</div>
@@ -44,7 +44,7 @@
 				{{ __("info.certs.title") }}
 			</p>
 
-			<p class="mt-0-md">
+			<p class="md:mt-0">
 				{!! __("info.certs.desc") !!}
 			</p>
 
@@ -97,7 +97,7 @@
 		<div class="divider"></div>
 
 		<!-- Timeline -->
-		<div class="grid-c-12 mr-4-lg u-text-left" id="timeline">
+		<div class="grid-c-12 lg:mr-4 u-text-left" id="timeline">
 			<p class="tile__title font-bold text-lg">
 				{{ __("info.timeline.title") }}
 			</p>

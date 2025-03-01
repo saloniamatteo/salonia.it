@@ -12,7 +12,7 @@
 <div class="hero" style="margin-top: 3.5em !important">
 <div class="hero-body bg-black u-opacity-90 py-1 px-0">
 <div class="content u-text-left">
-<div class="grid-sm u-gap-2">
+<div class="sm:grid u-gap-2">
 	<!-- Text -->
 	<div class="grid-c-9 grid-r-3 ml-2">
 		<!-- Hello -->

@@ -19,7 +19,7 @@
 	</x-slot>
 
 	<!-- Promo -->
-	<div class="content u-text-left w-90p-md">
+	<div class="content u-text-left md:w-90p">
 		<div class="card p-1" style="background: linear-gradient(to top, #141e30, #243b55)" id="promo">
 			<p class="font-bold text-white text-lg mx-2 mt-2 mb-0">
 				{!! __("services.promo.title") !!}
