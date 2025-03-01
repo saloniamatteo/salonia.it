@@ -26,6 +26,9 @@
             "@php artisan route:cache",
             "@php artisan optimize"
         ],
+        "deploy": [
+            "./vendor/bin/envoy run deploy"
+        ],
         "lint": [
             "./vendor/bin/pint -v"
         ],
