@@ -20,6 +20,9 @@ return [
         // Solutions Architect Associate
         'saa' => "This certification demonstrates skills in <strong>design</strong> & <strong>implementation</strong> of <strong>secure</strong>, <strong>scalable</strong>, <strong>resilient</strong>, and <strong>cost-optimized architectures</strong>, following <strong>architectural best practices</strong>, and translating <strong>business requirements</strong> into <strong>effective technical solutions</strong>.",
 
+        // Hurricane Electric Certified IPv6 Sage
+        'ipv6' => "This certification verifies proficiency in establishing <strong>full IPv6 connectivity</strong>, running a <strong>web server</strong>, maintaining an <strong>email setup</strong>, and managing both <strong>forward</strong> and <strong>reverse DNS configurations over IPv6</strong>.",
+
         // Certified Cloud Practitioner
         'ccp' => "This certification demonstrates mastery of <strong>cloud computing</strong< principles. This credential rigorously examines the components of the <strong>AWS ecosystem</strong>, including an <strong>analysis</strong> of the <strong>reference architectures</strong>, a <strong>broad range of services</strong>, as well as <strong>established best practices</strong> for <strong>security</strong> and <strong>regulatory compliance</strong>.",
     ],

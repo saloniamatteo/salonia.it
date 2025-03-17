@@ -57,6 +57,15 @@
 				{!! __("info.certs.saa") !!}
 			</x-badge>
 
+			<!-- AWS SAA -->
+			<x-badge alt="Hurricane Electric"
+					 image="he.png"
+					 name="Hurricane Electric Certified IPv6 Sage"
+					 date="Mar 2025"
+			>
+				{!! __("info.certs.ipv6") !!}
+			</x-badge>
+
 			<!-- AWS CCP -->
 			<x-badge alt="Certified Cloud Practitioner Badge"
 					 image="aws_ccp_badge.png"

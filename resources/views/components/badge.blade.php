@@ -5,7 +5,7 @@
         src="{{ Vite::asset("resources/img/{$image}") }}">
     </div>
 
-    <div class="grid-c-9 sm:grid-c-10">
+    <div class="grid-c-9 sm:grid-c-10 xl:grid-c-11">
         <p class="my-0 text-black">
             <u><strong>
                 {{ $name }}
