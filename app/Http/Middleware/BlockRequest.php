@@ -116,7 +116,7 @@ class BlockRequest
         }
 
         // IP is fine. Welcome!
-        self::cache("br-{$ip}", self::getConf('ip_ok'));
+        self::setCache("br-{$ip}", self::getConf('ip_ok'));
 
         return $next($request);
     }
