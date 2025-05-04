@@ -13,7 +13,7 @@ class BlockRequest
     /* Get value from config */
     private static function getConf($value)
     {
-        return Config::get("blocker.{$value}");
+        return Config::get("blockrequest.{$value}");
     }
 
     /* Get value from cache */
