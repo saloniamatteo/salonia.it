@@ -16,11 +16,17 @@ class BlockRequest
         return Config::get("blocker.{$value}");
     }
 
-    /* Save IP to cache */
-    private static function cache($ip, $value)
+    /* Get value from cache */
+    private static function getCache($key)
+    {
+        return cache($key);
+    }
+
+    /* Save value to cache */
+    private static function setCache($key, $value)
     {
         cache(
-            ["{$ip}" => "{$value}"],
+            ["{$key}" => "{$value}"],
             now()->addMinutes(self::getConf('cache_ttl'))
         );
     }
@@ -51,7 +57,7 @@ class BlockRequest
         $ip = $request->ip();
 
         // Check if IP is cached
-        $cache = cache($ip);
+        $cache = self::getCache("br-{$ip}");
 
         // Check gotten cache response
         // Note: we do not add "break" after return & abort,
@@ -61,8 +67,10 @@ class BlockRequest
             case self::getConf('ip_ok'):
                 return $next($request);
 
-                // Found IP, and it is bad! Forbid.
+            // Found IP, and it is bad! Forbid.
             case self::getConf('ip_bad'):
+                // Log this action
+                Log::info("BlockRequest Middleware: blocked {$ip}");
                 abort(403);
         }
 
@@ -100,13 +108,15 @@ class BlockRequest
         if (! $whitelisted || ($whitelisted && self::getConf('ignore_whitelist'))) {
             // Bad IP, save to cache, and return 403.
             if ($score >= self::getConf('threshold')) {
-                self::cache($ip, self::getConf('ip_bad'));
+                self::setCache("br-{$ip}", self::getConf('ip_bad'));
+                // Log this action
+                Log::info("BlockRequest Middleware: blocked {$ip}");
                 abort(403);
             }
         }
 
         // IP is fine. Welcome!
-        self::cache($ip, self::getConf('ip_ok'));
+        self::cache("br-{$ip}", self::getConf('ip_ok'));
 
         return $next($request);
     }
