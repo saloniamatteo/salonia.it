@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Matteo Salonia's custom request blocker implementation
+ * Matteo Salonia's request blocker (CheckRequest Middleware)
 */
 
 return [

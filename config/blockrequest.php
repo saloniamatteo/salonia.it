@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Matteo Salonia's custom blocker implementation
+ * Matteo Salonia's AbuseIPDB integration (BlockRequest Middleware)
 */
 
 return [
