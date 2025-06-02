@@ -5,11 +5,7 @@ import.meta.glob([
 ]);
 
 // Icons
-import { createIcons,
-AtSign, Binary, BookOpenText, CirclePlus, Facebook, FileBadge, FolderCog,
-Github, Globe, HandCoins, Info, Instagram, Laptop, Link, Linkedin, Mail, MapPin,
-Package, ScrollText, Search, Send, Server, ServerCog, TriangleAlert, UserRound,
-} from 'lucide';
+import { makeIcons } from './icons.js';
 
 // Make all nav-btns in the page clickable
 function handleNavBtns() {
@@ -32,38 +28,8 @@ function handleNavBtns() {
 // Fire events after page load
 document.addEventListener('DOMContentLoaded', () => {
     // Load Lucide icons
-    createIcons({
-        icons: {
-            AtSign,
-            Binary,
-            BookOpenText,
-            CirclePlus,
-            Facebook,
-            FileBadge,
-            FolderCog,
-            Github,
-            Globe,
-            HandCoins,
-            Info,
-            Instagram,
-            Laptop,
-            Link,
-            Linkedin,
-            Mail,
-            MapPin,
-            Package,
-            ScrollText,
-            Search,
-            Send,
-            Server,
-            ServerCog,
-            TriangleAlert,
-            UserRound,
-        }
-    });
+    makeIcons();
 
     // Make nav-btns clickable
-    // Not really important to load immediately, since it is only
-    // visible after the page has loaded anyway.
     handleNavBtns();
 });

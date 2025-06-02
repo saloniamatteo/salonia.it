@@ -7,6 +7,7 @@ use App\Helpers\Url;
 class Links
 {
 	public const maps = [
+		'writeups' => 'notebook-pen',
 		'kernel' => 'server-cog',
 		'packages' => 'package',
 		'software' => 'binary',

@@ -10,6 +10,7 @@ return [
         'linux-soft' => [
             'title' => 'Linux & Software',
             'c' => [
+                'writeups' => 'Writeups',
                 'kernel' => 'Kernel',
                 'packages' => 'Packages',
                 'software' => 'Software',

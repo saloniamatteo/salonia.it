@@ -1,0 +1,63 @@
+// Icons
+import { createIcons,
+AtSign,
+Binary,
+BookOpenText,
+CirclePlus,
+Facebook,
+FileBadge,
+FolderCog,
+Github,
+Globe,
+HandCoins,
+Info,
+Instagram,
+Laptop,
+Link,
+Linkedin,
+Mail,
+MapPin,
+NotebookPen,
+Package,
+ScrollText,
+Search,
+Send,
+Server,
+ServerCog,
+TriangleAlert,
+UserRound
+} from 'lucide';
+
+// Create Lucide icons
+export function makeIcons() {
+    createIcons({
+        icons: {
+            AtSign,
+            Binary,
+            BookOpenText,
+            CirclePlus,
+            Facebook,
+            FileBadge,
+            FolderCog,
+            Github,
+            Globe,
+            HandCoins,
+            Info,
+            Instagram,
+            Laptop,
+            Link,
+            Linkedin,
+            Mail,
+            MapPin,
+            NotebookPen,
+            Package,
+            ScrollText,
+            Search,
+            Send,
+            Server,
+            ServerCog,
+            TriangleAlert,
+            UserRound,
+        }
+    });
+}
