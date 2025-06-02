@@ -17,23 +17,61 @@ class PageController
     */
     private $langOverride = false;
 
-    public function viewLang($lang, $page = 'index')
+    private function loadLang($lang, $callback)
     {
         // Make sure page is loaded with lang
         $this->langOverride = true;
         Locale::setLocale($lang);
 
-        // Continue to our main view() func
-        return $this->view($page);
+        return $callback();
     }
 
-    public function view($page = 'index')
+    private function checkLocale()
     {
         // Check if we need to negotiate locale
         if (! $this->langOverride) {
             // Negotiate and set locale
             Locale::setLocale(Locale::negotiateLang());
         }
+    }
+
+    public function viewWriteupsLang($lang, $page)
+    {
+        return $this->loadLang(
+            $lang, function () use ($page) {
+                return $this->viewWriteups($page);
+            }
+        );
+    }
+
+    public function viewLang($lang, $page = 'index')
+    {
+        return $this->loadLang(
+            $lang, function () use ($page) {
+                return $this->view($page);
+            }
+        );
+    }
+
+    public function viewWriteups($page)
+    {
+        // Check if we need to negotiate locale
+        $this->checkLocale();
+
+        // Check if view exists
+        if (View::exists("writeups/$page")) {
+            // Load requested page, minified
+            return Page::minify("writeups/$page");
+        }
+
+        // Return 404
+        abort(404);
+    }
+
+    public function view($page = 'index')
+    {
+        // Check if we need to negotiate locale
+        $this->checkLocale();
 
         // Check if view exists
         if (View::exists($page)) {
