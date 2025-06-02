@@ -19,22 +19,37 @@
 
 	<!-- Packages -->
 	<x-card class="m-3">
-		<x-tile>
-			<x-icon-img alt="Librsvg"
-			href="https://github.com/saloniamatteo/librsvg-overlay"
-			src="{{ Vite::asset('resources/img/librsvg.png') }}">
+		@php
+			$packages = [
+				'librsvg' => [
+					'img' => 'librsvg.png',
+					'url' => 'https://github.com/saloniamatteo/librsvg-overlay'
+				]
+			];
+		@endphp
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700">
-					{{ __("packages.librsvg.title") }}
-				</p>
+		@foreach ($packages as $key => $val)
+			<x-tile>
+				<x-icon-img alt="{{ $key }}"
+				href="{{ $val['url'] }}"
+				src="{{ Vite::asset('resources/img/' . $val['img']) }}">
 
-				<p class="tile__subtitle text-black">
-					{!! __("packages.librsvg.desc") !!}
-				</p>
-			</div>
-			</x-icon-img>
-		</x-tile>
+				<div class="tile__container">
+					<p class="tile__title text-blue-700">
+						{{ __("packages.$key.title") }}
+					</p>
+
+					<p class="tile__subtitle text-black">
+						{!! __("packages.$key.desc") !!}
+					</p>
+				</div>
+				</x-icon-img>
+			</x-tile>
+
+			@if ($key !== array_key_last($packages))
+				<div class="divider"></div>
+			@endif
+		@endforeach
 	</x-card>
 
 	@include('static/home')

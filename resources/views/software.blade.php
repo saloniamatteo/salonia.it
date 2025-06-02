@@ -17,101 +17,57 @@
 		{{ __("software.desc") }}
 	</x-slot>
 
-	<!-- Software -->
 	<x-card class="m-3">
-		<!-- TP-XFan -->
-		<x-tile>
-			<x-icon-img alt="TP-XFan"
-			href="https://github.com/saloniamatteo/tp-xfan"
-			src="{{ Vite::asset('resources/img/tp-xfan.png') }}">
+		@php
+			$software = [
+				'tp-xfan' => [
+					'img' => 'tp-xfan.png',
+					'url' => 'https://github.com/saloniamatteo/tp-xfan'
+				],
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700">
-					{{ __("software.tp-xfan.title") }}
-				</p>
+				'csnake' => [
+					'img' => 'csnake.png',
+					'url' => 'https://github.com/saloniamatteo/csnake',
+				],
 
-				<p class="tile__subtitle text-black">
-					{!! __("software.tp-xfan.desc") !!}
-				</p>
+				'quiz' => [
+					'img' => 'quiz.png',
+					'url' => 'https://github.com/saloniamatteo/quiz',
+				],
 
-				<p class="tile__subtitle text-gray-800">
-					{{ __('software.tp-xfan.subd') }}
-				</p>
-			</div>
-			</x-icon-img>
-		</x-tile>
+				'calc' => [
+					'img' => 'calc.png',
+					'url' => 'https://github.com/saloniamatteo/calc',
+				],
+			];
+		@endphp
 
-		<div class="divider"></div>
+		@foreach ($software as $key => $val)
+			<x-tile>
+				<x-icon-img alt="{{ $key }}"
+				href="{{ $val['url'] }}"
+				src="{{ Vite::asset('resources/img/' . $val['img']) }}">
 
-		<!-- Csnake -->
-		<x-tile>
-			<x-icon-img alt="Csnake"
-			href="https://github.com/saloniamatteo/csnake"
-			src="{{ Vite::asset('resources/img/csnake.png') }}">
+				<div class="tile__container">
+					<p class="tile__title text-blue-700">
+						{{ __("software.$key.title") }}
+					</p>
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700">
-					{{ __("software.csnake.title") }}
-				</p>
+					<p class="tile__subtitle text-black">
+						{!! __("software.$key.desc") !!}
+					</p>
 
-				<p class="tile__subtitle text-black">
-					{!! __("software.csnake.desc") !!}
-				</p>
+					<p class="tile__subtitle text-gray-800">
+						{{ __("software.$key.subd") }}
+					</p>
+				</div>
+				</x-icon-img>
+			</x-tile>
 
-				<p class="tile__subtitle text-gray-800">
-					{{ __('software.csnake.subd') }}
-				</p>
-			</div>
-			</x-icon-img>
-		</x-tile>
-
-		<div class="divider"></div>
-
-		<!-- Quiz -->
-		<x-tile>
-			<x-icon-img alt="Quiz"
-			href="https://github.com/saloniamatteo/quiz"
-			src="{{ Vite::asset('resources/img/quiz.png') }}">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700">
-					{{ __("software.quiz.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{!! __("software.quiz.desc") !!}
-				</p>
-
-				<p class="tile__subtitle text-gray-800">
-					{{ __('software.quiz.subd') }}
-				</p>
-			</div>
-			</x-icon-img>
-		</x-tile>
-
-		<div class="divider"></div>
-
-		<!-- Calc -->
-		<x-tile>
-			<x-icon-img alt="Calc"
-			href="https://github.com/saloniamatteo/calc"
-			src="{{ Vite::asset('resources/img/calc.png') }}">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700">
-					{{ __("software.calc.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{!! __("software.calc.desc") !!}
-				</p>
-
-				<p class="tile__subtitle text-gray-800">
-					{{ __('software.calc.subd') }}
-				</p>
-			</div>
-			</x-icon-img>
-		</x-tile>
+			@if ($key !== array_key_last($software))
+				<div class="divider"></div>
+			@endif
+		@endforeach
 	</x-card>
 
 	@include('static/home')

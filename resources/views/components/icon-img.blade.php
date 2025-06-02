@@ -1,4 +1,4 @@
-@if ($attributes->has('href'))
+@if (!empty($href))
     <a href="{{ $href }}" class="u-flex">
 @endif
     <div class="tile__icon mt-1">
@@ -7,7 +7,7 @@
         </figure>
     </div>
 
-{{ $slot }}
-@if ($attributes->has('href'))
+    {{ $slot }}
+@if (!empty($href))
     </a>
 @endif
