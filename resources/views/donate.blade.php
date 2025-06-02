@@ -23,7 +23,7 @@
 		<x-tile>
 			<x-icon-img alt="Monero"
 			href=""
-			src="{{ Vite::asset('resources/img/xmr.png') }}">
+			src="{{ Vite::asset('resources/img/xmr.webp') }}">
 
 			<div class="tile__container">
 				<p class="tile__title font-bold text-lg">
@@ -61,7 +61,7 @@
 		<x-tile>
 			<x-icon-img alt="Bitcoin"
 			href=""
-			src="{{ Vite::asset('resources/img/btc.png') }}">
+			src="{{ Vite::asset('resources/img/btc.webp') }}">
 
 			<div class="tile__container">
 				<p class="tile__title font-bold text-lg">
@@ -99,7 +99,7 @@
 		<x-tile>
 			<x-icon-img alt="Paypal"
 			href=""
-			src="{{ Vite::asset('resources/img/paypal.png') }}">
+			src="{{ Vite::asset('resources/img/paypal.webp') }}">
 
 			<div class="tile__container">
 				<p class="tile__title font-bold text-lg">

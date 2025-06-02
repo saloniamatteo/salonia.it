@@ -6,7 +6,7 @@
 <div class="header header-animated header-fixed u-unselectable u-shadow-none blurbg" style="border-bottom: 1px solid">
 <div class="header-brand">
 	<a href="{{ URL::subUrl() }}">
-		<img src="{{ Vite::asset('resources/img/salonia.png') }}" alt="Logo"
+		<img src="{{ Vite::asset('resources/img/salonia.webp') }}" alt="Logo"
 		style="min-width: 180px; width: 13rem; padding: .3rem">
 	</a>
 

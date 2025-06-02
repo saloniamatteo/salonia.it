@@ -21,22 +21,22 @@
 		@php
 			$software = [
 				'tp-xfan' => [
-					'img' => 'tp-xfan.png',
+					'img' => 'tp-xfan.webp',
 					'url' => 'https://github.com/saloniamatteo/tp-xfan'
 				],
 
 				'csnake' => [
-					'img' => 'csnake.png',
+					'img' => 'csnake.webp',
 					'url' => 'https://github.com/saloniamatteo/csnake',
 				],
 
 				'quiz' => [
-					'img' => 'quiz.png',
+					'img' => 'quiz.webp',
 					'url' => 'https://github.com/saloniamatteo/quiz',
 				],
 
 				'calc' => [
-					'img' => 'calc.png',
+					'img' => 'calc.webp',
 					'url' => 'https://github.com/saloniamatteo/calc',
 				],
 			];

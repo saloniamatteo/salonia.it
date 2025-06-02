@@ -22,7 +22,7 @@
 		@php
 			$packages = [
 				'librsvg' => [
-					'img' => 'librsvg.png',
+					'img' => 'librsvg.webp',
 					'url' => 'https://github.com/saloniamatteo/librsvg-overlay'
 				]
 			];

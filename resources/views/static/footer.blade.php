@@ -5,7 +5,7 @@
 <footer class="footer bg-white p-4 mt-8 u-center">
 	<!-- Logo -->
 	<a href="https://salonia.it">
-		<img src="{{ Vite::asset('resources/img/salonia.png') }}"
+		<img src="{{ Vite::asset('resources/img/salonia.webp') }}"
 		alt="Logo" loading="lazy"
 		style="min-width: 180px; width: 14rem !important">
 	</a>

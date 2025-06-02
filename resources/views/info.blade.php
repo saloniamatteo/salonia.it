@@ -22,7 +22,7 @@
 			<div class="grid-c-4 grid-r-3">
 				<img class="img-stretch mb-2 u-round-lg u-center"
 				alt="Matteo Salonia"
-				src="{{ Vite::asset('resources/img/me.jpg') }}">
+				src="{{ Vite::asset('resources/img/me.webp') }}">
 			</div>
 
 			<div class="grid-c-7 md:ml-1">
@@ -50,7 +50,7 @@
 
 			<!-- AWS SAA -->
 			<x-badge alt="Solutions Architect Associate Badge"
-					 image="aws_saa_badge.png"
+					 image="aws_saa_badge.webp"
 					 name="AWS Certified Solutions Architect Associate"
 					 date="{{ __('info.certs.ongoing') }}"
 			>
@@ -59,7 +59,7 @@
 
 			<!-- AWS SAA -->
 			<x-badge alt="Hurricane Electric"
-					 image="he.png"
+					 image="he.webp"
 					 name="Hurricane Electric Certified IPv6 Sage"
 					 date="Mar 2025"
 			>
@@ -68,7 +68,7 @@
 
 			<!-- AWS CCP -->
 			<x-badge alt="Certified Cloud Practitioner Badge"
-					 image="aws_ccp_badge.png"
+					 image="aws_ccp_badge.webp"
 					 name="AWS Certified Cloud Practitioner"
 					 date="Feb 2025"
 			>

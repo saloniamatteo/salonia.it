@@ -18,7 +18,7 @@
 	<meta property="og:title"        content="{{ $title ?? 'Hello, world!'}}">
 	<meta property="og:description"  content="{{ $desc ?? 'Desc' }}">
 	<meta property="og:site_name"    content="{{ Config::get('app.sitename') }}">
-	<meta property="og:image"        content="/banner.png">
+	<meta property="og:image"        content="/banner.webp">
 	<meta property="og:image:alt"    content="{{ Config::get('app.name') }}">
 	<meta property="og:image:height" content="600">
 	<meta property="og:image:width"  content="1200">
@@ -29,13 +29,13 @@
 	<meta name="twitter:card"            content="summary_large_image">
 	<meta property="twitter:title"       content="{{ $title ?? 'Hello, world' }}">
 	<meta property="twitter:description" content="{{ $desc ?? 'Desc' }}">
-	<meta property="twitter:image"       content="/banner.png">
+	<meta property="twitter:image"       content="/banner.webp">
 	<meta property="twitter:url"         content="{{ $url ?? Url::getURL() }}">
 	@endif
 
 	<!-- Favicon -->
-	<link rel="apple-touch-icon" href="/favicon.png">
-	<link rel="icon"             href="/favicon.png">
+	<link rel="apple-touch-icon" href="/favicon.webp">
+	<link rel="icon"             href="/favicon.webp">
 
 	<!-- CSS & Fonts -->
 	@vite([
