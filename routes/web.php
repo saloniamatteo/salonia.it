@@ -9,6 +9,14 @@ use Illuminate\Support\Facades\Route;
 
 // Throttle all requests using the "global" throttler.
 Route::middleware(['throttle:global'])->group(function () {
+    // Writeups
+    // Example: /writeups/page
+    Route::get('/writeups/{page}', [PageController::class, 'viewWriteups']);
+
+    // Writeups + lang
+    Route::get('{lang}/writeups/{page}', [PageController::class, 'viewWriteupsLang'])
+        ->whereIn('lang', Config::get("locale.languages"));
+
     // Lang-only request
     // Example: /it
     Route::get('{lang}', [PageController::class, 'viewLang'])
@@ -23,15 +31,6 @@ Route::middleware(['throttle:global'])->group(function () {
     // Example: /it
     // Example: /it/page
     Route::get('{lang}/{page?}', [PageController::class, 'viewLang'])
-        ->whereIn('lang', Config::get("locale.languages"))
-        ->whereAlpha('page');
-
-    // Writeups
-    // Example: /writeups/page
-    Route::get('/writeups/{page}', [PageController::class, 'viewWriteups']);
-
-    // Writeups + lang
-    Route::get('{lang}/writeups/{page}', [PageController::class, 'viewWriteupsLang'])
         ->whereIn('lang', Config::get("locale.languages"))
         ->whereAlpha('page');
 });

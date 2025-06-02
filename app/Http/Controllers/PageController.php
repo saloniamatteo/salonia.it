@@ -65,7 +65,7 @@ class PageController
         }
 
         // Return 404
-        abort(404);
+        //abort(404);
     }
 
     public function view($page = 'index')
@@ -80,6 +80,6 @@ class PageController
         }
 
         // Return 404
-        abort(404);
+        //abort(404);
     }
 }
