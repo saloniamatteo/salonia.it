@@ -9,7 +9,9 @@ return [
     // Hero
     'welcome' => [
         'hello' => "Hello, I'm",
-        'desc' => 'Welcome to my website! Discover many GNU/Linux resources, my contacts, various tools, and much more.',
+        'desc' => 'Welcome to my website! Discover many GNU/Linux resources, '
+                  . 'my contacts, various tools, and much more.',
+
         'look' => 'Looking for',
         'sid' => 'Salonia Infrastrutture Digitali',
     ],
@@ -17,7 +19,8 @@ return [
     // Linux & Software
     'linux-soft' => [
         'title' => 'Linux & Software',
-        'desc' => "Discover the guide that helps you to install Arch Linux, my configurations (my dotfiles), my Kernel, the programs I've created, and my packages for Gentoo Linux.",
+        'desc' => 'Discover my technical guides, my configurations (dotfiles), '
+                  . "my Kernel, the programs I've created, and my packages.",
 
         // Arch Linux
         'arch' => [
@@ -32,16 +35,17 @@ return [
             'desc' => 'My GNU/Linux configurations',
         ],
 
+        // Writeups
+        'writeups' => [
+            'title' => 'Writeups',
+            'desc' => "Matteo Salonia's technical guides.",
+        ],
+
         // Kernel
         'kernel' => [
             'title' => 'Kernel',
-            'desc' => "All of the changes I've made to the Kernel to make it more performant and more efficient.",
-        ],
-
-        // DNS
-        'dns' => [
-            'title' => 'DoH server',
-            'desc' => 'Discover how to use my DNS-over-HTTPS (DoH) server.',
+            'desc' => "All of the changes I've made to the Kernel to increase its "
+                      . "performance and its efficiency.",
         ],
 
         // Packages
@@ -53,19 +57,21 @@ return [
         // Software
         'software' => [
             'title' => 'Software',
-            'desc' => 'All of the programs I made in C, compatible with Linux, and more.',
+            'desc' => 'All of the programs I made in C.',
         ],
     ],
 
     // About
     'about' => [
         'title' => 'About me',
-        'desc' => 'Discover who I am, my skills, my contact details, and how you can help me.',
+        'desc' => 'Discover who I am, my skills, my contact details, '
+                  . 'and how you can help me.',
 
         // Services
         'services' => [
             'title' => 'Services',
-            'desc' => 'Discover all of the services offered by Salonia Infrastrutture Digitali.',
+            'desc' => 'Discover all of the services offered by '
+                      . 'Salonia Infrastrutture Digitali.',
         ],
 
         // CV
@@ -96,7 +102,8 @@ return [
     // Tools & Links
     'tools-links' => [
         'title' => 'Tools & Links',
-        'desc' => 'Discover useful tools and links, such as SearXNG, the OpenAlias portal, and my GitHub profile.',
+        'desc' => 'Discover useful tools and links, such as SearXNG, '
+                  . 'the OpenAlias portal, and my GitHub profile.',
 
         // Portfolio
         'portfolio' => [
@@ -107,13 +114,15 @@ return [
         // SearXNG
         'searxng' => [
             'title' => 'SearXNG',
-            'desc' => "Self-hosted instance of the meta-search engine that protects its users' privacy.",
+            'desc' => 'Self-hosted instance of the meta-search engine that protects '
+                      . "its users' privacy.",
         ],
 
         // OpenAlias
-        'openalias' => [
+        'oa' => [
             'title' => 'OpenAlias',
-            'desc' => 'Get all OpenAlias records of a domain, with an easy-to-use and intuitive user interface.',
+            'desc' => 'Get all OpenAlias records of a domain, '
+                      . 'with an easy-to-use and intuitive user interface.',
         ],
 
         // GitHub

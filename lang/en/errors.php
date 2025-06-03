@@ -27,7 +27,8 @@ return [
 
     '404' => [
         'title' => 'Error 404: Page not found',
-        'desc' => "The page you're looking for may have been moved, or does not exist.",
+        'desc' => "The page you're looking for may have been moved, "
+                  . 'or does not exist.',
     ],
 
     '419' => [
