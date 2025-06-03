@@ -1,3 +1,4 @@
+@use('App\Helpers\Links')
 @use('App\Helpers\Url')
 @include('static/head', [
     "lang"  => app()->getLocale(),
@@ -66,100 +67,41 @@
 	</x-slot>
 
 	<x-card>
-		<!-- Arch Linux -->
-		<x-tile>
-			<x-icon link="https://arch.salonia.it" icon="book-open-text">
+		@foreach (__("header.pages.linux-soft.c") as $key => $value)
+			@php
+				$link = Links::getPagesLink("{$key}");
+				$icon = Links::getPagesIcon("{$key}");
+			@endphp
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.linux-soft.arch.title") }}
-				</p>
+			<x-tile>
+				<x-icon link="{{ $link }}" icon="{{ $icon }}">
 
-				<p class="tile__subtitle text-black">
-					{{ __("index.linux-soft.arch.desc") }}
-				</p>
+				<div class="tile__container">
+					<p class="tile__title text-blue-700 text-md u u-LR">
+						{{ __("index.linux-soft.$key.title") }}
+					</p>
 
-				<p class="tile__subtitle text-gray-800">
-					{{ __("index.linux-soft.arch.subd") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
+					<p class="tile__subtitle text-black">
+						{{ __("index.linux-soft.$key.desc") }}
+					</p>
 
-		<div class="divider my-2"></div>
+					@if (Lang::has("index.linux-soft.$key.subd"))
+						<p class="tile__subtitle text-gray-800">
+							{{ __("index.linux-soft.$key.subd") }}
+						</p>
+					@endif
+				</div>
+				</x-icon>
+			</x-tile>
 
-		<!-- Dotfiles -->
-		<x-tile>
-			<x-icon link="https://dotfiles.salonia.it" icon="folder-cog">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.linux-soft.dotfiles.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.linux-soft.dotfiles.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- Kernel -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('kernel') }}" icon="server-cog">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.linux-soft.kernel.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.linux-soft.kernel.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- Packages -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('packages') }}" icon="package">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.linux-soft.packages.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.linux-soft.packages.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- Software -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('software') }}" icon="binary">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.linux-soft.software.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.linux-soft.software.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
+			@if ($key !== array_key_last(__("header.pages.linux-soft.c")))
+				<div class="divider my-2"></div>
+			@endif
+		@endforeach
 	</x-card>
 </x-hero>
 
+<!-- About me -->
 <x-hero id="about">
 	<x-slot:title>
 		{{ __("index.about.title") }}
@@ -170,96 +112,41 @@
 	</x-slot>
 
 	<x-card>
-		<!-- Services -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('services') }}" icon="server">
+		@foreach (__("header.pages.about.c") as $key => $value)
+			@php
+				$link = Links::getPagesLink("{$key}");
+				$icon = Links::getPagesIcon("{$key}");
+			@endphp
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.about.services.title") }}
-				</p>
+			<x-tile>
+				<x-icon link="{{ $link }}" icon="{{ $icon }}">
 
-				<p class="tile__subtitle text-black">
-					{{ __("index.about.services.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
+				<div class="tile__container">
+					<p class="tile__title text-blue-700 text-md u u-LR">
+						{{ __("index.about.$key.title") }}
+					</p>
 
-		<div class="divider my-2"></div>
+					<p class="tile__subtitle text-black">
+						{{ __("index.about.$key.desc") }}
+					</p>
 
-		<!-- Curriculum vitae -->
-		<x-tile>
-			<x-icon link="{{ Url::getCVLink() }}" icon="file-badge">
+					@if (Lang::has("index.about.$key.subd"))
+						<p class="tile__subtitle text-gray-800">
+							{{ __("index.about.$key.subd") }}
+						</p>
+					@endif
+				</div>
+				</x-icon>
+			</x-tile>
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.about.cv.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.about.cv.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- About me -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('info') }}" icon="user-round">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.about.info.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.about.info.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- Contact me -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('contact') }}" icon="send">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.about.contact.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.about.contact.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- Donate -->
-		<x-tile>
-			<x-icon link="{{ URL::subUrl('donate') }}" icon="hand-coins">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.about.donate.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.about.donate.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
+			@if ($key !== array_key_last(__("header.pages.about.c")))
+				<div class="divider my-2"></div>
+			@endif
+		@endforeach
 	</x-card>
 </x-hero>
 
+<!-- Tools & Links -->
 <x-hero id="tools-links">
 	<x-slot:title>
 		{{ __("index.tools-links.title") }}
@@ -270,93 +157,37 @@
 	</x-slot>
 
 	<x-card>
-		<!-- Portfolio -->
-		<x-tile>
-			<x-icon link="https://portfolio.salonia.it" icon="globe">
+		@foreach (__("header.links.c") as $key => $value)
+			@php
+				$link = Links::getLink("{$key}");
+				$icon = Links::getIcon("{$key}");
+			@endphp
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.tools-links.portfolio.title") }}
-				</p>
+			<x-tile>
+				<x-icon link="{{ $link }}" icon="{{ $icon }}">
 
-				<p class="tile__subtitle text-black">
-					{{ __("index.tools-links.portfolio.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
+				<div class="tile__container">
+					<p class="tile__title text-blue-700 text-md u u-LR">
+						{{ __("index.tools-links.$key.title") }}
+					</p>
 
-		<div class="divider my-2"></div>
+					<p class="tile__subtitle text-black">
+						{{ __("index.tools-links.$key.desc") }}
+					</p>
 
-		<!-- SearXNG -->
-		<x-tile>
-			<x-icon link="https://s.salonia.it" icon="search">
+					@if (Lang::has("index.links.$key.subd"))
+						<p class="tile__subtitle text-gray-800">
+							{{ __("index.tools-links.$key.subd") }}
+						</p>
+					@endif
+				</div>
+				</x-icon>
+			</x-tile>
 
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.tools-links.searxng.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.tools-links.searxng.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- OpenAlias -->
-		<x-tile>
-			<x-icon link="https://oa.salonia.it" icon="scroll-text">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.tools-links.openalias.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.tools-links.openalias.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- GitHub -->
-		<x-tile>
-			<x-icon link="https://github.com/saloniamatteo" icon="github">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.tools-links.github.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.tools-links.github.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
-
-		<div class="divider my-2"></div>
-
-		<!-- Source code -->
-		<x-tile>
-			<x-icon link="https://github.com/saloniamatteo/salonia.it" icon="github">
-
-			<div class="tile__container">
-				<p class="tile__title text-blue-700 text-md u u-LR">
-					{{ __("index.tools-links.source.title") }}
-				</p>
-
-				<p class="tile__subtitle text-black">
-					{{ __("index.tools-links.source.desc") }}
-				</p>
-			</div>
-			</x-icon>
-		</x-tile>
+			@if ($key !== array_key_last(__("header.links.c")))
+				<div class="divider my-2"></div>
+			@endif
+		@endforeach
 	</x-card>
 </x-hero>
 

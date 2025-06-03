@@ -362,13 +362,6 @@
 					<td>{!! __("kernel.setup.s4.table.m") !!}</td>
 				</tr>
 
-				<!-- CPU opts -->
-				<tr>
-					<td>-o</td>
-					<td>--cpu-opts</td>
-					<td>{{ __("kernel.setup.s4.table.o") }}</td>
-				</tr>
-
 				<!-- Patches -->
 				<tr>
 					<td>-p</td>
@@ -398,6 +391,13 @@
 					</td>
 				</tr>
 
+				<!-- Flags -->
+				<tr>
+					<td>-y</td>
+					<td>--flags</td>
+					<td>{{ __('kernel.setup.s4.table.y') }}</td>
+				</tr>
+
 				<!-- Variables -->
 				<tr>
 					<td>-z</td>
@@ -416,7 +416,7 @@
 
 		<p>
 			<pre class="mb-2">
-				<code>./build.sh -l -m -o -p</code>
+				<code>./build.sh -l -m -p</code>
 			</pre>
 		</p>
 
@@ -433,11 +433,6 @@
 			<!-- Menuconfig -->
 			<x-list-item-code name="-m">
 				{!! __('kernel.setup.s5.cmd.m') !!}
-			</x-list-item-code>
-
-			<!-- CPU opts -->
-			<x-list-item-code name="-o">
-				{{ __('kernel.setup.s5.cmd.o') }}
 			</x-list-item-code>
 
 			<!-- Patches -->
@@ -492,7 +487,7 @@
 
 		<p>
 			<pre class="mb-2">
-				<code>./build.sh -f -l -o -p</code>
+				<code>./build.sh -f -l -p</code>
 			</pre>
 		</p>
 

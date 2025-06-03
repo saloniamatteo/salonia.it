@@ -29,7 +29,8 @@
 			<!-- Dropdown -->
 			<x-dropdown icon="laptop">{{ __("header.pages.title") }}</x-dropdown>
 
-			<ul class="dropdown-menu dropdown-animated blurbg" id="pages-menu" role="menu">
+			<ul class="dropdown-menu dropdown-animated blurbg" style="min-width: 200px"
+				id="pages-menu" role="menu">
 				<!-- Linux & Software -->
 				<x-header-span>{{ __("header.pages.linux-soft.title") }}</x-header-span>
 
