@@ -27,12 +27,14 @@ return [
 
     '404' => [
         'title' => 'Errore 404: Pagina non trovata',
-        'desc' => 'La pagina che stai cercando potrebbe essere stata spostata, o non esiste.',
+        'desc' => 'La pagina che stai cercando potrebbe essere stata spostata, '
+                  . 'o non esiste.',
     ],
 
     '419' => [
         'title' => 'Errore 419: Pagina scaduta',
-        'desc' => 'Ci scusiamo, la tua sessione è scaduta. Ricarica la pagina e prova di nuovo.',
+        'desc' => 'Ci scusiamo, la tua sessione è scaduta. '
+                  . 'Ricarica la pagina e prova di nuovo.',
     ],
 
     '429' => [
@@ -47,6 +49,7 @@ return [
 
     '503' => [
         'title' => 'Errore 503: Servizio non disponibile',
-        'desc' => 'Ci scusiamo, il servizio non è attualmente disponibile. Riprova più tardi.',
+        'desc' => 'Ci scusiamo, il servizio non è attualmente disponibile. '
+                  . 'Riprova più tardi.',
     ],
 ];

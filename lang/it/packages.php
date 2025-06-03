@@ -9,6 +9,9 @@ return [
     // Librsvg
     'librsvg' => [
         'title' => 'Librvsg',
-        'desc' => "Librsvg programmato interamente in C, senza dipendenza su rust.<br>Questo pacchetto non è più mantenuto, perchè l'upstream non viene aggiornato dal 2020.",
+        'desc' => 'Librsvg programmato interamente in C, senza dipendenza su rust.'
+                  . '<br>'
+                  . "Questo pacchetto non è più mantenuto, perchè l'upstream non "
+                  . 'viene aggiornato dal 2020.',
     ],
 ];

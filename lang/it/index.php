@@ -9,7 +9,8 @@ return [
     // Hero
     'welcome' => [
         'hello' => 'Ciao, sono',
-        'desc' => 'Benvenuto sul mio sito web! Scopri vaste risorse per GNU/Linux, i miei contatti, vari strumenti, e molto altro ancora.',
+        'desc' => 'Benvenuto sul mio sito web! Scopri vaste risorse per GNU/Linux, '
+                  . 'i miei contatti, vari strumenti, e molto altro ancora.',
         'look' => 'Cerchi',
         'sid' => 'Salonia Infrastrutture Digitali',
     ],
@@ -17,13 +18,16 @@ return [
     // Linux & Software
     'linux-soft' => [
         'title' => 'Linux e Software',
-        'desc' => 'Scopri la guida che ti aiuta ad installare Arch Linux, le mie configurazioni (i miei dotfiles), il mio Kernel, i programmi che ho creato, ed i miei pacchetti per Gentoo Linux.',
+        'desc' => 'Scopri la guida che ti aiuta ad installare Arch Linux, '
+                  . 'le mie configurazioni (i miei dotfiles), il mio Kernel, i '
+                  . 'programmi che ho creato, ed i miei pacchetti per Gentoo Linux.',
 
         // Arch Linux
         'arch' => [
             'title' => 'Istruzioni per installare Arch Linux',
             'desc' => 'Guida estensiva per installare Arch Linux',
-            'subd' => 'Ultimo aggiornamento tutorial: 20 Settembre 2021; Pagina in Inglese',
+            'subd' => 'Ultimo aggiornamento tutorial: 20 Settembre 2021; '
+                      . 'Pagina in Inglese',
         ],
 
         // Dotfiles
@@ -32,16 +36,17 @@ return [
             'desc' => 'Le mie configurazioni per GNU/Linux.',
         ],
 
+        // Writeups
+        'writeups' => [
+            'title' => 'Writeups',
+            'desc' => 'Le guide tecniche di Matteo Salonia.',
+        ],
+
         // Kernel
         'kernel' => [
             'title' => 'Kernel',
-            'desc' => 'Tutte le modifiche che ho apportato al Kernel per renderlo più performante e più efficiente.',
-        ],
-
-        // DNS
-        'dns' => [
-            'title' => 'Server DoH',
-            'desc' => 'Scopri come usare il mio server DNS-over-HTTPS (DoH).',
+            'desc' => 'Tutte le modifiche che ho apportato al Kernel per renderlo '
+                      . 'più performante e più efficiente.',
         ],
 
         // Packages
@@ -53,19 +58,21 @@ return [
         // Software
         'software' => [
             'title' => 'Software',
-            'desc' => 'Tutti i programmi che ho creato in C, compatibili con Linux e non solo.',
+            'desc' => 'Tutti i programmi che ho creato in C.',
         ],
     ],
 
     // About
     'about' => [
         'title' => 'Su di me',
-        'desc' => 'Scopri chi sono, le mie competenze, i miei recapiti, come puoi aiutarmi.',
+        'desc' => 'Scopri chi sono, le mie competenze, i miei recapiti, '
+                  . 'come puoi aiutarmi.',
 
         // Services
         'services' => [
             'title' => 'Servizi',
-            'desc' => 'Scopri tutti i servizi offerti da Salonia Infrastrutture Digitali.',
+            'desc' => 'Scopri tutti i servizi offerti da '
+                      . 'Salonia Infrastrutture Digitali.',
         ],
 
         // CV
@@ -96,7 +103,8 @@ return [
     // Tools & Links
     'tools-links' => [
         'title' => 'Strumenti e Link',
-        'desc' => 'Scopri strumenti e link utili, tra cui SearXNG, il portale OpenAlias, ed il mio profilo GitHub.',
+        'desc' => 'Scopri strumenti e link utili, tra cui SearXNG, '
+                  . 'il portale OpenAlias, ed il mio profilo GitHub.',
 
         // Portfolio
         'portfolio' => [
@@ -107,13 +115,15 @@ return [
         // SearXNG
         'searxng' => [
             'title' => 'SearXNG',
-            'desc' => 'Istanza self-hosted del meta-motore di ricerca che protegge la privacy dei propri utenti.',
+            'desc' => 'Istanza self-hosted del meta-motore di ricerca che '
+                      . 'protegge la privacy dei propri utenti.',
         ],
 
         // OpenAlias
-        'openalias' => [
+        'oa' => [
             'title' => 'OpenAlias',
-            'desc' => "Ottieni tutti i record OpenAlias di un dominio, con un'interfaccia utente facile da usare ed intuitiva.",
+            'desc' => "Ottieni tutti i record OpenAlias di un dominio, con "
+                      . "un'interfaccia utente facile da usare ed intuitiva.",
         ],
 
         // GitHub
