@@ -1,6 +1,6 @@
 // Load assets (for Vite)
 import.meta.glob([
-    '../img/*',
+    '../img/**/*',
     '../css/fonts/*.woff2',
 ]);
 
