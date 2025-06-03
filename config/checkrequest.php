@@ -58,7 +58,7 @@ return [
         "*bin/*",
         "*cgi-bin/*",
         "*file-manager/*",
-        "*login*",          // Comment or change this line if you do use login
+        "login*",           // Comment or change this line if you do use login
         "*register/*",      // Comment or change this line if you do use register
         "*webclient*",
 

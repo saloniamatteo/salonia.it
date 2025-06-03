@@ -6,7 +6,7 @@ return [
     'desc' => "Matteo Salonia's technical guides.",
 
     // MariaDB + Galera Cluster
-    'mariadb-galera-cluster' => [
+    'mgc' => [
         'title' => 'MariaDB + Galera Cluster',
         'desc' => 'Highly available & distributed MySQL database with MariaDB '
                   . '& Galera Cluster. Supports auto failover.',
@@ -82,10 +82,116 @@ return [
 
         // Step 7
         's7' => [
-            'title' => '7. Load balancer config with nginx (optional)',
-            'desc' => "It's possible to use nginx as a cluster load balancer. "
-                      . 'Modify <code>/etc/nginx/nginx.conf</code> and add the'
-                      . 'following config:',
+            'title' => '7. Load balancer with nginx',
+            'desc' => "It's possible to optionally use nginx as a cluster "
+                      . 'load balancer. Modify <code>/etc/nginx/nginx.conf</code> '
+                      . 'and add the following config:',
         ]
+    ],
+
+    // SSH Passwordless login
+    'spl' => [
+        'title' => 'SSH Passwordless Login',
+        'desc' => 'SSH Client & Server setup to login without passwords',
+
+        // Client config
+        'client' => [
+            'desc' => 'Configure your SSH client in order to login without having '
+                      . "to insert the remote user's password. Needed in "
+                      . 'environments where password login is not allowed. ',
+
+            // Step 1
+            's1' => [
+                'title' => '1. Generate keypair',
+                'desc' => "It's necessary to create a keypair. "
+                          . 'Run the following command to create a keypair '
+                          . 'with <strong>RSA 4096</strong> cryptography:',
+
+                'desc2' => "You'll have to insert the following parameters: ",
+
+                'li' => [
+                    'file' => [
+                        'title' => 'File in which to save the key',
+                        'desc' => 'Keep the default value (example: :path)',
+                    ],
+
+                    'password' => [
+                        'title' => 'Password to use for the key',
+                        'desc' => 'Insert a strong password. '
+                                  . 'You can also use a blank password '
+                                  . '(not recommended).',
+                    ],
+                ],
+            ],
+
+            // Step 2
+            's2' => [
+                'title' => '2. Configure .ssh/config',
+                'desc' => 'The file <code>~/.ssh/config</code> contains all of '
+                          . "your host's configurations, saving you from having "
+                          . 'to type user & IP/hostname every time you want to '
+                          . 'log onto a host. Modify this file with a text editor, '
+                          . 'and insert the following: ',
+
+                'desc2' => 'Set the bold parameters as follows:',
+
+                'li' => [
+                    'host' => 'The mnemonic name that will be used every time '
+                              . 'you connect to the host. In this case: :cmd',
+
+                    'user' => 'The remote user name.',
+
+                    'hostname' => "The remote host's IP address or hostname. "
+                                  . 'You can use an IP address (:ip), '
+                                  . 'hostname (:hosts), '
+                                  . 'or domain name (:domain).',
+                ],
+            ],
+
+            // Step 3
+            's3' => [
+                'title' => "3. Copy the key to the host",
+                'desc' => 'Run the following command: ',
+                'desc2' => "Insert the remote user's password, and not your key's "
+                           . 'password. If everything went well, running this '
+                           . 'command will let you log onto the server:',
+
+                'desc3' => "If you can't login to the server via ssh, but you can "
+                           . "modify the disk's contents, you can copy your public "
+                           . 'key on your server, inside the :file file, with the '
+                           . 'following format: ',
+
+                'desc4' => 'Where:',
+
+                'li' => [
+                    'ssh-rsa' => 'Key cryptography algorithm (RSA)',
+                    'pkey' => 'Public key',
+                    'host' => 'Optional; Helps to identify who owns the key',
+                ],
+            ],
+        ],
+
+        // Server config
+        'server' => [
+            'desc' => 'Configure your server so that only SSH keys can be used '
+                      . 'for authentication. Also, disable root login for '
+                      . 'better security.',
+
+            // Step 1
+            's1' => [
+                'title' => '1. Modify /etc/ssh/sshd_config',
+                'desc' => "Modify the ssh server's config "
+                          . 'located in :path, and make sure these options '
+                          . 'are set as follows: ',
+            ],
+
+            // Step 2
+            's2' => [
+                'title' => '2. Restart sshd',
+                'desc' => 'Run the following command:',
+                'desc2' => 'The ssh server will be restarted, and the new '
+                           . 'configuration will be applied.',
+            ],
+        ],
     ],
 ];

@@ -1,8 +1,8 @@
 @use('App\Helpers\Url')
 @include('static/head', [
     "lang"  => app()->getLocale(),
-    "title" => __("writeups.mariadb-galera-cluster.title"),
-    "desc"  => __("writeups.mariadb-galera-cluster.desc"),
+    "title" => __("writeups.mgc.title"),
+    "desc"  => __("writeups.mgc.desc"),
 ])
 
 <body>
@@ -11,19 +11,19 @@
 <!-- MariaDB + Galera Cluster -->
 <x-hero class="mt-4" id="mariadb-galera-cluster">
 	<x-slot:title>
-		{{ __("writeups.mariadb-galera-cluster.title") }}
+		{{ __("writeups.mgc.title") }}
 	</x-slot>
 
 	<x-slot:desc>
-		{{ __("writeups.mariadb-galera-cluster.desc") }}
+		{{ __("writeups.mgc.desc") }}
 	</x-slot>
 
 	<x-card class="m-3">
 		<!-- Step 1 -->
-		<x-tag-md id="s1">{{ __("writeups.mariadb-galera-cluster.s1.title") }}</x-tag-md>
+		<x-tag-md id="s1">{{ __("writeups.mgc.s1.title") }}</x-tag-md>
 
 		<p class="mt-0">
-			{!! __("writeups.mariadb-galera-cluster.s1.desc") !!}
+			{!! __("writeups.mgc.s1.desc") !!}
 		</p>
 
 		<p>
@@ -37,11 +37,11 @@
 		</p>
 
 		<p class="mt-0">
-			{!! __("writeups.mariadb-galera-cluster.s1.desc2") !!}
+			{!! __("writeups.mgc.s1.desc2") !!}
 		</p>
 
 		<x-card-info>
-			{!! __("writeups.mariadb-galera-cluster.s1.note") !!}
+			{!! __("writeups.mgc.s1.note") !!}
 
 		<p>
 			<pre>
@@ -55,7 +55,7 @@
 		</x-card-info>
 
 		<!-- Step 2 -->
-		<x-tag-md id="s2">{{ __("writeups.mariadb-galera-cluster.s2.title") }}</x-tag-md>
+		<x-tag-md id="s2">{{ __("writeups.mgc.s2.title") }}</x-tag-md>
 
 		<ul class="mt-0">
 			<li>
@@ -90,12 +90,12 @@
 		</ul>
 
 		<!-- Step 3 -->
-		<x-tag-md id="s3">{{ __("writeups.mariadb-galera-cluster.s3.title") }}</x-tag-md>
+		<x-tag-md id="s3">{{ __("writeups.mgc.s3.title") }}</x-tag-md>
 
 		<div class="mt-1"></div>
 
 		<x-card-info>
-			{!! __("writeups.mariadb-galera-cluster.s3.note") !!}
+			{!! __("writeups.mgc.s3.note") !!}
 
 			<p>
 				<pre>
@@ -106,7 +106,7 @@
 			</p>
 		</x-card-info>
 
-		<p>{!! __("writeups.mariadb-galera-cluster.s3.desc") !!}</p>
+		<p>{!! __("writeups.mgc.s3.desc") !!}</p>
 
 		<p>
 			<pre>
@@ -126,7 +126,7 @@
 			</pre>
 		</p>
 
-		<p>{!! __("writeups.mariadb-galera-cluster.s3.desc2") !!}</p>
+		<p>{!! __("writeups.mgc.s3.desc2") !!}</p>
 
 		<p>
 			<pre>
@@ -159,7 +159,7 @@
 			</pre>
 		</p>
 
-		<p>{!! __("writeups.mariadb-galera-cluster.s3.desc3") !!}</p>
+		<p>{!! __("writeups.mgc.s3.desc3") !!}</p>
 
 		<p>
 			<pre>
@@ -171,11 +171,11 @@
 		</p>
 
 		<!-- Step 4 -->
-		<x-tag-md id="s4">{{ __("writeups.mariadb-galera-cluster.s4.title") }}</x-tag-md>
+		<x-tag-md id="s4">{{ __("writeups.mgc.s4.title") }}</x-tag-md>
 
-		<p class="mt-0">{!! __("writeups.mariadb-galera-cluster.s4.desc") !!}</p>
+		<p class="mt-0">{!! __("writeups.mgc.s4.desc") !!}</p>
 
-		<p>{!! __("writeups.mariadb-galera-cluster.s4.desc2") !!}</p>
+		<p>{!! __("writeups.mgc.s4.desc2") !!}</p>
 
 		<p>
 			<pre>
@@ -208,7 +208,7 @@
 			</pre>
 		</p>
 
-		<p>{{ __("writeups.mariadb-galera-cluster.s4.desc3") }}</p>
+		<p>{{ __("writeups.mgc.s4.desc3") }}</p>
 
 		<p>
 			<pre>
@@ -219,9 +219,9 @@
 		</p>
 
 		<!-- Step 5 -->
-		<x-tag-md id="s5">{{ __("writeups.mariadb-galera-cluster.s5.title") }}</x-tag-md>
+		<x-tag-md id="s5">{{ __("writeups.mgc.s5.title") }}</x-tag-md>
 
-		<p class="mt-0">{!! __("writeups.mariadb-galera-cluster.s5.desc") !!}</p>
+		<p class="mt-0">{!! __("writeups.mgc.s5.desc") !!}</p>
 
 		<ul>
 			<li>
@@ -276,13 +276,13 @@
 		</p>
 
 		<x-card-alert>
-			{{ __("writeups.mariadb-galera-cluster.s5.warning") }}
+			{{ __("writeups.mgc.s5.warning") }}
 		</x-card-alert>
 
 		<!-- Step 6 -->
-		<x-tag-md id="s6">{{ __("writeups.mariadb-galera-cluster.s6.title") }}</x-tag-md>
+		<x-tag-md id="s6">{{ __("writeups.mgc.s6.title") }}</x-tag-md>
 
-		<p class="mt-0">{!! __("writeups.mariadb-galera-cluster.s6.desc") !!}</p>
+		<p class="mt-0">{!! __("writeups.mgc.s6.desc") !!}</p>
 
 		<p>
 			<pre>
@@ -292,7 +292,7 @@
 			</pre>
 		</p>
 
-		<p>{!! __("writeups.mariadb-galera-cluster.s6.desc2") !!}</p>
+		<p>{!! __("writeups.mgc.s6.desc2") !!}</p>
 
 		<p>
 			<pre>
@@ -306,7 +306,7 @@
 			</pre>
 		</p>
 
-		<p>{!! __("writeups.mariadb-galera-cluster.s6.desc3") !!}</p>
+		<p>{!! __("writeups.mgc.s6.desc3") !!}</p>
 
 		<p>
 			<pre>
@@ -332,7 +332,7 @@
 			</pre>
 		</p>
 
-		<p>{!! __("writeups.mariadb-galera-cluster.s6.desc4") !!}</p>
+		<p>{!! __("writeups.mgc.s6.desc4") !!}</p>
 
 		<p>
 			<pre>
@@ -343,9 +343,9 @@
 		</p>
 
 		<!-- Step 7 -->
-		<x-tag-md id="s7">{{ __("writeups.mariadb-galera-cluster.s7.title") }}</x-tag-md>
+		<x-tag-md id="s7">{{ __("writeups.mgc.s7.title") }}</x-tag-md>
 
-		<p class="mt-0">{!! __("writeups.mariadb-galera-cluster.s7.desc") !!}</p>
+		<p class="mt-0">{!! __("writeups.mgc.s7.desc") !!}</p>
 
 		<p>
 			<pre>

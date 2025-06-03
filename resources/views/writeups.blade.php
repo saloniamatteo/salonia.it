@@ -22,8 +22,14 @@
 	<x-card class="m-3">
 		@php
 			$writeups = [
-				'mariadb-galera-cluster' => [
-					'icon' => 'mariadb-galera-cluster.webp'
+				'mgc' => [
+					'icon' => 'mariadb-galera-cluster.webp',
+					'page' => 'mariadb-galera-cluster'
+				],
+
+				'spl' => [
+					'icon' => 'ssh-passwordless-login.webp',
+					'page' => 'ssh-passwordless-login',
 				]
 			]
 		@endphp
@@ -31,7 +37,7 @@
 		@foreach ($writeups as $key => $val)
 			<x-tile>
 				<x-icon-img alt="{{ $key }}"
-				href="{{ Url::subUrl('writeups/' . $key) }}"
+				href="{{ Url::subUrl('writeups/' . $val['page']) }}"
 				src="{{ Vite::asset('resources/img/writeups/' . $val['icon']) }}">
 
 				<div class="tile__container">
