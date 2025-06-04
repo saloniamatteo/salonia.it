@@ -22,14 +22,19 @@
 	<x-card class="m-3">
 		@php
 			$writeups = [
+				'k8s' => [
+					'icon' => 'k8s.webp',
+					'page' => 'kubernetes'
+				],
+
 				'mgc' => [
-					'icon' => 'mariadb-galera-cluster.webp',
+					'icon' => 'mgc.webp',
 					'page' => 'mariadb-galera-cluster'
 				],
 
 				'spl' => [
-					'icon' => 'ssh-passwordless-login.webp',
-					'page' => 'ssh-passwordless-login',
+					'icon' => 'spl.webp',
+					'page' => 'ssh-passwordless-login'
 				]
 			]
 		@endphp

@@ -210,4 +210,128 @@ return [
             ],
         ],
     ],
+
+    // Kubernetes
+    'k8s' => [
+        'title' => 'Cluster Kubernetes',
+        'desc' => 'Cluster Kubernetes (k8s) con Control Plane e Nodi Worker',
+
+        // Step 1
+        's1' => [
+            'title' => '1. Prerequisiti',
+            'desc' => 'I :req1 requisiti :req2 di Kubernetes sono i seguenti:',
+
+            'req' => [
+                'node' => 'per ogni nodo',
+                'hostname' => 'Hostname univoco per ogni nodo',
+                'ports' => ':req1 Porte aperte nel firewall :req2',
+            ],
+        ],
+
+        // Step 2
+        's2' => [
+            'title' => '2. Disabilita swap',
+            'desc' => 'È necessario :req1 disabilitare la swap:req2:',
+            'desc2' => 'Inoltre, modifica :file, e commenta la riga che '
+                      . 'contiene :swap. Ad esempio:',
+        ],
+
+        // Step 3
+        's3' => [
+            'title' => '3. Configura Kernel',
+            'desc' => 'È necessario modificare alcune impostazioni del Kernel.',
+        ],
+
+        // Step 4
+        's4' => [
+            'title' => '4. Configura firewall',
+            'desc' => 'Assicurati di aprire le seguenti porte:',
+            'worker' => 'Nodi Worker',
+            'warning' => 'Questa è solo una configurazione di esempio. '
+                       . 'È vivamente consigliato che tu modifichi questa '
+                       . 'configurazione in modo tale che solo i tuoi nodi  '
+                       . 'possano comunicare su queste porte. ',
+        ],
+
+        // Step 5
+        's5' => [
+            'title' => '5. Installa pacchetti',
+        ],
+
+        // Step 6
+        's6' => [
+            'title' => '6. Configura pacchetti',
+        ],
+
+        // Step 7
+        's7' => [
+            'title' => '7. Avvia servizi',
+        ],
+
+        // Step 8
+        's8' => [
+            'title' => '8. Crea cluster',
+            'desc' => 'Crea un cluster con indirizzi IP nel range :range:',
+            'info' => 'Qualora dovessero presentarsi problemi, per '
+                      . 'resettare ed eliminare il cluster, e tutti i '
+                      . 'dati relativi a Kubernetes, esegui i comandi seguenti:',
+
+            'info2' => 'Avvia kubelet:',
+
+            'desc2' => 'Una volta creato il cluster, verrà mostrato '
+                       . 'un comando come il seguente:',
+
+            'desc3' => 'Questo comando va eseguito su :b ogni nodo worker:eb '
+                       . 'da aggiungere al cluster. Sostituisci i parametri '
+                       . 'in grassetto con quelli ottenuti dal comando.',
+
+            'desc4' => 'Una volta creato il cluster, copia la '
+                       . 'configurazione nella tua home directory: ',
+
+            'desc5' => 'Verifica il numero di nodi nel cluster:',
+
+            'desc6' => 'Esempio di output:',
+
+            'info2' => 'Ogni nodo tipicamente entra nello status :ready '
+                       . 'quasi immediatamente, o comunque meno di 30 secondi '
+                       . 'dalla sua data di aggiunta.',
+        ],
+
+        // Step 9
+        's9' => [
+            'title' => '9. Installa Calico CNI',
+            'desc' => 'Calico CNI (Container Network Interface) fornisce '
+                      . 'connettività di rete, sicurezza, e osservabilità '
+                      . 'per applicazioni containerizzate. Installalo con '
+                      . 'i comandi seguenti:',
+        ],
+
+        // Step 10
+        's10' => [
+            'title' => '10. Esegui test',
+            'desc' => 'Verifichiamo ora che il cluster, il Control Plane, '
+                      . 'e i Nodi Worker funzionino correttamente. ',
+
+            'desc2' => 'Crea un namespace di test:',
+            'desc3' => 'Modifica il file :file ed inserisci il seguente:',
+            'desc4' => 'Applica il file:',
+            'desc5' => 'Controlla che i pod siano stati avviati:',
+            'desc6' => 'Esegui lo script sottostante per controllare che '
+                       . 'la funzionalità di load balancing funzioni:',
+
+            'desc7' => 'Ad esempio, se nel cluster vi sono 2 nodi worker, '
+                       . 'dovresti vedere il seguente output:',
+
+            'info' => 'Nota che non sempre ogni nodo sarà presente al 50% '
+                       . '(richieste_servite / richieste_totali). '
+                       . 'Questo è più che normale, in quanto Kubernetes '
+                       . 'tiene in conto il carico del sistema, oltre ad '
+                       . 'eseguire uno scheduling round-robin.',
+
+            'info2' => 'Questo significa che, ad esempio, potresti vedere: ',
+            'info3' => '...e subito dopo:',
+
+            'desc8' => "Rimuovi l'ambiente di test:",
+        ],
+    ],
 ];

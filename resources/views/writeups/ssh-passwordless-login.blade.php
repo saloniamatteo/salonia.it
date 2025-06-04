@@ -9,7 +9,7 @@
 @include('static/header')
 
 <!-- SSH Passwordless Login -->
-<x-hero class="mt-4" id="ssh-passwordless-login">
+<x-hero class="mt-4" id="ssh-passwordless-login" img="writeups/spl.webp" alt="{{ __('writeups.spl.title') }}">
 	<x-slot:title>
 		{{ __("writeups.spl.title") }}
 	</x-slot>
@@ -21,7 +21,7 @@
 	<!-- Go to -->
 	<p>
 		{{ __("glob.go-to") }}:
-		<br>
+
 
 		<!-- Client -->
 		<x-tag-xs href="client">
@@ -39,7 +39,7 @@
 	<x-card class="m-3">
 		<!-- Client -->
 		<x-tag-xl id="client">Client</x-tag-xl>
-		<br>
+
 
 		<p class="my-0">
 			{!! __("writeups.spl.client.desc") !!}
@@ -52,13 +52,9 @@
 			{!! __("writeups.spl.client.s1.desc") !!}
 		</p>
 
-		<p>
-			<pre>
-			<code data-lang="Bash">
-			ssh-keygen -t rsa -b 4096
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+ssh-keygen -t rsa -b 4096
+		</x-code>
 
 		<p class="my-0">
 			{!! __("writeups.spl.client.s1.desc2") !!}
@@ -85,15 +81,11 @@
 			{!! __("writeups.spl.client.s2.desc") !!}
 		</p>
 
-		<p>
-			<pre>
-			<code data-lang="~/.ssh/config">
-			Host <strong>server</strong><br>
-			&nbsp;&nbsp;User <strong>user</strong><br>
-			&nbsp;&nbsp;HostName <strong>100.0.10.2</strong>
-			</code>
-			</pre>
-		</p>
+		<x-code lang="~/.ssh/config">
+Host <strong>server</strong>
+	User <strong>user</strong>
+	HostName <strong>100.0.10.2</strong>
+		</x-code>
 
 		<p>
 		{{ __("writeups.spl.client.s2.desc2") }}
@@ -129,25 +121,17 @@
 			{{ __("writeups.spl.client.s3.desc") }}
 		</p>
 
-		<p>
-			<pre>
-			<code data-lang="Bash">
-			ssh-copy-id <strong>server</strong>
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+ssh-copy-id <strong>server</strong>
+		</x-code>
 
 		<p>
 			{{ __("writeups.spl.client.s3.desc2") }}
 		</p>
 
-		<p>
-			<pre>
-			<code data-lang="Bash">
-			ssh <strong>server</strong>
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+ssh <strong>server</strong>
+		</x-code>
 
 		<p>
 			{!! __("writeups.spl.client.s3.desc3", [
@@ -155,13 +139,9 @@
 			]) !!}
 		</p>
 
-		<p>
-			<pre>
-			<code data-lang="~/.ssh/authorized_keys">
+		<x-code lang="~/.ssh/authorized_keys">
 			ssh-rsa AAAA... user@host
-			</code>
-			</pre>
-		</p>
+		</x-code>
 
 		<p class="mb-0">
 			{{ __("writeups.spl.client.s3.desc4") }}
@@ -188,7 +168,7 @@
 	<x-card class="m-3">
 		<!-- Server -->
 		<x-tag-xl id="server">Server</x-tag-xl>
-		<br>
+
 
 		<p class="my-0">
 			{!! __("writeups.spl.server.desc") !!}
@@ -203,23 +183,19 @@
 			]) !!}
 		</p>
 
-		<p>
-			<pre>
-			<code data-lang="/etc/ssh/sshd_config">
-			# Disable root login<br>
-			PermitRootLogin no<br>
-			<br>
-			# Lower login attempt count<br>
-			MaxAuthTries 3<br>
-			<br>
-			# Disable password login<br>
-			PubkeyAuthentication yes<br>
-			PasswordAuthentication no<br>
-			ChallengeResponseAuthentication no<br>
-			UsePAM no
-			</code>
-			</pre>
-		</p>
+		<x-code lang="/etc/ssh/sshd_config">
+# Disable root login
+PermitRootLogin no
+
+# Lower login attempt count
+MaxAuthTries 3
+
+# Disable password login
+PubkeyAuthentication yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM no
+		</x-code>
 
 		<!-- Step 2 -->
 		<x-tag-md id="server-s2">{{ __("writeups.spl.server.s2.title") }}</x-tag-md>
@@ -228,17 +204,13 @@
 			{{ __("writeups.spl.server.s2.desc") }}
 		</p>
 
-		<p>
-			<pre>
-			<code data-lang="Bash">
-			systemctl start sshd # Debian, CentOS, Fedora, RHEL<br>
-			# OR<br>
-			service ssh restart # Older Debian & Sysvinit users<br>
-			# OR<br>
-			rc-service sshd restart # OpenRC users (Gentoo)
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+systemctl start sshd # Debian, CentOS, Fedora, RHEL
+# OR
+service ssh restart # Older Debian & Sysvinit users
+# OR
+rc-service sshd restart # OpenRC users (Gentoo)
+		</x-code>
 
 		<p class="my-0">
 			{{ __("writeups.spl.server.s2.desc2") }}
