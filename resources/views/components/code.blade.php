@@ -1,11 +1,5 @@
-<p>
-<pre>
-<code
-@if (!empty($lang))
-    data-lang="{{ $lang }}"
-@endif
->
-{!! $slot !!}
-</code>
-</pre>
-</p>
+@php
+    $attr = !empty($lang) ? "data-lang=\"{$lang}\"" : '';
+@endphp
+
+<p><pre><code {!! $attr !!}>{!! $slot !!}</code></pre></p>
