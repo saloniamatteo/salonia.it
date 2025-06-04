@@ -4,16 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Table extends Component
+class Code extends Component
 {
     /* Create a new component instance. */
     public function __construct(
-        public string $nofoot = '',
+        public string $lang = '',
     ) {}
 
     /* Get the view / contents that represent the component. */
     public function render()
     {
-        return view('components.table');
+        return view('components.code');
     }
 }

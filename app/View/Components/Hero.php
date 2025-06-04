@@ -10,6 +10,8 @@ class Hero extends Component
     public function __construct(
         public string $id,
         public string $class = '',
+        public string $img = '',
+        public string $alt = '',
     ) {}
 
     /* Get the view / contents that represent the component. */

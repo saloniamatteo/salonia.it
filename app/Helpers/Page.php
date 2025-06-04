@@ -23,7 +23,27 @@ class Page
             '',
         ];
 
-        return preg_replace($search, $replace, $html);
+        // Split string
+        $blocks = preg_split(
+            '/(<\/?pre[^>]*>)/', $html,
+            null, PREG_SPLIT_DELIM_CAPTURE
+        );
+
+        // Empty buffer
+        $html = '';
+
+        // Check each block
+        foreach ($blocks as $i => $block) {
+            if ($i % 4 == 2) {
+                // Break out <pre>...</pre> with \n's
+                $html .= $block;
+            } else {
+                // Classic search & replace
+                $html .= preg_replace($search, $replace, $block);
+            }
+        }
+
+        return $html;
     }
 
     // Minify a page

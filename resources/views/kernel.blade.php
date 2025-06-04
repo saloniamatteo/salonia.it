@@ -183,14 +183,12 @@
 			{!! __("kernel.setup.s1.desc") !!}
 		</p>
 
-		<p>
-			<pre>
-			<code>
-				git clone --recurse-submodules "https://github.com/saloniamatteo/kernel" /usr/src/usr-kernel<br>
-				cd /usr/src/usr-kernel
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+git clone --recurse-submodules \
+https://github.com/saloniamatteo/kernel /usr/src/usr-kernel
+
+cd /usr/src/usr-kernel
+		</x-code>
 
 		<x-card-info>{!! __("kernel.setup.s1.note") !!}</x-card-info>
 
@@ -201,21 +199,17 @@
 			{!! __("kernel.setup.s2.desc") !!}
 		</p>
 
-		<p>
-			<pre>
-			<code>
-			$ ls<br>
-			<strong>6.12.8-gentoo</strong> # <-- Kernel config <br>
-			bore-scheduler<br>
-			clear-patches<br>
-			kernel_compiler_patch<br>
-			patches<br>
-			v4l2loopback<br>
-			build.sh<br>
-			README.md
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+$ ls
+<strong>6.12.8-gentoo</strong> # &lt;-- Kernel config
+bore-scheduler
+clear-patches
+kernel_compiler_patch
+patches
+v4l2loopback
+build.sh
+README.md
+		</x-code>
 
 		<p>
 			{!! __("kernel.setup.s2.desc2") !!}
@@ -414,11 +408,9 @@
 			{{ __("kernel.setup.s5.desc") }}
 		</p>
 
-		<p>
-			<pre class="mb-2">
-				<code>./build.sh -l -m -p</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+./build.sh -l -m -p
+		</x-code>
 
 		<p>
 			{{ __("kernel.setup.s5.cmd.desc") }}:
@@ -449,14 +441,10 @@
 			{!! __("kernel.setup.s5.desc3") !!}
 		</p>
 
-		<p>
-			<pre>
-			<code>
-				cp /usr/src/linux/.config 6.12.8-gentoo/config.new<br>
-				diff -u 6.12.8-gentoo/config{,.new} | vim
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+cp /usr/src/linux/.config 6.12.8-gentoo/config.new
+diff -u 6.12.8-gentoo/config{,.new} | vim
+		</x-code>
 
 		<p>
 			{!! __("kernel.setup.s5.desc4") !!}
@@ -470,13 +458,9 @@
 			{!! __("kernel.setup.s5.desc6") !!}
 		</p>
 
-		<p>
-			<pre>
-			<code>
-				mv 6.12.8-gentoo/config{.new,}
-			</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+mv 6.12.8-gentoo/config{.new,}
+		</x-code>
 
 		<!-- Step 6 -->
 		<x-tag-md id="s6">{{ __("kernel.setup.s6.title") }}</x-tag-md>
@@ -485,11 +469,9 @@
 			{!! __("kernel.setup.s6.desc") !!}
 		</p>
 
-		<p>
-			<pre class="mb-2">
-				<code>./build.sh -f -l -p</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+./build.sh -f -l -p
+		</x-code>
 
 		<p>
 			{!! __("kernel.setup.s6.desc2") !!}
@@ -523,11 +505,9 @@
 			{!! __("kernel.extra.v4l2.desc2") !!}
 		</p>
 
-		<p>
-			<pre class="mb-2">
-				<code>options v4l2loopback exclusive_caps=1 card_label="Camera2"</code>
-			</pre>
-		</p>
+		<x-code lang="v4l2loopback.conf">
+options v4l2loopback exclusive_caps=1 card_label="Camera2"
+		</x-code>
 
 		<p>
 			{!! __("kernel.extra.v4l2.desc3") !!}
@@ -544,49 +524,45 @@
 			{!! __("kernel.extra.initramfs.desc2") !!}
 		</p>
 
-		<p>
-			<pre><code>
-			# Equivalent to -H<br>
-			hostonly="yes"<br>
-			<br>
-			# Add various modules<br>
-			# Module: description<br>
-			# ==================================<br>
-			# base: include basic utilities<br>
-			# dash: include /bin/dash as /bin/sh<br>
-			# fs-lib: include filesystem tools like mount<br>
-			# kernel-modules: include kernel modules<br>
-			# rescue: include various utils for rescue mode<br>
-			# resume: allow initramfs to resume from low-power state<br>
-			# rootfs-block: mount block device that contains rootfs<br>
-			# shutdown: set up hooks to run on shutdown<br>
-			# udev-rules: include udev and some basic rules<br>
-			# usrmount: mount /usr<br>
-			dracutmodules+=" base dash fs-lib kernel-modules rescue resume rootfs-block shutdown udev-rules usrmount "<br>
-			<br>
-			# Do not include bash (we use dash)<br>
-			omit_dracutmodules="bash"<br>
-			<br>
-			# Include elogind<br>
-			install_items="/lib64/elogind/elogind-uaccess-command"<br>
-			<br>
-			# Use lz4 to compress the initramfs<br>
-			compress="lz4"<br>
-			<br>
-			# Add early microcode loading<br>
-			early_microcode="yes"
-			</code></pre>
-		</p>
+		<x-code lang="/etc/dracut.conf">
+# Equivalent to -H
+hostonly="yes"
+
+# Add various modules
+# Module: description
+# ==================================
+# base: include basic utilities
+# dash: include /bin/dash as /bin/sh
+# fs-lib: include filesystem tools like mount
+# kernel-modules: include kernel modules
+# rescue: include various utils for rescue mode
+# resume: allow initramfs to resume from low-power state
+# rootfs-block: mount block device that contains rootfs
+# shutdown: set up hooks to run on shutdown
+# udev-rules: include udev and some basic rules
+# usrmount: mount /usr
+dracutmodules+=" base dash fs-lib kernel-modules rescue resume rootfs-block shutdown udev-rules usrmount "
+
+# Do not include bash (we use dash)
+omit_dracutmodules="bash"
+
+# Include elogind
+install_items="/lib64/elogind/elogind-uaccess-command"
+
+# Use lz4 to compress the initramfs
+compress="lz4"
+
+# Add early microcode loading
+early_microcode="yes"
+		</x-code>
 
 		<p>
 			{{ __("kernel.extra.initramfs.desc3") }}
 		</p>
 
-		<p>
-			<pre class="mb-2">
-				<code>dracut --kver 6.8.2-gentoo -f</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+dracut --kver 6.8.2-gentoo -f
+		</x-code>
 
 		<p>
 			{!! __("kernel.extra.initramfs.desc4") !!}
@@ -611,11 +587,9 @@
 			{{ __("kernel.extra.bootloader.desc3") }}
 		</p>
 
-		<p>
-			<pre class="mb-2">
-				<code>grub-mkconfig -o /boot/grub/grub.cfg</code>
-			</pre>
-		</p>
+		<x-code lang="Bash">
+grub-mkconfig -o /boot/grub/grub.cfg
+		</x-code>
 
 		<p>
 			{{ __("kernel.extra.bootloader.desc4") }}
