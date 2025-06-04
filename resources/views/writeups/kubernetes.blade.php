@@ -414,7 +414,7 @@ kubectl get nodes
 		</x-table>
 
 		<x-card-info>
-			{!! __('writeups.k8s.s8.info2', [
+			{!! __('writeups.k8s.s8.info3', [
 				'ready' => '<code>Ready</code>',
 			]) !!}
 		</x-card-info>
@@ -448,12 +448,18 @@ kubectl create -f custom-resources.yaml
 		</p>
 
 		<p>
-			{{ __('writeups.k8s.s10.desc') }}
+			{{ __('writeups.k8s.s10.desc2') }}
 		</p>
 
 		<x-code lang="Bash">
 kubectl create namespace test
 		</x-code>
+
+		<p>
+			{!! __('writeups.k8s.s10.desc3', [
+				'file' => '<code>nginx.yaml</code>',
+			]) !!}
+		</p>
 
 		<x-code lang="nginx.yaml">
 apiVersion: v1

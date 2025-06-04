@@ -285,14 +285,14 @@ return [
                        . 'da aggiungere al cluster. Sostituisci i parametri '
                        . 'in grassetto con quelli ottenuti dal comando.',
 
-            'desc4' => 'Una volta creato il cluster, copia la '
-                       . 'configurazione nella tua home directory: ',
+            'desc4' => 'Dopo aver creato il cluster, copia la '
+                       . 'configurazione nella tua home directory:',
 
             'desc5' => 'Verifica il numero di nodi nel cluster:',
 
             'desc6' => 'Esempio di output:',
 
-            'info2' => 'Ogni nodo tipicamente entra nello status :ready '
+            'info3' => 'Ogni nodo tipicamente entra nello status :x '
                        . 'quasi immediatamente, o comunque meno di 30 secondi '
                        . 'dalla sua data di aggiunta.',
         ],
@@ -313,7 +313,8 @@ return [
                       . 'e i Nodi Worker funzionino correttamente. ',
 
             'desc2' => 'Crea un namespace di test:',
-            'desc3' => 'Modifica il file :file ed inserisci il seguente:',
+            'desc3' => 'Crea il file :file, modificalo, '
+                       . 'ed inserisci il seguente:',
             'desc4' => 'Applica il file:',
             'desc5' => 'Controlla che i pod siano stati avviati:',
             'desc6' => 'Esegui lo script sottostante per controllare che '

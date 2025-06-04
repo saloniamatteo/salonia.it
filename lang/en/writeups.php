@@ -194,4 +194,128 @@ return [
             ],
         ],
     ],
+
+    // Kubernetes
+    'k8s' => [
+        'title' => 'Kubernetes Cluster',
+        'desc' => 'Kubernetes (k8s) Cluster with Control Plane & Worker Nodes',
+
+        // Step 1
+        's1' => [
+            'title' => '1. Prerequisites',
+            'desc' => "Kubernetes' :req1 requirements :req2 are as follows:",
+
+            'req' => [
+                'node' => 'for each node',
+                'hostname' => 'Unique hostname for each node',
+                'ports' => ':req1 Firewall ports open :req2',
+            ],
+        ],
+
+        // Step 2
+        's2' => [
+            'title' => '2. Disable swap',
+            'desc' => "You must :req1 disable swap:req2:",
+            'desc2' => 'Also, modify :file, and comment out the line that '
+                      . 'contains :swap. For example:',
+        ],
+
+        // Step 3
+        's3' => [
+            'title' => '3. Configure Kernel',
+            'desc' => "It's necessary to modify some Kernel settings.",
+        ],
+
+        // Step 4
+        's4' => [
+            'title' => '4. Configure firewall',
+            'desc' => 'Make sure to open the following ports:',
+            'worker' => 'Worker Nodes',
+            'warning' => 'This is only an example config. It is highly recommended '
+                         . 'you modify it so that only your nodes can communicate '
+                         . 'on these ports.',
+        ],
+
+        // Step 5
+        's5' => [
+            'title' => '5. Install packages',
+        ],
+
+        // Step 6
+        's6' => [
+            'title' => '6. Configure packages',
+        ],
+
+        // Step 7
+        's7' => [
+            'title' => '7. Start services',
+        ],
+
+        // Step 8
+        's8' => [
+            'title' => '8. Create cluster',
+            'desc' => 'Create a cluster with IP addresses in the range :range:',
+            'info' => 'If any problems arise, reset & delete the cluster '
+                      . 'with all Kubernetes data with these commands:',
+
+            'info2' => 'Start kubelet:',
+
+            'desc2' => "Once the cluster has been created, you'll see "
+                       . 'a command like this:',
+
+            'desc3' => 'This command has to be executed on :b each worker node:eb '
+                       . 'that you want to add to the cluster. Replace the '
+                       . 'bold parameters with those retrieved from '
+                       . 'the command output.',
+
+            'desc4' => 'After creating the cluster, copy the configuration '
+                       . 'into your home directory:',
+
+            'desc5' => 'Verify the number of nodes in the cluster:',
+
+            'desc6' => 'Example output:',
+
+            'info3' => 'Each node tipically becomes :ready almost '
+                       . 'immediately, or in less than 30 seconds '
+                       . 'from its add/join date.',
+        ],
+
+        // Step 9
+        's9' => [
+            'title' => '9. Install Calico CNI',
+            'desc' => 'Calico CNI (Container Network Interface) provides '
+                      . 'network connectivity, security, and observability '
+                      . 'for containerized applications. Install it '
+                      . 'with these commands:',
+        ],
+
+        // Step 10
+        's10' => [
+            'title' => '10. Test environment',
+            'desc' => 'Verify that the cluster, the Control Plane, '
+                      . 'and the Worker Nodes work correctly. ',
+
+            'desc2' => 'Create a test namespace:',
+            'desc3' => 'Create a new file :file, modify it, '
+                       . 'and add the following:',
+            'desc4' => 'Apply the file:',
+            'desc5' => 'Make sure the pods have been started:',
+            'desc6' => 'Run the script below to check that '
+                       . 'the load balancing functionality works as expected:',
+
+            'desc7' => 'For example, if the cluster has 2 worker nodes, '
+                       . 'you should see the following output:',
+
+            'info' => 'Note that the ratio may not always be 50% for each node '
+                       . '(requests_served / total_requests). '
+                       . 'This is more than normal, as Kubernetes takes into '
+                       . "account the system's load, as well as running "
+                       . 'round-robin scheduling.',
+
+            'info2' => 'This means that, for example, you could see:',
+            'info3' => '...and immediately after:',
+
+            'desc8' => "Remove the test environment:",
+        ],
+    ],
 ];
