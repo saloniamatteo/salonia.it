@@ -6,11 +6,13 @@
         </tr>
     </thead>
 
-    <tfoot class="bg-blue-700 text-white">
-        <tr>
-            {!! $head !!}
-        </tr>
-    </tfoot>
+    @if (empty($nofoot))
+        <tfoot class="bg-blue-700 text-white">
+            <tr>
+                {!! $head !!}
+            </tr>
+        </tfoot>
+    @endif
 
     <tbody>
         {!! $body !!}
