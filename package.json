@@ -18,6 +18,7 @@
     },
     "dependencies": {
         "@speed-highlight/core": "^1.2.7",
+        "clipboard": "^2.0.11",
         "lucide": "^0.460.0"
     }
 }

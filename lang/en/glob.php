@@ -9,4 +9,7 @@ return [
     // Cards
     'info' => 'Info',
     'warning' => 'Warning',
+
+    // Clipboard
+    'copy-clipboard' => 'Copy to clipboard',
 ];

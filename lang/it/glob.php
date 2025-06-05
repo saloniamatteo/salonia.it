@@ -9,4 +9,7 @@ return [
     // Cards
     'info' => 'Info',
     'warning' => 'Attenzione',
+
+    // Clipboard
+    'copy-clipboard' => 'Copia negli appunti',
 ];
