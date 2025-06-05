@@ -52,10 +52,14 @@ export default defineConfig({
             ],
             fontFace: true,
             keyframes: true,
-            safelist: [
-                "active",           // Header
-                "text-blue-300"     // Promo link
-            ],
+            safelist: {
+                // standard: exact class names
+                standard: [
+                    'active',        // Header
+                    'text-blue-300', // Promo link
+                    /^shj-/          // Speed-highlight
+                ],
+            },
         }),
     ],
 });
