@@ -11,6 +11,11 @@ code {
 /* Dark <code> */
 code.d { background-color: #343a40; color: #f8f9fa }
 
+/* Fix fonts in <code> */
+code div, code span {
+	font-family: 'Red Hat Mono'!important
+}
+
 /* Add margin on top of selected items (/page#item) */
 h3 { scroll-margin-top: 5rem }
 

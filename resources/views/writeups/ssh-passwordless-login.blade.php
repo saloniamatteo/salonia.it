@@ -3,6 +3,7 @@
     "lang"  => app()->getLocale(),
     "title" => __("writeups.spl.title"),
     "desc"  => __("writeups.spl.desc"),
+	"highlight" => 1,
 ])
 
 <body>

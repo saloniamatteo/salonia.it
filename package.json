@@ -17,6 +17,7 @@
         "vite": "^6.0"
     },
     "dependencies": {
+        "@speed-highlight/core": "^1.2.7",
         "lucide": "^0.460.0"
     }
 }

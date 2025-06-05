@@ -47,6 +47,15 @@
 	<!-- JS -->
 	@vite(['resources/js/main.js'])
 
+	<!-- Highlight code -->
+	@if (!empty($highlight))
+		<!-- Speed-highlight -->
+		@vite(['resources/js/highlight.js'])
+
+		<!-- Style -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/speed-highlight/core/dist/themes/atom-dark.css">
+	@endif
+
 	<!-- Check if head.after.blade.php exists, and include it -->
 	@if (file_exists(resource_path("views/static/head-after.blade.php")))
 		@include('static/head-after')

@@ -3,6 +3,7 @@
     "lang"  => app()->getLocale(),
     "title" => __("writeups.k8s.title"),
     "desc"  => __("writeups.k8s.desc"),
+	"highlight" => 1,
 ])
 
 <body>
@@ -348,10 +349,10 @@ sudo systemctl start kubelet
 			{{ __('writeups.k8s.s8.desc2') }}
 		</p>
 
-		<x-code>
-sudo kubeadm join <strong>CONTROL-PLANE-IP</strong>:6443 \
---token <strong>TOKEN</strong> \
---discovery-token-ca-cert-hash sha256:<strong>HASH</strong>
+		<x-code lang="Bash">
+sudo kubeadm join <span class="hljs-literal">CONTROL-PLANE-IP</span>:6443 \
+--token <u>TOKEN</u> \
+--discovery-token-ca-cert-hash sha256:<u>HASH</u>
 		</x-code>
 
 		<p>
@@ -461,7 +462,7 @@ kubectl create namespace test
 			]) !!}
 		</p>
 
-		<x-code lang="nginx.yaml">
+		<x-code lang="YAML">
 apiVersion: v1
 kind: ConfigMap
 metadata:

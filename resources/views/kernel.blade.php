@@ -3,6 +3,7 @@
     "lang"  => app()->getLocale(),
     "title" => __("kernel.title"),
     "desc"  => __("kernel.desc"),
+	"highlight" => 1,
 ])
 
 <body>
@@ -505,7 +506,7 @@ mv 6.12.8-gentoo/config{.new,}
 			{!! __("kernel.extra.v4l2.desc2") !!}
 		</p>
 
-		<x-code lang="v4l2loopback.conf">
+		<x-code lang="plain">
 options v4l2loopback exclusive_caps=1 card_label="Camera2"
 		</x-code>
 
@@ -524,7 +525,7 @@ options v4l2loopback exclusive_caps=1 card_label="Camera2"
 			{!! __("kernel.extra.initramfs.desc2") !!}
 		</p>
 
-		<x-code lang="/etc/dracut.conf">
+		<x-code lang="plain">
 # Equivalent to -H
 hostonly="yes"
 

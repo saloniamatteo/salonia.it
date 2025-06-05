@@ -3,6 +3,7 @@
     "lang"  => app()->getLocale(),
     "title" => __("writeups.mgc.title"),
     "desc"  => __("writeups.mgc.desc"),
+	"highlight" => 1,
 ])
 
 <body>
@@ -85,7 +86,7 @@ sudo emerge dev-db/mariadb sys-cluster/galera
 		<x-card-info>
 			{!! __("writeups.mgc.s3.note") !!}
 
-			<x-code>
+			<x-code lang="ini">
 # bind-address = 0.0.0.0
 			</x-code>
 		</x-card-info>
@@ -106,7 +107,7 @@ FLUSH PRIVILEGES;
 
 		<p>{!! __("writeups.mgc.s3.desc2") !!}</p>
 
-		<x-code lang="60-galera.cnf">
+		<x-code lang="ini">
 # Debian: [galera]
 # RHEL: [mysqld]
 
@@ -147,7 +148,7 @@ galera_new_cluster
 
 		<p>{!! __("writeups.mgc.s4.desc2") !!}</p>
 
-		<x-code lang="60-galera.cnf">
+		<x-code lang="ini">
 # Debian: [galera]
 # RHEL: [mysqld]
 
