@@ -1,4 +1,8 @@
+// Speed-highlight
 import { highlightElement } from '../../node_modules/@speed-highlight/core/dist/index.js';
+
+// Style
+import '../../node_modules/@speed-highlight/core/dist/themes/atom-dark.css';
 
 // Highlight all elements
 document
