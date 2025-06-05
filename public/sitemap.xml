@@ -10,18 +10,23 @@
 </url>
 
 <url>
-  <loc>https://salonia.it/contact</loc>
+  <loc>https://salonia.it/writeups</loc>
   <priority>1.00</priority>
 </url>
 
 <url>
-  <loc>https://salonia.it/donate</loc>
-  <priority>1.00</priority>
+  <loc>https://salonia.it/writeups/kubernetes</loc>
+  <priority>0.80</priority>
 </url>
 
 <url>
-  <loc>https://salonia.it/info</loc>
-  <priority>1.00</priority>
+  <loc>https://salonia.it/writeups/mariadb-galera-cluster</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/writeups/ssh-passwordless-login</loc>
+  <priority>0.80</priority>
 </url>
 
 <url>
@@ -35,12 +40,27 @@
 </url>
 
 <url>
+  <loc>https://salonia.it/software</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
   <loc>https://salonia.it/services</loc>
   <priority>1.00</priority>
 </url>
 
 <url>
-  <loc>https://salonia.it/software</loc>
+  <loc>https://salonia.it/info</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/contact</loc>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://salonia.it/donate</loc>
   <priority>1.00</priority>
 </url>
 </urlset>
