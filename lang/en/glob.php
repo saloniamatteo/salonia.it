@@ -11,5 +11,5 @@ return [
     'warning' => 'Warning',
 
     // Clipboard
-    'copy-clipboard' => 'Copy to clipboard',
+    'copy' => 'Copy',
 ];

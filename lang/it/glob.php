@@ -11,5 +11,5 @@ return [
     'warning' => 'Attenzione',
 
     // Clipboard
-    'copy-clipboard' => 'Copia negli appunti',
+    'copy' => 'Copia',
 ];
