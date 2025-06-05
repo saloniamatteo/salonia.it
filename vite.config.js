@@ -30,6 +30,7 @@ export default defineConfig({
                 'resources/css/fonts/fonts.css',
                 'resources/css/overrides.css',
                 'resources/js/main.js',
+                'resources/js/highlight.js',
             ],
             refresh: true,
         }),
