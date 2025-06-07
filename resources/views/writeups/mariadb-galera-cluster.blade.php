@@ -65,7 +65,7 @@ sudo apt install mariadb-server galera-4
 				Centos/Fedora/RHEL:
 
 				<x-code lang="Bash">
-sudo yum install mariadb-server mariadb-server-galera
+sudo dnf install mariadb-server mariadb-server-galera
 				</x-code>
 			</li>
 
