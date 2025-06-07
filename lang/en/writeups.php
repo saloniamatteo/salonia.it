@@ -15,7 +15,7 @@ return [
         's1' => [
             'title' => '1. Gather your hosts',
             'desc' => 'In order to have a more flexible configuration, and not have '
-                      . 'to remember IP addresses, modify <code>/etc/hosts</code> '
+                      . 'to remember IP addresses, edit <code>/etc/hosts</code> '
                       . 'and insert the following lines:',
 
             'desc2' => 'Modify each IP address & each hostname as you please.',
@@ -32,13 +32,13 @@ return [
         // Step 3
         's3' => [
             'title' => '3. Configure the first node',
-            'note' => 'Modify <code>/etc/mysql/mariadb.cnf.d/50-server.cnf</code> '
+            'note' => 'Edit <code>/etc/mysql/mariadb.cnf.d/50-server.cnf</code> '
                       . '& make sure the following line is commented:',
 
             'desc' => 'Create the user that will be used for replication: '
                       . '(modify all bold parameters)',
 
-            'desc2' => 'Modify <code>/etc/mysql/mariadb.cnf.d/60-galera.cnf</code>: '
+            'desc2' => 'Edit <code>/etc/mysql/mariadb.cnf.d/60-galera.cnf</code>: '
                        . '(modify all bold parameters)',
 
             'desc3' => 'Create the cluster:',
@@ -84,7 +84,7 @@ return [
         's7' => [
             'title' => '7. Load balancer with nginx',
             'desc' => "It's possible to optionally use nginx as a cluster "
-                      . 'load balancer. Modify <code>/etc/nginx/nginx.conf</code> '
+                      . 'load balancer. Edit <code>/etc/nginx/nginx.conf</code> '
                       . 'and add the following config:',
         ]
     ],
@@ -130,7 +130,7 @@ return [
                 'desc' => 'The file <code>~/.ssh/config</code> contains all of '
                           . "your host's configurations, saving you from having "
                           . 'to type user & IP/hostname every time you want to '
-                          . 'log onto a host. Modify this file with a text editor, '
+                          . 'log onto a host. Edit this file with a text editor, '
                           . 'and insert the following: ',
 
                 'desc2' => 'Set the bold parameters as follows:',
@@ -179,7 +179,7 @@ return [
 
             // Step 1
             's1' => [
-                'title' => '1. Modify /etc/ssh/sshd_config',
+                'title' => '1. Edit /etc/ssh/sshd_config',
                 'desc' => "Modify the ssh server's config "
                           . 'located in :path, and make sure these options '
                           . 'are set as follows: ',
@@ -216,7 +216,7 @@ return [
         's2' => [
             'title' => '2. Disable swap',
             'desc' => "You must :req1 disable swap:req2:",
-            'desc2' => 'Also, modify :file, and comment out the line that '
+            'desc2' => 'Also, edit :file, and comment out the line that '
                       . 'contains :swap. For example:',
         ],
 
@@ -296,7 +296,7 @@ return [
                       . 'and the Worker Nodes work correctly. ',
 
             'desc2' => 'Create a test namespace:',
-            'desc3' => 'Create a new file :file, modify it, '
+            'desc3' => 'Create a new file :file, edit it, '
                        . 'and add the following:',
             'desc4' => 'Apply the file:',
             'desc5' => 'Make sure the pods have been started:',
@@ -316,6 +316,171 @@ return [
             'info3' => '...and immediately after:',
 
             'desc8' => "Remove the test environment:",
+        ],
+    ],
+
+    // Unbound
+    'unbound' => [
+        'title' => 'Unbound DNS Resolver + DoH',
+        'desc' => 'Local DNS resolver with Unbound, with optional custom '
+                  . 'DoH endpoint (DNS over HTTPS)',
+
+        // DNS
+        'dns' => [
+            'desc' => 'Configure the local DNS resolver.',
+
+            // Step 1
+            's1' => [
+                'title' => '1. Install packages',
+            ],
+
+            // Step 2
+            's2' => [
+                'title' => '2. Edit /etc/resolv.conf',
+                'desc' => 'Make sure :file contains the following:',
+                'desc2' => 'This temporary configuration will allow us to '
+                           . 'continue using DNS services & modify the '
+                           . 'unbound configuration without incurring in '
+                           . 'resolution issues.',
+            ],
+
+            // Step 3
+            's3' => [
+                'title' => '3. Edit the unbound config',
+                'desc' => "Edit :file, replacing the contents with the following:",
+
+                'desc2' => 'Note the parameters :tlssk and :tlssp: these two '
+                           . 'parameters indicate the key and the SSL certificate. ',
+            ],
+
+            // Step 4
+            's4' => [
+                'title' => '4. Get anchor file',
+            ],
+
+            // Step 5
+            's5' => [
+                'title' => '5. Get root.hints',
+            ],
+
+            // Step 6
+            's6' => [
+                'title' => '6. Edit crontab',
+            ],
+
+            // Step 7
+            's7' => [
+                'title' => '7. Fix permissions',
+            ],
+
+            // Step 8
+            's8' => [
+                'title' => '8. Check resolution',
+                'output' => 'Example output:',
+            ],
+
+            // Step 9
+            's9' => [
+                'title' => '9. Edit /etc/resolv.conf',
+
+                'warning' => [
+                    'desc' => "Make sure :file isn't a symlink:",
+                    'desc2' => 'If you see',
+                    'desc3' => 'Instead of just :file, then remove it:',
+                ],
+
+                'desc' => 'Edit :file:',
+            ],
+
+            // Step 10
+            's10' => [
+                'title' => '10. Make it immutable',
+                'info' => 'If this command errors out saying '
+                          . '"Operation not supported", make sure :file '
+                          . "isn't a symlink. See the warning above.",
+
+                'desc' => 'The next time you want to edit this file, make sure '
+                          . 'you remove the attribute:',
+
+                'desc2' => 'After you finished editing the file, you just need to '
+                           . 'set the parameter again with the previous command.',
+            ],
+
+            // Step 11
+            's11' => [
+                'title' => '11. Enable service',
+            ],
+        ],
+
+        // DoH
+        'doh' => [
+            'desc' => 'Configure your custom DoH endpoint (DNS over HTTPS) '
+                      . 'with nginx.',
+
+            // Requirements
+            'requirements' => [
+                'title' => 'Requirements:',
+                'domain' => 'Domain and/or subdomain',
+                'ports' => 'Open ports',
+            ],
+
+            // Step 1
+            's1' => [
+                'title' => '1. Install packages',
+            ],
+
+            // Step 2
+            's2' => [
+                'title' => '2. Configure nginx',
+                'desc' => 'Create an empty nginx config file in :file. '
+                          . 'Make sure you can visit your website correctly '
+                          . 'on port :port before moving on.',
+
+                'desc2' => "If it doesn't exist, create :path, and an empty :file.",
+                'desc3' => 'Modify :domain with your domain name.',
+            ],
+
+            // Step 3
+            's3' => [
+                'title' => '3. Request certificate',
+                'desc' => 'If needed, type your email, and agree to '
+                          . "Let's Encrypt's TOS.",
+            ],
+
+            // Step 4
+            's4' => [
+                'title' => '4. Configure nginx',
+                'desc' => 'Edit :file again:',
+            ],
+
+            // Step 5
+            's5' => [
+                'title' => '5. Configure unbound',
+                'desc' => 'Edit :file, and make sure the following lines '
+                          . 'are not commented:',
+            ],
+
+            // Step 6
+            's6' => [
+                'title' => '6. Restart services',
+            ],
+
+            // Step 7
+            's7' => [
+                'title' => '7. Test the endpoint',
+                'desc' => 'To test your endpoint, you just need to open a web '
+                          . 'browser, and configure the DoH settings. '
+                          . 'In Firefox, for example, you need to go under '
+                          . ':b Settinfs :eb, :b Privacy & Security :eb, '
+                          . 'and scroll down until you find :b DNS over HTTPS :eb. '
+                          . 'Configure a new custom endpoint, '
+                          . 'with the following URL:',
+
+                'desc2' => 'Try to visit a couple of websites, like :domain. '
+                           . 'If the page loads, your endpoint '
+                           . 'works correctly! Otherwise, verify your '
+                           . 'configuration, and try again.',
+            ]
         ],
     ],
 ];

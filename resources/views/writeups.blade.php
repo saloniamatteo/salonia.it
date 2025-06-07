@@ -35,7 +35,12 @@
 				'spl' => [
 					'icon' => 'spl.webp',
 					'page' => 'ssh-passwordless-login'
-				]
+				],
+
+				'unbound' => [
+					'icon' => 'unbound.webp',
+					'page' => 'unbound',
+				],
 			]
 		@endphp
 

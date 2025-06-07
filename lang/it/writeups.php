@@ -335,4 +335,170 @@ return [
             'desc8' => "Rimuovi l'ambiente di test:",
         ],
     ],
+
+    // Unbound
+    'unbound' => [
+        'title' => 'Risolutore DNS Unbound + DoH',
+        'desc' => 'Risolutore DNS locale con Unbound, con configurazione opzionale '
+                  . 'per endpoint DoH personalizzato (DNS over HTTPS)',
+
+        // DNS
+        'dns' => [
+            'desc' => 'Configura il resolver DNS locale.',
+
+            // Step 1
+            's1' => [
+                'title' => '1. Installa pacchetti',
+            ],
+
+            // Step 2
+            's2' => [
+                'title' => '2. Modifica /etc/resolv.conf',
+                'desc' => 'Assicurati che :file contenga le righe seguenti:',
+                'desc2' => 'Questa configurazione temporanea ci permetterà di '
+                           . 'poter continuare ad utilizzare i servizi DNS '
+                           . 'e modificare la configurazione di unbound '
+                           . 'senza incorrere in problemi di risoluzione.',
+            ],
+
+            // Step 3
+            's3' => [
+                'title' => '3. Modifica la config di unbound',
+                'desc' => 'Modifica :file, sostituendo tutto il contenuto del file '
+                          . 'con il seguente:',
+
+                'desc2' => 'Nota i parametri :tlssk e :tlssp: questi due parametri '
+                           . 'indicano la chiave ed il certificato SSL. ',
+            ],
+
+            // Step 4
+            's4' => [
+                'title' => '4. Ottieni file anchor',
+            ],
+
+            // Step 5
+            's5' => [
+                'title' => '5. Ottieni root.hints',
+            ],
+
+            // Step 6
+            's6' => [
+                'title' => '6. Modifica crontab',
+            ],
+
+            // Step 7
+            's7' => [
+                'title' => '7. Correggi i permessi',
+            ],
+
+            // Step 8
+            's8' => [
+                'title' => '8. Verifica funzionamento',
+                'output' => 'Esempio di output:',
+            ],
+
+            // Step 9
+            's9' => [
+                'title' => '9. Modifica /etc/resolv.conf',
+
+                'warning' => [
+                    'desc' => 'Controlla che :file non sia un symlink:',
+                    'desc2' => "Se nell'output vedi",
+                    'desc3' => 'Piuttosto che solamente :file, allora eliminalo:',
+                ],
+
+                'desc' => 'Modifica :file:',
+            ],
+
+            // Step 10
+            's10' => [
+                'title' => '10. Rendilo immutabile',
+                'info' => 'Se questo commando non va a buon fine, dicendo '
+                          . '"Operazione non supportata", assicurati che :file '
+                          . "non sia un symlink. Vedi l'avvertimento soprastante.",
+
+                'desc' => 'La prossima volta che desideri modificare questo file, '
+                          . "assicurati di togliere l'attributo: ",
+
+                'desc2' => 'Una volta terminate le modifiche, è sufficiente '
+                           . 'reimpostare il parametro con il comando precedente.',
+            ],
+
+            // Step 11
+            's11' => [
+                'title' => '11. Abilita servizio',
+            ],
+        ],
+
+        // DoH
+        'doh' => [
+            'desc' => 'Configura il tuo endpoint DoH (DNS over HTTPS) '
+                      . 'personalizzato con nginx.',
+
+            // Requirements
+            'requirements' => [
+                'title' => 'Requisiti:',
+                'domain' => 'Dominio e/o sottodominio',
+                'ports' => 'Porte aperte',
+            ],
+
+            // Step 1
+            's1' => [
+                'title' => '1. Installa pacchetti',
+            ],
+
+            // Step 2
+            's2' => [
+                'title' => '2. Configura nginx',
+                'desc' => 'Crea un file di configurazione nginx vuoto in :file. '
+                          . 'Assicurati che tu possa visitare il tuo sito '
+                          . 'correttamente sulla porta :port prima di continuare.',
+
+                'desc2' => 'Se non esiste, crea :path, ed un file :file vuoto.',
+                'desc3' => 'Modifica :domain con il tuo nome di dominio.',
+            ],
+
+            // Step 3
+            's3' => [
+                'title' => '3. Richiedi certificato',
+                'desc' => 'Se richiesti, inserisci la tua email, e aderisci '
+                          . "ai TOS di Let's Encrypt.",
+            ],
+
+            // Step 4
+            's4' => [
+                'title' => '4. Configura nginx',
+                'desc' => 'Modifica nuovamente :file:',
+            ],
+
+            // Step 5
+            's5' => [
+                'title' => '5. Configura unbound',
+                'desc' => 'Modifica :file, e assicurati che le seguenti righe '
+                          . 'non siano commentate:',
+            ],
+
+            // Step 6
+            's6' => [
+                'title' => '6. Riavvia servizi',
+            ],
+
+            // Step 7
+            's7' => [
+                'title' => '7. Prova endpoint',
+                'desc' => 'Per provare il tuo endpoint, è sufficiente '
+                          . 'aprire un browser web, e configurare le impostazioni '
+                          . 'DoH. Su Firefox, ad esempio, basterà andare in '
+                          . ':b Impostazioni :eb, :b Privacy e Sicurezza :eb, '
+                          . 'e scorrere fino a trovare :b DNS su HTTPS :eb. '
+                          . 'Configura un nuovo endpoint personalizzato, '
+                          . 'con il seguente URL:',
+
+                'desc2' => 'Prova a visitare qualche sito web, come :domain. '
+                           . 'Se la pagina carica, il tuo endpoint '
+                           . 'funziona correttamente! Altrimenti, verifica '
+                           . 'nuovamente la tua configurazione, e riprova.',
+            ]
+        ],
+    ],
 ];
