@@ -23,6 +23,7 @@
 	<p>
 		{{ __("glob.go-to") }}:
 
+		<br>
 
 		<!-- Client -->
 		<x-tag-xs href="client">
