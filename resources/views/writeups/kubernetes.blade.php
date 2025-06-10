@@ -560,6 +560,7 @@ watch kubectl get pods -n test
 		</p>
 
 		<x-code lang="Bash">
+#!/bin/bash
 IP=controlplane
 PORT=30000
 
