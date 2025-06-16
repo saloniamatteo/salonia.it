@@ -23,7 +23,6 @@ return [
         'about' => [
             'title' => 'Su di me',
             'c' => [
-                'services' => 'Servizi',
                 'cv' => 'Curriculum',
                 'info' => 'Info',
                 'contact' => 'Contattami',

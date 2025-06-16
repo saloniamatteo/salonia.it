@@ -23,7 +23,6 @@ return [
         'about' => [
             'title' => 'About me',
             'c' => [
-                'services' => 'Services',
                 'cv' => 'Resume',
                 'info' => 'Info',
                 'contact' => 'Contact me',

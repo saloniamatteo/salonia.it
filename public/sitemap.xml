@@ -30,6 +30,11 @@
 </url>
 
 <url>
+  <loc>https://salonia.it/writeups/unbound</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
   <loc>https://salonia.it/kernel</loc>
   <priority>1.00</priority>
 </url>
@@ -41,11 +46,6 @@
 
 <url>
   <loc>https://salonia.it/software</loc>
-  <priority>1.00</priority>
-</url>
-
-<url>
-  <loc>https://salonia.it/services</loc>
   <priority>1.00</priority>
 </url>
 

@@ -36,15 +36,6 @@
 		<p class="font-bold lead mt-3 text-white" style="line-height: 1.7rem!important">
 			{{ __("index.welcome.desc") }}
 		</p>
-
-		<!-- SID -->
-		<p class="font-bold lead mt-3 text-white" style="line-height: 1.7rem!important">
-			{{ __("index.welcome.look") }}&nbsp;
-			<a class="font-bold text-white" href="{{ Url::subUrl('services') }}">
-				<u>{{ __("index.welcome.sid") }}</u>
-			</a>
-			?
-		</p>
 	</div>
 
 	<!-- Picture -->

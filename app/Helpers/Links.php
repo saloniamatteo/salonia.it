@@ -21,7 +21,6 @@ class Links
         'kernel' => 'server-cog',
         'packages' => 'package',
         'software' => 'binary',
-        'services' => 'server',
         'cv' => 'file-badge',
         'info' => 'user-round',
         'contact' => 'send',

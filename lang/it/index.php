@@ -68,13 +68,6 @@ return [
         'desc' => 'Scopri chi sono, le mie competenze, i miei recapiti, '
                   . 'come puoi aiutarmi.',
 
-        // Services
-        'services' => [
-            'title' => 'Servizi',
-            'desc' => 'Scopri tutti i servizi offerti da '
-                      . 'Salonia Infrastrutture Digitali.',
-        ],
-
         // CV
         'cv' => [
             'title' => 'CV',

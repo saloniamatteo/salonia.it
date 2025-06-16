@@ -67,13 +67,6 @@ return [
         'desc' => 'Discover who I am, my skills, my contact details, '
                   . 'and how you can help me.',
 
-        // Services
-        'services' => [
-            'title' => 'Services',
-            'desc' => 'Discover all of the services offered by '
-                      . 'Salonia Infrastrutture Digitali.',
-        ],
-
         // CV
         'cv' => [
             'title' => 'Resume',
