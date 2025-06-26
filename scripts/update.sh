@@ -6,8 +6,8 @@ dir=$(pwd)
 [[ $(basename $dir) == "scripts" ]] && cd ..
 
 # Install deps
-composer update
-npm update
+composer update -o --no-dev
+npm update --omit dev
 
 # Fix any security issues
 npm audit fix
