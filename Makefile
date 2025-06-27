@@ -8,7 +8,7 @@ all: build restart
 # Check if .env file exists: if not, copy default env
 checkenv:
 	@if ! [ -f .env ]; then \
-		cp .env.example .env; \
+		cp .env.docker .env; \
 	fi
 
 # Build docker image

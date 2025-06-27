@@ -39,7 +39,7 @@ RUN chown -R www-data:www-data node_modules vendor
 
 # Copy env file if it does not exist
 RUN if ! [ -f .env ]; then \
-        cp .env.example .env; \
+        cp .env.docker .env; \
     fi
 
 # Run setup script
