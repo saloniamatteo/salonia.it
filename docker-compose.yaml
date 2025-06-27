@@ -4,25 +4,6 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: salonia-website
-    #depends_on:
-    #- valkey
-    environment:
-      # Cache & Session Store
-      DOCKER_CACHE_STORE:            ${CACHE_STORE}
-      DOCKER_SESSION_DRIVER:         ${SESSION_DRIVER}
-      # Docker: use local Valkey
-      DOCKER_VALKEY_LOCAL:           ${VALKEY_LOCAL}
-      # Redis settings
-      DOCKER_REDIS_HOST:             ${REDIS_HOST}
-      DOCKER_REDIS_PORT:             ${REDIS_PORT}
-      # AbuseIPDB
-      DOCKER_ABUSEIPDB_KEY:          ${ABUSEIPDB_KEY}
-      DOCKER_ABUSEIPDB_THRESHOLD:    ${ABUSEIPDB_THRESHOLD}
-      DOCKER_ABUSEIPDB_CACHE_TTL:    ${ABUSEIPDB_CACHE_TTL}
-      DOCKER_ABUSEIPDB_IP_OK:        ${ABUSEIPDB_IP_OK}
-      DOCKER_ABUSEIPDB_IP_BAD:       ${ABUSEIPDB_IP_BAD}
-      # CheckRequest
-      DOCKER_CHECKREQUEST_CACHE_TTL: ${CHECKREQUEST_CACHE_TTL}
     # Check FastCGI connectivity
     # The health check will start 5 seconds after the container has been started,
     # and will run once every 5 seconds. If an health check fails 3 times,
