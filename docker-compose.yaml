@@ -1,0 +1,48 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: salonia-website
+    depends_on:
+      - valkey
+    environment:
+      # Cache & Session Store
+      CACHE_STORE:            ${CACHE_STORE:-redis}
+      SESSION_DRIVER:         ${SESSION_DRIVER:-redis}
+      # Docker: use local Valkey
+      VALKEY_LOCAL:           ${VALKEY_LOCAL:-yes}
+      # Redis settings
+      #REDIS_CACHE_CONNECTION: ${REDIS_CACHE_CONNECTION:-default}
+      REDIS_HOST:             ${REDIS_HOST:-valkey}
+      REDIS_PORT:             ${REDIS_PORT:-6379}
+      # AbuseIPDB
+      ABUSEIPDB_KEY:          ${ABUSEIPDB_KEY:-}
+      ABUSEIPDB_THRESHOLD:    ${ABUSEIPDB_THRESHOLD:-}
+      ABUSEIPDB_CACHE_TTL:    ${ABUSEIPDB_CACHE_TTL:-}
+      ABUSEIPDB_IP_OK:        ${ABUSEIPDB_IP_OK:-}
+      ABUSEIPDB_IP_BAD:       ${ABUSEIPDB_IP_BAD:-}
+      # CheckRequest
+      CHECKREQUEST_CACHE_TTL: ${CHECKREQUEST_CACHE_TTL:-}
+    # Check FastCGI connectivity
+    # The health check will start 5 seconds after the container has been started,
+    # and will run once every 5 seconds. If an health check fails 3 times,
+    # the container will restart.
+    healthcheck:
+      test: ["CMD", "cgi-fcgi", "-bind", "-connect", "/var/run/php-fpm.sock"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    image: salonia:1.0
+    restart: unless-stopped
+    # Map the container's PHP-FPM socket under /var/run/docker/salonia.it
+    volumes:
+      - /var/run/docker-salonia.it/:/var/run/
+    working_dir: /var/www/salonia.it
+
+  valkey:
+    command: ["redis-server", "--bind", "valkey", "--protected-mode", "no"]
+    container_name: salonia-valkey
+    image: valkey/valkey:8.1.2-alpine
+    restart: unless-stopped
