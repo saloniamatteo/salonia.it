@@ -37,6 +37,8 @@ down:
 	docker compose down --remove-orphans
 
 up: checkenv
+	@# Source .env file
+	@source .env
 	@echo "Starting containers"
 	@# Check if we have to use local valkey
 	@if [ "${VALKEY_LOCAL}" = "yes" ]; then \

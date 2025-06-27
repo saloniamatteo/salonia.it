@@ -27,10 +27,38 @@ check_tunables() {
 
 		# If value is not empty, set it
 		if ! [ -z "$value" ]; then
-			write_env_opt $tunable "$value"
+			# Remove "DOCKER_" at the beginning of the variable name
+			write_env_opt ${tunable#DOCKER_} "$value"
 		fi
 	done
 }
+
+cache() {
+	# Clear cache & Regenerate key
+	php artisan optimize:clear
+	php artisan key:generate --force
+
+	# Cache assets
+	composer cache
+}
+
+# Do not apply changes if .env differs from .env.example
+diff .env.example .env >/dev/null 2>&1
+if ! [ $? = 0 ]; then
+	# Regen cache & key
+	cache
+
+	# Execute php-fpm
+	php-fpm
+
+	# Exit on php-fpm exit
+	exit 0
+fi
+
+# Default settings
+DE_CACHE_STORE="redis"
+DE_SESSION_DRIVER="redis"
+DE_REDIS_HOST="valkey"
 
 # Start writing env
 cat > .env <<EOF
@@ -63,29 +91,23 @@ EOF
 #   - Yes -> set it; check if tunables are set
 
 # Check if we have to use Valkey as cache/session driver
-if ! [ -z "$VALKEY_LOCAL" ] && ! [ "$VALKEY_LOCAL" = "no" ]; then
+if ! [ -z "$DOCKER_VALKEY_LOCAL" ] && ! [ "$DOCKER_VALKEY_LOCAL" = "no" ]; then
 	write_env "# Cache & Session store"
 
 	# Here we write "redis" because Valkey is redis-compatible
-	write_env_opt CACHE_STORE "redis"
-	write_env_opt SESSION_DRIVER "redis"
-	write_env_opt REDIS_HOST "valkey"
+	write_env_opt CACHE_STORE $DE_CACHE_STORE
+	write_env_opt SESSION_DRIVER $DE_SESSION_DRIVER
+	write_env_opt REDIS_HOST $DE_REDIS_HOST
 else
+	# Check cache & session settings
 	write_env "# Cache & Session store"
 
-	# Check if a custom cache driver is set
-	if [ -z "$CACHE_STORE" ]; then
-		write_env_opt CACHE_STORE "file"
-	else
-		write_env_opt CACHE_STORE "$CACHE_STORE"
-	fi
+	cache_session=(
+		"DOCKER_CACHE_STORE"
+		"DOCKER_SESSION_DRIVER"
+	)
 
-	# Check if session driver is set
-	if [ -z "$SESSION_DRIVER" ]; then
-		write_env_opt SESSION_DRIVER "file"
-	else
-		write_env_opt SESSION_DRIVER "$SESSION_DRIVER"
-	fi
+	check_tunables ${cache_session[@]}
 fi
 
 # Add newline
@@ -95,25 +117,24 @@ write_env
 write_env "# Redis settings"
 
 redis=(
-	#"REDIS_CACHE_CONNECTION"
-	"REDIS_HOST"
-	"REDIS_PORT"
+	"DOCKER_REDIS_HOST"
+	"DOCKER_REDIS_PORT"
 )
 
 check_tunables ${redis[@]}
 
 # Check if AbuseIPDB API key is set
-if ! [ -z "$ABUSEIPDB_KEY" ]; then
+if ! [ -z "$DOCKER_ABUSEIPDB_KEY" ]; then
 	write_env "# AbuseIPDB settings"
-	write_env_opt ABUSEIPDB_KEY "$ABUSEIPDB_KEY"
+	write_env_opt ABUSEIPDB_KEY "$DOCKER_ABUSEIPDB_KEY"
 
 	# Define AbuseIPDB tunables
 	abuseipdb=(
-		"ABUSEIPDB_THRESHOLD"
-		"ABUSEIPDB_IGNORE_WHITELIST"
-		"ABUSEIPDB_CACHE_TTL"
-		"ABUSEIPDB_IP_OK"
-		"ABUSEIPDB_IP_BAD"
+		"DOCKER_ABUSEIPDB_THRESHOLD"
+		"DOCKER_ABUSEIPDB_IGNORE_WHITELIST"
+		"DOCKER_ABUSEIPDB_CACHE_TTL"
+		"DOCKER_ABUSEIPDB_IP_OK"
+		"DOCKER_ABUSEIPDB_IP_BAD"
 	)
 
 	# Check if each tunable is set and, if it is,
@@ -128,7 +149,7 @@ write_env
 write_env "# CheckRequest settings "
 
 checkrequest=(
-	"CHECKREQUEST_CACHE_TTL"
+	"DOCKER_CHECKREQUEST_CACHE_TTL"
 )
 
 check_tunables ${checkrequest[@]}
@@ -138,12 +159,8 @@ write_env
 write_env "# Application key"
 write_env APP_KEY=
 
-# Clear cache & Regenerate key
-php artisan optimize:clear
-php artisan key:generate --force
-
-# Cache assets
-composer cache
+# Regen cache & key
+cache
 
 # Execute php-fpm
 php-fpm

@@ -37,8 +37,10 @@ COPY --chown=www-data:www-data . .
 RUN mkdir -p node_modules vendor
 RUN chown -R www-data:www-data node_modules vendor
 
-# Temporarily copy env file (will be overwritten by entrypoint)
-COPY --chown=www-data:www-data .env.example .env
+# Copy env file if it does not exist
+RUN if ! [ -f .env ]; then \
+        cp .env.example .env; \
+    fi
 
 # Run setup script
 RUN /var/www/salonia.it/scripts/update.sh

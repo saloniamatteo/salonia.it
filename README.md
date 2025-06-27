@@ -135,13 +135,49 @@ I've implemented my own simple HTML minifier, making use of PHP's output bufferi
 
 Additionally, CSS & JS files are minified by PurgeCSS and Vite, respectively.
 
-## Dependencies
+***
+
+## Setup with Docker
+You can easily deploy this website via Docker.
+I provided a `Makefile` to make things even simpler:
+
+```bash
+make
+```
+
+This will use the defaults provided in .env.example, which are:
+- CACHE_STORE: `redis`
+- SESSION_DRIVER: `redis`
+- VALKEY_LOCAL: `yes` (use Valkey inside the container)
+
+The `make` command above will build & deploy this website in a matter of minutes.
+
+If you want to apply custom settings, make sure you first setup `.env`:
+
+```bash
+cp .env.example .env
+```
+
+Now you can modify this file.
+Any changes made to this file will be replicated in the container.
+
+### Makefile commands
+These commands are provided by the Makefile:
+- `build`: Only build the image
+- `exec`: Run a shell inside the container
+- `logs`: View the logs inside the container
+- `restart`: Stop & start the container
+- `down`/`stop`: Stop the container
+- `up`/`start`: Start the container
+
+## Manual Setup
+### Dependencies
 To deploy this website, you need the following:
 - `php`
 - `composer`
 - `nodejs` with `npm`
 
-## Setup
+### Steps
 - Clone the repo: `git clone https://github.com/saloniamatteo/salonia.it website`
 - Change directory: `cd website`
 - Install PHP dependencies: `composer install`
