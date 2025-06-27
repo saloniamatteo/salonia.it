@@ -145,21 +145,31 @@ I provided a `Makefile` to make things even simpler:
 make
 ```
 
-This will use the defaults provided in .env.example, which are:
+This will use the defaults provided in `.env.docker`, which are:
 - CACHE_STORE: `redis`
 - SESSION_DRIVER: `redis`
 - VALKEY_LOCAL: `yes` (use Valkey inside the container)
 
 The `make` command above will build & deploy this website in a matter of minutes.
 
-If you want to apply custom settings, make sure you first setup `.env`:
+If you don't want to use `make` (weirdo :P)
+you can directly run `docker compose` (which is what Make runs):
 
 ```bash
-cp .env.example .env
+cp .env.docker .env
+docker compose --env-file .env up -d app valkey
 ```
 
-Now you can modify this file.
-Any changes made to this file will be replicated in the container.
+### Customizing the env
+If you want to apply custom settings, make sure you first copy the env:
+
+```bash
+cp .env.docker .env
+```
+
+This is required for both methods, although `make` does this automagically.
+
+Any changes to `.env` will be replicated in the container the next time it is ran.
 
 ### Makefile commands
 These commands are provided by the Makefile:
@@ -169,6 +179,33 @@ These commands are provided by the Makefile:
 - `restart`: Stop & start the container
 - `down`/`stop`: Stop the container
 - `up`/`start`: Start the container
+
+### Setting up webserver
+This docker image does not ship with a built-in webserver on purpose.
+Rather, it exposes a PHP-FPM socket on the host system, at `/var/run/docker-salonia.it/php-fpm.sock`,
+with permissions www-data:www-data (UID 82 : GID 82), umask 0660 (`rw-rw----`).
+
+At the bottom of this page you will find
+[a sample `nginx` config](https://github.com/saloniamatteo/salonia.it#sample-nginx-config).
+You can copy that as-is, making sure you modify the following lines:
+
+```nginx
+# Change this
+root /var/www/example.com/public;
+
+# To this
+root /var/www/salonia.it/public;
+```
+
+```nginx
+# Change this
+fastcgi_pass unix:/var/run/php-fpm.sock;
+
+# To this
+fastcgi_pass unix:/var/run/docker-salonia.it/php-fpm.sock;
+```
+
+Obviously, if you change the paths in Docker, you have to reflect those changes here.
 
 ## Manual Setup
 ### Dependencies
