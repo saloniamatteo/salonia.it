@@ -183,7 +183,7 @@ These commands are provided by the Makefile:
 ### Setting up webserver
 This docker image does not ship with a built-in webserver on purpose.
 Rather, it exposes a PHP-FPM socket on the host system, at `/var/run/docker-salonia.it/php-fpm.sock`,
-with permissions www-data:www-data (UID 82 : GID 82), umask 0660 (`rw-rw----`).
+with permissions `www-data:www-data` (UID 82 : GID 82), umask 0660 (`rw-rw----`).
 
 At the bottom of this page you will find
 [a sample `nginx` config](https://github.com/saloniamatteo/salonia.it#sample-nginx-config).
