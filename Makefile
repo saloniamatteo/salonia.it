@@ -38,10 +38,10 @@ down:
 
 up: checkenv
 	@# Source .env file
-	@source .env
 	@echo "Starting containers"
 	@# Check if we have to use local valkey
-	@if [ "${VALKEY_LOCAL}" = "yes" ]; then \
+	@set -a; . ./.env; set +a; \
+	if [ "$$VALKEY_LOCAL" = "yes" ]; then \
 		echo "Using local Valkey"; \
 		docker compose --env-file .env up -d app valkey; \
 	else \
