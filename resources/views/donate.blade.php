@@ -87,7 +87,7 @@
 				</p>
 
 				<p class="tile__subtitle text-black font-bold" style="word-break: break-all">
-					sp1qq2wuevaqz4e0s9z3sy0lr5vqfr34e4rauf8k6kywmuhaa99xp2y6gq7fpv592ltlr59y9au4yd60qr2vt6yjjxsxvqvsjdgy3vavsum3jv5euk75
+					bc1pf3glnmkke3yemu3r040hmapnkddaxyvy0vucekjt4dnvgwa8qdkss8aede
 				</p>
 			</div>
 			</x-icon-img>

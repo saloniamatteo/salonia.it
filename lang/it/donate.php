@@ -14,6 +14,6 @@ return [
     // Bitcoin
     'btc' => [
         'oa' => 'Indirizzi OpenAlias (Bitcoin)',
-        'addr' => 'Indirizzo Silent Payments',
+        'addr' => 'Indirizzo (taproot)',
     ],
 ];
