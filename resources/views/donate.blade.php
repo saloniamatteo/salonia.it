@@ -95,6 +95,40 @@
 
 		<div class="divider"></div>
 
+		<!-- PayNym -->
+		<x-tile>
+			<x-icon-img alt="PayNym"
+			href=""
+			src="{{ Vite::asset('resources/img/paynym.webp') }}">
+
+			<div class="tile__container">
+				<p class="tile__title font-bold text-lg">
+					PayNym
+				</p>
+
+				<p class="tile__subtitle text-black">
+					{{ __("donate.paynym.user") }}
+				</p>
+
+				<p class="tile__subtitle text-black font-bold" style="word-break: break-all">
+					+needydiet00
+				</p>
+
+				<div class="my-2"></div>
+
+				<p class="tile__subtitle text-black">
+					{{ __("donate.paynym.addr") }}
+				</p>
+
+				<p class="tile__subtitle text-black font-bold" style="word-break: break-all">
+					PM8TJNSdXtSWbvBysP9EHHt45ARety4u3VjqWvQAF1WaK3QhZruiYDU7mXGnqBa8EXFGDN8tVYHCtbEv8G3MZNLEKgeQWKU2ZugS2QhTNSRbq9ZXFFuX
+				</p>
+			</div>
+			</x-icon-img>
+		</x-tile>
+
+		<div class="divider"></div>
+
 		<!-- Paypal -->
 		<x-tile>
 			<x-icon-img alt="Paypal"

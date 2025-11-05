@@ -16,4 +16,10 @@ return [
         'oa' => 'Indirizzi OpenAlias (Bitcoin)',
         'addr' => 'Indirizzo (taproot)',
     ],
+
+    // PayNym
+    'paynym' => [
+        'user' => 'Username',
+        'addr' => 'Indirizzo',
+    ],
 ];
