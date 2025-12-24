@@ -101,7 +101,7 @@ sudo emerge dev-db/mariadb sys-cluster/galera
 
 		<x-code lang="SQL">
 CREATE USER '<strong>replication</strong>' IDENTIFIED BY '<strong>password</strong>';
-GRANT ALL PRIVILEGES ON TO '<strong>replication</strong>';
+GRANT ALL PRIVILEGES ON *.* TO '<strong>replication</strong>';
 FLUSH PRIVILEGES;
 		</x-code>
 
