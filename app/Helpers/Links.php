@@ -28,11 +28,6 @@ class Links
     ];
 
     public const LINK_MAPS = [
-        'portfolio' => [
-            'link' => 'https://portfolio.salonia.it',
-            'icon' => 'globe',
-        ],
-
         'searxng' => [
             'link' => 'https://s.salonia.it',
             'icon' => 'search',

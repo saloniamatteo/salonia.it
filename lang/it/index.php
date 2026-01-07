@@ -99,12 +99,6 @@ return [
         'desc' => 'Scopri strumenti e link utili, tra cui SearXNG, '
                   . 'il portale OpenAlias, ed il mio profilo GitHub.',
 
-        // Portfolio
-        'portfolio' => [
-            'title' => 'Portfolio',
-            'desc' => 'Esplora la galleria dei miei siti web.',
-        ],
-
         // SearXNG
         'searxng' => [
             'title' => 'SearXNG',

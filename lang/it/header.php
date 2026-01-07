@@ -37,7 +37,6 @@ return [
 
         // Links
         'c' => [
-            'portfolio' => 'Portfolio',
             'searxng' => 'SearXNG',
             'oa' => 'OpenAlias',
             'github' => 'GitHub',

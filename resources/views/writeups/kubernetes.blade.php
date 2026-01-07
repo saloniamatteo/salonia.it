@@ -262,8 +262,10 @@ curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | sudo gpg --
 # Add Kubernetes repository
 echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
+# Update repos
+
 # Install Kubernetes & other packages
-sudo apt install docker containerd kubectl kubeadm kubelet
+sudo apt install docker-cli containerd kubectl kubeadm kubelet
 				</x-code>
 			</li>
 
@@ -285,7 +287,7 @@ sudo emerge -a app-containers/{containerd,cri-o} sys-cluster/kube{let,-proxy}
 
 		<x-code lang="Bash">
 # Containerd
-mkdir -p /etc/containerd
+sudo mkdir -p /etc/containerd
 containerd config default | sudo tee /etc/containerd/config.toml
 
 # Gentoo users: do not run if you don't use systemd
@@ -293,7 +295,7 @@ sudo sed -i 's/SystemdCgroup = false/SystemdCgroup = true/g' /etc/containerd/con
 sudo systemctl restart containerd
 
 # Configure crictl (cri-o)
-sudo cat > /etc/crictl.yaml &lt;&lt;EOF
+cat &lt;&lt;EOF | sudo tee /etc/crictl.yaml
 runtime-endpoint: unix:///run/containerd/containerd.sock
 image-endpoint: unix:///run/containerd/containerd.sock
 timeout: 3
@@ -312,6 +314,9 @@ sudo systemctl enable --now kubelet
 sudo rc-update add containerd default
 sudo rc-update add kubelet default
 sudo rc-service containerd start
+# Note: do not run the line below on the control plane.
+# If the control plane also acts as a worker (2-node cluster),
+# enable the 'kubelet' service only after creating the cluster.
 sudo rc-service kubelet start
 		</x-code>
 
@@ -381,7 +386,9 @@ kubectl get nodes
 		</x-code>
 
 		<p>
-			{{ __('writeups.k8s.s8.desc6') }}
+			{{ __('writeups.k8s.s8.desc6', [
+				'x' => '<b>Ready</b>',
+			]) }}
 		</p>
 
 		<x-table nofoot="1">
