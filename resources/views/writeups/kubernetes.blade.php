@@ -263,6 +263,7 @@ curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | sudo gpg --
 echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
 # Update repos
+sudo apt update
 
 # Install Kubernetes & other packages
 sudo apt install docker-cli containerd kubectl kubeadm kubelet
