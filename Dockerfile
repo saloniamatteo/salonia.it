@@ -1,8 +1,9 @@
 # Setup PHP-FPM
 FROM php:8.4.8-fpm-alpine AS base
 
-# Tell php-fpm to listen on both a Unix domain socket and a TCP socket
-RUN echo "listen = /var/run/php-fpm.sock" | tee -a /usr/local/etc/php-fpm.d/zz-docker.conf
+# Tell php-fpm to listen on a Unix domain socket
+# instead of a TCP socket, thus achieving faster performance
+#RUN sed -i "s/listen = 9000/listen = \/var\/run\/php-fpm.sock/" /usr/local/etc/php-fpm.d/zz-docker.conf
 RUN echo "listen.owner = www-data" | tee -a /usr/local/etc/php-fpm.d/zz-docker.conf
 RUN echo "listen.group = www-data" | tee -a /usr/local/etc/php-fpm.d/zz-docker.conf
 RUN echo "listen.mode = 0660" | tee -a /usr/local/etc/php-fpm.d/zz-docker.conf
