@@ -16,6 +16,8 @@ services:
       start_period: 5s
     image: salonia:1.0
     restart: unless-stopped
+    ports:
+      - 9000:9000
     # Map the container's PHP-FPM socket under /var/run/docker/salonia.it
     volumes:
       - /var/run/docker-salonia.it/:/var/run/
